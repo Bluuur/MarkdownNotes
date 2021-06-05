@@ -15,7 +15,7 @@ hahahah
 $$
 这里是跨行公式\\
 \begin{aligned}
-    平板不能使用tab自动补全  为什么呢
+     nihaoa wojiao sailiya 
 \end{aligned}
 
 $$
