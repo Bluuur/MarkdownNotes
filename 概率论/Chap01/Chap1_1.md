@@ -1,12 +1,12 @@
-# 第一节 随机试验与随机概率
+# heading one 
+use markdown taking notes and sync with github
+
 ```java
-    public static void main(String[] args){
-
+public class test{
+    public static void main(String[] atgs){
+        System.out.println("hello, markdown");
+        System.out.println("hello VS code");
+        System.out.println("hello github);
     }
-
+}
 ```
-test
-
-push
-
-pull
