@@ -15,7 +15,7 @@ hahahah
 $$
 这里是跨行公式\\
 \begin{aligned}
-     nihaoa wojiao sailiya 
+     你好啊 我叫赛利亚
 \end{aligned}
 
 $$
