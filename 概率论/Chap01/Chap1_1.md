@@ -9,4 +9,13 @@ public class test{
         System.out.println("hello github);
     }
 }
-```
+``` 
+
+hahahah
+$$
+这里是跨行公式\\
+\begin{aligned}
+\    
+\end{aligned}
+
+$$
