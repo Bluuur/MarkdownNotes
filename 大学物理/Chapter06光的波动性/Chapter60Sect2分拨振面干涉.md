@@ -4,7 +4,7 @@
 
 ### 试验现象
 
-<img src="${pic}/image-20210608230258486.png" alt="image-20210608230258486" style="zoom:67%;" />
+![image-20210608233111156](image/image-20210608233111156.png)
 
 #### 条纹特点
 
@@ -14,7 +14,7 @@
 
 ### 条纹明暗条件
 
-<img src="${pic}/image-20210608230407306.png" alt="image-20210608230407306" style="zoom:80%;" />
+![image-20210608233058570](image/image-20210608233058570.png)
 $$
 \begin{aligned}
 &\boldsymbol{S}_{1}, \boldsymbol{S}_{2} \text { 光线在 } P \text { 点光程差 }\\
@@ -24,7 +24,7 @@ $$
 \end{array}\right.
 \end{aligned}
 $$
-<img src="${pic}/image-20210608230442299.png" alt="image-20210608230442299" style="zoom:80%;" />
+![image-20210608233052019](image/image-20210608233052019.png)
 $$
 \begin{aligned}
 &\frac{d x}{D}=\left\{\begin{array}{ccc}
@@ -37,7 +37,7 @@ $$
 \end{array}\right.
 \end{aligned}
 $$
-<img src="${pic}/image-20210608230756577.png" alt="image-20210608230756577" style="zoom:80%;" />
+![image-20210608233045308](image/image-20210608233045308.png)
 $$
 x=\left\{\begin{array}{l}
 \pm k \frac{D \lambda}{d} \quad&(k=0,1,2, \ldots) \quad &\text { 明纹 } \\
@@ -51,7 +51,7 @@ k=0, x=\left\{\begin{array}{l}
 \pm \frac{3 D \lambda}{2 d} &\text { 二级暗纹 }
 \end{array}\right.\right.
 $$
-<img src="${pic}/image-20210608231013484.png" alt="image-20210608231013484" style="zoom:80%;" />
+![image-20210608233033582](image/image-20210608233033582.png)
 
 条纹间距、条纹宽度
 $$
@@ -113,6 +113,4 @@ $$
 $$
 \lambda=\frac{\Delta xd}{D}
 $$
-
-![image-20210608232041564](${pic}/image-20210608232041564.png)
 
