@@ -49,3 +49,7 @@
 
 壳体和核酸统称为核衣壳(nucleocapsid).有的病毒在核衣壳外还有**包膜**和刺突.
 
+>   病毒粒子:成熟的或结构完整,有感染性的病毒个体.
+
+![HImg-7qxYho63HxdxCar7Q](image/HImg-7qxYho63HxdxCar7Q.png)
+
