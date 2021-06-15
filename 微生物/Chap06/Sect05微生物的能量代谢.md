@@ -212,3 +212,23 @@ $氧化的功能\begin{cases}产能(ATP)\\产还原力[H]\\产小分子中间代
     +   德氏乳杆菌:$C_6H_{12}O_6\longrightarrow2乳酸+2ATP$
 +   异型乳酸发酵(发酵产物除乳酸外，还有其它的化合物)
 
+    +   肠膜状明串珠菌:$葡萄糖$$P.K\over$$\to1乳酸+1乙醇+1CO_2+ATP$
+    +   双歧杆菌:$2葡萄糖$$H.K\over$$\to2乳酸+3乙酸+5ATP$
+
+    >   $P.K$为磷酸戊糖解酮酶,$H.K$为磷酸已糖解酮酸
+
+##### 丁酸发酵与丙酮丁醇发酵
+
++   丁酸梭状芽孢杆菌(Clostridium butyricum)可以发酵葡萄糖得到丁酸
+    +   $4 \mathrm{C}_{6} \mathrm{H}_{12} \mathrm{O}_{6} \longrightarrow2 \text { 乙酸+3丁酸 }+8 \mathrm{CO}_{2}+8 \mathrm{H}_{2}+10 \mathrm{ATP}$
+    +   每$mol$葡萄糖在发酵中大约产$2.5$个$ATP$
+
++   丙酮丁醇梭菌(Clostridium acetobutylicum)
+    +   $葡萄糖\longrightarrow丁醇+丙酮+乙酸+乙醇+H_2+CO_2+ATP$
+
+#### 有氧呼吸
+
+Aerobic respiration:微生物氧化底物时以**分子氧作为最终电子受体**的氧化作用.它是一种最普遍又最重要的生物氧化或产能方式.
+
++   特点:有氧存在,底物氧化得彻底,产能大.
+
