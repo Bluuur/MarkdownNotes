@@ -50,9 +50,10 @@ $C$：掷骰子掷出的点数小于$8$	必然事件－全集
 ### 2.事件的并(和)
 
 若事件$A$，$B$中至少有一个发生，即“$A$或$B$”是一个事件，被称为事件$A$与事件$B$的并事件或和事件，记作$A\cup B$或$A+B$
-$A\cup B\to A+B\to A\ |\ B\ =\ true$
 
-推广：$n$个事件$A_1,A_2,\cdots,A_n$中至少有一个发生的时间称为事件$A_1,A_2,\cdots,A_n$的并事件或和事件，记作$U_{i=1}^{n}=A_i$
+>   $A\cup B\to A+B\to A\ |\ B\ =\ true$ 
+
+推广：$n$个事件$A_1,A_2,\cdots,A_n$中至少有一个发生的时间称为事件$A_1,A_2,\cdots,A_n$的并事件或和事件，记作$\cup_{i=1}^{n}=A_i$
 
 ### 3.事件的交(积)
 
@@ -60,9 +61,9 @@ $A\cup B\to A+B\to A\ |\ B\ =\ true$
 
 显然$AB\sub A,AB\sub B,$当$A\sub B$时$，AB=A$
 
-$A\cap B\to AB\to A\ \&\ B\ =\ true$
+>    $A\cap B\to AB\to A\ \&\ B\ =\ true$
 
-推广：$n$个事件$A_1,A_2,\cdots,A_n$同时发生的时间称为事件$A_1,A_2,\cdots,A_n$的交事件或积事件，记作
+推广：$n$个事件$A_1,A_2,\cdots,A_n$同时发生的时间称为事件$A_1,A_2,\cdots,A_n$的交事件或积事件，记作$\cap_{i=1}^{n}A_i$
 
 ### 4.互不相容事件
 
