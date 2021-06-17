@@ -13,7 +13,7 @@ $$现实世界的客观现象\begin{cases}确定性现象\\非确定性现象\to
 - 明确性	实验前知道一切可能出现的试验结果
 - 随机性	每次试验的具体结果不能预知
 
-**注意：虽然一次实验的具体结果不能预支，但是在相同的条件下大量重复试验时，则会呈现出一定的数量规律性**
+**注意：虽然一次实验的具体结果不能预知，但是在相同的条件下大量重复试验时，则会呈现出一定的数量规律性**
 
 ## 1.1.2 随机试验的样本空间
 
@@ -94,7 +94,7 @@ $A\cup B=B\cup AB=BA$
 - 结合律
 $(AB)C=A(BC)$
 - 分配律
-$\begin{aligned}A\cup BC&=(A\cup B)(A\cup C)\\A\cup BC&=(A\cup B)(A\cup V)\end{aligned}$
+$\begin{aligned}A\cup BC&=(A\cup B)(A\cup C)\\A\cup BC&=(A\cup B)(A\cup C)\end{aligned}$
 - De-morgen 对偶律
 $\overline{A\cup B}=\overline{A}\cap\overline{B},\overline{AB}=\overline{A}\cup\overline{B}$
 
