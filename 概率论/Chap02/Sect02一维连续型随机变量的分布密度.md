@@ -9,6 +9,10 @@
 
 $$F(x)=P\{X\leq x\}=\int_{-\infin}^{x}p(x)dx\\F'(x)=p(x),F(x)连续 $$
 
+>   概率为0的事件不一定是不可能事件
+>
+>   概率为1的事件不一定是必然事件(去掉端点)
+
 ## 性质
 
 - $p(x)\geq0$
@@ -16,6 +20,10 @@ $$F(x)=P\{X\leq x\}=\int_{-\infin}^{x}p(x)dx\\F'(x)=p(x),F(x)连续 $$
 - 连续型随机变量$X$$,\forall a,$有$P\{X=a\}=0$
 
 $$\begin{aligned}故&有P\{a\leq X<b\}\\&=P\{a<X<b\}\\&=P\{a<X\leq b\}\\&=P\{a\leq X\leq b\}\end{aligned}$$
+
+---
+
+![image-20210617154113308](image/image-20210617154113308.png)
 
 $$\begin{aligned}
 (1)\lim_{x\to+\infin}F(x)&=1\\
@@ -29,7 +37,7 @@ F(x)&=\lim_{x\to0^+}\left (A+Be^{-\frac{x^2}{2}}\right ) \\
 \therefore B&=-1\\
 (2)p(x)&=F'(x)\\
 &=\begin{cases}
--Be^{-\frac{x^2}{x}}x\qquad x>0\\
+-Be^{-\frac{x^2}{2}}x\qquad x>0\\
 0\qquad\qquad\qquad x\leq0
 \end{cases}
 \end{aligned}$$
