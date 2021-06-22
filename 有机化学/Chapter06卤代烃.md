@@ -1,3 +1,5 @@
+[TOC]
+
 # Chapter06卤代烃
 
 # 6.1 卤代烃
@@ -10,21 +12,21 @@ $$分类方法\begin{cases}按烃基类型\begin{cases}饱和卤代烃\\不饱�
 
 ### 普通命名法
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled.png](image\/Untitled.png)
 
 ### 系统命名法
 
 - 卤素和支链作为取代基
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%201.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%201.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%201.png](image/Untitled%201.png)
 
 - 较小基团有较小的编号
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%202.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%202.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%202.png](image\Untitled%202.png)
 
 - 芳环和卤原子可能作为取代基
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%203.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%203.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%203.png](image\Untitled%203.png)
 
 ## 6.1.3 卤代烃的结构
 
@@ -34,7 +36,7 @@ $$分类方法\begin{cases}按烃基类型\begin{cases}饱和卤代烃\\不饱�
 
 - 卤原子电负性大,吸走电子
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%204.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%204.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%204.png](image\Untitled%204.png)
 
 # 6.2 卤代烃
 
@@ -64,31 +66,31 @@ $$分类方法\begin{cases}按烃基类型\begin{cases}饱和卤代烃\\不饱�
 
 ### 被羟基取代
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%205.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%205.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%205.png](image\Untitled%205.png)
 
 ### 被氰基取代
 
 常用于增长碳链
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%206.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%206.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%206.png](image\Untitled%206.png)
 
 ### 被烷氧基取代
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%207.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%207.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%207.png](image\Untitled%207.png)
 
 ### 被氨基取代
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%208.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%208.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%208.png](image\Untitled%208.png)
 
 ### ⭐被硝酰氧基取代
 
 ⭐鉴别卤代烃的常用方法之一
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%209.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%209.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%209.png](image\Untitled%209.png)
 
 ### 以上反应的通式：
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/mmexport1619311654093-01.jpeg](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/mmexport1619311654093-01.jpeg)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/mmexport1619311654093-01.jpeg](image\mmexport1619311654093-01.jpeg)
 
 ### ⭐📌亲核取代反应
 
@@ -96,7 +98,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 ### ⭐单分子亲核取代($S_N1$)
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2010.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2010.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2010.png](image\Untitled%2010.png)
 
 先生成碳正离子，再与亲核试剂反应
 
@@ -105,7 +107,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 ### ⭐双分子亲核取代($S_N2$)
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2011.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2011.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2011.png](image\Untitled%2011.png)
 
 亲核试剂先进攻碳正离子（**两个分子**先发生有效碰撞），再发生分解，脱去卤素离子
 经过$S_N2$反应得到的产物没有旋光性（亲核试剂只从一个方向进攻碳正离子）⭐
@@ -123,7 +125,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 练习:
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2012.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2012.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2012.png](image\Untitled%2012.png)
 
 绝对构型法(R/S)
 
@@ -135,7 +137,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 > ⭐扎伊采夫规则:消除反应的主要产物是双键碳原子上连有较多烃基的烯烃
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2013.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2013.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2013.png](image\Untitled%2013.png)
 
 但是，如果能形成共轭，则优先形成共轭
 
@@ -143,13 +145,13 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 经历碳正离子,类似于$S_N1$反应,只是碳正离子被进攻的部位是$\beta$氢,而不是碳原子
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2014.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2014.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2014.png](image\Untitled%2014.png)
 
 ### 双分子消除 $E2$
 
 不经历碳正离子,直接进攻$\beta$氢
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2015.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2015.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2015.png](image\Untitled%2015.png)
 
 ### 取代和消除反应的异同
 
@@ -179,7 +181,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 ⭐📌下图要考（格氏试剂结构）
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/KingDraw210427083258.jpeg](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/KingDraw210427083258.jpeg)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/KingDraw210427083258.jpeg](image\KingDraw210427083258.jpeg)
 
 - 格氏试剂或有机锂试剂可以和三级卤代烃、烯丙基卤或苄基卤化物发生偶联反应。这是有机合成中增长碳链的一类有效方法。
 - 卤代烃在金属$Na$作用下的偶联反应可得到对称烷烃，也称武兹$(Wurtz)$反应。
@@ -197,7 +199,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 ### 不饱和卤代烃分类
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2016.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2016.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2016.png](image\Untitled%2016.png)
 
 ### ⭐期中必考
 
@@ -207,7 +209,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 ## 6.3.1 ⭐卤代烃和硝酸银的反应
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2017.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2017.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2017.png](image\Untitled%2017.png)
 
 **注:**
 
@@ -221,7 +223,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 - 对于烯丙基型,由于同样的原因,其亲电加成比烯烃有所变慢
 - 隔离性大致相同
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/KingDraw210427093107.jpeg](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/KingDraw210427093107.jpeg)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/KingDraw210427093107.jpeg](image\/KingDraw210427093107.jpeg)
 
 第四种结构最容易发生亲电加成
 第三种结构最不容易发生亲电加成
@@ -252,7 +254,7 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 - 碘代物更活泼,反应性好
 - 从1-氯丁烷或1-溴丁烷制备1-碘丁烷
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2018.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2018.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2018.png](image\Untitled%2018.png)
 
 ## 单卤代烃
 
@@ -261,14 +263,18 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 # 习题小结
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2019.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2019.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2019.png](image\Untitled%2019.png)
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2020.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2020.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2020.png](image\Untitled%2020.png)
 
-A与B是对映体
-A与C是非对映体
-A与D是相同物
+>   A与B是对映体
+>   A与C是非对映体
+>   A与D是相同物
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2021.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2021.png)
+---
 
-![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2022.png](Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2022.png)
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2021.png](image\Untitled%2021.png)
+
+---
+
+![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2022.png](image\Untitled%2022.png)

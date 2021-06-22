@@ -1,18 +1,20 @@
+[TOC]
+
 # 芳香烃
 
-![image-20210408092226672](image-20210408092226672.png)
+![image-20210408092226672](image\image-20210408092226672.png)
 
 # 单环芳烃的结构与命名
 
 ### 苯环上的位置异构
 
-![image-20210408092255516](image-20210408092255516.png)
+![image-20210408092255516](image\image-20210408092255516.png)
 
 ### 取代苯的命名
 
 **常见基团**
 
-![image-20210408092626327](image-20210408092626327.png)
+![image-20210408092626327](image\image-20210408092626327.png)
 
 芳环化合物中主要官能团:
 
@@ -20,11 +22,11 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 >  命名时前面的官能团优于后面的
 
-![image-20210408093200377](image-20210408093200377.png)
+![image-20210408093200377](image\image-20210408093200377.png)
 
-![image-20210408093212076](image-20210408093212076.png)
+![image-20210408093212076](image\image-20210408093212076.png)
 
-![image-20210408093351838](image-20210408093351838.png)
+![image-20210408093351838](image\image-20210408093351838.png)
 
 # 单环芳烃的化学反应
 
@@ -48,17 +50,17 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 #### 卤代反应
 
-<img src="image-20210413075725864.png" alt="image-20210413075725864" style="zoom:67%;" />
+<img src="image\image-20210413075725864.png" alt="image-20210413075725864" style="zoom:67%;" />
 
 **活性 : $\mathrm{F>Cl>Br>I}$**
 
-<img src="image-20210413075837705.png" alt="image-20210413075837705" style="zoom:67%;" />
+<img src="image\image-20210413075837705.png" alt="image-20210413075837705" style="zoom:67%;" />
 
 
 
 #### 硝化反应
 
-<img src="image-20210413080516969.png" alt="image-20210413080516969" style="zoom:67%;" />
+<img src="image\image-20210413080516969.png" alt="image-20210413080516969" style="zoom:67%;" />
 
 
 
@@ -66,21 +68,21 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 >  <span id="磺化反应">**可逆反应**</span>
 
-<img src="image-20210413080804224-1619180839045.png" alt="image-20210413080804224" style="zoom:67%;" />
+<img src="image\image-20210413080804224-1619180839045.png" alt="image-20210413080804224" style="zoom:67%;" />
 
 
 
 #### 傅克反应
 
-<img src="image-20210413081203496.png" alt="image-20210413081203496" style="zoom:67%;" />
+<img src="image\image-20210413081203496.png" alt="image-20210413081203496" style="zoom:67%;" />
 
 ##### 傅氏烷基化的重排
 
-<img src="image-20210413081356838.png" alt="image-20210413081356838" style="zoom:67%;" />
+<img src="image\image-20210413081356838.png" alt="image-20210413081356838" style="zoom:67%;" />
 
 **重排机理 : 碳正离子**
 
-<img src="image-20210413081535388.png" alt="image-20210413081535388" style="zoom:67%;" />
+<img src="image\image-20210413081535388.png" alt="image-20210413081535388" style="zoom:67%;" />
 
 ##### 傅克反应
 
@@ -90,17 +92,17 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 +  烷基化可能会重排,酰基化不会重排
 +  位阻效应
    +  叔丁基使**邻**对位定位基, 邻位受阻,只在对位取代
-   +  ![image-20210413093049914](image-20210413093049914.png)
+   +  ![image-20210413093049914](image\image-20210413093049914.png)
 
 ### 苯环的加成
 
 #### 加氢
 
-<img src="image-20210413085821132.png" alt="image-20210413085821132" style="zoom:67%;" />
+<img src="image\image-20210413085821132.png" alt="image-20210413085821132" style="zoom:67%;" />
 
 #### 加氯
 
-<img src="image-20210413085917766.png" alt="image-20210413085917766" style="zoom:67%;" />
+<img src="image\image-20210413085917766.png" alt="image-20210413085917766" style="zoom:67%;" />
 
 ### 苯环的氧化
 
@@ -108,11 +110,11 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 >  苯环连接的$\alpha$碳上有氢时将侧链氧化成羧基
 
-<img src="image-20210413090057262.png" alt="image-20210413090057262" style="zoom:67%;" />
+<img src="image\image-20210413090057262.png" alt="image-20210413090057262" style="zoom:67%;" />
 
 #### 苯环自身的氧化
 
-<img src="image-20210413090108481.png" alt="image-20210413090108481" style="zoom: 50%;" />
+<img src="image\image-20210413090108481.png" alt="image-20210413090108481" style="zoom: 50%;" />
 
 ### 侧链卤代
 
@@ -132,7 +134,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 >
 >  与苯环相连的原子通过单键与其他原子/基团相连
 
-![image-20210413091801252](image-20210413091801252.png)
+![image-20210413091801252](image\image-20210413091801252.png)
 
 ### 间位定位基(钝化)
 
@@ -142,7 +144,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 >
 >  与苯环相连的原子通过双键/叁键与其他原子/基团相连或苯环相连的原子带正电(三甲铵基)
 
-![image-20210413092249707](image-20210413092249707.png)
+![image-20210413092249707](image\image-20210413092249707.png)
 
 ### 苯环亲电取代规则
 
@@ -155,37 +157,37 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 ### 作用一致,加强
 
-<img src="image-20210413093837557.png" alt="image-20210413093837557" style="zoom:67%;" />
+<img src="image\image-20210413093837557.png" alt="image-20210413093837557" style="zoom:67%;" />
 
 ### 矛盾, 同类定位基
 
-<img src="image-20210413093850009.png" alt="image-20210413093850009" style="zoom:67%;" />
+<img src="image\image-20210413093850009.png" alt="image-20210413093850009" style="zoom:67%;" />
 
 ### 矛盾, 不同类定位基
 
 >  以活化为主
 
-<img src="image-20210413093905181.png" alt="image-20210413093905181" style="zoom:67%;" />
+<img src="image\image-20210413093905181.png" alt="image-20210413093905181" style="zoom:67%;" />
 
 ## 二元取代中的空间效应
 
 >  位阻
 
-<img src="image-20210415081143047.png" alt="image-20210415081143047" style="zoom:67%;" />
+<img src="image\image-20210415081143047.png" alt="image-20210415081143047" style="zoom:67%;" />
 
 ### 化合物
 
 >  非甾体类抗炎药
 
-<img src="image-20210415081404369.png" alt="image-20210415081404369" style="zoom: 50%;" />
+<img src="image\image-20210415081404369.png" alt="image-20210415081404369" style="zoom: 50%;" />
 
 >  TNT和苦味酸
 
-<img src="image-20210415081839013.png" alt="image-20210415081839013" style="zoom:67%;" />
+<img src="image\image-20210415081839013.png" alt="image-20210415081839013" style="zoom:67%;" />
 
-## 思考题 
+## 思考题
 
-<img src="image-20210415083807217.png" alt="image-20210415083807217" style="zoom:67%;" />
+<img src="image\image-20210415083807217.png" alt="image-20210415083807217" style="zoom:67%;" />
 
 >  (1)①甲基②溴③酸性高锰酸钾氧化④硝基
 >
@@ -193,21 +195,21 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 # 稠环芳烃
 
-<img src="image-20210415082814554.png" alt="image-20210415082814554" style="zoom:67%;" />
+<img src="image\image-20210415082814554.png" alt="image-20210415082814554" style="zoom:67%;" />
 
 ## 萘的结构
 
 平面; 芳香性弱于苯; 各个碳原子不等同
 
-<img src="image-20210415082920263.png" alt="image-20210415082920263" style="zoom:67%;" />
+<img src="image\image-20210415082920263.png" alt="image-20210415082920263" style="zoom:67%;" />
 
 有两个及以上取代基,使用数字命名
 
-<img src="image-20210415083146305.png" alt="image-20210415083146305" style="zoom:67%;" />
+<img src="image\image-20210415083146305.png" alt="image-20210415083146305" style="zoom:67%;" />
 
 -----------
 
-![稠环芳烃命名](稠环芳烃命名1.png)
+![稠环芳烃命名](image\稠环芳烃命名1.png)
 
 >$2$-萘甲酸/$\beta$-萘甲酸
 
@@ -227,7 +229,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 都是平面结构分子
 
-<img src="image-20210415084843828.png" alt="image-20210415084843828" style="zoom:67%;" />
+<img src="image\image-20210415084843828.png" alt="image-20210415084843828" style="zoom:67%;" />
 
 # 非苯芳烃-休克尔规则
 
@@ -235,7 +237,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 以$sp^2$杂化原子形成的含有$4n+2$个$\pi$电子的**平面单环共轭多烯**具备芳香性
 
-<img src="image-20210415085241900.png" alt="image-20210415085241900" style="zoom:67%;" />
+<img src="image\image-20210415085241900.png" alt="image-20210415085241900" style="zoom:67%;" />
 
 >  环戊二烯阴离子 : 两个双键(4个$\pi$电子) + 一个阴离子(2个$\pi$电子)
 >
