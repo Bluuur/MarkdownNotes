@@ -22,7 +22,7 @@
 
 ### 内能(状态量)
 
-理想气体系统的内能,是组成该气体系统的全部分子的动能之,其值为$E=\frac{m}{M}\frac{i}{2}RT$
+理想气体系统的内能,是组成该气体系统的全部分子的动能值,其值为$E=\frac{m}{M}\frac{i}{2}RT$
 
 <font color ="blue">理想气体的内能是状态参量$T$的单值函数$E=E(T)\to$状态函数</font>
 $$
@@ -36,9 +36,9 @@ $\Delta E>0$,系统内能增加 ; $\Delta E<0$,系统内能减少
 $$
 d A=F d I=p S d l=p d V
 $$
-系统体积由 $V_{I}$ 变为 $V_{2}$, 系统对 外界作总功为：
+系统体积由 $V_{1}$ 变为 $V_{2}$, 系统对 外界作总功为：
 $$
-\boldsymbol{A}=\int d \boldsymbol{A}=\int_{V_{1}}^{V_{1}} p d V
+\boldsymbol{A}=\int d \boldsymbol{A}=\int_{V_{1}}^{V_{2}} p d V
 $$
 功的大小等于在P-V图 中曲线下的面积
 
