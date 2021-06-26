@@ -43,14 +43,15 @@ $$
 
 ## 库仑定律
 
-<img src="image-20210408102048514.png" alt="image-20210408102048514" style="zoom:50%;" />
+<img src="image\image-20210408102048514.png" alt="image-20210408102048514" style="zoom:50%;" />
 $$
-\Large\overline{F_{21}}=K\frac{q_1q_2}{r^2}\hat{r}_{21}\\
+\Large\vec{F_{21}}=K\frac{q_1q_2}{r^2}\hat{r}_{21}\\
 K=\frac{q}{4\pi\varepsilon_0}\quad\varepsilon_0=8.85\times10^{-12}c^2N^{-1}m^{-2}
 $$
 
-### 库伦定律与万有引力定律
+>   $\hat{r}是一个单位矢量,计算式后面乘一个\hat{r}是为了让计算结果是一个矢量,而不是标量,因为力是矢量$
 
+### 库伦定律与万有引力定律
 $$
 \begin{array}{l}
 F=G \frac{M_{1} M_{2}}{R^{2}} \\
@@ -67,7 +68,7 @@ $$
 
 当空间中有两个以上的点电荷时,作用在某一点电荷的总静电力,等于其他各点电荷单独存在时对该点电荷所施静待能力的矢量和
 
-<img src="image-20210408102923464.png" alt="image-20210408102923464" style="zoom: 50%;" />
+<img src="image\image-20210408102923464.png" alt="image-20210408102923464" style="zoom: 50%;" />
 $$
 \Large\vec{F}_{0}=\sum_{i}^{N} \frac{1}{4 \pi \varepsilon_{0}} \frac{q_{0} q_{i}}{r_{0 i}} \hat{r}_{0 i}
 $$
@@ -115,7 +116,7 @@ $$
 
 例题:
 
-<img src="image-20210408104320064.png" alt="image-20210408104320064" style="zoom:50%;" />
+<img src="image\image-20210408104320064.png" alt="image-20210408104320064" style="zoom:50%;" />
 
 >  +  以$q$为球心的球面上场强大小相同
 >  +  距离增大,场强减小(平方反比定律)
@@ -125,7 +126,7 @@ $$
 
 例题 : 
 
-<img src="image-20210408104741722.png" alt="image-20210408104741722" style="zoom:67%;" />
+<img src="image\image-20210408104741722.png" alt="image-20210408104741722" style="zoom:67%;" />
 
 >  答案:D 
 
@@ -133,7 +134,7 @@ $$
 
 ## 点电荷系电场中某点的场强
 
-<img src="image-20210408105245452.png" alt="image-20210408105245452" style="zoom:67%;" />
+<img src="image\image-20210408105245452.png" alt="image-20210408105245452" style="zoom:67%;" />
 $$
 \large\begin{aligned}
 \vec{E} &=\frac{\vec{F}}{q_{0}}=\frac{\vec{F_{1}}+\vec{F_{2}}+\vec{F_{3}}}{q_{0}} \\
@@ -154,13 +155,13 @@ $$
 
 ### 电荷连续均匀分布情况
 
-<img src="image-20210408110957688.png" alt="image-20210408110957688" style="zoom: 67%;" />
+<img src="image\image-20210408110957688.png" alt="image-20210408110957688" style="zoom: 67%;" />
 
 
 
 例题 : 
 
-<img src="phy01.png" alt="phy01" style="zoom:50%;" />
+<img src="image\phy01.png" alt="phy01" style="zoom:50%;" />
 
 # 电场线
 
@@ -200,7 +201,7 @@ $$
 
 **①匀强电场**$\vec{S} \parallel \vec{E}$
 
-<img src="image-20210412081314746.png" alt="image-20210412081314746" style="zoom:67%;" />
+<img src="image\image-20210412081314746.png" alt="image-20210412081314746" style="zoom:67%;" />
 
 
 $\vec{S}\begin{cases}大小为曲面的面积\\方向为曲面的法线方向\end{cases}$
@@ -210,19 +211,19 @@ $$
 
 **②匀强电场**$\vec{E}与\vec{S}$的夹角为$\theta$
 
-<img src="image-20210412081838945.png" alt="image-20210412081838945" style="zoom:67%;" />
+<img src="image\image-20210412081838945.png" alt="image-20210412081838945" style="zoom:67%;" />
 $$
 \large\Phi_E=ES\cos{\theta}=\vec{E}\cdot\vec{S}
 $$
 **③非匀强电场**
 
-<img src="image-20210412082215366.png" alt="image-20210412082215366" style="zoom:67%;" />
+<img src="image\image-20210412082215366.png" alt="image-20210412082215366" style="zoom:67%;" />
 $$
 \large\Phi_E=\int d\Phi_E=\int\vec{E}\cdot d\vec{S}=\int_s E\cos{\theta}dS
 $$
 **④闭合曲面**
 
-<img src="image-20210412083100379.png" alt="image-20210412083100379" style="zoom:67%;" />
+<img src="image\image-20210412083100379.png" alt="image-20210412083100379" style="zoom:67%;" />
 $$
 \theta_1< \frac{\pi}{2},d\Phi_{e1}>0\\
 \theta_2>\frac{\pi}{2},d\Phi_{e2}<0\\
@@ -232,7 +233,7 @@ $$
 
 --------
 
-<img src="image-20210412083521951.png" alt="image-20210412083521951" style="zoom:50%;" />
+<img src="image\image-20210412083521951.png" alt="image-20210412083521951" style="zoom:50%;" />
 $$
 \large\begin{aligned}
 \quad \Phi_{\mathrm{e}}&=\Phi_{\text {e前 }}+\Phi_{\text {e后 }}+\Phi_{\mathrm{e} \text { 左 }}+\Phi_{\mathrm{e} \text { 右 }}+\Phi_{\mathrm{e}}\\
@@ -245,7 +246,7 @@ $$
 
 ------------
 
-<img src="image-20210412084624836.png" alt="image-20210412084624836" style="zoom:50%;" />
+<img src="image\image-20210412084624836.png" alt="image-20210412084624836" style="zoom:50%;" />
 
 ## 高斯定理
 
@@ -318,7 +319,7 @@ $$
 
 ### 例题
 
-<img src="image-20210412091934403.png" alt="image-20210412091934403" style="zoom: 50%;" />
+<img src="image\image-20210412091934403.png" alt="image-20210412091934403" style="zoom: 50%;" />
 
 >  答案 : $A$
 >
@@ -329,27 +330,27 @@ $$
 
 -------------------
 
-<img src="image-20210412091844236.png" alt="image-20210412091844236" style="zoom: 67%;" />
+<img src="image\image-20210412091844236.png" alt="image-20210412091844236" style="zoom: 67%;" />
 
 >  答案 : D [见总结](#sum)
 
 ------------
 
-<img src="image-20210412093752143.png" alt="image-20210412093752143" style="zoom: 67%;" />
+<img src="image\image-20210412093752143.png" alt="image-20210412093752143" style="zoom: 67%;" />
 
 >  答案 : B [见总结](#sum)
 
-<img src="image-20210415093616326-1619094457662.png" alt="image-20210415093616326" style="zoom:67%;" />
+<img src="image\image-20210415093616326-1619094457662.png" alt="image-20210415093616326" style="zoom:67%;" />
 
 >  答案 : D [高斯定理](#高斯定理)
 
 
 
-## 均匀带电球壳的电场强度
+## 均匀带电球体的电场强度
 
 ###  1.$r<R$
 
-<img src="image-20210415110759528.png" alt="image-20210415110759528" style="zoom: 50%;" />
+<img src="image\image-20210415110759528.png" alt="image-20210415110759528" style="zoom: 50%;" />
 $$
 \large\begin{array}{l}
 \begin{cases}\Phi_{E}=\oint_{S_{2}} \vec{E} \cdot \mathrm{d} \vec{S}=E \oint_{S} d S=E 4 \pi r^{2} \\
@@ -363,7 +364,7 @@ $$
 
 ### 2.$r>R$
 
-<img src="image-20210415111011121.png" alt="image-20210415111011121" style="zoom:50%;" />
+<img src="image\image-20210415111011121.png" alt="image-20210415111011121" style="zoom:50%;" />
 $$
 \large\begin{aligned}
 &\left\{\begin{array}{l}
@@ -376,7 +377,7 @@ $$
 \Large E=\frac{q}{4 \pi \varepsilon_{0} r^{2}}
 $$
 
-### 均匀带电球壳的电场强度分布曲线
+### 均匀带电球体的电场强度分布曲线
 
 $$
 \large\text { 场强E }\left\{\begin{array}{ll}
@@ -385,13 +386,13 @@ r>R & \frac{q}{4 \pi \varepsilon_{n} r^{2}}
 \end{array}\right.
 $$
 
-<img src="image-20210415111834146.png" alt="image-20210415111834146" style="zoom:67%;" />
+<img src="image\image-20210415111834146.png" alt="image-20210415111834146" style="zoom:67%;" />
 
 ## 无限长均匀带电直线的电场强度
 
 无限长均匀带点直线,单位长度上的电荷,即电荷线密度为$\lambda$,求距直线$r$处的电场强度
 
-<img src="image-20210415112311241.png" alt="image-20210415112311241" style="zoom:50%;" />
+<img src="image\image-20210415112311241.png" alt="image-20210415112311241" style="zoom:50%;" />
 $$
 对称性分析:轴对称\\
 选取闭合的柱形高斯面\\
@@ -468,7 +469,7 @@ $$
 
 +  任意电荷的电场(视为点电荷组)
 
-<img src="image-20210419085601947.png" alt="image-20210419085601947" style="zoom:67%;" />
+<img src="image\image-20210419085601947.png" alt="image-20210419085601947" style="zoom:67%;" />
 $$
 \large\begin{aligned}
 A_{a b} &=\int_{a(L)}^{b} \vec{F} \cdot \mathrm{d} \vec{l}=\int_{a(L)}^{b} q_{0} \vec{E} \cdot \mathrm{d} \vec{l} \\
@@ -483,7 +484,7 @@ $$
 
 在静电场中,沿闭合路径移动$q_0$,电场力做功
 
-<img src="image-20210419090045683.png" alt="image-20210419090045683" style="zoom:67%;" />
+<img src="image\image-20210419090045683.png" alt="image-20210419090045683" style="zoom:67%;" />
 $$
 \large\begin{aligned}
 A &=\oint \vec{F} \cdot d \vec{l}=\oint q_{0} \vec{E} \cdot d \vec{l} \\
@@ -528,7 +529,7 @@ $$
 
 ## 电势
 
-<img src="image-20210419092040558.png" alt="image-20210419092040558" style="zoom:67%;" />
+<img src="image\image-20210419092040558.png" alt="image-20210419092040558" style="zoom:67%;" />
 $$
 \large\begin{align}
 \int_{A}^{B} q_{0} \vec{E} \cdot d \vec{l} & = W_{p A}-W_{p B} \\
@@ -566,19 +567,19 @@ $$
 
 选择题1
 
-<img src="image-20210419102232667.png" alt="image-20210419102232667" style="zoom:67%;" />
+<img src="image\image-20210419102232667.png" alt="image-20210419102232667" style="zoom:67%;" />
 
 >  答案:D
 
 ---
 
-<img src="image-20210419102404618.png" alt="image-20210419102404618" style="zoom:67%;" />
+<img src="image\image-20210419102404618.png" alt="image-20210419102404618" style="zoom:67%;" />
 
 >  答案:A
 
 ---
 
-<img src="image-20210419102513435.png" alt="image-20210419102513435" style="zoom:67%;" />
+<img src="image\image-20210419102513435.png" alt="image-20210419102513435" style="zoom:67%;" />
 
 >  答案:C
 
@@ -586,7 +587,7 @@ $$
 
 ## 点电荷的电势
 
-<img src="image-20210419103028447.png" alt="image-20210419103028447" style="zoom:67%;" />
+<img src="image\image-20210419103028447.png" alt="image-20210419103028447" style="zoom:67%;" />
 $$
 \large\begin{aligned}
 E&=\frac{q}{4 \pi \varepsilon_{0} r^{2}} \quad \text { 令 } V_{\infty}=0 \\
@@ -652,7 +653,7 @@ $$
 
 
 
-<img src="image-20210419110014448.png" alt="image-20210419110014448" style="zoom:67%;" />
+<img src="image\image-20210419110014448.png" alt="image-20210419110014448" style="zoom:67%;" />
 
 # 静电场中的导体
 
@@ -701,7 +702,7 @@ $$
 
 接地导体电势为零
 
-<img src="image-20210422100615505.png" alt="image-20210422100615505" style="zoom:67%;" />
+<img src="image\image-20210422100615505.png" alt="image-20210422100615505" style="zoom:67%;" />
 
 >  答案:D
 
