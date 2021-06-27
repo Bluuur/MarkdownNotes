@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.dao.StudentDao">
+
+    <!--
+      parameterType ： dao接口中方法参数的数据类型。
+        parameterType它的值是java的数据类型全限定名称或者是mybatis定义的别名
+        例如：parameterType="java.lang.Integer"
+             parameterType="int"
+
+        注意：parameterType不是强制的，mybatis通过反射机制能够发现接口参数的数类型。
+        所以可以没有。 一般我们也不写。
+
+        使用#{}之后， mybatis执行sql是使用的jdbc中的PreparedStatement对象
+        由mybatis执行下面的代码：
+         1. mybatis创建Connection ， PreparedStatement对象
+            String sql="select id,name, email,age from student where id=?";
+            PreparedStatement pst = conn.preparedStatement(sql);
+            pst.setInt(1,1001);
+
+         2. 执行sql封装为resultType="com.bjpowernode.domain.Student"这个对象
+            ResultSet rs = ps.executeQuery();
+            Student student = null;
+            while(rs.next()){
+               //从数据库取表的一行数据， 存到一个java对象属性中
+               student = new Student();
+               student.setId(rs.getInt("id));
+               student.setName(rs.getString("name"));
+               student.setEmail(rs.getString("email"));
+               student.setAge(rs.getInt("age"));
+            }
+
+           return student;  //给了dao方法调用的返回值
+    -->
+    <select id="selectStudentById" parameterType="int" resultType="com.bjpowernode.domain.Student">
+        select id,name, email,age from student where id=${studentId}
+    </select>
+
+    <!--多个参数，使用@Param命名-->
+    <select id="selectMultiParam" resultType="com.bjpowernode.domain.Student">
+         select id,name, email,age from student where name=#{myname} or age=#{myage}
+    </select>
+
+    <!--多个参数， 使用java对象的属性值，作为参数实际值
+        使用对象语法： #{属性名,javaType=类型名称,jdbcType=数据类型} 很少用。
+                    javaType:指java中的属性数据类型。
+                    jdbcType:在数据库中的数据类型。
+                    例如： #{paramName,javaType=java.lang.String,jdbcType=VARCHAR}
+
+        我们使用的简化方式： #{属性名}  ，javaType, jdbcType的值mybatis反射能获取。不用提供
+
+    -->
+   <!-- <select id="selectMultiObject" resultType="com.bjpowernode.domain.Student">
+          select id,name, email,age from student where
+           name=#{paramName,javaType=java.lang.String,jdbcType=VARCHAR}
+           or age=#{paramAge,javaType=java.lang.Integer,jdbcType=INTEGER}
+    </select>-->
+
+    <select id="selectMultiObject" resultType="com.bjpowernode.domain.Student">
+          select id,name, email,age from student where
+           name=#{paramName}   or age=#{paramAge}
+    </select>
+
+    <select id="selectMultiStudent" resultType="com.bjpowernode.domain.Student">
+         select id,name, email,age from student where name=#{name} or age=#{age}
+    </select>
+
+    <!--多个参数使用位置-->
+    <select id="selectMultiPosition" resultType="com.bjpowernode.domain.Student">
+          select id,name, email,age from student where
+          name = #{arg0} or age=#{arg1}
+    </select>
+
+    <!--多个参数，使用Map , 使用语法 #{map的key}-->
+    <select id="selectMultiByMap" resultType="com.bjpowernode.domain.Student">
+          select id,name, email,age from student where
+          name = #{myname} or age=#{age1}
+    </select>
+
+    <!--使用 ${}-->
+    <select id="selectUse$" resultType="com.bjpowernode.domain.Student">
+         select * from student where name=${myname}
+    </select>
+
+    <!--
+       $替换列名
+    -->
+    <select id="selectUse$Order" resultType="com.bjpowernode.domain.Student">
+         select * from student order by ${colName}
+    </select>
+
+</mapper>

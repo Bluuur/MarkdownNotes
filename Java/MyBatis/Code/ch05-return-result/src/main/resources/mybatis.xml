@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--settings：控制mybatis全局行为-->
+    <settings>
+        <!--设置mybatis输出日志-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <!--定义别名-->
+    <typeAliases>
+        <!--
+            第一种方式：
+            可以指定一个类型一个自定义别名
+            type:自定义类型的全限定名称
+            alias:别名（短小，容易记忆的）
+        -->
+        <!--<typeAlias type="com.bjpowernode.domain.Student" alias="stu" />
+        <typeAlias type="com.bjpowernode.vo.ViewStudent" alias="vstu" />-->
+
+        <!--
+          第二种方式
+          <package> name是包名， 这个包中的所有类，类名就是别名（类名不区分大小写）
+        -->
+        <package name="com.bjpowernode.domain"/>
+        <package name="com.bjpowernode.vo"/>
+    </typeAliases>
+
+
+    <environments default="mydev">
+        <environment id="mydev">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!--数据库的驱动类名-->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <!--连接数据库的url字符串-->
+                <property name="url" value="jdbc:mysql://localhost:3306/springdb"/>
+                <!--访问数据库的用户名-->
+                <property name="username" value="root"/>
+                <!--密码-->
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+
+    <!-- sql mapper(sql映射文件)的位置-->
+    <mappers>
+        <mapper resource="com/bjpowernode/dao/StudentDao.xml"/>
+        <!--<mapper resource="com/bjpowernode/dao/SchoolDao.xml" />-->
+    </mappers>
+</configuration>

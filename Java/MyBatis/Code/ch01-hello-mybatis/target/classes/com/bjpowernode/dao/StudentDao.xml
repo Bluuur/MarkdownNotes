@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.dao.StudentDao">
+    <!--
+       select:表示查询操作。
+       id: 你要执行的sql语法的唯一标识， mybatis会使用这个id的值来找到要执行的sql语句
+           可以自定义，但是要求你使用接口中的方法名称。
+
+       resultType:表示结果类型的， 是sql语句执行后得到ResultSet,遍历这个ResultSet得到java对象的类型。
+          值写的类型的全限定名称
+    -->
+    <select id="selectStudents" resultType="com.bjpowernode.domain.Student" >
+        select id,name,email,age from student order by id
+    </select>
+
+    <!--插入操作-->
+    <insert id="insertStudent">
+        insert into student values(#{id},#{name},#{email},#{age})
+    </insert>
+</mapper>
+<!--
+  sql映射文件（sql mapper）： 写sql语句的， mybatis会执行这些sql
+  1.指定约束文件
+     <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+    mybatis-3-mapper.dtd是约束文件的名称， 扩展名是dtd的。
+  2.约束文件作用：  限制，检查在当前文件中出现的标签，属性必须符合mybatis的要求。
+
+  3.mapper 是当前文件的根标签，必须的。
+    namespace：叫做命名空间，唯一值的， 可以是自定义的字符串。
+               要求你使用dao接口的全限定名称。
+
+  4.在当前文件中，可以使用特定的标签，表示数据库的特定操作。
+   <select>:表示执行查询，select语句
+   <update>:表示更新数据库的操作， 就是在<update>标签中 写的是update sql语句
+   <insert>:表示插入， 放的是insert语句
+   <delete>:表示删除， 执行的delete语句
+-->
