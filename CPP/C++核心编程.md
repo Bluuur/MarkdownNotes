@@ -2210,6 +2210,13 @@ int main() {
 
 
 
+$$
+\Delta = 2n_1d\\
+蓝光反射增强\therefore\Delta=k\lambda\\
+\therefore d=\frac{k\lambda}{2n_1}\\
+let\ k = 1\\
+d_{min}=181.1mm
+$$
 
 
 

@@ -129,8 +129,6 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 绝对构型法(R/S)
 
-[Chapter05手性和旋光异构](https://www.notion.so/Chapter05-8cbb9cf0433c48d8be84af9479144828)
-
 ## 6.2.3 消除反应
 
 如果存在两种$\beta$氢，则生成的主要烯烃遵循扎伊采夫规则
