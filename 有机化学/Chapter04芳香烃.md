@@ -243,3 +243,4 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 >
 >  $一个双键\to两个\pi电子$
 >  二茂铁 $Fe  :+2$价
+
