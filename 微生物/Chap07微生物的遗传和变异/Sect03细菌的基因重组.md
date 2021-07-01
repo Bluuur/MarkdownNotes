@@ -128,7 +128,7 @@
 
 **接合(Conjugation)**:通过细胞与细胞的直接接触而产生的遗传信息的转移和重组过程
 
-<img src="image/image-20210621001748466.png" alt="image-20210621001748466" style="zoom:67%;" />
+<img src="image/image-20210621001748466.png" alt="image-20210621001748466" style="zoom:67%;" />e
 
 #### 接合现象的发现
 

@@ -138,3 +138,4 @@ $$A_7=\overline{A}BC+A\overline{B}C+AB\overline{C}+ABC=AB\cup BC\cup CA$$
 - A，B，C中不多于（至多）一个发生
 
 $$A_8=\overline{A}\,\overline{B}\,\overline{C}+\overline{A}\,\overline{B}C+\overline{A}B\overline{C}+A\overline{B}\overline{C}=\overline{AB}\cup \overline{BC}\cup\overline{CA}\\=\overline{AB\cup BC\cup CA}$$
+
