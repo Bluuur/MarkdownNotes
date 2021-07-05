@@ -64,7 +64,7 @@ $$
 
 3.立体型
 
-<img src="image\image-20210420083817706.png" alt="image-20210420083817706" style="zoom:67%;" />![image-20210420083944912](image\image-20210420083944912.png)
+<img src="image\image-20210420083817706.png" alt="image-20210420083817706" style="zoom:67%;" />
 
 >  不是环状,末尾两个苯不相连
 

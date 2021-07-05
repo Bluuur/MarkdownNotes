@@ -49,7 +49,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 ### 亲电取代
 
->  反应条件:催化剂(铁粉)/加热
+>  反应条件:**催化剂(铁粉)/加热**
 
 #### 卤代反应
 
@@ -83,7 +83,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 <img src="试卷/image/image-20210413081356838.png" alt="image-20210413081356838" style="zoom:67%;" />
 
-**重排机理 : 碳正离子**
+**重排机理 : 生成稳定碳正离子**
 
 <img src="image\image-20210413081535388.png" alt="image-20210413081535388" style="zoom:67%;" />
 
@@ -94,7 +94,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 +  苯环上推电子基团促进反应;**苯环上如果有吸电子基团,反应不发生**:star:
 +  烷基化可能会重排,酰基化不会重排
 +  位阻效应
-   +  叔丁基使**邻**对位定位基, 邻位受阻,只在对位取代
+   +  叔丁基是**邻**对位定位基, 邻位受阻,只在对位取代
    +  ![image-20210413093049914](image\image-20210413093049914.png)
 
 ### 苯环的加成
@@ -121,7 +121,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 ### 侧链卤代
 
-<img src="image-20210413090512776.png" alt="image-20210413090512776" style="zoom:67%;" />
+<img src="image\image-20210413090512776.png" alt="image-20210413090512776" style="zoom:67%;" />
 
 >  $\alpha$碳自由基与苯环形成$p-\pi$共轭, 优先取代$\alpha$碳上的氢
 
@@ -194,7 +194,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 >  (1)①甲基②溴③酸性高锰酸钾氧化④硝基
 >
->  (2)①甲基②对位磺化③硝基/秀④[磺基水解](#磺化反应)
+>  (2)①甲基②对位磺化③硝基/溴④[磺基水解](#磺化反应)
 
 # 稠环芳烃
 

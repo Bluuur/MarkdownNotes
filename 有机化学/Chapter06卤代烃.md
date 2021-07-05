@@ -100,6 +100,9 @@ $$ 亲核取代\begin{cases} 单分子(S_N1)反应\\ 双分子(S_N2)\end{cases}$
 
 ![Chapter06%E5%8D%A4%E4%BB%A3%E7%83%83%20b66aad0ce25e448a94fdf9cd5dd2fd7f/Untitled%2010.png](image\Untitled%2010.png)
 
+>   上图有误
+>   最右两个结构同时产生
+
 先生成碳正离子，再与亲核试剂反应
 
 从两面进攻正电中心，得到两种结构的取代物，互为外消旋体
