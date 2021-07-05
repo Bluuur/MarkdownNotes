@@ -43,6 +43,9 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 特征 : 一般较稳定,易发生亲电反应
 
 >  大$\pi$键使苯环能量降低
+>
+>  易发生亲电反应: 离域$\pi$键富电子
+>  降低电子密度会降低亲电活性(见杂环化合物)
 
 ### 亲电取代
 
