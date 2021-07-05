@@ -78,7 +78,7 @@ $\mathrm{-COOH\quad-SO_3H\quad-CN\quad-CHO\quad C=O\quad-OH\quad-NH_2\quad-R\qua
 
 ##### 傅氏烷基化的重排
 
-<img src="image\image-20210413081356838.png" alt="image-20210413081356838" style="zoom:67%;" />
+<img src="试卷/image/image-20210413081356838.png" alt="image-20210413081356838" style="zoom:67%;" />
 
 **重排机理 : 碳正离子**
 
