@@ -1,0 +1,120 @@
+{
+  "main": {
+    "id": "c0c2ef9b7d1d5151",
+    "type": "split",
+    "children": [
+      {
+        "id": "d590168bc0901ec9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "生物化学/糖类与糖生物学.md",
+            "mode": "source"
+          }
+        },
+        "group": "f80c758bf9dc3013"
+      },
+      {
+        "id": "1dbf7f601320eed8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "生物化学/糖类与糖生物学.md",
+            "mode": "preview"
+          }
+        },
+        "group": "f80c758bf9dc3013"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6eb4a50bf230ace",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a0316ff95f2d661",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c1a4f88ca6ac1eb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "cf180790b98a42d5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e86d2cefd920e181",
+    "type": "split",
+    "children": [
+      {
+        "id": "7792d99a43b1a93a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "816443c7d779af8f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "生物化学/糖类与糖生物学.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b0c5187dd5f439d4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "生物化学/糖类与糖生物学.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d590168bc0901ec9",
+  "lastOpenFiles": [
+    "生物化学/糖类与糖生物学.md",
+    "未命名.md",
+    "线性代数/Chapter 01 二阶与三阶行列式.md",
+    "LICENSE.md",
+    "概率论/Chap04/作业/Chap04_01.md"
+  ]
+}

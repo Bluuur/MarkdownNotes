@@ -17,7 +17,7 @@
 
 <img src="image/image-20210621002113937.png" alt="image-20210621002113937" style="zoom: 80%;" />
 
-##### "$F^\times F^-$"  $\to$ "$F^+ +F^+$"
+##### "$F^+ +F^-$"  $\to$ "$F^+ +F^+$"
 
 <img src="image/image-20210621002403790.png" alt="image-20210621002403790" style="zoom:80%;" />
 

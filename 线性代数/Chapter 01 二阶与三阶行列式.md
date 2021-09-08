@@ -1,4 +1,4 @@
-# 绪论 研究对象:矩阵(matrix)                                                                       
+# 绪论 研究对象:矩阵(matrix)
 
 由$m\times n$个数$a_{ij}$所拍成的$m$行$n$列的举行数表称为$m\times n$阶矩阵
 $$
@@ -36,7 +36,7 @@ x_2
 =\begin{bmatrix}
 0\\1
 \end{bmatrix}
-\\  \ \downarrow\quad \quad  \ \ \,\,\,
+\\   \ \downarrow\quad \quad  \ \ \,\,\,
 \downarrow\qquad\quad\downarrow\\
 得矩阵方程\,\,\,\,\,A \quad \cdot\,\,\quad X\,\,\,\,=\,\,\,\,\, B \qquad\qquad\,\,\,\,
 $$
