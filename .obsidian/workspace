@@ -22,7 +22,7 @@
           "type": "markdown",
           "state": {
             "file": "生物化学/糖类与糖生物学.md",
-            "mode": "preview"
+            "mode": "source"
           }
         },
         "group": "1087060f77611762"
@@ -31,87 +31,73 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c6eb4a50bf230ace",
-    "type": "split",
+    "id": "3144b09aaebd959e",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "1a0316ff95f2d661",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6c1a4f88ca6ac1eb",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "cf180790b98a42d5",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "432c009d29b8ea8f",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "091e96cb226c79e4",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "e86d2cefd920e181",
-    "type": "split",
+    "id": "53cee4df7b5538c3",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "7792d99a43b1a93a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "816443c7d779af8f",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "生物化学/糖类与糖生物学.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "b0c5187dd5f439d4",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "生物化学/糖类与糖生物学.md"
-              }
-            }
+        "id": "76f1ce61b0afd7c5",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "生物化学/糖类与糖生物学.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "fb8732e5a620bfbf",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "生物化学/糖类与糖生物学.md"
+          }
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
-  "active": "ec9705e28e1d38ce",
+  "active": "958968359c427281",
   "lastOpenFiles": [
     "生物化学/糖类与糖生物学.md",
+    "生物化学/image/Untitled.png",
     "生物化学/image/Untitled4-163110556916645.png",
     "微生物/Chap01微生物细胞/第一章微生物细胞.md",
     "微生物/Chap01微生物细胞/image/_(2).jpg",
