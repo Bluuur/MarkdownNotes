@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "d590168bc0901ec9",
+        "id": "958968359c427281",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -13,10 +13,10 @@
             "mode": "source"
           }
         },
-        "group": "f80c758bf9dc3013"
+        "group": "1087060f77611762"
       },
       {
-        "id": "1dbf7f601320eed8",
+        "id": "ec9705e28e1d38ce",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -25,7 +25,7 @@
             "mode": "preview"
           }
         },
-        "group": "f80c758bf9dc3013"
+        "group": "1087060f77611762"
       }
     ],
     "direction": "vertical"
@@ -109,9 +109,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d590168bc0901ec9",
+  "active": "ec9705e28e1d38ce",
   "lastOpenFiles": [
     "生物化学/糖类与糖生物学.md",
+    "生物化学/image/Untitled4-163110556916645.png",
+    "微生物/Chap01微生物细胞/第一章微生物细胞.md",
+    "微生物/Chap01微生物细胞/image/_(2).jpg",
+    "生物化学/image/Untitled 3-163110556916644.png",
     "未命名.md",
     "线性代数/Chapter 01 二阶与三阶行列式.md",
     "LICENSE.md",
