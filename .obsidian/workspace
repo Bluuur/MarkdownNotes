@@ -1,125 +1,97 @@
 {
   "main": {
-    "id": "c0c2ef9b7d1d5151",
+    "id": "fdb9c549c5fab72d",
     "type": "split",
     "children": [
       {
-        "id": "958968359c427281",
+        "id": "b49a001e7719436c",
         "type": "leaf",
+        "dimension": 40.234375,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/糖类与糖生物学.md",
+            "file": "生物化学/脂质.md",
             "mode": "source"
           }
         },
-        "group": "1087060f77611762"
+        "group": "a3f924596f98fc7f"
       },
       {
-        "id": "ec9705e28e1d38ce",
+        "id": "3d1dec7a96cb7fc3",
         "type": "leaf",
+        "dimension": 59.765625,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/糖类与糖生物学.md",
+            "file": "生物化学/脂质.md",
             "mode": "preview"
           }
         },
-        "group": "1087060f77611762"
+        "group": "a3f924596f98fc7f"
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "e7f61396f5dfc341",
-    "type": "split",
+    "id": "ec80d291689776d3",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "b6099748e2b5c50b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c94deea18d7da667",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "e10cbb08a2420dbc",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "bf1f78bc555fdc92",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "f3924fd85a263667",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "91ec5a7e4100879b",
-    "type": "split",
+    "id": "a5aa98a1fc65ab3c",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "d9f3f0f8dc9816fe",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a7d478908f2de0bd",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "生物化学/糖类与糖生物学.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "b30f7d76827cc434",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "生物化学/糖类与糖生物学.md"
-              }
-            }
+        "id": "cf486a5a0ca22b50",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "生物化学/脂质.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
-  "active": "958968359c427281",
+  "active": "b49a001e7719436c",
   "lastOpenFiles": [
+    "生物化学/脂质.md",
     "生物化学/糖类与糖生物学.md",
-    "生物化学/image/Untitled.png",
-    "生物化学/image/Untitled4-163110556916645.png",
-    "微生物/Chap01微生物细胞/第一章微生物细胞.md",
-    "微生物/Chap01微生物细胞/image/_(2).jpg",
-    "生物化学/image/Untitled 3-163110556916644.png",
+    "脂质.md",
     "未命名.md",
-    "线性代数/Chapter 01 二阶与三阶行列式.md",
-    "LICENSE.md",
-    "概率论/Chap04/作业/Chap04_01.md"
+    "未命名 1.md"
   ]
 }
