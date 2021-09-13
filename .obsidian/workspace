@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "离散数学/未命名.md",
+            "file": "离散数学/命题与连接词.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "离散数学/未命名.md",
+            "file": "离散数学/命题与连接词.md",
             "mode": "preview"
           }
         },
@@ -72,7 +72,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "离散数学/未命名.md",
+            "file": "离散数学/命题与连接词.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "离散数学/未命名.md"
+            "file": "离散数学/命题与连接词.md"
           }
         }
       }
