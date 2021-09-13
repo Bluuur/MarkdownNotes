@@ -6,7 +6,7 @@
       {
         "id": "b49a001e7719436c",
         "type": "leaf",
-        "dimension": 40.234375,
+        "dimension": 40.0390625,
         "state": {
           "type": "markdown",
           "state": {
@@ -19,7 +19,7 @@
       {
         "id": "3d1dec7a96cb7fc3",
         "type": "leaf",
-        "dimension": 59.765625,
+        "dimension": 59.9609375,
         "state": {
           "type": "markdown",
           "state": {
@@ -98,6 +98,7 @@
   },
   "active": "b49a001e7719436c",
   "lastOpenFiles": [
+    "离散数学/命题与连接词.md",
     "离散数学/未命名.md",
     "未命名.md",
     "生物膜.md",
