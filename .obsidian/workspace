@@ -6,11 +6,15 @@
       {
         "id": "b49a001e7719436c",
         "type": "leaf",
-        "dimension": 40.234375,
+        "dimension": 40.0390625,
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "Java/Redis/入门.md",
+=======
+            "file": "常用的抽样分布.md",
+>>>>>>> 7dde4d38bc921e3786c1ad930c86994948d80122
             "mode": "source"
           }
         },
@@ -19,11 +23,15 @@
       {
         "id": "3d1dec7a96cb7fc3",
         "type": "leaf",
-        "dimension": 59.765625,
+        "dimension": 59.9609375,
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "Java/Redis/入门.md",
+=======
+            "file": "常用的抽样分布.md",
+>>>>>>> 7dde4d38bc921e3786c1ad930c86994948d80122
             "mode": "preview"
           }
         },
@@ -74,6 +82,7 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "0ee67553af5b5252",
         "type": "tabs",
         "children": [
@@ -105,19 +114,54 @@
             }
           }
         ]
+=======
+        "id": "cf486a5a0ca22b50",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "常用的抽样分布.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "57e7f1b350d1fdca",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "常用的抽样分布.md"
+          }
+        }
+>>>>>>> 7dde4d38bc921e3786c1ad930c86994948d80122
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "b49a001e7719436c",
+  "active": "3d1dec7a96cb7fc3",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Java/Redis/入门.md",
+=======
+    "常用的抽样分布.md",
+    "未命名.md",
+    "抽样分布.md",
+    "离散数学/命题逻辑基本概念.md",
+    "离散数学/命题与连接词.md",
+    "离散数学/未命名.md",
+    "生物膜.md",
+>>>>>>> 7dde4d38bc921e3786c1ad930c86994948d80122
     "生物化学/脂质.md",
     "生物化学/糖类与糖生物学.md",
-    "脂质.md",
-    "未命名.md",
-    "未命名 1.md"
+    "脂质.md"
   ]
 }
