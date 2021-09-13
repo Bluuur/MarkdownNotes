@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "抽样分布.md",
+            "file": "常用的抽样分布.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "抽样分布.md",
+            "file": "常用的抽样分布.md",
             "mode": "preview"
           }
         },
@@ -72,7 +72,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "抽样分布.md",
+            "file": "常用的抽样分布.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -89,24 +89,24 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "抽样分布.md"
+            "file": "常用的抽样分布.md"
           }
         }
       }
     ],
     "currentTab": 0
   },
-  "active": "b49a001e7719436c",
+  "active": "3d1dec7a96cb7fc3",
   "lastOpenFiles": [
-    "抽样分布.md",
+    "常用的抽样分布.md",
     "未命名.md",
+    "抽样分布.md",
     "离散数学/命题逻辑基本概念.md",
     "离散数学/命题与连接词.md",
     "离散数学/未命名.md",
     "生物膜.md",
     "生物化学/脂质.md",
     "生物化学/糖类与糖生物学.md",
-    "脂质.md",
-    "未命名 1.md"
+    "脂质.md"
   ]
 }
