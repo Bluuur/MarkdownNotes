@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "离散数学/命题与连接词.md",
+            "file": "离散数学/命题逻辑基本概念.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "离散数学/命题与连接词.md",
+            "file": "离散数学/命题逻辑基本概念.md",
             "mode": "preview"
           }
         },
@@ -72,7 +72,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "离散数学/命题与连接词.md",
+            "file": "离散数学/命题逻辑基本概念.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "离散数学/命题与连接词.md"
+            "file": "离散数学/命题逻辑基本概念.md"
           }
         }
       }
@@ -98,6 +98,7 @@
   },
   "active": "b49a001e7719436c",
   "lastOpenFiles": [
+    "离散数学/命题逻辑基本概念.md",
     "离散数学/命题与连接词.md",
     "离散数学/未命名.md",
     "未命名.md",
