@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "生物膜.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "生物膜.md",
             "mode": "preview"
           }
         },
@@ -72,7 +72,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "生物膜.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "生物化学/脂质.md"
+            "file": "生物膜.md"
           }
         }
       }
@@ -98,10 +98,10 @@
   },
   "active": "b49a001e7719436c",
   "lastOpenFiles": [
+    "未命名.md",
     "生物化学/脂质.md",
     "生物化学/糖类与糖生物学.md",
     "脂质.md",
-    "未命名.md",
     "未命名 1.md"
   ]
 }
