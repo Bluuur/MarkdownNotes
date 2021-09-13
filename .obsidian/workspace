@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "Java/Redis/入门.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "Java/Redis/入门.md",
             "mode": "preview"
           }
         },
@@ -33,61 +33,87 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ec80d291689776d3",
-    "type": "mobile-drawer",
+    "id": "15668128ed8bbc18",
+    "type": "split",
     "children": [
       {
-        "id": "bf1f78bc555fdc92",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "f3924fd85a263667",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "79229c94f11d55b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d845971dfb3d4c05",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a23d2cb190b1bc30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "a5aa98a1fc65ab3c",
-    "type": "mobile-drawer",
+    "id": "6374d709a0579d89",
+    "type": "split",
     "children": [
       {
-        "id": "cf486a5a0ca22b50",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "生物化学/脂质.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "0ee67553af5b5252",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0aa8f90af88e0fd0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Java/Redis/入门.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0b01f6f2d3223a81",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Java/Redis/入门.md"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "b49a001e7719436c",
   "lastOpenFiles": [
+    "Java/Redis/入门.md",
     "生物化学/脂质.md",
     "生物化学/糖类与糖生物学.md",
     "脂质.md",
