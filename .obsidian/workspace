@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物信息学数学基础/未命名.md",
+            "file": "命题公式及其赋值.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物信息学数学基础/未命名.md",
+            "file": "命题公式及其赋值.md",
             "mode": "preview"
           }
         },
@@ -72,7 +72,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "生物信息学数学基础/未命名.md",
+            "file": "命题公式及其赋值.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "生物信息学数学基础/未命名.md"
+            "file": "命题公式及其赋值.md"
           }
         }
       },
@@ -105,15 +105,15 @@
   },
   "active": "b49a001e7719436c",
   "lastOpenFiles": [
-    "生物信息学数学基础/未命名.md",
     "未命名.md",
+    "离散数学/命题逻辑基本概念.md",
+    "生物信息学数学基础/未命名.md",
     "生物信息学数学基础/抽样分布.md",
     "物理化学/绪论.md",
     "无机及分析化学/物质结构基础OneNote/量子数—磁量子数m.pdf",
     "物理化学/未命名.md",
     "生物化学/生物膜.md",
     "生物膜.md",
-    "抽样分布.md",
-    "生物信息学数学基础/常用的抽样分布.md"
+    "抽样分布.md"
   ]
 }
