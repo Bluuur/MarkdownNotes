@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/氨基酸,肽和蛋白质.md",
+            "file": "生物化学/脂质.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/氨基酸,肽和蛋白质.md",
+            "file": "生物化学/脂质.md",
             "mode": "preview"
           }
         },
@@ -33,78 +33,87 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ec80d291689776d3",
-    "type": "mobile-drawer",
+    "id": "237304c841e4a184",
+    "type": "split",
     "children": [
       {
-        "id": "bf1f78bc555fdc92",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "f3924fd85a263667",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "a64343cbc436a6bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4eb22e414ef0671d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "70de7365d30c6d81",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "a5aa98a1fc65ab3c",
-    "type": "mobile-drawer",
+    "id": "0f43209d0fe7c816",
+    "type": "split",
     "children": [
       {
-        "id": "cf486a5a0ca22b50",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "生物化学/氨基酸,肽和蛋白质.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "c1ec43c1d0fe81cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01749fb2f71344ab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "生物化学/脂质.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3524c970860fe82c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "生物化学/脂质.md"
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "57e7f1b350d1fdca",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "生物化学/氨基酸,肽和蛋白质.md"
-          }
-        }
-      },
-      {
-        "id": "10425ef917ff55c5",
-        "type": "leaf",
-        "state": {
-          "type": "advanced-tables-toolbar",
-          "state": {}
-        }
+        ]
       }
-    ]
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
-  "active": "b49a001e7719436c",
+  "active": "3d1dec7a96cb7fc3",
   "lastOpenFiles": [
+    "生物化学/脂质.md",
     "生物化学/氨基酸,肽和蛋白质.md",
     "有机化学/Chapter04芳香烃.md",
     "image/image-20210408093200377.png.md",
@@ -112,7 +121,6 @@
     "生物化学/生物膜.md",
     "氨基酸,肽和蛋白质.md",
     "未命名.md",
-    "生物化学/脂质.md",
     "离散数学/2.1等值式.md",
     "2.1等值式.md"
   ]
