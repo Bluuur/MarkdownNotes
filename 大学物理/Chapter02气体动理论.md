@@ -386,6 +386,7 @@ $$
 |单原子分子|3|0|3|
 |双原子分子|3|2|5|
 |多原子分子|3|3|6|
+
 ## 能量均分定理
 质点模型
 $$
@@ -393,10 +394,11 @@ $$
     \overline{\omega}&=\frac{1}{2}m\overline{v^2}\\
     &=\frac{3}{2}kT\\
     &=\frac{1}{2}m_0(\overline{v_x^2}+\overline{v_y^2}+\overline{v_z^2})\\
-	\rightarrow\qquad\frac{1}{2}2m_0\overline{v_x^2}&=\frac{1}{2}2m_0\overline{v_y^2}=\frac{1}{2}m_0\overline{v_z^2}\\
+    \rightarrow\qquad\frac{1}{2}2m_0\overline{v_x^2}&=\frac{1}{2}2m_0\overline{v_y^2}=\frac{1}{2}m_0\overline{v_z^2}\\
     &=\frac{1}{2}kT
 \end{aligned}
 $$
+
 >气体分子沿$X,Y,Z$三个方向运动的平均动能完全相等，可以认为分子的平均平动动能$\frac{3}{2}kT$均匀分在每个平动自由度上。
 ### 能量按自由度均分定理<span id="能量按自由度均分定理"></span>
 
@@ -480,13 +482,11 @@ $$
 ## 速率分布函数
 
 ## 麦克斯韦速率分布规律
-
 $$
 \huge\begin{aligned}
     f(v)&=4\pi(\frac{m}{2\pi kT})^{\frac{3}{2}}v^2e^{-\frac{mv^2}{2kT}}
 \end{aligned}
 $$
-
 ### 三种速率
 
 #### 最概然速率$v_p$
@@ -498,13 +498,11 @@ $$
 $$
 \large v_p=\sqrt{\frac{2kT}{m_0}}=\sqrt{\frac{2RT}{M}}\approx1.41\sqrt{\frac{RT}M{}}
 $$
-
 +  如果把整个速率范围分成许多相等的小区间,则分布在$v_p$所在的区间内的分子比率最大
 
 #### 平均速率
 
 >  大量分子速率的统计平均值
-
 $$
 假设:速度为v_1的分子有\Delta N_1个.\\\qquad速度为v_2的分子有\Delta N_2个
 \\\vdots\\
@@ -514,20 +512,17 @@ $$
 \overline{v}&=\sqrt{\frac{8kT}{\pi m_0}}=\sqrt{\frac{8RT}{\pi M}}\approx1.60\sqrt{\frac{RT}{M}}
 \end{aligned}
 $$
-
 +  算数平均速率是研究大量分子运动的平均效应,不考虑矢量性.反映了一定温度下粒子平均移动的**快慢程度**
 
 #### 方均根速率
 
 >  大量分子速率的平方平均值的平方根
-
 $$
 \begin{aligned}
 \overline{v^2}=\int_{0}^{\infin}v^2f(v)dv\\
 \sqrt{\overline{v^2}}=\sqrt{\frac{3RT}{M}}\approx1.73\sqrt{\frac{RT}{M}}
 \end{aligned}
 $$
-
 
 
 +  方均根速率反应了气体分子**平均平动动能的大小**
@@ -597,7 +592,6 @@ $$
 $$
 p=\frac{2}{3}n\overline{\varepsilon_k}
 $$
-
 +   当温度不变时,其压强随体积的减小而增大
     +   分子数密度增大引起的压强增大,分子的平均动能不变
 +   当体积不变时,其压强随温度的升高而增大
@@ -665,7 +659,7 @@ $\large(5)nf(v)dv$ : 表示速率在$v$~$v+dv$内分子的概率密度
 
 -----------------------------------
 
-6.![第二章气体动理论作业第6题.png](第二章气体动理论作业第6题.png)
+6.![第二章气体动理论作业第6题.png](image/第二章气体动理论作业第6题.png)
 
 >理想气体内能:$E=N(\frac{i}{2}kT)=\frac{N}{N_A}N_A\frac{i}{2}kT=\frac{m}{M}\frac{i}{2}RT$
 >氧气摩尔质量:$M_{O_2}=32g/mol$
