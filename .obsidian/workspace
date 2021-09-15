@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "氨基酸,肽和蛋白质.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "氨基酸,肽和蛋白质.md",
             "mode": "preview"
           }
         },
@@ -72,7 +72,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "生物化学/脂质.md",
+            "file": "氨基酸,肽和蛋白质.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "生物化学/脂质.md"
+            "file": "氨基酸,肽和蛋白质.md"
           }
         }
       },
@@ -103,17 +103,17 @@
       }
     ]
   },
-  "active": "b49a001e7719436c",
+  "active": "3d1dec7a96cb7fc3",
   "lastOpenFiles": [
+    "氨基酸,肽和蛋白质.md",
+    "未命名.md",
+    "生物化学/生物膜.md",
     "生物化学/脂质.md",
     "离散数学/2.1等值式.md",
     "2.1等值式.md",
-    "未命名.md",
     "离散数学/1.2命题公式及其赋值.md",
     "离散数学/命题逻辑基本概念.md",
     "1.2命题公式及其赋值.md",
-    "生物信息学数学基础/未命名.md",
-    "生物信息学数学基础/抽样分布.md",
-    "物理化学/绪论.md"
+    "生物信息学数学基础/未命名.md"
   ]
 }
