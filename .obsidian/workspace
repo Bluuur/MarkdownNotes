@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "离散数学/2.1等值式.md",
+            "file": "生物化学/脂质.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "离散数学/2.1等值式.md",
+            "file": "生物化学/脂质.md",
             "mode": "preview"
           }
         },
@@ -72,7 +72,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "离散数学/2.1等值式.md",
+            "file": "生物化学/脂质.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "离散数学/2.1等值式.md"
+            "file": "生物化学/脂质.md"
           }
         }
       },
@@ -105,6 +105,7 @@
   },
   "active": "b49a001e7719436c",
   "lastOpenFiles": [
+    "生物化学/脂质.md",
     "离散数学/2.1等值式.md",
     "2.1等值式.md",
     "未命名.md",
@@ -113,7 +114,6 @@
     "1.2命题公式及其赋值.md",
     "生物信息学数学基础/未命名.md",
     "生物信息学数学基础/抽样分布.md",
-    "物理化学/绪论.md",
-    "无机及分析化学/物质结构基础OneNote/量子数—磁量子数m.pdf"
+    "物理化学/绪论.md"
   ]
 }
