@@ -1,7 +1,8 @@
 # MarkdownNotes
 + 个人笔记,可能有错误
-+ 推荐使用[Obsidian](https://obsidian.md/)
-+ 使用[typora.io](https://typora.io)
++ 推荐使用Typora打开:[typora.io](https://typora.io)
++ 使用Obsidian打开:[Obsidian](https://obsidian.md/)
+
 
 
 
