@@ -1,3 +1,5 @@
+[TOC]
+
 # 微生物诱变育种
 
 **诱变育种**:指利用各种诱变剂处理微生物细胞,提高基因的随机突变率,通过一定的筛选方法获得所需要的高产优质菌株.
@@ -18,7 +20,7 @@
 $$
 \large诱变\longrightarrow\stackrel{\underbrace{富集培养(抗生素法)}}{淘汰野生型}\longrightarrow\stackrel{\underbrace{影印平板法}}{检出营养缺陷型
 }\longrightarrow\stackrel{\underbrace{生长谱法}}{鉴定营养缺陷型
-}
+}
 $$
 
 ## 淘汰野生型,浓缩营养缺陷型
