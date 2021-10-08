@@ -1,2 +1,2 @@
-This is a README file
++   包含大量 $\LaTeX$ 公式 建议下载到本地或 `fork` 查看
 
