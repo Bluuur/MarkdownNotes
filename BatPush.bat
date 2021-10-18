@@ -1,5 +1,6 @@
 @echo off
 echo "GIT PUSH BAT"
+pause
 
 echo "Moving to working directory" 
 D:
