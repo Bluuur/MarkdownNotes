@@ -1,6 +1,6 @@
 @echo off
 echo "GIT PUSH BAT"
-pause
+
 
 echo "Moving to working directory" 
 D:
@@ -18,5 +18,5 @@ echo "Push the changes to the remote git server"
 git push origin main
  
 echo "Execution complete!"
-pause
+
 exit
