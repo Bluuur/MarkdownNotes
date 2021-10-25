@@ -128,7 +128,6 @@
 
 +   DNA denaturation can be followed spectrophotometrically by measuring the absorption of UV light at 260 nm 
 +   In its native state,DNA absorbs less UV light than the separate polynucleotide chains,a phenomenon that is called hypochromic effect(减色效应).
-    
 +   If a DNA dispersion is slowly heated and its UV light absorption isfollowwed,the temperature/absorbency relationship is an indicator of DNA denaturation
 
 ![image-20211021150209596](image/image-20211021150209596.png)
@@ -144,8 +143,8 @@
 
 The temperature at which half of the DNA is denatured(corresponding to the midpoint or in flection of the curve) is known as the DNA melting temperature($T_m$)
 
-+   The Tm is characteristic for each DNA under defined conditions of pH and salt concentration, it ranges from 80 to 100℃ for DNA isolated from different organisms.
-+   Determining the value of Tm is useful to estimate the base composition of DNA.
++   The Tm is characteristic for each DNA under defined conditions of pH and salt concentration, it ranges from 80 to $100℃$ for DNA isolated from different organisms.
++   Determining the value of $T_m$ is useful to estimate the base composition of DNA.
     $A=T, G\equiv C$
 
 #### Correlations of Melting Temperature ($T_m$) with G + C Content
@@ -268,14 +267,14 @@ This method is developed by British biologist Edwin Southern
 
 ![image-20211023225201481](image/image-20211023225201481.png)
 
-<img src="image/image-20211023225221312.png" alt="image-20211023225221312" style="zoom:67%;" />
+![image-20211023225221312](image/image-20211023225221312.png)
 
 ## Gel Electrophoresis 凝胶电泳
 
 +   Physical method of separation of molecules based on their charge and length
-    +   Agarose gel electrophoresis (琼脂糖凝胶电泳)
-    +   Pulsed field gel electrophoresis (PFGE) (脉冲电场凝胶电泳)
-    +   Polyacrylamide gel electrophoresis (PAGE) (聚丙烯酰胺凝胶电泳)
+    +   Agarose gel electrophoresis(琼脂糖凝胶电泳)
+    +   Pulsed field gel electrophoresis(PFGE)(脉冲电场凝胶电泳)
+    +   Polyacrylamide gel electrophoresis(PAGE)(聚丙烯酰胺凝胶电泳)
 
 Electrophoretic band of DNA/RNA can be visualized under UV light (UV-transilluminator or Gel-Doc)at specific wavelength.
 
@@ -285,20 +284,16 @@ Visualizations achieved by different strategies. Most commonly by intercalating 
 
 ![image-20211023225411612](image/image-20211023225411612.png)
 
-When exposed to ultraviolet light, it will fluoresce with an orange color, intensifying almost 20-fold after binding to DNA
-
->   水溶液中与疏水环境中荧光发光不同
+When exposed to ultraviolet light,it will fluoresce with an orange color, intensifying almost 20-fold after binding to DNA
 
 ### Agarose Gel Electrophoresis(琼脂糖凝胶电泳)
 
 ![image-20211023225457276](image/image-20211023225457276.png)
 
 +   Agarose gel electrophoresis is a method to separate DNA, or RNA molecules by size. 
-+   This is achieved by moving **negatively charged nucleic acid** molecules through an agarose matrix with an electric field(electrophoresis).
++   This is achieved by moving negatively charged nucleic acid molecules through an agarose matrix with an electric field(electrophoresis).
 +   The pore size is determined by adjusting the concentration of agarose in a gel(normally in the rank of 0.4-4%)
-    空洞大小由琼脂粉浓度决定
 +   Shorter molecules migrate farther than longer ones.
-    分子量越小 移动速度越快 移动距离越远
 
 ### Pulsed Field Gel Electrophoresis(PFGE)(脉冲电场凝胶电泳)
 
@@ -314,32 +309,25 @@ When exposed to ultraviolet light, it will fluoresce with an orange color, inten
 
 +   There are several basic steps in a DNA extraction, the details of which may vary depending on the type of sample and any substances that may interfere with the extraction and subsequent analysis.
     +   Breaking the cells open to expose the DNA
-        裂解细胞 暴露 DNA
     +   Removing the membrane lipids through the use of an appropriate detergent
-        使用恰当去污剂 去除膜脂
     +   Removal of proteins by adding an appropriate protease
-        使用蛋白酶去除蛋白质
     +   Removal of contaminants
-    +   Removal of RNA with the use of an RNase 
-    +   Precipitating the DNA with alcohol
+    +   Removal of RNA with the use of an RNase Precipitating the DNA with alcohol
 
 ![image-20211023230225831](image/image-20211023230225831.png)
 
 +   Liquid Phase Organic Extraction
-    液相有机萃取
-    +   Phenol : Chloroform : Isoamyl alcohol(50:49:1)
-        苯酚 氯仿 异戊醇
+    +   Phenol: Chloroform: Isoamyl alcohol(50:49:1)
         +   Lysed samples mixed with above; two layers are formed
         +   Proteins remain at interface
         +   DNA is removed with top aqueous layer
-            DNA 溶解于上层水相
         +   DNA is precipitated with alcohol and rehydrated.
     +   Disadvantages
         +   Slow, labor-intensive, toxic(phenol, chloroform)
         +   Fume hood required, disposal of hazardous materials required
-    
+
 +   Nonorganic Salt Precipitation 
-    +   Cell membranes are lysed and proteins are denatured by detergent(such as sodium dodecyl sulfate(SDS)(十二烷基硫酸钠(强阴离子去污剂))).
+    +   Cell membranes are lysed and proteins are denatured by detergent(such as sodium dodecyl sulfate(SDS)(十二烷基硫酸钠)).
         +   RNA is removed with RNase.
         +   Proteins are precipitated with salt solution.
         +   DNA is precipitated with alcohol and rehydrated.
@@ -352,7 +340,6 @@ When exposed to ultraviolet light, it will fluoresce with an orange color, inten
 
 +   There are several basic steps in a RNA extraction, the details of which may vary depending on the type of sampleand any substances that may interfere with the extraction and subsequent analysis.
     +   Breaking the cells open to expose the RNA(add RNase inhibitors)
-        裂解细胞 暴露 RNA (加入 RNA 酶抑制剂)
     +   Removing the membrane lipids through the use of an appropriate detergent
     +   Removal of proteins by adding an appropriate protease
     +   Removal of contaminants
@@ -362,30 +349,28 @@ When exposed to ultraviolet light, it will fluoresce with an orange color, inten
 ---
 
 +   RNA is not a stable molecule
-    RNA 分子不稳定
     +   It is easily degraded by RNase enzymes.
-        容易被 RNA 酶降解
 +   Use sterile, disposable and RNase free plastic ware (tubes, filter tips)
 +   Always wear gloves and work in a hood whenever possible/practical.
-+   Treat liquids with diethyl pyrocarbonate(DEPC)(RNA 酶强抑制剂).
++   Treat liquids with diethyl pyrocarbonate(DEPC).
 +   It is important to note that RNA is less stable as compared to DNA so one should only isolate it prior to use.
 
 ---
 
 ### Three major techniques extensively used for RNA extraction 
 
-+   Organic extraction,such as Phenol(苯酚)/Guanidine Isothiocyanate(GITC)(异硫氰酸胍)-based solutions
++   Organic extraction,such as Phenol(苯酚)/Guanidine Isothiocyanate(GITC)(异硫氰酸服)-based solutions
 +   Silica-membrane based spin column technology
 +   Paramagnetic particle technology.
 
 ####  Guanidinium(胍盐)-based Organic Isolation
 
-+   Phenol(苯酚)/guanidinium(胍盐)solution disrupts cells, solubilizes cell components, but maintains integrity of RNA.
++   Phenol(苯酚)/guanidinium(胍盐)solution disrupts cells,solubilizes cell components,but maintains integrity of RNA.
 +   Add chloroform(氯仿),mix,and centrifuge.
 +   Proteins/DNA remain at interface.
 +   RNA is removed with aqueous top layer.
 +   RNA is precipitated with alcohol and rehydrated.
-+   Advantage: faster than $\mathrm{CsCl}$ method 
++   Advantage: faster than $CsCI$ method 
 +   Disadvantages: fume hood required, hazardous waste disposal issues
 
 #### Cesium Chloride Gradient(氯化绝梯度离心)
@@ -413,14 +398,9 @@ Used mainly to get clean RNA for Northern blots
 
 ![image-20211023231234562](image/image-20211023231234562.png)
 
->   双脱氧 加入 4 种 去除 $2-OH$ 的核苷酸 DNA 链无法延伸
-
 ### Second generation sequencing(massively parallel)
 
 ![image-20211023231253146](image/image-20211023231253146.png)
-
->   高通量 
->   只能读取短片段
 
 ### Third generation sequencing(Nanopore sequencing(新型纳米孔测序法))
 
@@ -428,18 +408,11 @@ Nanopore sequencing is used in the sequencing of biopolymers, specifically, poly
 
 ![image-20211023231328132](image/image-20211023231328132.png)
 
->   记录电信号
-
 ## DNA sequencing applications
 
 ![image-20211023231343595](image/image-20211023231343595.png)
 
 ![image-20211023231349964](image/image-20211023231349964.png)
-
-+   Genome resequencing
-    SNP
-+   Clinical application
-    产前诊断
 
 ![image-20211023231354699](image/image-20211023231354699.png)
 
