@@ -1,7 +1,6 @@
 @echo off
 echo "GIT PUSH BAT"
 
-
 echo "Moving to working directory" 
 D:
 cd D:\program\MarkdownNotes
