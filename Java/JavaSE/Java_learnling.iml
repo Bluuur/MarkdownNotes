@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/chapter01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/feidain" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter05" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter06" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter07" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter08" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter09" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter17" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter19" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter21" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter23" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter_unkonwn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/phyCalculator/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

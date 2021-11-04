@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../chapter10/NullPointerTest.iml" filepath="$PROJECT_DIR$/../chapter10/NullPointerTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chapter11/chapter11.iml" filepath="$PROJECT_DIR$/../chapter11/chapter11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chapter17/chapter17.iml" filepath="$PROJECT_DIR$/../chapter17/chapter17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chapter19/chapter19.iml" filepath="$PROJECT_DIR$/../chapter19/chapter19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chapter21/chapter21.iml" filepath="$PROJECT_DIR$/../chapter21/chapter21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chapter23/chapter23.iml" filepath="$PROJECT_DIR$/../chapter23/chapter23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../feidain/feidain.iml" filepath="$PROJECT_DIR$/../feidain/feidain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../progremming/progremming.iml" filepath="$PROJECT_DIR$/../progremming/progremming.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/HomeWork/src/HomeWork01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/KeyInput.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/KeyInput02.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/Notion.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/PassengerThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/PolymorphismTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/RecursionHW.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/TicketTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/calculator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork/src/reviewOnThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetworkProgram/src/InetAddressTest01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetworkProgram/src/TCPClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetworkProgram/src/TCPServer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetworkProgram/src/UDPReceiveTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetworkProgram/src/UDPSendTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch01-mybatis-first/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/BooleanTest01.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/CharTest01.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/CharTest02.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/IntTest01.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/IntTest02.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/IntTest03.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/IntTest04.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/IntTest05.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter04/src/demo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter05/src/OperatorTest01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter07/src/RecursionTest02.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter13/src/Test001.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter19/src/com/java/array/ArrayTest01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter19/src/com/java/array/ArrayTest03.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter20/src/com/java/Integer/IntegerTest01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter20/src/com/java/date/DateTest01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter20/src/com/java/number/BigDecimalTest01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest02.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest03.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest04.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest05.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest07.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest08.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest09.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest10.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest11.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest12.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/ThreadTest16.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/thread/TimerTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/threadsafty/Account.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/threadsafty/AccountThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter24/src/com/feidian/java/threadsafty/Test.java" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
