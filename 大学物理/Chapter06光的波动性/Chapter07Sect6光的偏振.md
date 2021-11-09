@@ -1,5 +1,4 @@
 # 光的偏振
-
 $$
 \Large \text { 波 }\left\{\begin{array}{l}
 \text { 横波: 质点的振动方向与波的传播方向垂直 } \\
