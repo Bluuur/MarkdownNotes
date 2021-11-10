@@ -10,7 +10,7 @@
 >   ### 方法1
 >
 >   点击右上角 `Code`, 选择 `Download ZIP` 下载到本地后解压查看
->   可以使用上述两个软件(Typora/Obsidian)
+>   可以使用上述两个软件 (Typora/Obsidian)
 >
 >   ### 方法2
 >
@@ -33,7 +33,7 @@
 
 All Rights Reserve (C) 2021 Zidong Zh.
 
-本项目采用Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)进行许可
+本项目采用 Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) 进行许可
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
