@@ -9,14 +9,14 @@
 >
 >   ### 方法1
 >
->   点击右上角`Code`,选择`Download ZIP` 下载到本地后解压查看
+>   点击右上角 `Code`, 选择 `Download ZIP` 下载到本地后解压查看
 >   可以使用上述两个软件(Typora/Obsidian)
 >
 >   ### 方法2
 >
 >   Github在线查看
 >
->   需要翻越GFW 可以直接显示图片
+>   科学 上网 可以直接显示图片
 >   但不支持 $\LaTeX$ 公式显示
 >
 >   ### 方法3
@@ -27,7 +27,7 @@
 
 
 
-本项目中部分图片版权归属于其原作者，侵权请联系bluur@foxmail.com删除
+本项目中部分图片版权归zidongzh@outlook.com删除
 
 
 
