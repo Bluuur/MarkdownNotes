@@ -2,7 +2,7 @@
 
 >   生信 2001 张子栋 2020317210101
 
-GitHub: 
+GitHub: [MarkdownNotes/R_Source.md at main · Bluuur/MarkdownNotes (github.com)](https://github.com/Bluuur/MarkdownNotes/blob/main/MathBasisForBioinformatics/Calculus/R_Source.md)
 
 ## 实验背景
 
@@ -487,3 +487,4 @@ List of 12
 [1] -0.7311179
 ```
 
+![位图](image/位图.png)
