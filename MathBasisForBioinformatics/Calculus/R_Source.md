@@ -6,7 +6,7 @@ GitHub: [MarkdownNotes/R_Source.md at main · Bluuur/MarkdownNotes (github.com)]
 
 ## 实验背景
 
-使用 R, 通过水稻群体的基因型数据预测表型中的 `yd`
+使用 R, 预测水稻群体表型中的 `yd`
 
 ## 实验数据
 
