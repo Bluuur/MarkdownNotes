@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="400"
+   id="svg2467"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.0 r9654"
+   version="1.0"
+   sodipodi:docname="s.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2469">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path3448"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3442"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path3469"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2475" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.545"
+     inkscape:cx="400"
+     inkscape:cy="301.32671"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2472">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.1866951"
+       id="rect2481"
+       width="314.13086"
+       height="213.59543"
+       x="18.582613"
+       y="46.486141"
+       ry="20.024572" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;stroke:#000000"
+       id="path2483"
+       sodipodi:cx="645.96875"
+       sodipodi:cy="239.95229"
+       sodipodi:rx="120.18023"
+       sodipodi:ry="138.09171"
+       d="M 766.14898,239.95229 A 120.18023,138.09171 0 1 1 525.78852,239.95229 A 120.18023,138.09171 0 1 1 766.14898,239.95229 z"
+       transform="matrix(1.0206951,0,0,0.9999628,-11.693234,-8.7671978)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#f9f9f9;stroke:#000000"
+       id="path2603"
+       sodipodi:cx="544.27777"
+       sodipodi:cy="81.060165"
+       sodipodi:rx="49.689903"
+       sodipodi:ry="24.26716"
+       d="M 593.96767,81.060165 A 49.689903,24.26716 0 1 1 494.58787,81.060165 A 49.689903,24.26716 0 1 1 593.96767,81.060165 z"
+       transform="translate(-335.7392,1.5557911)" />
+    <rect
+       ry="2.6755602"
+       y="131.12141"
+       x="264.2619"
+       height="28.539309"
+       width="63.206726"
+       id="rect2583"
+       style="fill:#ffff00;stroke:#000000;stroke-width:0.1945769" />
+    <rect
+       ry="2.6755602"
+       y="192.96313"
+       x="538.57819"
+       height="28.539309"
+       width="63.206726"
+       id="rect2601"
+       style="fill:#ffff00;stroke:#000000;stroke-width:0.1945769" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.81711161px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow1Mstart);stroke-opacity:1"
+       d="M 208.65821,180.55553 L 208.61448,187.04019 L 208.52198,224.20346"
+       id="path2607"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -50.845481,243.99682 0,0"
+       id="path2631"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ccc"
+       id="path5271"
+       d="M 209.7356,112.50705 L 209.69151,118.64105 L 209.59825,153.7947"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77446961px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow1Mstart);stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9277333px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 209.10029,128.27393 C 225.74415,148.10932 260.68112,144.96097 260.68112,144.96097"
+       id="path5277"
+       sodipodi:nodetypes="cc" />
+    <path
+       transform="translate(-94.818299,15.678741)"
+       d="M 593.96767,81.060165 A 49.689903,24.26716 0 1 1 494.58787,81.060165 A 49.689903,24.26716 0 1 1 593.96767,81.060165 z"
+       sodipodi:ry="24.26716"
+       sodipodi:rx="49.689903"
+       sodipodi:cy="81.060165"
+       sodipodi:cx="544.27777"
+       id="path5279"
+       style="fill:#f9f9f9;stroke:#000000"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.20970161;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path5293"
+       sodipodi:cx="260.02841"
+       sodipodi:cy="83.479782"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3.0368278"
+       sodipodi:radius="87.498573"
+       sodipodi:argument="-19.291382"
+       sodipodi:t0="0.88560891"
+       d="M 203.24954,30.746632 C 231.57811,-3.6216083 283.89637,-6.6957546 317.66343,21.422971 C 331.21838,32.710538 341.01765,48.180657 345.59687,65.203042"
+       transform="matrix(1.0508117,0,0,0.1624611,45.04016,67.364924)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.08138669px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 501.82078,95.987596 C 501.82078,95.987596 639.1488,93.25479 647.12269,123.31566"
+       id="path5301" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#f9f9f9;stroke:#000000"
+       id="path5303"
+       sodipodi:cx="544.27777"
+       sodipodi:cy="81.060165"
+       sodipodi:rx="49.689903"
+       sodipodi:ry="24.26716"
+       d="M 593.96767,81.060165 A 49.689903,24.26716 0 1 1 494.58787,81.060165 A 49.689903,24.26716 0 1 1 593.96767,81.060165 z"
+       transform="translate(111.0568,70.847491)" />
+    <path
+       sodipodi:nodetypes="ccc"
+       id="path5313"
+       d="M 656.07067,223.91865 L 656.02658,217.78465 L 655.93332,182.631"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77446961px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow1Mstart);stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77446961px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow1Mstart);stroke-opacity:1"
+       d="M 656.90143,295.36416 L 656.85734,289.23016 L 656.76408,254.07651"
+       id="path5315"
+       sodipodi:nodetypes="ccc" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path5317"
+       d="m 656.64684,191.41182 c -16.64386,19.83539 -51.58083,16.68704 -51.58083,16.68704"
+       style="fill:none;stroke:#000000;stroke-width:0.92800000000000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
+    <path
+       transform="matrix(-1.1192244,0,0,-0.2514134,832.77765,321.04934)"
+       d="M 203.24954,30.746632 C 231.57811,-3.6216083 283.89637,-6.6957546 317.66343,21.422971 C 331.21838,32.710538 341.01765,48.180657 345.59687,65.203042"
+       sodipodi:t0="0.88560891"
+       sodipodi:argument="-19.291382"
+       sodipodi:radius="87.498573"
+       sodipodi:revolution="3.0368278"
+       sodipodi:expansion="1"
+       sodipodi:cy="83.479782"
+       sodipodi:cx="260.02841"
+       id="path5321"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.96767521;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="spiral" />
+    <path
+       id="path5323"
+       d="M 359.8424,296.03822 C 359.8424,296.03822 217.35936,300.72414 209.08614,249.17908"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.44236696px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="543.97009"
+       y="214.44049"
+       id="text2493"><tspan
+         sodipodi:role="line"
+         id="tspan2495"
+         x="543.97009"
+         y="214.44049"><tspan
+           x="543.97009"
+           y="214.44049"
+           style="font-size:18px"
+           id="tspan2497">2 ATP</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="268.49817"
+       y="151.75435"
+       id="text2505"><tspan
+         sodipodi:role="line"
+         id="tspan2507"><tspan
+           x="268.49817"
+           y="151.75435"
+           style="font-size:18px"
+           id="tspan2509">6 ATP</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="167.57401"
+       y="173.43622"
+       id="text2529"><tspan
+         sodipodi:role="line"
+         id="tspan2531"
+         x="167.57401"
+         y="173.43622"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"><tspan
+           x="167.57401"
+           y="173.43622"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+           id="tspan2533">2×丙酮酸</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="107.91626"
+       y="36.458874"
+       id="text2535"><tspan
+         sodipodi:role="line"
+         id="tspan2537"
+         x="107.91626"
+         y="36.458874"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">肝脏</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="57.152992"
+       y="142.45908"
+       id="text2541"><tspan
+         sodipodi:role="line"
+         id="tspan2543"
+         x="57.152992"
+         y="142.45908"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">糖异生</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="178.20471"
+       y="89.651405"
+       id="text2547"><tspan
+         sodipodi:role="line"
+         id="tspan2549"
+         x="178.20471"
+         y="89.651405"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">葡萄糖</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="624.63745"
+       y="79.599754"
+       id="text2535-6"><tspan
+         sodipodi:role="line"
+         id="tspan2537-8"
+         x="624.63745"
+         y="79.599754"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">肌肉</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="418.61206"
+       y="105.3643"
+       id="text2547-3"><tspan
+         sodipodi:role="line"
+         id="tspan2549-8"
+         x="418.61206"
+         y="105.3643"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">葡萄糖</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="626.37903"
+       y="159.08598"
+       id="text2547-7"><tspan
+         sodipodi:role="line"
+         id="tspan2549-4"
+         x="626.37903"
+         y="159.08598"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">葡萄糖</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="612.42255"
+       y="245.11034"
+       id="text2529-7"><tspan
+         sodipodi:role="line"
+         id="tspan2531-9"
+         x="612.42255"
+         y="245.11034"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"><tspan
+           x="612.42255"
+           y="245.11034"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+           id="tspan2533-3">2×丙酮酸</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="178.40958"
+       y="241.8741"
+       id="text2529-1"><tspan
+         sodipodi:role="line"
+         id="tspan2531-98"
+         x="178.40958"
+         y="241.8741"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"><tspan
+           x="178.40958"
+           y="241.8741"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+           id="tspan2533-6">2×乳酸</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="626.36426"
+       y="319.54401"
+       id="text2529-5"><tspan
+         sodipodi:role="line"
+         id="tspan2531-0"
+         x="626.36426"
+         y="319.54401"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"><tspan
+           x="626.36426"
+           y="319.54401"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+           id="tspan2533-2">2×乳酸</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="376.76233"
+       y="302.06827"
+       id="text2529-1-6"><tspan
+         sodipodi:role="line"
+         id="tspan2531-98-0"
+         x="376.76233"
+         y="302.06827"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"><tspan
+           x="376.76233"
+           y="302.06827"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+           id="tspan2533-6-2">2×乳酸</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="393.36932"
+       y="197.92093"
+       id="text2547-3-4"><tspan
+         sodipodi:role="line"
+         id="tspan2549-8-8"
+         x="393.36932"
+         y="197.92093"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">血液</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="664.54034"
+       y="212.54025"
+       id="text2541-3"><tspan
+         sodipodi:role="line"
+         id="tspan2543-8"
+         x="664.54034"
+         y="212.54025"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei">糖酵解</tspan></text>
+  </g>
+</svg>
