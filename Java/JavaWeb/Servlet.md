@@ -169,3 +169,30 @@ Java EE 包括 13 种规范, Servlet 就是 Java EE 规范之一.
 - http://127.0.0.1:8080/oa/userList.html 
     - 访问这个地址, 可以展示一个用户列表页面. 但是这个用户列表页面是写死在 HTML 文件当中的. 这种资源我们称为静态资源. 怎么能变成动态资源. 显然需要连接数据库. 
     - 连接数据库需要 JDBC 程序, 也就是说需要编写 Java 程序连接数据库, 数据库中有多少条记录, 页面上就显示多少条记录, 这种技术被称为动态网页技术. (动态网页技术并不是说页面中有动画. 动态网页技术是说页面中的数据是动态的, 根据数据库中数据的变化而变化. ）
+
+# 参与 B/S 结构系统的角色
+
++   浏览器 Browser
++   WEB Server
++   DB Server
++   Webapp
+
+---
+
++   需要遵守的规范与协议
+    +   Webapps 开发团队与 WEB Server 开发团队
+        +   Servlet 规范
+            +   作用: WEB Server 和 webapp 解耦合
+    +   Browser 和 WEB Server 之间有一套传输协议 :`HTTP` 协议
+    +   webapp 开发团队与 DB Server 开发团队之间有一套规范 : JDBC 规范
+
++   Servlet 规范
+    +   遵循Servlet规范的webapp，这个webapp就可以放在不同的WEB服务器中运行。（因为这个webapp是遵循Servlet规范的。）
+    +   Servlet规范包括什么呢？
+        +   规范了类与接口
+        +   规范 web 应用中应该有哪些配置文件
+        +   规范 web 应用中配置文件的名字
+        +   规范 web 应用中配置文件存放的路径
+        +   规范 web 应用中配置文件的内容
+        +   规范合法有效的 web 应用它的目录结构
+    +   
