@@ -95,5 +95,77 @@ Java EE 包括 13 种规范, Servlet 就是 Java EE 规范之一.
 
 `DNS` (Domain Name System) 服务是和 `HTTP` 协议一样位于应用层的协议. 它提供域名到 `IP` 地址之间的解析服务. 计算机既可以被赋予 `IP` 地址, 也可以被赋予主机名和域名. 比如 www.hackr.jp 用户通常使用主机名或域名来访问对方的计算机, 而不是直接通过 `IP` 地址访问. 因为与 `IP` 地址的一组纯数字相比, 用字母配合数字的表示形式来指定计算机名更符合人类的记忆习惯. 但要让计算机去理解名称, 相对而言就变得困难了. 因为计算机更擅长处理一长串数字.  为了解决上述的问题, `DNS` 服务应运而生. `DNS` 协议提供通过域名查找 `IP` 地址, 或逆向从 `IP` 地址反查域名的服务.
 
-## 端口号
+# WEB 服务器
 
++   WEB 服务器软件
+    +   Tomcat (WEB 服务器)
+    +   jetty (WEB 服务器)
+    +   JBOSS (应用服务器)
+    +   WebLogic (应用服务器)
+    +   WebSphere (应用服务器)
++   应用服务器和 WEB 服务器的关系
+    +   应用服务器实现了 Java EE 的所有规范 (共 13 个)
+    +   WEB 服务器只实现了 Java EE 中的 Servlet + JSP 两个核心的规范
+    +   应用服务器包含 WEB 服务器
++   Tomcat
+    +   apache 官网地址: https://www.apache.org
+    - tomcat 官网地址: https://tomcat.apache.org
+    - tomcat 开源免费的轻量级WEB服务器
+    - 使用 Java 语言编写
+    - 需要有 JRE 才能运行
++   需要配置的环境变量
+    +   `JAVA_HOME=C:\Program Files\Java\jdk-17.0.1`
+    +   `PATH=%JAVA_HOME%\bin`
+    +   `CATALINA_HOME=Tomcat根目录`
++   Tomcat 服务器的目录
+    +   `bin`: Tomcat 服务器的命令文件存放的目录
+    +   `conf`: Tomcat 服务器的核心程序目录, 因为 Tomcat 服务器是 Java 语言编写的, 这里的 `jar`包都是 `class` 文件
+    +   `logs`: Tomcat 服务器的日志目录, Tomcat 服务器启动等信息都会在这个目录下生成日志文件
+    +   `temp`: Tomcat 服务器的临时目录, 存储临时文件
+    +   `webapps`: 这个目录当中就是用来存放大量的 webapp (web application, web 应用)
+    +   `work`: 用来存放 `JSP` 文件翻译之后的 Java 文件以及编译之后的 class 文件
++   Tomcat 的启动与关闭
+    +   `startup`
+    +   `stop`
+        +   把 `shutdown.bat` 文件重命名为 `stop.bat`, 因为 shutdown 与 Windows 中的关机命令冲突
++   测试 Tomcat 服务器是否启动成功
+    +   打开浏览器, 输入 http://localhost:8080
+
+# 实现最基本的 WEB 应用
+
++   第一步: 找到 `CATALINA_HOME\webapps` 目录
+
+- 因为所有的 `webapp` 要放到 `webapps` 目录下. (这是 Tomcat 服务器的要求. 如果不放到这里, Tomcat 服务器找不到你的应用)
+
+- 第二步: 在 `CATALINA_HOME\webapps` 目录下新建一个子目录, 起名: `oa`
+
+    - 这个目录名 `oa` 就是 `webapp` 的名字。
+
+- 第三步: 在 `oa` 目录下新建资源文件, 例如: `index.html`
+
+    - 编写 `index.html` 文件的内容. 
+
+- 第四步: 启动 Tomcat 服务器
+
+- 第五步: 打开浏览器, 在浏览器地址栏上输入这样的 `URL`
+
+    - http://127.0.0.1:8080/oa/index.html
+
+- 思考一个问题: 
+
+    - 在浏览器上直接输入一个 `URL`, 然后回车 这个动作和超链接一样
+        完全可以使用超链接
+        
+        ```html
+        <!--注意以下的路径，以/开始，带项目名，是一个绝对路径. 不需要添加：http://127.0.0.1:8080-->
+        <a href="/oa/login.html">user login2</a>
+        
+        <!--多个层级也没有关系，正常访问即可。-->
+        <!--注意：我们目前前端上的路径都以“/”开始的，都是加项目名的。-->
+        <a href="/oa/test/debug/d.html">d page</a>
+        ```
+
+
+- http://127.0.0.1:8080/oa/userList.html 
+    - 访问这个地址, 可以展示一个用户列表页面. 但是这个用户列表页面是写死在 HTML 文件当中的. 这种资源我们称为静态资源. 怎么能变成动态资源. 显然需要连接数据库. 
+    - 连接数据库需要 JDBC 程序, 也就是说需要编写 Java 程序连接数据库, 数据库中有多少条记录, 页面上就显示多少条记录, 这种技术被称为动态网页技术. (动态网页技术并不是说页面中有动画. 动态网页技术是说页面中的数据是动态的, 根据数据库中数据的变化而变化. ）
