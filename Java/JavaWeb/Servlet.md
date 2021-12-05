@@ -133,37 +133,28 @@ Java EE 包括 13 种规范, Servlet 就是 Java EE 规范之一.
 
 # 实现最基本的 WEB 应用
 
-+   第一步: 找到 `CATALINA_HOME\webapps` 目录
+1.   找到 `CATALINA_HOME\webapps` 目录
 
-- 因为所有的 `webapp` 要放到 `webapps` 目录下. (这是 Tomcat 服务器的要求. 如果不放到这里, Tomcat 服务器找不到你的应用)
+     +   所有的 webapp 要放到 webapps 目录下
 
-- 第二步: 在 `CATALINA_HOME\webapps` 目录下新建一个子目录, 起名: `oa`
+2.   在 `CATALINA_HOME\webapps`目录下新建一个子目录, 起名 `oa`
 
-    - 这个目录名 `oa` 就是 `webapp` 的名字。
+     +   目录名 `oa` 就是 webapp 的名字
 
-- 第三步: 在 `oa` 目录下新建资源文件, 例如: `index.html`
+3.   在 `oa` 目录下新建资源文件, 例如`index.html`
 
-    - 编写 `index.html` 文件的内容. 
+4.   打开浏览器, 输入 http://localhost:8080/oa/index.html
 
-- 第四步: 启动 Tomcat 服务器
+5.   在浏览器中输入 URL 的动作与点击超链接一样
 
-- 第五步: 打开浏览器, 在浏览器地址栏上输入这样的 `URL`
-
-    - http://127.0.0.1:8080/oa/index.html
-
-- 思考一个问题: 
-
-    - 在浏览器上直接输入一个 `URL`, 然后回车 这个动作和超链接一样
-        完全可以使用超链接
-        
-        ```html
-        <!--注意以下的路径，以/开始，带项目名，是一个绝对路径. 不需要添加：http://127.0.0.1:8080-->
-        <a href="/oa/login.html">user login2</a>
-        
-        <!--多个层级也没有关系，正常访问即可。-->
-        <!--注意：我们目前前端上的路径都以“/”开始的，都是加项目名的。-->
-        <a href="/oa/test/debug/d.html">d page</a>
-        ```
+     ```html
+     <!--注意以下的路径，以/开始，带项目名，是一个绝对路径。不需要添加：http://127.0.0.1:8080-->
+     <a href="/oa/login.html">user login2</a>
+     
+     <!--多个层级也没有关系，正常访问即可。-->
+     <!--注意：我们目前前端上的路径都以“/”开始的，都是加项目名的。-->
+     <a href="/oa/test/debug/d.html">d page</a>
+     ```
 
 
 - http://127.0.0.1:8080/oa/userList.html 
@@ -185,7 +176,6 @@ Java EE 包括 13 种规范, Servlet 就是 Java EE 规范之一.
             +   作用: WEB Server 和 webapp 解耦合
     +   Browser 和 WEB Server 之间有一套传输协议 :`HTTP` 协议
     +   webapp 开发团队与 DB Server 开发团队之间有一套规范 : JDBC 规范
-
 +   Servlet 规范
     +   遵循Servlet规范的webapp，这个webapp就可以放在不同的WEB服务器中运行。（因为这个webapp是遵循Servlet规范的。）
     +   Servlet规范包括什么呢？
@@ -195,4 +185,52 @@ Java EE 包括 13 种规范, Servlet 就是 Java EE 规范之一.
         +   规范 web 应用中配置文件存放的路径
         +   规范 web 应用中配置文件的内容
         +   规范合法有效的 web 应用它的目录结构
-    +   
+
+# 开发一个带有 Servlet 的 webapp
+
++   开发步骤
+
+    1.    在 `webapps` 目录下新建一个目录, 起名 `crm` (这个 `crm` 就是 webapp 的名字), 当然, 也可以是其它项目, 比如银行项目, 可以创建一个目录 `bank`, 办公系统可以创建一个 `oa`.
+
+         - 注意: `crm` 就是这个 `webapp` 的根
+
+    2.   在 `webapp` 的根下新建一个目录: WEB-INF
+
+        - 注意: 这个目录的名字是 `Servlet` 规范中规定的, 必须全部大写, 必须一模一样. 
+
+    3.   在 WEB-INF 目录下新建一个目录: `classes`
+
+        - 注意: 这个目录的名字必须是全部小写的 `classes`. 这也是 Servlet 规范中规定的. 另外这个目录下一定存放的是 Java 程序编译之后的 class 文件(这里存放的是字节码文件)
+
+    4.   在 WEB-INF 目录下新建一个目录: `lib`
+
+        - 注意: 这个目录不是必须的. 但如果一个 `webapp` 需要第三方的 `jar` 包的话, 这个 `jar` 包要放到这个 `lib` 目录下，这个目录的名字也不能随意编写，必须是全部小写的 `lib`. 例如 Java 语言连接数据库需要数据库的驱动 `jar` 包. 那么这个 `jar` 包就一定要放到 `lib` 目录下. 这 Servlet 规范中规定的。
+
+    5.   在 WEB-INF 目录下新建一个文件: `web.xml`
+
+        - 注意: 这个文件是必须的, 这个文件名必须叫做 `web.xml`. 这个文件必须放在这里. 一个合法的 webapp, `web.xml` 文件是必须的, 这个 `web.xml` 文件就是一个配置文件, 在这个配置文件中描述了请求路径和 Servlet 类之间的对照关系. 
+
+        - 这个文件最好从其他的 webapp 中拷贝, 最好复制粘贴
+
+        - ```xml
+            <?xml version="1.0" encoding="UTF-8"?>
+            
+            <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                                  https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+              version="5.0"
+              metadata-complete="true">
+            
+            
+            </web-app>
+            
+            ```
+
+    6.   编写一个 Java 程序, 这个 Java 程序也不能随意开发, 必须实现 Servlet 接口
+
+         - Servlet 接口不在 JDK 当中. (因为 Servlet 不是 Java SE 了. Servlet 属于 Java EE, 是另外的一套类库.）
+         - Servlet 接口(`Servlet.class`文件)是 Oracle 提供的. (最原始的是 SUN 公司提供的.)
+         - Servlet 接口是 Java EE 的规范中的一员。
+         - Tomcat 服务器实现了 Servlet 规范, 所以 Tomcat 服务器也需要使用 Servlet 接口. Tomcat 服务器中应该有这个接口, Tomcat 服务器的 `CATALINA_HOME\lib` 目录下有一个 `servlet-api.jar`, 解压这个 `servlet-api.jar` 之后, 你会看到里面有一个 `Servlet.class` 文件. 
+         - 
