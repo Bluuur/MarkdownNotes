@@ -230,7 +230,18 @@ Java EE 包括 13 种规范, Servlet 就是 Java EE 规范之一.
     6.   编写一个 Java 程序, 这个 Java 程序也不能随意开发, 必须实现 Servlet 接口
 
          - Servlet 接口不在 JDK 当中. (因为 Servlet 不是 Java SE 了. Servlet 属于 Java EE, 是另外的一套类库.）
-         - Servlet 接口(`Servlet.class`文件)是 Oracle 提供的. (最原始的是 SUN 公司提供的.)
+         - Servlet 接口(`Servlet.class` 文件)是 Oracle 提供的. (最原始的是 SUN 公司提供的.)
          - Servlet 接口是 Java EE 的规范中的一员。
          - Tomcat 服务器实现了 Servlet 规范, 所以 Tomcat 服务器也需要使用 Servlet 接口. Tomcat 服务器中应该有这个接口, Tomcat 服务器的 `CATALINA_HOME\lib` 目录下有一个 `servlet-api.jar`, 解压这个 `servlet-api.jar` 之后, 你会看到里面有一个 `Servlet.class` 文件. 
-         - 
+         - 从 `Jakarta EE 9` 开始, Servlet 的接口全名变为: `Jakarta.servlet.Servlet`
+         - Java 源文件可以放在任意位置, 只需要将 Java 源文件编译之后的 class 文件放在 classes 目录下即可 
+
+## 关于 JavaEE 的版本
+
++   JavaEE 目前最高版本是 JavaEE8
++   Oracle 将 JavaEE 规范捐献给 Apache 软件基金会
++   Apache 将 JavaEE 换名为 Jakarta EE
++   Java EE 8 版本升级之后叫做 Jakarta EE 9
++   Java EE 8 及之前版本对应的 Servlet 类名是 `javax.servlet.Servlet`
++   Jakarta EE 9 及之后对应的 Servlet 类名是 `jakarta.servlet.Servlet` 
++   如果之前的项目使用 `javax.servlet.Servlet`, 那么项目无法直接部署到 `Tomcat 10+` 版本上. 在 Tomcat 9 以及 Tomcat 9 之前的版本中还能够识别 `javax.servlet` 这个包
