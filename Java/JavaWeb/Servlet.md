@@ -325,3 +325,220 @@ Java EE 包括 13 种规范, Servlet 就是 Java EE 规范之一.
 +   Java EE 8 及之前版本对应的 Servlet 类名是 `javax.servlet.Servlet`
 +   Jakarta EE 9 及之后对应的 Servlet 类名是 `jakarta.servlet.Servlet` 
 +   如果之前的项目使用 `javax.servlet.Servlet`, 那么项目无法直接部署到 `Tomcat 10+` 版本上. 在 Tomcat 9 以及 Tomcat 9 之前的版本中还能够识别 `javax.servlet` 这个包
+
+## 解决 Tomcat 服务器在 DOS 命令窗口中的乱码问题
+
+将 `CATALINA_HOME/conf/logging.properties `文件中的内容修改如下: 
+
+`java.util.logging.ConsoleHandler.encoding = GBK`
+
+## 向浏览器响应一段 HTML 代码
+
+```java
+public void service(ServletRequest request, ServletResponse response){
+    response.setContentType("text/html");
+    PrintWriter out = response.getWriter();
+    out.print("<h1>hello servlet!</h1>");
+}
+```
+
+## 在 Servlet 中连接数据库
+
+- Servlet 是 Java 程序, 所以在 Servlet 中编写 JDBC 代码连接数据库
+- 在一个 webapp 中连接数据库, 需要将驱动 jar 包放到 `WEB-INF/lib` 目录下(`com.mysql.cj.jdbc.Driver` 这个类就在驱动jar包当中)
+
+# 在 IntelliJ IDEA 中开发 Servlet 程序
+
+1.   创建项目 New Project
+
+2.   新建模块 New Module
+
+     +   创建普通的 Java SE 模块
+
+3.   让 Module 变为 Java EE 的模块
+
+     +   右键 Module, Add Framework Support (添加框架支持)
+     +   在弹出的窗口中, 选择 Web Application
+     +   IDEA 会自动生成一个符合 Servlet 规范的 webapp 目录结构
+     +   在IDEA工具中根据 Web Application 模板生成的目录中有一个 web 目录, 这个目录就代表webapp的根
+
+4.   (非必须) 根据 Web Application 生成的资源中有 `index.jsp` 文件, 这里选择删除这个 `index.jsp` 文件
+
+5.   编写 Servlet (StudentServlet)
+
+     +   `class StudentServlet implements Servlet`
+     +   这里会提示没有 `Servlet.class` 文件
+         +   将 `CATALINA_HOME/lib/servlet-api.jar` 和 `jsp-api.jar` 添加到 IDEA 的 classpath
+         +   `File` -> `Project Structrue` -> `Modules` -> + 加号 -> `Add JARS....`
+         +   实现 `jakarta.servlet.Servlet` 接口中的 5 个方法
+
+6.   在 `Servlet` 当中的 `service` 方法中编写业务代码 这里连接了数据库
+
+7.   在 WEB-INF 目录下新建了一个子目录: lib (这个目录名可不能随意, 必须是全部小写的lib), 并且将连接数据库的驱动 jar 包放到 lib 目录下
+
+8.   在 `web.xml` 文件中完成 `StudentServlet` 类的注册
+
+     ````xml
+     <?xml version="1.0" encoding="UTF-8"?>
+     <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+              version="4.0">
+     
+         <servlet>
+             <servlet-name>studentServlet</servlet-name>
+             <servlet-class>com.feidian.javaweb.servlet.StudentServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+             <servlet-name>studentServlet</servlet-name>
+             <url-pattern>/servlet/student</url-pattern>
+         </servlet-mapping>
+         
+     </web-app>
+     ````
+
+9.   通过 URL 发送请求 Tomcat 执行后台的 `StudentServlet`
+
+     +   `student.html`
+
+     - 这个文件不能放到 WEB-INF 目录里面, 只能放到 WEB-INF 目录外面
+
+     - `student.html` 文件的内容
+
+     - ```html
+         <!DOCTYPE html>
+         <html lang="en">
+         <head>
+             <meta charset="UTF-8">
+             <title>student page</title>
+         </head>
+         <body>
+             <!--这里的项目名是 /xmm ，无法动态获取，先写死-->
+             <a href="/xmm/servlet/student">student list</a>
+         </body>
+         </html>
+         ```
+
+10.   IDEA 关联 Tomcat 服务器 关联的过程中将 webapp 布署到 Tomcat 服务器当中
+
+      +   Add Configuration
+      +   加号, Tomcat Server -> local
+      +   设置服务器 Server 的参数
+      +   Deployment 点击用来布署 webapp, 继续点击加号, 布署
+      +   修改 Application context 为 `/xmm`
+
+11.   启动 Tomcat 服务器
+
+      +   建议使用 debug 模式启动 Tomcat
+
+12.   在浏览器中输入 URL
+
+# Servlet 对象的生命周期
+
++   Servlet 对象的生命周期
+    +   Servlet 对象的创建
+    +   Servlet 对象的销毁
+    +   Servlet 对象的创建数量
+    +   Servlet 对象生命周期表示 一个 Servlet 对象从创建到销毁的全过程
+
++   Servlet 对象的维护
+    +   Servlet 对象的创建, 对象方法的调用, 对象最终的销毁, JavaWeb 程序员是无权干预的
+    +   Servlet 对象的生命周期是由 Tomcat 服务器(WEB Server) 全权负责
+    +   Tomcat 服务器又称为 WEB 容器
+
++   程序员自己创建的 Servlet 对象
+    +   程序员自己创建的 Servlet 对象是不受 WEB 容器管理的
+    +   WEB 容器创建的 Servlet 对象都会被发给到一个集合中(HashMap), 只有放到这个集合中的 Servlet 对象才能够被 WEB 容器管理, 自己创建的 Servlet 对象不会被 WEB 容器管理 (程序员自己创建的 Servlet 对象不在容器中)
+    +   web 容器底层应该有一个 HashMap 这样的集合, 在这个集合中存储了 Servlet 对象和请求路径之间的关系
+
++   服务器在启动的 Servlet 对象是否被创建
+
+    +   在 Servlet 中提供一个无参数的构造方法, 启动服务器的时候看构造方法是否执行
+    +   测试结果: 在默认情况下, 服务器在启动时 Servlet 对象不会被实例化
+    +   这个设计是合理的, 用户没有发送请求之前, 如果提前创建出来所有的 Servlet 对象, 会耗费内存, 而且创建出来的 Servlet 对象如果一直没有用户访问, 那么这个 Servlet 对象是没有必要创建的.
+
++   让服务器在启动时创建 Servlet 对象
+
+    +   在 servlet 标签中添加 `<load-on-startup>` 子标签, 在该子标签中填写整数, 越小的整数优先级越高
+
+    +   ```xml
+        <servlet>
+            <servlet-name>aservlet</servlet-name>
+            <servlet-class>com.feidian.javaweb.servlet.AServlet</servlet-class>
+            <load-on-startup>1</load-on-startup>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>aservlet</servlet-name>
+            <url-pattern>/a</url-pattern>
+        </servlet-mapping>
+        ```
+
++   Servlet 对象生命周期
+
+    +   默认情况下服务器启动的时候 AServlet 对象并没有被实例化
+
+    +   用户发送洗一次请求的时候, 控制台输出了一下内容:
+
+        ```pliantext
+        AServlet无参数构造方法执行了
+        AServlet's init method execute!
+        AServlet's service method execute!
+        ```
+
+    +   根据以上输出内容得出结论:
+
+        +   用户在发闪送第一次请求的时候 Servlet 对象被实例化 (AServlet 的构造方法被执行了. 并且执行的是无参数构造方法.)
+        +   AServlet 对象被创建出来之后, Tomcat 服务器马上调用了 AServlet 对象的 `init` 方法 (`init` 方法在执行的时候, AServlet 对象已经存在)
+        +   用户发送第一次请求的时候, `init` 方法执行之后, Tomcat 服务器马上调用 AServlet 对象的 `service` 方法. 
+
+    +   用户继续发送第二次请求, 控制台输出了以下内容
+
+        ```plaintext
+        AServlet's service method execute!
+        ```
+
+    +   根据以上输出结果得知, 用户在发送第二次及以后的请求的时候, Servlet 对象并没有新建, 还是使用之前创建好的 Servlet 对象, 直接调用该 Servlet 对象的 `service` 方法. 这说明:
+
+        1.   Servlet 对象是单例的(单实例 但是要注意, Servlet 对象是单实例的, 但是 Servlet 类并不符合单例模式, 称之为假单例, 之所以单例是因为 Servlet 对象的创建不受 JavaWeb 程序员管理, 而是由 Tomcat 管理, Tomcat 只创建了一个, 所以单例. 真单例模式的构造方法是私有化的.)
+        2.   无参数构造方法, `init` 方法只在第一次用户发送请求的时候执行,  也就是说无参数构造方法只执行一次, `init` 方法也制备 Tomcat 服务器调用一次.
+        3.   只要用户发送一次请求, `service` 方法必然会被 Tomcat 服务器调用一次.
+
+    +   关闭服务器的时候, 控制台输出了以下内容: 
+
+        ```plaintext
+        AServlet's destroy method execute!
+        ```
+
+    +   通过以上输出内容, 可以得出:
+
+        1.   Servlet 的 `destroy` 方法只被 Tomcat 服务器调用一次
+        2.   在服务器关闭, 会调用 `destroy` 方法
+             +   服务器关闭的时候要销毁 AServlet 对象的内存
+             +   服务器在销毁 AServlet 对象的内存之前, Tomcat 服务器会自动调用 AServlet 对象的 `destroy` 方法. 
+
+    +   `destroy` 方法执行时 AServlet 对象还没有被销毁. `destroy` 方法执行结束之后, AServlet 对象的内存才会被 Tomcat 释放. 
+
+    +   Servlet 类中方法的调用次数
+
+        - 构造方法只执行 1 次
+        - `init` 方法只执行 1 次
+        - `service` 方法：用户发送 1 次请求则执行 1 次
+        - `destroy` 方法只执行 1 次
+
+    +   Servlet 类中编写一个有参数的构造方法, 但没有手动编写无参数构造方法
+
+        - 报错了: 500错误
+        - 500 一般情况下是因为服务器端的 Java 程序出现了异常
+            服务器端的错误都是500错误：服务器内部错误。
+        - 如果没有无参数的构造方法, 会导致出现 500 错误, 无法实例化 Servlet 对象
+        - 所以, 在 Servlet 开发当中, 不建议程序员定义构造方法, 因为定义不当, 会导致无法实例化 Servlet 对象
+
+    +   能否使用无参数构造方法代替 `init` 方法
+
+        +   不能,  Servlet 规范中有要求, 作为 Javaweb 程序员, 编写 Servlet 类的时候, 不建议手动编写构造方法, 因为编写构造方法, 很容易让无参数构造方法消失, 这个操作可能会导致 Servlet 对象无法实例化. 所以 `init` 方法是有存在的必要的. 
+
+    +   关于 `init`, `service`, `destroy` 方法
+
+        +   使用最多的是 `service` 方法, `service` 方法是处理用户请求的核心方法.
+        +   `init` 方法很少用, 通常在 `init` 方法当中做初始化操作, 并且这个初始化操作只需要执行一次. 例如, 初始化数据库连接池, 初始化线程池等
+        +   
