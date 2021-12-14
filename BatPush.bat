@@ -3,7 +3,7 @@ echo "GIT PUSH BAT"
 
 echo "Moving to working directory" 
 D:
-cd D:\program\MarkdownNotes
+cd D:\Projects\MarkdownNotes
 
 echo "Start submitting code to the local repository"
 git add *
