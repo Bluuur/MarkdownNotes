@@ -152,7 +152,6 @@ $\begin{vmatrix}
 
 ****
 ### 克拉默法则
-
 $$
 \begin{aligned}
 &\text { 求解 }\left\{\begin{array}{l}
