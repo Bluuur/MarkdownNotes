@@ -193,3 +193,11 @@
    4. 双链CDNA的克隆
       + 用来克隆CDNA的载体主要为质粒和入噬菌体载体
    5. 对构建的cDNA文库进行鉴定
+
+---
+
+All Rights Reserve (C) 2021 Zidong Zh.
+
+![CC](Chap37基因工程及蛋白质工程.assets/CC.png)
+
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
