@@ -346,10 +346,11 @@ You find yourself in a dimly lit cavern.
   			price *= 2
   		}
           
-  		fmt.Printf("%-16v %4v %-10v $%4v\n", agents[agent], days, tripTypes[tripType], price)
+  		fmt.Printf("%-16v %4v %-10v $%4v\n", agents[agent], days, tripT
+                     ypes[tripType], price)
   	}
   }
   
   ```
-
   
+
