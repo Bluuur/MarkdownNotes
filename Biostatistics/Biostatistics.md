@@ -1,4 +1,4 @@
-# Biostatics
+# Biostatistics
 
 ## Hypothesis Test
 
@@ -51,7 +51,7 @@ If accept $H_0$, go on step 2
 
 2. t Test
    $$
-   t=\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{\sqrt{\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}}\sqrt{\frac{1}{n_1}+\frac{1}{n_1}}}\sim t(n_1+n_2-2)
+   t=\frac{(\bar{X}-\bar{Y})-(\mu_1-\mu_2)}{\sqrt{\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}}\sqrt{\frac{1}{n_1}+\frac{1}{n_1}}}\sim t(n_1+n_2-2)
    $$
    
 
@@ -69,11 +69,11 @@ $$
 \chi^2=\sum\frac{(O-E)^2}{E}
 $$
 
-> $O$ for Observation
+> $O$: Observed Value
 >
-> $E$ for Expectation
+> $E$: Expected Value
 >
-> $df$ for dimention of freedom
+> $df$: degree of freedom
 
 ### $df =1$
 
@@ -119,7 +119,7 @@ SSE &= SST-SSt
 \end{aligned}
 $$
 
-> $T$ for Grand Total
+> $T$: Grand Total
 
 ANOVA
 $$
@@ -127,8 +127,9 @@ $$
 \hline
 &SOV &SS &df &MS &F &F_{0.05} &F_{0.01}\\
 \hline
-&Treatment &SSt &k-1 &MSt  &\frac{MSt}{MSE} &check\ \ \ \ in&table\\
+&Treatment &SSt &k-1 &MSt  &\frac{MSt}{MSE} &\text{check\ \ \ \ in}&\text{table}\\
 &Error &SSR &k(n-1)&MSE\\
+\hline
 &Total &SST &kn-1\\
 \hline
 \end{array}
@@ -196,9 +197,10 @@ $$
 \hline
 &SOV &SS &df &MS &F &F_{0.05} &F_{0.01}\\
 \hline
-&Trt\ A &SSA &a-1 &MSA  &\frac{MSA}{MSE} &check\ \ \ \ in&table\\
+&Trt\ A &SSA &a-1 &MSA  &\frac{MSA}{MSE} &\text{check\ \ \ \ in}&\text{table}\\
 &Trt\ B &SSB &b-1 &MSB  &\frac{MSA}{MSE} \\
 &Error &SSE &(a-1)(n-1) &MSE\\
+\hline
 &Total &SST &ab-1\\
 \hline
 \end{array}
@@ -206,7 +208,7 @@ $$
 
 ## Linear Regression
 
-Statics Values
+Statistics Values
 $$
 \begin{aligned}
 SS_x&=\sum x^2-\frac{(\sum x)^2}{n}\\
@@ -249,14 +251,14 @@ $$
 
 #### $\mu_{y/x}$
 
-for given $x$
+for given $x$:
 $$
 s_{\hat y}=s_{y/x}\sqrt{\frac{1}{n}+\frac{(x-\bar x)^2}{SS_x}}\qquad t=\frac{\hat y-\mu_{y/x}}{s_{\hat y}}
 $$
 
 #### $y$
 
-for given $x$
+for given $x$:
 $$
 s_{ y}=s_{y/x}\sqrt{1+\frac{1}{n}+\frac{(x-\bar x)^2}{SS_x}}\qquad t=\frac{\hat y-y}{s_{ y}}
 $$
