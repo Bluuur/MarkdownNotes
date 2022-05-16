@@ -2,6 +2,8 @@
 
 ## 数据类型
 
+Go 是静态类型语言, 一旦某个变量被声明, 那么其类型不能再被改变
+
 ### 浮点型变量
 
 #### 声明
@@ -297,7 +299,7 @@ var str = "String"
 var str string = "String"
 ```
 
-#### string
+#### `string`
 
 + 可一个给某个变量赋予不同的 `string` 值
 + 但是 `string` 本身是不可变的
@@ -321,7 +323,72 @@ s
 .\main.go:10:2: cannot assign to str[0] (value of type byte)
 ```
 
+##### `len`
 
++ 返回字符串所占 `byte` 数
+  + 如果字符都用 `utf-8` 编码, 则返回字符串长度
++ 使用 `utf-8` 包, 可以按 `rune` 计算字符串长度
+
+`RuneCountInString`
+
++ 返回字符串长度(以 `rune` 计)
+
+##### `DecodeRuneInString`
+
++ 返回第一个字符以及字符所占字节数
+  + `Go` 中的函数可以返回多个值
+
+##### `range` 关键字
+
++ 使用 `range` 关键字可以遍历各种集合
+
+  ```go
+  str := "Hello world"
+  
+  for i, c := range str {
+      fmt.Printf("%v %c\n", i, c)
+  }
+  ```
+
+  ```
+  0 H
+  1 e
+  2 l
+  3 l
+  4 o
+  5
+  6 w
+  7 o
+  8 r
+  9 l
+  10 d
+  ```
+
+  + 使用 `_` 缺省
+
+    ```go
+    str := "Hello world"
+    
+    for _, c := range str {
+    fmt.Printf("%c\n", c)
+    }
+    ```
+
+    ```
+    H
+    e
+    l
+    l
+    o
+     
+    w
+    o
+    r
+    l
+    d
+    ```
+
+    
 
 #### 字符串字面值
 
@@ -394,7 +461,75 @@ Type float64 for 0.1
 + Go 里面每个类型都有一个默认值, 它称作零值
 + 声明变量但不初始化, 其值为零值
 
+### 类型转换
 
+#### 不能混用类型
 
++ 使用 `+` 连接字符串
+  + `str := "Hello" + " world"`
 
++ 不能连接字符串和数值
+  + 报错 `str := "Hello" + 10 + " World"`
+    + Java 中可以这么写
 
++ 整形和浮点类型不能混用
+
++ 浮点类型转换为小数类型， 小数点后面的部分会被截断
+
++ 无符号和有符号整数类型之间需要转换
+
++ 大小不同的整数类型之间需要转换
+
+  + 转换时超出类型容纳范围也会发生「环绕」
+  + 可以通过 `math` 包下的 `max` `min` 常量判断是否超过范围
+
++ 数值转化为 `string`, 其值必须能转化为 `code point`
+
+  + 不会报错, 但是会输出乱码
+
++ `strconv` 包下的 `Itoa` (Integer to ASCII)可以将数值转换为字符串
+
+  +  ```go
+     countdown := 123456
+     str := "now time " + strconv.Itoa(countdown) + " seconds"
+     fmt.Println(str)
+     ```
+
+    ```
+    now time 123456 seconds
+    ```
+
++ 也可以使用 `Sprintf`
+
+  + 这个函数返回一个 `string`, 不向控制台打印字符串
+
+  + ```go
+    countdown := 123456
+    str := fmt.Sprintf("now time %v seconds", countdown)
+    fmt.Println(str)
+    ```
+
++ `Atoi` (ASCII to integer)函数可以将字符串表示的数值转换为 `int` 数值
+
+  + 如果要转换的数值过大, 可能会发生错误
+
+  + 这个函数返回两个结果, 转换的数值和 `err`, 如果 `err == nil` 就是没有发生错误
+
+    + `nil` 就是 Java 中的 `null`
+
+    + ```go
+      num, err := strconv.Atoi("12341231234567456456")
+      if err != nil {
+          fmt.Println(err.Error())
+      }
+      fmt.Println(num)
+      ```
+
+      ```
+      strconv.Atoi: parsing "12341231234567456456": value out of range   # 错误信息
+      9223372036854775807   # 整数环绕
+      ```
+
++ `Print` 这一类函数会把 `bool` 类型的值打印为 `true` `flase` 的 `string`
+
++ Go 语言中 `bool` 类型只能是 `true` / `false` 不能把 1 / 0 作为 `true` / `false`
