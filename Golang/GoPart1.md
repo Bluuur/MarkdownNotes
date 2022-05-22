@@ -1,6 +1,6 @@
 # Go 语言入门
 
-## Hello wrold
+## Hello world
 
 ```go
 package main
@@ -18,8 +18,6 @@ func main() {
 > + `Println` 函数, 打印后换行
 > + `Print` 函数, 打印后不换行
 > + 打印多个字符串, 认为是接受多个参数, 而不是做拼接字符串操作(不用 `+`, 用 `,` 隔开)
-
-
 
 ## `Printf` 格式化输出
 

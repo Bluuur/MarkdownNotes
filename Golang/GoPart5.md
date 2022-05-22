@@ -383,8 +383,6 @@ type report struct {
 	location    location
 }
 
-
-
 func main() {
 	bradbury := location{lat: -4.5895, long: 137.4417}
 	t := temperature{high: -1.0, low: -78.0}
@@ -395,9 +393,136 @@ func main() {
 	}
 	fmt.Printf("%+v\n", report)
 }
+
+func (t temperature) average() celsius {
+	return (t.high + t.low) / 2
+}
+
+// 方法转发
+func (r report) average() celsius {
+	return r.temperature.average()
+}
 ```
 
 ```
 {sol:15 temperature:{high:-1 low:-78} location:{lat:-4.5895 long:137.4417}}
 ```
 
+##  接口
+
++ 接口关注于类型可以做什么, 而不是存储了什么
++ 接口通过列举类型必须满足的一组方法来进行声明
++ 在 Go 语言中, 不需要显式声明接口
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+var t interface {
+	talk() string
+}
+
+type martain struct {
+}
+
+// 实现接口不是显式的
+func (m martain) talk() string {
+	return "nack nack"
+}
+
+type laser int
+
+func (l laser) talk() string {
+	return strings.Repeat("pew ", int(l))
+}
+
+func main() {
+	t = martain{}
+	fmt.Println(t.talk())
+
+	t = laser(3)
+	fmt.Println(t.talk())
+}
+
+```
+
++ 为了复用, 通常会把接口声明为了类型
++ 按约定, 接口通常以 `er` 结尾 
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+// 将接口声明为类型
+type talker interface {
+	talk() string
+}
+
+type martain struct {
+}
+
+// 实现接口不是显式的
+func (m martain) talk() string {
+	return "nack nack"
+}
+
+type laser int
+
+func (l laser) talk() string {
+	return strings.Repeat("pew ", int(l))
+}
+
+func shout(t talker) {
+	louder := strings.ToUpper(t.talk())
+	fmt.Println(louder)
+}
+
+func main() {
+	// 多态
+	shout(martain{})
+	shout(laser(2))
+}
+
+```
+
++ Go 的接口都是隐式实现的
+
++ Go 通过简单的, 通常只有单个方法的接口, 来鼓励组合而不是继承, 这些接口在各个组件之间形成了简明易懂的界限.
+
++ 例如 `fmt` 包声明的 `Stringer` 接口
+
+  + ```go
+    package main
+    
+    import "fmt"
+    
+    type location struct {
+    	lat, long float64
+    }
+    
+    // fmt 包中声明的 Stringer j
+    //type Stringer interface {
+    //	String() string
+    //}
+    
+    // location 结构体实现了 Stringer 接口, 可以以这里具体实现的格式, 被 Print 家族函数打印
+    func (l location) String() string {
+    	return fmt.Sprintf("%v, %v", l.lat, l.long)
+    }
+    
+    func main() {
+    	curiosity := location{-4.5895, 137.4417}
+    	fmt.Println(curiosity)
+    }
+    
+    ```
+
+    
