@@ -321,3 +321,70 @@ func main() {
 
 ## `nil`
 
++ `nil` 是指针, `slice`,`map` 的零值
++ Go 语言的 `nil`, 比其他语言中的 `null` 更为友好, 而且用的没那么频繁, 但是仍需谨慎使用
+
+`nil` 会导致 `panic`
+
++ 如果指针没有明确的指向, 那么程序将无法对其实施的解引用
++ 尝试解引用一个 `nil` 指针将导致程序崩溃
+
+### 避免 `nil` 引发 `panic`
+
++ 因为值为 `nil` 的接收者和值为 `nil` 的参数在行为上并没有区别, 所以 Go 语言即使在接收者为 nil 的情况下, 也会继续调用方法
+
+### `nil` 函数值
+
++ 当变量被声明为函数类型时, 它的默认值为 `nil`
+
+  + ```go
+    package main
+    
+    import "fmt"
+    
+    func main() {
+    	var fn func(a, b int) int
+    	fmt.Println(fn == nil)
+    }
+    ```
+
+    ```
+    true
+    ```
+
++ 检查函数值是否为 `nil`, 并在有需要的时候提供默认行为
+
+### `nil slice`
+
++ 如果 `slice` 在声明之后没有使用复合字面值或内置的 `make` 函数进行初始化, 那么它的值就是 `nil`
+
++ `range`, `len`, `append `等内置函数都可以正常处理值为 `nil` 的 `slice`
+
+  + ```go
+    package main
+    
+    import "fmt"
+    
+    func main() {
+    	var soup []string
+    	fmt.Println(soup == nil)
+    
+    	for _, ingredient := range soup {
+    		fmt.Println(ingredient)
+    	}
+    
+    	fmt.Println(len(soup))
+    
+    	soup = append(soup, "onion", "carrot", "celery")
+    	fmt.Println(soup)
+    }
+    ```
+
+    ```
+    true
+    0
+    [onion carrot celery]
+    
+    ```
+
++ 虽然空 `slice` 和值为 `nil` 的 `slice` 并不相等, 但它们通常可以替换使用
