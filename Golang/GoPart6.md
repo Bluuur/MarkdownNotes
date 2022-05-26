@@ -384,7 +384,160 @@ func main() {
     true
     0
     [onion carrot celery]
+    ```
+  
++ 虽然空 `slice` 和值为 `nil` 的 `slice` 并不相等, 但它们通常可以替换使用
+
+### `nil map`
+
++ 和 `slice` 一样, 如果 `map` 在声明后没有使用复合字面值或内置的 `make` 函数进行初始化, 那么它的值将会是默认的 `nil`
+
+### `nil interface`
+
++ 声明为接口类型的变量在未被赋值时, 它的零值是 `nil`
+
++ 对于一个未被赋值的接口变量来说, 它的接口类型和值都是 `nil`, 并且变量本身也等于 `nil`
+
++ 当接口类型的变量被赋值后, 接口就会在内部指向该变量的类型和值
+
+  + ```go
+    package main
     
+    import "fmt"
+    
+    func main() {
+    	var v interface{}
+    	fmt.Printf("Type: %T, Value: %v, Is Nil: %v\n", v, v, v == nil)
+    
+    	var p *int
+    	v = p
+    	fmt.Printf("Type: %T, Value: %v, Is Nil: %v\n", v, v, v == nil)
+    }
     ```
 
-+ 虽然空 `slice` 和值为 `nil` 的 `slice` 并不相等, 但它们通常可以替换使用
+    ```
+    Type: <nil>, Value: <nil>, Is Nil: true
+    Type: *int, Value: <nil>, Is Nil: false 
+    ```
+
++ 在 Go 中, 接口类型的变量只有在类型和值都为 `nil` 时才等于 `nil`
+
++ 检验接口变量的内部表示
+
+  + ```go
+    fmt.Printf("%#v\n", v)
+    ```
+
+    ```
+    (*int)(nil)
+    ```
+
+## 错误处理
+
++ Go 语言允许函数和方法同时返回多个值
++ 函数在返回错误时, 最后一个返回值应该用来表示错误
++ 调用函数后, 应立即检查是否发生错误
+  + 如果没有发生错误, 那么返回的错误值为 `nil`
+
++ Errors are values.
++ Don't just check errors, handle them gracefully.
++ Don't panic.
++ Make the zero value useful.
++ The bigger the interface, the weaker the abstraction.
++ `interface{}` says nothing.
++ Gofmt's style is no one's favorite, yet gofmt is everyone's favorite.
++ Documentation is for users.
++ A little copying is better than a little dependency.
++ Clear is better than clever.
++ Concurrency is not parallelism.
++ Don't communicate by sharing memory, share memory by communicating.
++ Channels orchestrate; mutexes serialize.
+
+### 文件写入
+
++ 写入文件的时候可能出错
+  + 路径不正确
+  + 权限不够
+  + 磁盘空间不足
+  + ...
++ 文件写入完毕后, 必须先被关闭, 确保文件被刷到磁盘上, 避免资源的泄露.
+
+### `defer` 关键字
+
++ 使用 `defer` 关键字, Go 可以确保所有 `deferred` 的动作可以在函数返回前执行
+  + 无论在哪个语句 `return`, 都会保证 `defer` 修饰的语句执行
++ 可以 `defer` 任意的函数和方法
++ `defer` 并不是专门做错误处理的
++ `defer` 可以消除必须时刻执行资源释放的负担
+
+### `New error`
+
++ `errors` 包里有一个构造用 `New` 函数,它接收 `string` 作为参数用来表示错误信息. 该函数返回 `error` 类型.
+
+  + ```go
+    err := errors.New("Out of bounds")
+    ```
+
++ 错误信息应具有信息性
+
++ 可以把错误信息当作用户界面的一部分, 无论对最终用户还是开发者
+
+### 按需返回错误
+
++ 按照惯例, 包含错误信息的变量名应以 `Err` 开头
+
+### 自定义错误类型
+
++ `error` 类型是一个内置的接口, 任何类型只要实现了返回 `string` 的 `Error()` 方法就满足了该接口
++ 可以创建新的错误类型
+  + `Part6_18`
++ 按照惯例, 自定义错误类型的名字应以 `Error` 结尾
+  + 有时候名字就是 `Error`, 例如 `url.Error`
+
+### 类型断言
+
++ 可以使用类型断言来访问每一种错误
++ 使用类型断言, 可以把接口类型转化成底层的具体类型
+  + `Part6_19`
++ 如果类型满足多个接口, 那么类型断言可使它从一个接口类型转化为另一个接口类型
+
+### Don't panic.
+
++ Go 语言中没有异常(`Exception`), 有类似机制 `panic`
++ 当 `panic` 发生时, 程序会崩溃
++ 其他语言的异常在行为和实现上与 Go 语言的错误值有很大的不同
+  + 其他语言如果抛出(`throw`) 异常, 而且附近没有 `try ... catch ...` 那么它就会「冒泡」到函数的调用者那里, 如果还没有 `try ... catch ...` , 那么就会继续「冒泡」到更上层的调用者, 直到栈底(如 `main` 方法)
+    + `Exception` 这种错误处理方式可被看作是可选的
+      + 不处理异常, 就不需要加入其他代码
+      + 要处理异常, 就要加入相当数量的专用代码 
+  + Go语言中的错误值更简单灵活
+    + 忽略错误时有意识的决定, 从代码上看也是显而易见的
++ 如何使用 `error`
+  + 可能发生的错误只有一个时, 不使用 `error`, 返回 `bool` 类型
+  + 不会出错的函数不使用 `error`
+  + 多次尝试可以避免错误的时候, 不要立即返回错误
+    + 例如访问网页, 刷新后可以进入
+
+### `recover`
+
++ 为了防止 `panic` 导致程序崩溃, Go 提供了 `recover` 函数
++ `defer` 的动作会在函数返回前执行, 即使发生了 `panic`
++ 但如果 `defer` 的函数调用了 `recover`, `panic` 就会停止, 程序将继续运行
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+
+	defer func() {
+		if e := recover(); e != nil {
+			fmt.Println(e)
+		}
+	}()
+
+	panic("Don't panic!")
+}
+```
+
