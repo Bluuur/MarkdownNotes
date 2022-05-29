@@ -73,34 +73,170 @@ func main() {
   })
   ```
 
-+ 响应 HTML
+## Gin HTML 模板渲染
 
-  ```go
-  // 调用 HTML 需要 LoadHTMLGlob
-  // 配置静态资源的路径
-  r.LoadHTMLGlob("templates/*")
-  
-  // html 模板
-  r.GET("index", func(c *gin.Context) {
-      c.HTML(http.StatusOK, "index.html", gin.H{
-          "title": "data from backend",
-      })
-  })
-  ```
++ 类似 Java 中的模板引擎 Thymeleaf
 
-  + 访问后端数据
+```go
+// 调用 HTML 需要 LoadHTMLGlob
+// 配置静态资源的路径, f
+r.LoadHTMLGlob("templates/*")
 
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
+// html 模板
+r.GET("index", func(c *gin.Context) {
+    c.HTML(http.StatusOK, "index.html", gin.H{
+        "title": "data from backend",
+    })
+})
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h2>{{.title}}</h2>
+</body>
+</html>
+```
+
+![image-20220529181427301](Go Gin.assets/image-20220529181427301.png)
+
++ 拿到结构体参数
+
+```go
+r.GET("/news", func(c *gin.Context) {
+    // & 传入指针, 节省资源
+    news := &Article{
+        Title:   "News title",
+        Content: "News content",
+    }
+    c.HTML(http.StatusOK, "news.html", gin.H{
+        "title": "News page",
+        "news":  news,
+    })
+})
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Index</title>
+        <title>Title</title>
     </head>
     <body>
         <h2>{{.title}}</h2>
-    </body>
-    </html>
-    ```
 
-    ![image-20220529181427301](Go Gin.assets/image-20220529181427301.png)
+        <p>{{.news.Title}}</p>
+        <p>{{.news.Content}}</p>
+    </body>
+</html>
+```
+
+### `templates` 下有多个目录
+
++ ![image-20220529201746678](Go Gin.assets/image-20220529201746678.png)
+
+1. 改 `r.LoadHTMLGlob`
+
+   ```go
+   r.LoadHTMLGlob("templates/**/*")
+   ```
+
+2. html 文件加上 `define/end`
+
+   ````
+   {{ define "default/news.html" }} // 这里填具体路径
+   	html
+   {{ end }}
+   ````
+
+3. 路由写对应的路径
+
+   ```go
+   r.GET("/admin", func(c *gin.Context) {
+       c.HTML(http.StatusOK, "admin/index.html", gin.H{
+           "title": "back end front page",
+       })
+   })
+   ```
+
+### 变量
+
++ 可以在模板中声明变量, 用来保存传入模板的数据或其他语句生成的结果
+
+```html
+<h4>{{$obj := .title}}<h4>
+
+<h4>{{$obj}}<h4>
+```
+
+### 比较函数
+
++ 布尔函数会将任何类型的零值视为假, 其余是为真
+
+```
+eq	//	==
+ne	//	!=
+lt	//	<
+le	//	<=
+gt	//	>
+ge	//	>=
+```
+
+### 条件判断
+
+```
+{{if pipeline}} T1 {{end}}
+
+{{if pipeline}} T1 {{else}} T0 {{end}}
+
+{{if pipeline}} T! {{else if pipeline}} T0 {{end}}
+
+
+{{if ge .score 60}}
+pass
+{{else}}
+fail
+{{end}}
+```
+
+### `range`
+
++ Go 的模板语法中使用 `range` 关键字进行遍历, 有两种写法, 其中 `pipeline` 的值必须是数组, 切片, 字典或者通道.
+
+```
+{{range $key, $value := .hobby}}
+	<li>{{$key}} -> {{$value}}</li>
+{{end}}
+```
+
++ `$obj` 长度为 0 时不会有任何输出
+
+```
+{{range $key, $value := .hobby}}
+	<li>{{$key}} -> {{$value}}</li>
+{{else}}
+	$obj 值长度为 0
+{{end}}
+```
+
+### `with`
+
++ 使用 `with` 简化结构体数据的输出
+  + 类似 R 语言中的 `with`
+
+```
+{{with .user}}
+	<h4>姓名: {{.Name}}</h4>
+	<h4>年龄: {{.Age}}</h4>
+	<h4>性别: {{.Gender}}</h4>
+{{end}}
+```
+
+
+
