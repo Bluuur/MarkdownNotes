@@ -6,7 +6,7 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 
 ![Nokia_Bell_Labs_logo](slides.assets/Nokia_Bell_Labs_logo.svg)
 
-> 张子栋 梁国相 邱一埕 孙启政
+> 第 12 组  张子栋 梁国相 邱一埕 孙启政
 
 ---
 
