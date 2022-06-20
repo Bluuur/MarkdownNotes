@@ -31,7 +31,7 @@
 
 ### 染色体在有丝分裂中的行为
 
-![Animal_cell_cycle-en](Genitics02.assets/Animal_cell_cycle-en.svg)
+![Animal_cell_cycle-en](Genetics02.assets/Animal_cell_cycle-en.svg)
 
 ### 有丝分裂的遗传学意义
 
@@ -41,7 +41,7 @@
 
 ## 减数分裂 Meiosis
 
-![Meiosis_Stages](Genitics02.assets/Meiosis_Stages.svg)
+![Meiosis_Stages](Genetics02.assets/Meiosis_Stages.svg)
 
 ### 联会复合体
 

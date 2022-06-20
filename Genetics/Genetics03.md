@@ -58,7 +58,7 @@ Mosaic Dominance, 双亲的性状在后代的同一个体不同部位表现出�
 
 ## 非等位基因的相互作用:star:
 
-![image-20220618140256816](Genitics03.assets/image-20220618140256816.png)
+![image-20220618140256816](Genetics03.assets/image-20220618140256816.png)
 
 ### 基因互作
 
@@ -88,7 +88,7 @@ Complementary Gene, 若干非等位基因只有在同时存在时才表现某一
 
 A 抑制 B
 
-<img src="Genitics03.assets/image-20220618140059671.png" alt="image-20220618140059671" style="zoom:80%;" />
+<img src="Genetics03.assets/image-20220618140059671.png" alt="image-20220618140059671" style="zoom:80%;" />
 
 #### 抑制基因
 
@@ -105,7 +105,7 @@ Inhibitor
 上位作用与显性相似, 因为这两者都是一个基因掩盖了另一个基因的表达, 区别是显性是一对基因中的一个掩盖了另一个的作用, 而上位效应是非等位基因间的掩盖作用. 起遮盖作用的基因称上位基因, 被遮盖的基因称下位基因. 一对基因中, 只要有一个显性基因, 就能掩盖其他对基因的作用, 这种上位作用称显性上位作用(只有在上位基因不存在时, 被掩盖的基因(下位基因)才得以表现).
 
 A 对 B 上位:
-<img src="Genitics03.assets/image-20220618135557118.png" alt="image-20220618135557118" style="zoom:80%;" />
+<img src="Genetics03.assets/image-20220618135557118.png" alt="image-20220618135557118" style="zoom:80%;" />
 
 > 狗的毛色遗传(12 : 3 : 1)
 
@@ -114,7 +114,7 @@ A 对 B 上位:
 在两对互作的基因中, 其中一对隐性基因对另一对基因起上位作用
 
 a 对 b 上位:
-<img src="Genitics03.assets/image-20220618135813989.png" alt="image-20220618135813989" style="zoom:80%;" />
+<img src="Genetics03.assets/image-20220618135813989.png" alt="image-20220618135813989" style="zoom:80%;" />
 
 #### 共上位  Coepistasis
 
