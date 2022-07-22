@@ -532,4 +532,4 @@ Type float64 for 0.1
 
 + `Print` 这一类函数会把 `bool` 类型的值打印为 `true` `flase` 的 `string`
 
-+ Go 语言中 `bool` 类型只能是 `true` / `false` 不能把 1 / 0 作为 `true` / `false`
++ Go 语言中 `bool` 类型只能是 `true` / `false`, 不能把 1 / 0 作为 `true` / `false`
