@@ -22,7 +22,7 @@ int main() {
             scanf("%lf", &matrix1[i][j]);
         }
     }
-    printf("------------------------------");
+    printf("------------------------------\n");
     for (int i = 0; i < dimension; ++i) {
         for (int j = 0; j < dimension; ++j) {
             printf("Enter the number of matrix2 at row %d, column %d:", i + 1, j + 1);

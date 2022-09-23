@@ -7,9 +7,9 @@
 #include <stdlib.h>
 
 int main() {
-    for (int dimension = 1; dimension <= 1000; dimension += 20) {
 
-        long tic = clock();
+    for (int dimension = 10; dimension <= 100; dimension += 10) {
+        int tic = clock();
 
         // Initialize array
         double matrix1[dimension][dimension];
@@ -33,10 +33,8 @@ int main() {
             }
         }
 
-        long tak = clock();
-
-        printf("n = %d, time cost: %d ms\n", dimension, tak - tic);
+        int tak = clock();
+        printf("n = %d, time cost: %d ms\n", dimension, (tak - tic));
     }
-
     return 0;
 }

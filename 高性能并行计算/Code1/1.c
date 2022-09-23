@@ -7,7 +7,7 @@
 
 double getMax(double array[]) {
     double max = array[0];
-    for (int i = 0; i < (sizeof(array) / sizeof(array[0])); ++i) {
+    for (int i = 0; i < ((int) sizeof(array) / sizeof(*array)); ++i) {
         if (array[i] >= max) {
             max = array[i];
         }
@@ -17,7 +17,7 @@ double getMax(double array[]) {
 
 double getMin(double array[]) {
     double min = array[0];
-    for (int i = 0; i < (sizeof(array) / sizeof(array[0])); ++i) {
+    for (int i = 0; i < ((int) sizeof(array) / sizeof(*array)); ++i) {
         if (array[i] <= min) {
             min = array[i];
         }
@@ -26,7 +26,7 @@ double getMin(double array[]) {
 }
 
 double getMean(double array[]) {
-    int len = sizeof(array) / sizeof(array[0]);
+    int len = (int) sizeof(array) / sizeof(*array);
     double sum = 0.0;
     double mean = 0.0;
     for (int i = 0; i < len; ++i) {
@@ -37,7 +37,7 @@ double getMean(double array[]) {
 }
 
 double getSD(double array[]) {
-    int len = sizeof(array);
+    int len = (int) sizeof(array) / sizeof(*array);
     double mean = getMean(array);
     double SS = 0.0;
     for (int i = 0; i < len; ++i) {
@@ -76,4 +76,3 @@ int main() {
     printf("Mean of data is: %lf\n", getMean(array));
     printf("SD of data is: %lf\n", getSD(array));
 }
-
