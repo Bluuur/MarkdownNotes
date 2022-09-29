@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #include <profileapi.h>
 
 int main() {
@@ -57,7 +56,7 @@ int main() {
         // Get time in us
         run_time = 1000000 * (time_over.QuadPart - time_start.QuadPart) / dqFreq;
 
-        printf("\ndata num:%d ,run_time:%fus\n", k, run_time);
+        printf("\ndata num:%d, run_time:%fus", k, run_time);
 
     }
 
