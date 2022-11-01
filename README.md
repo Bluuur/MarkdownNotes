@@ -19,10 +19,8 @@
 >   可以直接在 GitHub 显示图片
 >   但不支持 $\LaTeX$ 公式渲染
 >
->   ### 方法3
->
->   如果你熟悉 `git` 的使用
->   欢迎 `fork` 此仓库
+>   本仓库同步至 Gitee [MarkdownNotes: MarkdownNotes， mirro of https://github.com/Bluuur/MarkdownNotes (gitee.com)](https://gitee.com/bluur/MarkdownNotes)
+>Gitee 支持 LaTeX 公式的在线渲染
 
 
 
