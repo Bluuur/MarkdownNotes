@@ -243,3 +243,7 @@ L-arabinose metabolism
 ### CAP/cAMP 的正调控
 
 + 不存在葡萄糖时，高水平的 $CAP-cAMP$ 复合物会结合 $CAP$ 结合位点，即 $araI1$ 和 $araO1$ 之间的位点。$CAP-cAMP$ 的结合负责打开 $araI1$ 和 $araO2$ 之间的 DNA 环，增加 $AraC$ 蛋白对 $araI2$ 的结合亲和力，从而促进 RNA 聚合酶与 $araBAD$ 启动子结合，从而开启代谢 $L-arabinose$ 所需的 $araBAD$ 的表达阿拉伯糖。
+
+### $AraC$ 的自调控
+
++ $araC$ 的表达受到其自身蛋白产物 $AraC$ 的负调控。过两的 $AraC$ 与 $araC$ 基因的操纵子 $araO1$ 结合，这在物理上阻止了 RNA 聚合酶到达 $araC$ 启动子。因此，$AraC$ 蛋白在高浓度下会抑制其自身的表达。
