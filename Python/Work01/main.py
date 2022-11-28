@@ -12,7 +12,7 @@ sequence = "MNAPERQPQPDGGDAPGHEPGGSPQDELDFSILFDYEYLNPNEEEPNAHKVASPPSGPAYPDDVLDYG
 file_path = "D:\\test\\frq.txt"
 
 # make dir when dir dose not exists
-if not exists(file_path):
+if not exists("D:\\test"):
     mkdir("D:\\test")
 
 # init file obj
