@@ -426,3 +426,88 @@ $$
 <img src="Chap02DNA与染色体.assets/image-20221202131624149.png" alt="image-20221202131624149" style="zoom: 50%;" />
 
 <img src="Chap02DNA与染色体.assets/image-20221202131637056.png" alt="image-20221202131637056" style="zoom:50%;" />
+
+# 2.4 原核生物和真核生物 DNA 复制的特点
+
+## 2.4.1 原核生物 DNA 复制的特点
+
+<img src="Chap02DNA与染色体.assets/image-20221202132707948.png" alt="image-20221202132707948" style="zoom: 67%;" />
+
+需要多种酶和蛋白质参与（包括拓扑异构酶、解旋酶、单链DNA结合蛋白、引物合成酶、DNA聚合酶及连接酶等）。
+
+### DNA 双螺旋的解旋
+
+#### 解旋酶 Helicase
+
+DNA 复制时，解旋酶利用 ATP 的能量启动 DNA 解旋，使双链分开形成单链。
+
++ 在 $E.\ coll$ 中，解旋酶 DnaB 利用 ATP 水解的能量解开双螺旋，推动复制叉向前延伸。
++ 生物体内的解旋酶有多种，有些解旋酶还参与 DNA 修复，重组等非复制过程。
+
+#### 拓扑异构酶 Topoisomerase
+
+<img src="Chap02DNA与染色体.assets/image-20221202132942534.png" alt="image-20221202132942534" style="zoom:50%;" />
+
+可以使 DNA 的两种拓扑异构体互变的酶。
+
+DNA 拓扑异构酶催化同一 DNA 分子不同超螺旋状态之间转变。
+
+参与复制、转录、重组
+
+<img src="Chap02DNA与染色体.assets/image-20221202133013433.png" alt="image-20221202133013433" style="zoom: 67%;" />
+
++ 拓扑异构酶可使 DNA 发生：
+  + 连环化 (catenate)
+  + 脱连环化 (decatenate)
+  + 打结 (knot)
+  + 解结 (unknot)
+
+#### 单链结合蛋白 SSB
+
+<img src="Chap02DNA与染色体.assets/image-20221202133129776.png" alt="image-20221202133129776" style="zoom:67%;" />
+
+解旋酶沿着复制叉向前延伸产生了一段单链，细胞内大量的单链结合蛋白能和单链 DNA 结合，防止其重新配对形成双链。
+
++ SSB 的作用
+  + 使 DNA 单链保持一种伸展构象它们与磷酸骨架结合，离开暴露的碱基，那些碱基能作为 DNA 合成的模板。
+  + 使解开的单链不形成发卡结构。
+  + 保护 DNA 单链不受 DNase 水解。
+
+<img src="Chap02DNA与染色体.assets/image-20221202133242798.png" alt="image-20221202133242798" style="zoom:67%;" />
+
+### DNA 复制的引发
+
+#### 复制起始区
+
+<img src="Chap02DNA与染色体.assets/image-20221202133825706.png" alt="image-20221202133825706" style="zoom: 67%;" />
+
+![Origins_of_DNA_replication_Figure_2](Chap02DNA与染色体.assets/Origins_of_DNA_replication_Figure_2.jpg)
+
+oriC 在不同原核生物中有同源性，很多细菌的 oriC 区在结构上相似的，在序列上有相当的保守型，而且在分类上越接近的细菌其同源性越高。
+
+将 DNA 分子的复制起始点连接到任何一个 DNA 分子上，都能起始其复制
+起始蛋白与 DNA 特异序列结合、促进解旋和引发体组装
+
+#### 引发体(Primosome)由很多蛋白质因子参与形成
+
+引发体(Primosome)是 DNA 复制过程中的一种负责专一性引发的多酶复合物，位于复制叉的前端。
+
+<img src="Chap02DNA与染色体.assets/image-20221202142415781.png" alt="image-20221202142415781" style="zoom:67%;" />
+
+只有当引发前体把这 6 种蛋白质合在一起并于引发酶进一步组装后形成引发提，才能发挥其功效。
+
++ 引发酶(Primase 或引物酶)
+  + DNA 合成是需要一段大约 6-10 个核苷酸长的 RNA 作为引物，由引物酶合成的。
+  + RNA 聚合酶，仅用于合成 DNA 复制所需的一小段 RNA.
+  + 引物酶以单链 DNA 作为模板，利用核糖核苷酸直接从头合成 RNA 引物(6-10 nt)
+
+<img src="Chap02DNA与染色体.assets/image-20221202143120509.png" alt="image-20221202143120509" style="zoom:67%;" />
+
+---
+
+![image-20221202144809350](Chap02DNA与染色体.assets/image-20221202144809350.png)
+
+DNA 复制中引物的意义：减少致死突变。DNA 合成中最初几个核苷酸正确性远比其后的低。引物 RNA 随后被降解，从而减少了复制错误。
+
+#### DNA 复制的过程
+
