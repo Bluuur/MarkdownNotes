@@ -1,5 +1,5 @@
 # @time     2022/11/28 16:06
-# @author   Zidong Zh
+# @author   Zidong Zh 2020317210101
 # @fileName main.py
 # @IDE      PyCharm
 # @GitHub   https://github.com/Bluuur/MarkdownNotes/blob/main/Python/Work01/main.py
