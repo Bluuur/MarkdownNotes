@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  12 NOV 2022 23:59
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  9 DEC 2022 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,22 +514,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13] (./药物化学.aux) ) 
+[12] (./药物化学.aux) ) 
 Here is how much of TeX's memory you used:
- 8863 strings out of 476179
- 240433 string characters out of 5809102
+ 8854 strings out of 476179
+ 239870 string characters out of 5809102
  554140 words of memory out of 5000000
- 29482 multiletter control sequences out of 15000+600000
+ 29473 multiletter control sequences out of 15000+600000
  479038 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,11n,97p,1186b,377s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,11n,97p,1186b,307s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 药物化学.pdf (15 pages).
+Output written on 药物化学.pdf (14 pages).
