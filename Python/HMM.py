@@ -4,8 +4,6 @@
 # @IDE PyCharm
 from datetime import datetime
 
-from future.backports.datetime import time
-
 pi = [0.4, 0.4, 0.2]
 
 matrixB = [
