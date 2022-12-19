@@ -587,6 +587,14 @@ $E. coli$ DNA 复制到最后，子代 DNA 链套在一起，由 DNA 拓扑异�
 
 ---
 
+DNA 聚合酶 I（Pol I）：沿着 DNA 模板，顺着 RNA 成分的引物延长合成新的 DNA 链。
+
+<img src="Chap02DNA与染色体.assets/image-20221220011759261.png" alt="image-20221220011759261" style="zoom:50%;" />
+
+![image-20221220011820511](Chap02DNA与染色体.assets/image-20221220011820511.png)
+
+---
+
 $3'-5'$ 外切酶活性与 DNA 聚合酶的校正功能有关
 
 ![image-20221216182106104](Chap02DNA与染色体.assets/image-20221216182106104.png)
@@ -628,11 +636,15 @@ DNA 聚合酶 II (Pol II): 聚合短链，具 $3'\to5'$ 核酸外切酶活性，
 
 ## 2.4.2 真核生物 DNA 复制的特点
 
-真核生物是多点复制，原核生物是单点复制。真核生物在完成全部复制之前，各个起始点上 DNA 复制不能再开始；原核生物起始点上可连续开始新的 DNA 复制。
++ 真核生物的 DNA 复制有多个复制起始位点，而原核只有一个起始位点。 
++ 真核生物复制一旦启动，在完成本次复制前不能在再启动新的复制，而原核复制起始位点可以连续开始新的复制，特别是快速繁殖的细胞。
++ 真核生物和原核生物的复制调控不同。
++ 原核的 DNA 聚合酶 III 复制时形成二聚体复合物，而真核的聚合酶保持分离状态 。
++ 真核生物的聚合酶没有 $5'-3'$ 外切酶活性，需要一种叫 FEN1 的蛋白切除 $5'$ 端引物，原核的 DNA 聚合酶 I 具有 $5'-3'$ 外切酶活性
 
 ---
 
-复制起始位点：
+### 复制起始位点
 
 自主复制序列（Autonomous Replicating Sequence, ARS）这个序列是染色体正常起始复制所必需的。所有的 ARS 的 DNA 均有一段保守序列。
 
@@ -658,4 +670,124 @@ ARS 能结合起始点识别复合物（Origin Recognition Complex, ORC）
 + 已发现 15 种真核 DNA 聚合酶，在哺乳动物细胞中有 5 种
   + Pol $\alpha$
     + 作为引发酶（引物酶）合成 RNA 引物，然后作为 DNA 聚合酶延伸此段 RNA 引物；合成数百个碱基后，将后续的延伸过程交给 Pol $\delta$ 与 Pol $\varepsilon$
-  + 计算机科学与技术 你好啊 我叫赛利亚
+  + Pol $\beta$
+    + 在 DNA 修复中其作业
+  + Pol $\gamma$
+    + 复制线粒体 DNA
+  + Pol $\delta$
+    + Pol $\delta$ 与 Pol $\varepsilon$ 是真核细胞的主要 DNA 聚合酶
+  + Pol $\varepsilon$
+    + 填补引物空隙，切除修复，重组
+
+---
+
+真核生物 DNA 复制
+
+![image-20221220003115128](Chap02DNA与染色体.assets/image-20221220003115128.png)
+
+---
+
+### 末端复制难题 End Replication Problem
+
+在 DNA 复制过程中随着引物的一走， 后随链末端在顶部相当于引物长度的一小段不能完整复制下来，这势必会导致 DNA 分子越来越短。
+
+<img src="Chap02DNA与染色体.assets/image-20221220010306461.png" alt="image-20221220010306461" style="zoom:67%;" />
+
+#### 端粒 Telomere
+
+端粒是真核细胞染色体末端的特殊结构；由末端 DNA 和蛋白质组成复合体；端粒 DNA 由多次串联重复的短序列构成。 
+
+端粒功能：稳定染色体末端结构，防止染色体间末端连接，并补偿新生链 $5’$ 末端在消除引物后造成的空缺。
+
+<img src="Chap02DNA与染色体.assets/image-20221220010429090.png" alt="image-20221220010429090" style="zoom:50%;" />
+
+<img src="Chap02DNA与染色体.assets/image-20221220010440782.png" alt="image-20221220010440782" style="zoom:50%;" />
+
+#### 端粒酶 Telomerase
+
+在细胞中负责端粒的延长的一种酶，是基本的核蛋白逆转录酶，可将端粒 DNA 加至真核细胞染色体末端，把 DNA 复制损失的端粒填补起来，使端粒修复延长，可以让端粒不会因细胞分裂而有所损耗。 
+
+端粒酶将自身 RNA 模板合成的 DNA 重复序列加在后随链亲链的 $3’$ 端，然后再以延长了的亲链为模板，由 DNA 聚合酶合成子链。
+
+<img src="Chap02DNA与染色体.assets/image-20221220010553244.png" alt="image-20221220010553244" style="zoom:67%;" />
+
+#### 端粒的形成过程
+
+「爬行模型」
+
+![image-20221220010659157](Chap02DNA与染色体.assets/image-20221220010659157.png)
+
+![image-20221220010712015](Chap02DNA与染色体.assets/image-20221220010712015.png)
+
+## 2.4.3 DNA 复制的调控
+
+#### 大肠杆菌染色体 DNA 的复制调控
+
+<img src="Chap02DNA与染色体.assets/image-20221220010901420.png" alt="image-20221220010901420" style="zoom:50%;" />
+
+复制起始不依赖于细胞分裂，复制终止则能引发细胞分裂。
+
+复制调控主要发生在起始阶段。 
+
+dnaA-ADP 复合物
+
+非甲基化 GATC-SeqA 复合物
+
+> 对 dam- $E. Coli$ 的研究表明，半甲基化的 Ori C 不能发动一轮新的复制。
+>
+> 在复制过程中，Ori C 的半甲基化状态约保留 13 min。而在基因组其它区域的 GATC 位点，在复制后 1.5  min 内即被甲基化。
+
+#### ColE1 质粒 DNA 的复制调控
+
+<img src="Chap02DNA与染色体.assets/image-20221220011034546.png" alt="image-20221220011034546" style="zoom: 50%;" />
+
++ Rop 蛋白和反义 RNA 控制了起始 DNA 复制所必需的引物合成。
++ RNA1 通过氢键配对与引物 RNA 前体相互作用，阻止了 RNaseH 加工引物前体，使其不能转化为有活性的引物而对复制起负调控作用。
++ Rop 蛋白能提高 RNA1 与引物前体的相互作用，从而加强了 RNA1 的负调控作用。
+
+#### 真核细胞 DNA 的复制调控
+
+1. 细胞生活周期水平调控：DNA 复制只发生在 S 期，决定细胞停留在 G1 还是进入 S 期。
+2. 染色体水平调控：决定不同染色体或同一染色体不同部位的复制子按一定顺序在 S 期进行复制。
+3. 复制子水平调控：决定复制的起始与否，这种调控从单细胞生物到高等生物是高度保守的。
+
+<img src="Chap02DNA与染色体.assets/image-20221220011208197.png" alt="image-20221220011208197" style="zoom:67%;" />
+
+![image-20221220011235998](Chap02DNA与染色体.assets/image-20221220011235998.png)
+
+# 2.5 DNA 的突变和修复
+
++ 修复 DNA 突变的能力是生物能保持遗传稳定性的关键
++ 细胞中能进行修复的生物大分子只有 DNA
++ 在生物进化中，变异与遗传是普遍存在的既对立又统一的矛盾
+
+### DNA 的损伤
+
++ 各种因素所导致的 DNA 组成或结构的异常改变称为 DNA 损伤。
++ 如果这一损伤能导致生物的基因型发生稳定的、可遗传的变化，就称为突变（mutation）。
+
+### DNA 的突变 Mutation
+
++ 小规模突变 Small-scale mutations
+  + 替换 Substitution
+  + 缺失 Deletion
+  + 插入 Insertion
+  + 外显子跳读 Exon Skipping
++  染色体异常 The chromosome abnormality
+  + 染色体数量异常 Numerical abnormality
+    + 单倍体 Monosomy
+    + 三倍体 Trisomy
+  + 染色体结构异常 Structural abnormality
+    + 一条染色体上的两处断裂可导致染色体部分反转，缺失或产生环状结构。
+      Two breaks in a single chromosome can cause inversion, deletion or ring structure.
+
+#### The substitution mutation
+
+<img src="Chap02DNA与染色体.assets/image-20221220013025156.png" alt="image-20221220013025156" style="zoom:50%;" />
+
++ 转换：嘌呤和嘌呤之间的替换，或嘧啶和嘧啶之间的替换。
++ 颠换：嘌呤和嘧啶之间的替换。
+
+---
+
++ 沉默突变
