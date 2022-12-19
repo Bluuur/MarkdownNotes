@@ -781,7 +781,7 @@ dnaA-ADP 复合物
     + 一条染色体上的两处断裂可导致染色体部分反转，缺失或产生环状结构。
       Two breaks in a single chromosome can cause inversion, deletion or ring structure.
 
-#### The substitution mutation
+#### 碱基替换 The substitution mutation
 
 <img src="Chap02DNA与染色体.assets/image-20221220013025156.png" alt="image-20221220013025156" style="zoom:50%;" />
 
@@ -790,4 +790,188 @@ dnaA-ADP 复合物
 
 ---
 
-+ 沉默突变
++ 沉默突变（Slilent mutation）
+  + 也称同义突变（Same-sense mutation）DNA 的突变虽引起 mRNA 中密码子改变为另一种密码，但由于密码子的简并作用，并未使编码的氨基酸改变。
++ 无义突变（Nonsense mutation）
+  + DNA 的突变引起 mRNA 中的密码子改变为一种终止密码子。
++ 错义突变（missense mutation）
+  + 是指 DNA 的突变引起 mRNA 中密码子改变，编码另一种氨基酸。
+
+#### 单核苷酸多态性 SNP
+
+基因组重测序
+
+![image-20221220013919411](Chap02DNA与染色体.assets/image-20221220013919411.png)
+
+![image-20221220013942067](Chap02DNA与染色体.assets/image-20221220013942067.png)
+
+#### 碱基插入/删除 Insertion & Deletion Mutation
+
+<img src="Chap02DNA与染色体.assets/image-20221220014036448.png" alt="image-20221220014036448" style="zoom:67%;" />
+
+一个或多个碱基被插入到一条序列中。如果插入的剪辑数量不是 3 的整数倍，会导致移码突变，造成严重后果。
+One or more nucleotides are inserted into a sequence. If the number of inserted bases is not a multiple of 3, it will cause frameshift, resulting in serious consequences.
+
+<img src="Chap02DNA与染色体.assets/image-20221220014242705.png" alt="image-20221220014242705" style="zoom: 67%;" />
+
+碱基缺失指一条 DNA 序列中一个或多个碱基的缺失，可能会导致移码突变，产生非功能蛋白。
+The deletion mutation involves elimination of one or more nucleotides from a DNA sequence. It may cause frameshift, producing a non-functional protein.
+
+#### 外显子跳读 Exon Skipping
+
+<img src="Chap02DNA与染色体.assets/image-20221220014548909.png" alt="image-20221220014548909" style="zoom:50%;" />
+
+内含子的拼接需要一个重要的信号：`GT...AG`。如果剪接受体位点 `AG` 发生突变(如图中 A 到 C)，则剪接机器将寻找下一个受体位点。结果，两个内含子之间的外显子也被移除。
+Splicing of an intron requires an essential signal: "GT........AG". If the splice acceptor site AG is mutated (e.g., A to C in this figure), the splicing machinery will look for the next acceptor site. As a result, the exon between two introns is also removed.
+
+#### 染色体异常
+
+染色体数目变异
+
+<img src="Chap02DNA与染色体.assets/image-20221220015015478.png" alt="image-20221220015015478" style="zoom:67%;" />
+
+染色体结构变异
+
+![image-20221220015100691](Chap02DNA与染色体.assets/image-20221220015100691.png)
+
+## 2.5.1 DNA 损伤的来源
+
+### DNA 复制不准确性
+
+<img src="Chap02DNA与染色体.assets/image-20221220015343359.png" alt="image-20221220015343359" style="zoom:50%;" />
+
+DNA 复制是严格而精确的事件，但也可能发生错误。虽然有碱基互补配对和 pol 的校正作用，但错配率仍有 $10^{-10}$ 左右。
+
+### 外界环境或内部因素对 DNA 的损伤
+
++ 内源性因素：如代谢产生的自由基
++ 外源性因素：物理、化学、生物因素
+
+#### 1. 电离辐射
+
+受到紫外线照射时，DNA 链上相邻的嘧啶以共价键连接形成二聚体。
+
+![image-20221220015552538](Chap02DNA与染色体.assets/image-20221220015552538.png)
+
+#### 2. 化学因素
+
+##### 烷化剂
+
+硫酸二甲酯，甲烷磺酸甲酯等使碱基烷化，导致复制时碱基错配。
+
+<img src="Chap02DNA与染色体.assets/image-20221220015646987.png" alt="image-20221220015646987" style="zoom:67%;" />
+
+##### 亚硝酸盐
+
+<img src="Chap02DNA与染色体.assets/image-20221220020124074.png" alt="image-20221220020124074" style="zoom:67%;" />
+
+##### 碱基类似物
+
+<img src="Chap02DNA与染色体.assets/image-20221220020308546.png" alt="image-20221220020308546" style="zoom: 50%;" />
+
+如 $5-$溴尿嘧啶（5-BU）， $5-$氟尿嘧啶(5-FU)等，它们的结构与碱基相似，进入细胞能代替正常的碱基参入到 DNA 链中而干扰 DNA 的复制。 5-BU 与 T 结构相似，在酮式时，与 A 配对；它呈烯醇式结构，与 G 配对。在复制时导致 `A-T` 转换为 `G-C`
+
+---
+
+嵌入试剂可以导致一个甚至几个碱基对的插入或缺失
+
+![image-20221220020459146](Chap02DNA与染色体.assets/image-20221220020459146.png)
+
+---
+
+##### 碱基自发改变造成的损伤
+
++ 碱基的互构异变，会使碱基间发生错配，使 `A-C`，`G-T`。 
++ DNA 的水解或脱 $-NH_2$：碱基环外的 $-NH_2$ 有时会发生自行脱落，使 $C\to U$，$A\to I$（次黄嘌呤），$G\to X$ （黄嘌呤）；复制时 `U-A`，`I- C`，`I -X` 配对， 导致子代 DNA 序列错误。
+
+---
+
+最常见和最重要的水解损伤是胞嘧啶脱氨基转变为尿嘧啶
+
+<img src="Chap02DNA与染色体.assets/image-20221220020835856.png" alt="image-20221220020835856" style="zoom:50%;" />
+
+---
+
+DNA 也会自发水解 $C-N$ 糖苷键而发生脱嘌呤作用 （depurination），在 DNA 分子中产生无碱基位点。
+
+<img src="Chap02DNA与染色体.assets/image-20221220020914319.png" alt="image-20221220020914319" style="zoom:50%;" />
+
+---
+
++ DNA 复制错误和 DNA 损伤会导致两种结果
+  + 影响复制与转录
+  + 导致 DNA 序列发生变异，从而改变遗传物质
+
+## 2.5.2 DNA 复制错误及损伤修复
+
+细胞有一套用来检验错配并对之进行修复的机制
+
+> 存在于 $E.\ coli$ 中的 DNA 修复系统
+
+|       DNA 修复系统        |                  功能                  |
+| :-----------------------: | :------------------------------------: |
+|         错配修复          |                恢复错配                |
+| 切除修复<br>(碱基/核苷酸) |     切除突变的碱基<br>和核苷酸片段     |
+|         重组修复          | 复制后的修复，<br>重新启动停止的复制叉 |
+|       DNA 直接修复        |        修复嘧啶二体或甲基化 DNA        |
+|         SOS 系统          |          DNA 的修复，导致变异          |
+
+### 1. 错配修复 Mismatch repair
+
++ 保证 DNA 复制高保真的最后责任由错配修复系统承担
++ 错配修复系统识别新合成链中的错配并加以校正，DNA 子链中的错配几乎完全能被修正
+
+<img src="Chap02DNA与染色体.assets/image-20221220021626453.png" alt="image-20221220021626453" style="zoom: 67%;" />
+
++ 根据母链甲基化原则找出错配碱基
+  + 发现碱基错配
+  + 在水解 ATP 的作用下，MutS，MutL 与碱基错配位点的 DNA 双链相结合。
+  + MutS - MutL 在 DNA 双链上移动，发现甲基化 DNA 后由 MutH 切开非甲基化的子链。
+
+<img src="Chap02DNA与染色体.assets/image-20221220021816028.png" alt="image-20221220021816028" style="zoom:67%;" />
+
+识别母链的依据来自 Dam 甲基化酶，它能使位于 $5’$ `GATC` 序列中腺苷酸的 N6 位甲基化。一旦复制叉通过复制起始位点， 母链就会在开始 DNA 合成前的几秒种至几分钟内被甲基化。
+
+<img src="Chap02DNA与染色体.assets/image-20221220021934026.png" alt="image-20221220021934026" style="zoom:67%;" />
+
+---
+
+当错配碱基位于切口 $3’$ 下游端时，在 MutL - MutS，解链酶 II，DNA 外切酶 VII 或 RecJ 核酸酶的作下从错配碱基 $3’$ 下游端开始切除单链 DNA 直到错配位点，并在 Pol III 和 SSB 的作用下合成新的子链片段。
+
+![image-20221220021958676](Chap02DNA与染色体.assets/image-20221220021958676.png)
+
+---
+
+若错配碱基位于切口的 $5’$ 上游端，则在 DNA 外切酶 I 或 X 的作用下切除单链 DNA 直到错配位点，再合成新的子链片段。
+
+![image-20221220022105395](Chap02DNA与染色体.assets/image-20221220022105395.png)
+
+![image-20221220022154336](Chap02DNA与染色体.assets/image-20221220022154336.png)
+
+### 2. 切除修复
+
+#### 碱基切除修复 Base-excision repair
+
+所有细胞中都带有能识别受损核酸位点的不同的糖苷水解酶，能特异性切除受损核苷酸上的 $N-\beta$ 糖苷键，形成去嘌呤或去嘧啶位点，统称为 AP 位点。
+
+![image-20221220024245351](Chap02DNA与染色体.assets/image-20221220024245351.png)
+
+![image-20221220024250580](Chap02DNA与染色体.assets/image-20221220024250580.png)
+
+DNA 分子中一旦产生了 AP 位点，内切酶就会把受损核苷酸的糖苷-磷酸键切开，移去 AP 位点附近小片段 DNA，并由 DNA 聚合酶 I 和 DNA 连接酶共同完成修复。
+
+![image-20221220024431563](Chap02DNA与染色体.assets/image-20221220024431563.png)
+
+#### 核苷酸切除修复 nucleotide-excision repair
+
+当 DNA 链上相应位置的核苷酸发生损伤，导致双链之间无法形成氢键，则由核苷酸切除修复系统负责修复。
+
+![image-20221220024500559](Chap02DNA与染色体.assets/image-20221220024500559.png)
+
+损伤发生后，首先由 DNA 切割酶(excinuclease)在已损伤的核苷酸 $5’$ 和 $3’$ 位分别切开磷酸糖苷键，产生并移去 DNA 小片段，然后由 DNA 聚合酶合成新片段，并由DNA连接酶完成修复中的最后步骤。
+
+![image-20221220035001608](Chap02DNA与染色体.assets/image-20221220035001608.png)
+
+Nucleotide-excision repair in $E.\ coli$ and human
+
+$\LaTeX$
