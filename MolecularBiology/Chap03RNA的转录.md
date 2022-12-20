@@ -629,7 +629,7 @@ RNA 的类型和功能
   3. 类型 II 自我拼接（group II self-splicing）
   4. 核 tRNA 的酶促拼接（nuclear tRNA enzymatic splicing）
 
-### 1. I 型内含子的自我剪切
+### 1. I 型内含子的自我剪接
 
 嗜热四膜虫中 **35S 的前体 rRNA**，含有一个长 413 bp 的内含子。此 35S rRNA 要加入**一价或二价阳离子及 GTP** 就可以在**体外释放出 413 b 的线性的内含子**；若继续保温，那么**线形内含子又可形成环状的 RNA**。这就意味着 35SRNA 在 GTP 的作用下可以自我剪接。
 
@@ -685,3 +685,182 @@ RNA 的类型和功能
 
 <img src="Chap03RNA的转录.assets/image-20221220074537833.png" alt="image-20221220074537833" style="zoom:50%;" />
 
+#### mRNA 内含子
+
++ 结构特点
+  + 边界顺序：符合 GU-AG 法则
+  + 分枝点顺序：为 $Py_{80}NPy_{80}Py_{87}Pu_{75}APy_{95}$ 其中 **A 为百分之百的保守，且具有 $2'-OH$**，位于内含子 $3'$ 剪接位点上游 18-40 核苷酸处
+
+![image-20221220110013719](Chap03RNA的转录.assets/image-20221220110013719.png)
+
+#### 两次连续转酯反应 Transesterification
+
+1. 分支位点保守的 **A 的 $2'\ OH$ 攻击 $5'$ 剪切位点保守 G 的磷酰基**，5‘端外显子得到释放，内含子的 5’末端形成三叉交汇点（three-way junction structure）
+   ![image-20221220110420049](Chap03RNA的转录.assets/image-20221220110420049.png)
+2. $5'$ 端外显子攻击 $3'$ 剪切位点的磷酰基。结果 $5'$ 和 $3'$ 外显子连接在一起，内含子以套索（lariat）形式释放。
+   ![image-20221220110458290](Chap03RNA的转录.assets/image-20221220110458290.png)
+
+#### 剪切体
+
++ 剪接体 **spliceosome**：包含大约 150 个蛋白质和 5 个 RNA 分子。
++ 5 种 **snRNAs**（small nuclear RNAs）：U1，U2，U4，U5，U6，100-300 nt，富含 U，因此称为 U
++ 剪接体的许多功能由它的 RNA 成分行使
+
+<img src="Chap03RNA的转录.assets/image-20221220110603836.png" alt="image-20221220110603836" style="zoom: 50%;" />
+
++ snRNA 和许多蛋白质结合在一起成为小核核糖核蛋白（snRNP 即 small nuclear ribonucleoproteins），参与信使 RNA 前体（pre-mRNA）的剪接，使后者成为成熟 mRNA。
++ 剪接过程中 snRNPs 的 3 个功能
+  1. **识别 5’剪接位点和分支位点。**
+  2. **将剪接位点连接起来。**
+  3. **催化（或帮助催化）RNA 剪接。**
+
+RNA-RNA，RNA-protein 及 protein-protein 之间的相互作用在剪接过程中都是非常重要的。
+
+---
+
+不同的 snRNPs 之间，snRNPs 和 pre-mRNA 之间的 RNA-RNA 相互作用
+
+<img src="Chap03RNA的转录.assets/image-20221220120042450.png" alt="image-20221220120042450" style="zoom:67%;" />
+
+### 剪接过程
+
+#### 剪接体的装配
+
+##### 装配步骤 1
+
+1. U1 识别 $5' $剪接位点（碱基互补配对）。
+2. U2AF（U2 辅助因子，U2 auxiliary factor）的一个亚单位（65 kDa）结合到嘧啶富集区（Pytract），另一个亚单位（35 kDa）结合到 $3'$ 剪接位点。U2AF 的 65 kDa 亚单位与 BBP（分支点结合蛋白 branchpointbindingprotein 或称为剪接因子 1，splicing factor 1）相互作用，帮助 BBP 结合到分支点。
+3. 早期复合体（Early（E）complex）形成。
+
+<img src="Chap03RNA的转录.assets/image-20221220120552263.png" alt="image-20221220120552263" style="zoom:55%;" /><img src="Chap03RNA的转录.assets/image-20221220120559061.png" alt="image-20221220120559061" style="zoom:70.5%;" />
+
+##### 装配步骤 2
+
+1. 在 U2AF 的帮助下，U2 取代 BBP 结合到分枝点，A 复合体（Acomplex）形成。
+2. U2 和分支点之间的碱基配对（A 周围），使分支点 A 核苷酸残基突出。这个参与与 $5'$ 剪接位点的反应。
+
+<img src="Chap03RNA的转录.assets/image-20221220120804574.png" alt="image-20221220120804574" style="zoom:48.2%;" /><img src="Chap03RNA的转录.assets/image-20221220120810439.png" alt="image-20221220120810439" style="zoom:66.5%;" />
+
+##### 装配步骤 3
+
+1. U4，U5 和 U6 形成三联 snRNP 颗粒（tri-snRNP）。
+2. tri-snRNP 进入复合体，A 复合体转变为 B 复合体。
+
+![image-20221220122521972](Chap03RNA的转录.assets/image-20221220122521972.png)
+
+##### 装配步骤 4
+
+1. U1 离开复合体，由 U6 代替结合在 5' 剪接位点。
+2. U4 释放，使 U6 与 U2 相互作用，重排后的复合体称为 C 复合体。
+
+<img src="Chap03RNA的转录.assets/image-20221220122821429.png" alt="image-20221220122821429" style="zoom:50%;" /><img src="Chap03RNA的转录.assets/image-20221220122825479.png" alt="image-20221220122825479" style="zoom:54.2%;" /><img src="Chap03RNA的转录.assets/image-20221220122858377.png" alt="image-20221220122858377" style="zoom:150%;" />
+
+#### 剪切体的催化
+
+##### 催化步骤 1
+
+C 复合物的形成，U2 和 U6 RNA 的配对，产生催化活性位点，活性位点的形成并置（juxtaposes）5' 剪接位点和分之点，使分支的 A 残基攻击 5' 剪接位点，完成第一次转酯反应。
+
+<img src="Chap03RNA的转录.assets/image-20221220123114290.png" alt="image-20221220123114290" style="zoom:60.8%;" /><img src="Chap03RNA的转录.assets/image-20221220123120362.png" alt="image-20221220123120362" style="zoom:75%;" />
+
+##### 催化步骤 2
+
+U5 snRNP 帮助两个外显子靠近和第二次转酯反应（of the $5'$ 外显子的 $3'-OH$ 攻击 $3'$ 剪接位点。
+
+<img src="Chap03RNA的转录.assets/image-20221220123303066.png" alt="image-20221220123303066" style="zoom: 42%;" /><img src="Chap03RNA的转录.assets/image-20221220123308537.png" alt="image-20221220123308537" style="zoom:71.6%;" />
+
+最后的步骤是释放出 mRNA 产物及 snRNP。起初 snRNP 仍然与内含子形成的套索结合在一起，随着后者的快速降解，snRNP 又进入下一轮循环
+
+<img src="Chap03RNA的转录.assets/image-20221220123550896.png" alt="image-20221220123550896" style="zoom: 66.35%;" /><img src="Chap03RNA的转录.assets/image-20221220123556008.png" alt="image-20221220123556008" style="zoom: 76.5%;" />
+
+### mRNA 的选择性剪接（可变剪接 Alternative Splicing）
+
++ 可变剪接是指从一个 mRNA 前体中通过不同的剪接方式（选择不同的剪接位点组合）产生不同的 mRNA 剪接异构体的过程。
++ 可变剪接是调节基因表达和产生蛋白质组多样性的重要机制。
+
+![image-20221220124922496](Chap03RNA的转录.assets/image-20221220124922496.png)
+
+The human genome is estimated to contain ∼20,000–25,000 genes, and recent studies suggest that ∼50%–75% of multiexon genes undergo alternative splicing (AS), generating multiple mRNA isoforms and greatly increasing human proteomic diversity. 
+
+Up to **95% of human multi-exon genes** undergo alternative splicing to encode proteins with different functions. Moreover, around 15% of human hereditary diseases and cancers are associated with alternative splicing.
+
+#### 选择性剪切的意义
+
++ 可在同一细胞中产生多种蛋白质。
++ 在不同细胞中有不同的剪接方式，表现出组织特异性。
++ 在不同发育时期或不同条件下采取不同剪接方式，表达不同蛋白。
+
+### 反式剪接 Trans-splicing
+
++ 顺式剪接（Cis-splicing）：剪接过程发生在一个 RNA 分子的内部，即通过剪接将一个 RNA 分子的内含子去除，使外显子连接在一起。
++ 反式剪接（Trans-splicing）：**以两种不同来源的 RNA 前体分子为底物**，经过剪接在成熟的 mRNA 非翻译部分接上一小段 RNA 片段（剪接前导序列或小外显子）
+  如：锥虫表面糖蛋白基因 VSG（variablesurfaceglycoprotein），线虫的肌动蛋白基因（actingenes），衣藻（chlamydomonas）叶绿体 DNA 中含有的 psa 基因
+
+![image-20221220131306550](Chap03RNA的转录.assets/image-20221220131306550.png)
+
+![image-20221220131313060](Chap03RNA的转录.assets/image-20221220131313060.png)
+
+![image-20221220131316637](Chap03RNA的转录.assets/image-20221220131316637.png)
+
+# 3.8 RNA 的编辑及化学修饰
+
+## 3.8.1 RNA 的编辑
+
++ RNA 的编辑是某些 RNA，特别是 mRNA 前体的一种加工方式，如插入、删除或取代一些核苷酸残基，导致 DNA 编码的**遗传信息的改变**。
++ 介导 RNA 编辑的机制有两种
+  + **位点特异性脱氨基作用**
+  + **引导 RNA 指导的尿嘧啶插入或删除**
+
+![image-20221220160345673](Chap03RNA的转录.assets/image-20221220160345673.png)
+
+---
+
++ 位点特异性脱氨基作用
+  + 载脂蛋白 C $\to$ U 导致提前终止
+  + 由脱氨基酶催化
+
+![image-20221220160522635](Chap03RNA的转录.assets/image-20221220160522635.png)								<img src="Chap03RNA的转录.assets/image-20221220160531465.png" alt="image-20221220160531465" style="zoom: 67%;" />    
+
+---
+
+尿苷酸的缺失和添加
+
+![image-20221220160617613](Chap03RNA的转录.assets/image-20221220160617613.png)
+
+![image-20221220160626898](Chap03RNA的转录.assets/image-20221220160626898.png)
+
+### RNA 编辑的生物学意义
+
+1. 校正作用：有些基因在突变过程中丢失的遗传信息可能通过 RNA 编辑修复。
+2. 调控翻译：通过编辑可以构建和去除起始或终止密码子，是基因表达调控的一种方式。
+3. 扩充遗传信息：能是基因产物获得新的结构和功能，有利于生物进化。
+
+## 3.8.2  RNA 的化学修饰
+
+![image-20221220161858035](Chap03RNA的转录.assets/image-20221220161858035.png)
+
+![image-20221220161905354](Chap03RNA的转录.assets/image-20221220161905354.png)
+
+![image-20221220161917332](Chap03RNA的转录.assets/image-20221220161917332.png)
+
+![image-20221220161929581](Chap03RNA的转录.assets/image-20221220161929581.png)
+
+![image-20221220161937461](Chap03RNA的转录.assets/image-20221220161937461.png)
+
+## 3.8.3 RNA 在生物进化中的地位
+
+酶组成的进化：
+
+![image-20221220162232399](Chap03RNA的转录.assets/image-20221220162232399.png)
+
+生物体组成的进化：
+
+![image-20221220162245354](Chap03RNA的转录.assets/image-20221220162245354.png)
+
+RNA World Hypothesis
+
+![image-20221220162256639](Chap03RNA的转录.assets/image-20221220162256639.png)
+
+生命进化的早期，没有蛋白质（酶），某些 RNA 可以催化 RNA 的复制——也就是说 RNA 是唯一的遗传物质，是生命的源头。
+
+![image-20221220162313464](Chap03RNA的转录.assets/image-20221220162313464.png)
