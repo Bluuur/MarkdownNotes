@@ -67,7 +67,7 @@ cols <- brewer.pal(8, "Set1")
     "replacing previous import 'AnnotationDbi::tail' by 'utils::tail' when loading 'ath1121501cdf'"
     Warning message:
     "replacing previous import 'AnnotationDbi::head' by 'utils::head' when loading 'ath1121501cdf'"
-
+    
     Background correcting
     Normalizing
     Calculating Expression
@@ -483,7 +483,7 @@ ggscatter(deg.data, x = "logFC", y = "logP", color = "Group") + theme_base()
 ​    
 ​    The following object is masked from 'package:enrichplot':
 ​    
-        color_palette
+​        color_palette
 
 
 ​    

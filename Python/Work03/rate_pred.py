@@ -32,6 +32,17 @@ for line in origin_data:
         sequence[seq_id] = ''
         sequence[seq_id] += line.strip('\n')
 
+
+
+
+
+
+
+
+
+
+
+
 pro_folding_rate_file = open(path_prefix + '.\\ProFoldingRate.txt', 'w')
 # format header for better display
 header = "%10s\t%6s\n" % ("ID", "Rate")
