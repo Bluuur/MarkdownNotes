@@ -7,7 +7,7 @@
 	+ 生物
 	知识发现整理
 
-# Fundamentals in Linguistics, NLP and Bio NLP
+# Fundamentals in Linguistics, NLP and BioNLP
 ```mermaid
 graph LR
 
