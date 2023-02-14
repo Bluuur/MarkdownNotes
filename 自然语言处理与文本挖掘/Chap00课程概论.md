@@ -8,7 +8,4 @@
 	知识发现整理
 
 # Fundamentals in Linguistics, NLP and BioNLP
-```mermaid
-graph LR
 
-```
