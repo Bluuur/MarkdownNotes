@@ -18,4 +18,6 @@ git push origin main
  
 echo "Execution complete!"
 
+pause
+
 exit
