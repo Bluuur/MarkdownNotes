@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}引言}{1}{}%
+\contentsline {section}{\numberline {2}结果}{2}{}%
+\contentsline {subsection}{\numberline {2.1}确定HIF-1的直接靶点}{2}{}%
+\contentsline {subsection}{\numberline {2.2}HIF-1结合位点的特征}{3}{}%
+\contentsline {subsection}{\numberline {2.3}HIF-1对新陈代谢的再编程}{4}{}%
+\contentsline {subsection}{\numberline {2.4}PCK-1促进低氧应激时的存活}{5}{}%
+\contentsline {subsection}{\numberline {2.5}HIF-1直接靶点是保守的}{6}{}%
+\contentsline {section}{\numberline {3}讨论}{7}{}%
+\contentsline {section}{\numberline {4}方法}{9}{}%
+\contentsline {subsection}{\numberline {4.1}转基因和转基因动物的产生}{9}{}%
+\contentsline {subsection}{\numberline {4.2}荧光显微镜与图像分析}{10}{}%
+\contentsline {subsection}{\numberline {4.3}定量RT-PCR检测基因表达}{10}{}%
+\contentsline {subsection}{\numberline {4.4}产卵和卵滞留的特征}{11}{}%
+\contentsline {subsection}{\numberline {4.5}ChIP-seq}{11}{}%

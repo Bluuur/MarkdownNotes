@@ -1,0 +1,128 @@
+\documentclass{beamer}
+\usepackage{ctex}
+\usetheme{AnnArbor}
+\usecolortheme{spruce}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage {mathtools}
+\usepackage{utopia}
+
+\setbeamerfont{headline}{family=\kaishu}
+\setbeamerfont{footline}{family=\kaishu}
+\setbeamerfont{frametitle}{family=\heiti}
+
+%----------
+
+\definecolor{myNewColorA}{RGB}{0, 81, 40}
+\definecolor{myNewColorB}{RGB}{153, 193, 173}
+\definecolor{myNewColorC}{RGB}{216, 232, 224}
+\setbeamercolor*{palette primary}{bg=myNewColorC}
+\setbeamercolor*{palette secondary}{bg=myNewColorB, fg = white}
+\setbeamercolor*{palette tertiary}{bg=myNewColorA, fg = white}
+\setbeamercolor*{titlelike}{fg=myNewColorA}
+\setbeamercolor*{title}{bg=myNewColorA, fg = white}
+\setbeamercolor*{item}{fg=myNewColorA}
+\setbeamercolor*{caption name}{fg=myNewColorA}
+\usefonttheme{professionalfonts}
+\usepackage{natbib}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black
+}
+
+%----------
+
+\titlegraphic{\includegraphics[height=1.5cm]{hzau-logo.eps}}
+\setbeamertemplate{background}{\includegraphics[width=12.8cm]{background.jpg}}
+
+%----------
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{institute}{size=\small}
+\author[张子栋]{张子栋}
+\title[神经网络]{神经网络}
+\subtitle{感知器模型}
+\institute[HZAU]{华中农业大学
+	
+	信息学院}
+\date[\today]{\today}
+
+%----------
+
+\AtBeginSection[]
+{
+	\begin{frame}{}
+		\transfade
+		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide]
+		\addtocounter{framenumber}{0}
+	\end{frame}
+}
+
+%----------
+
+\begin{document}
+	\kaishu
+	
+	\frame{\titlepage}
+	
+	\begin{frame}
+		\frametitle{目录}
+		\tableofcontents
+	\end{frame}
+	
+	\section{引言}
+	\begin{frame}{引言}
+		\begin{itemize}
+			\item 1
+			\item 2
+		\end{itemize}
+	\end{frame}
+
+	\subsection{subsection}
+	\begin{frame}{subsection}{subsub}
+		this is subsection
+	\end{frame}
+
+	\section{文献回顾与理论假说}
+	\begin{frame}{文献回顾与理论假说}
+		内容...
+	\end{frame}
+	
+	\section{数据来源与统计学特征}
+	\begin{frame}{数据来源}
+		内容...
+	\end{frame}
+	\begin{frame}{统计学特征}
+		内容...
+	\end{frame}
+
+	\section{变量选取与模型设定}
+	\begin{frame}{}
+		内容...
+	\end{frame}
+
+	\section{计量结果与实证分析}
+	\begin{frame}{}
+		内容...
+	\end{frame}
+
+	\section{主要结论与政策含义}
+	\begin{frame}{}
+		内容...
+	\end{frame}
+	
+	\section*{致谢}  
+	\begin{frame}
+		\begin{center}
+			\textcolor{myNewColorA}{\huge {谢谢!\\ \quad \\ 请老师批评指正！}}
+		\end{center}
+	\end{frame}
+	
+\end{document}

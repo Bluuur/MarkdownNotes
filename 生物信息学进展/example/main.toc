@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}实验材料}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}线虫参考基因组}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}WormBase}{1}{subsubsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}线虫 ChIP-Seq 数据}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}实验软件}{1}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}BWA}{1}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Bowtie}{2}{subsubsection.1.3.2}%
+\contentsline {section}{\numberline {2}实验步骤}{3}{section.2}%
+\contentsline {section}{\numberline {3}实验结果}{3}{section.3}%
+\contentsline {section}{\numberline {4}实验总结}{3}{section.4}%
