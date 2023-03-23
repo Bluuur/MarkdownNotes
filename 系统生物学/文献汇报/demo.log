@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  23 MAR 2023 10:04
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  23 MAR 2023 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1052,12 +1052,12 @@ File: img/background.jpg Graphic file (type bmp)
 
  (./demo.aux)
 Package rerunfilecheck Info: File `demo.out' has not changed.
-(rerunfilecheck)             Checksum: BC835A1D1615BD30C97DDBEE3A5B1A78;808.
+(rerunfilecheck)             Checksum: 85F792DFA8BDAAFEE1F47928E5E807A4;862.
  ) 
 Here is how much of TeX's memory you used:
  28194 strings out of 476179
  619634 string characters out of 5809102
- 927705 words of memory out of 5000000
+ 928157 words of memory out of 5000000
  48335 multiletter control sequences out of 15000+600000
  471549 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

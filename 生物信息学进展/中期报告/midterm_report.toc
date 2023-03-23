@@ -1,0 +1,37 @@
+\contentsline {section}{\numberline {1}实验材料}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}PubMed 数据库中搜索数据文献}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}选定研究物种}{2}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}在 PubMed 中检索文献并下载数据}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}数据获取}{2}{subsubsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.2}线虫参考基因组}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}WormBase}{2}{subsubsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.3}实验软件}{3}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}FastQC}{3}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Trommomatic}{4}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}BWA}{5}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Bowtie}{5}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}BWA 与 Bowtie}{5}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.3.6}Samtools}{6}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}Bedtools}{7}{subsubsection.1.3.7}%
+\contentsline {subsubsection}{\numberline {1.3.8}MACS}{7}{subsubsection.1.3.8}%
+\contentsline {subsubsection}{\numberline {1.3.9}MEME}{7}{subsubsection.1.3.9}%
+\contentsline {section}{\numberline {2}实验流程及结果}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}使用 FastQC 分析数据}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}FastQC 分析结果}{8}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2} 使用 Trimmomatic 去除 adapter 序列}{13}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}使用 FastQC 分析处理后的数据}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}BWA 比对}{17}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}建立参考基因组索引}{17}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}BWA 比对}{17}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Bowtie 比对}{18}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}建立参考基因组索引}{18}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Bowtie 比对}{18}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}Samtools 统计比对结果}{18}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}BWA 比对结果}{18}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Bowtie 比对结果}{19}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7}Peak Calling}{19}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Motif 分析}{20}{subsection.2.8}%
+\contentsline {section}{\numberline {3}实验总结}{22}{section.3}%
+\contentsline {subsection}{\numberline {3.1}数据预处理}{22}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}序列比对}{22}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Peak Calling \& Motif Analysis}{22}{subsection.3.3}%
