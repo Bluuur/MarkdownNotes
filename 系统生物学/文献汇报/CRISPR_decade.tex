@@ -1,0 +1,301 @@
+\documentclass{beamer}
+\usepackage{ctex}
+\usetheme{AnnArbor}
+\usecolortheme{spruce}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage {mathtools}
+\usepackage{utopia}
+
+\setbeamerfont{headline}{family=\kaishu}
+\setbeamerfont{footline}{family=\kaishu}
+\setbeamerfont{frametitle}{family=\kaishu}
+
+%----------
+
+\definecolor{myNewColorA}{RGB}{0, 81, 40}
+\definecolor{myNewColorB}{RGB}{153, 193, 173}
+\definecolor{myNewColorC}{RGB}{216, 232, 224}
+\setbeamercolor*{palette primary}{bg=myNewColorC}
+\setbeamercolor*{palette secondary}{bg=myNewColorB, fg = white}
+\setbeamercolor*{palette tertiary}{bg=myNewColorA, fg = white}
+\setbeamercolor*{titlelike}{fg=myNewColorA}
+\setbeamercolor*{title}{bg=myNewColorA, fg = white}
+\setbeamercolor*{item}{fg=myNewColorA}
+\setbeamercolor*{caption name}{fg=myNewColorA}
+\usefonttheme{professionalfonts}
+\usepackage{natbib}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black
+}
+
+%----------
+
+\titlegraphic{\includegraphics[height=1.5cm]{img/hzau-logo.eps}}
+\setbeamertemplate{background}{\includegraphics[width=12.8cm]{img/background.jpg}}
+
+%----------
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{institute}{size=\small}
+\author[张子栋~颜旭~宋俊亮~曹相洲]{张子栋~颜旭~宋俊亮~曹相洲}
+\title[CRISPR decade]{系统与合成生物学文献汇报}
+\subtitle{CRISPR decade}
+\institute[Group 5]{华中农业大学\\信息学院}
+\date[2023年3月27日]{2023年3月27日}
+
+%----------
+
+\AtBeginSection[]
+{
+	\begin{frame}{}
+		\transfade
+		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide]
+		\addtocounter{framenumber}{0}
+	\end{frame}
+}
+
+%----------
+
+\begin{document}
+	\kaishu
+	
+	\frame{\titlepage}
+	
+% ----------------- begin frame -----------------
+
+	\begin{frame}
+		\frametitle{目录}
+		\tableofcontents
+	\end{frame}
+
+% ----------------- begin frame -----------------
+
+	\section{CRISPR 原理}
+	\begin{frame}{CRISPR 原理}{细菌/古菌中的免疫系统}
+		\begin{columns}
+			\column{0.4\textwidth}
+			\begin{itemize}
+				\item CRISPR 系统是目前发现存在于多数细菌/古菌中的一种后天免疫系统。
+				\item 微生物中的 CRISPR 免疫系统靶定 DNA/RNA.
+			\end{itemize}
+
+			\column{0.6\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.9\textwidth]{img/CRISPR.pdf}
+			\end{figure}	
+		\end{columns}
+	\end{frame}
+
+% ----------------- begin frame -----------------
+
+\begin{frame}{CRISPR 原理}{CRISPR 位点结构}
+		
+	\begin{itemize}
+		\item Clustered Regularly Interspersed Short Palindromic Repeats\\成簇规律间隔短回文重复序列
+		\begin{itemize}
+			\item 重复序列区 Repeat
+			\begin{itemize}
+				\item 短而保守的重复序列
+				\item 有回文序列，可以形成发卡结构 
+			\end{itemize}
+			\item 间隔区 Spacer
+			\begin{itemize}
+				\item 是被细菌俘获活的外源 DNA 序列 
+			\end{itemize}
+			\item CRISPR 关联基因（CRISPR associated，Cas）。
+			\begin{itemize}
+				\item 该基因编码的蛋白均可与CRISPR序列区域共同发生作用。
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+
+% 目前已经发现了Cas1-Cas10等多种类型的Cas基因。Cas基因与CRISPR序列共同进化，形成了在细菌中高度保守的CRISPR/Cas系统。
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\textwidth]{img/CRISPR_struc.jpeg}
+	\end{figure}
+
+\end{frame}
+
+% ----------------- begin frame -----------------
+
+\begin{frame}{CRISPR 原理}{免疫过程}
+		
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{img/infect_stage1.jpeg}
+		\caption{1. 外源 DNA 俘获}
+	\end{figure}
+
+% 当噬菌体病毒首次入侵宿主细菌，病毒的双链DNA被注入细胞内部。CRISPR/Cas系统会从这段外源DNA中截取一段序列作为外源DNA用于识别该DNA
+
+% 这段序列称为原间隔序列（protospacer）。
+
+% 原间隔序列向两端延伸的几个碱基都十分保守，被称为原间隔序列临近基序（protospacer adjacent motif，PAM）。
+
+% PAM通常由NGG三个碱基构成（N为任意碱基）。病毒入侵时，Cas1和Cas2编码的蛋白将扫描这段外源DNA，并识别出PAM区域，然后将临近PAM的DNA序列作为候选的原间隔序列。
+
+% 随后，Cas1/2蛋白复合物将原间隔序列从外源DNA中剪切下来，并在其他酶的协助下将原间隔序列插入临近CRISPR序列前导区的下游。然后，DNA会进行修复，将打开的双链缺口闭合。
+
+\end{frame}
+
+% ----------------- begin frame -----------------
+
+\begin{frame}{CRISPR 原理}{免疫过程}
+		
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{img/infect_stage2.jpeg}
+		\caption{2. crRNA 合成}
+	\end{figure}
+
+% RISPR/Cas系统共有三种方式（Type Ⅰ、Ⅱ、Ⅲ）合成 用于 攻击
+
+\end{frame}
+
+% ----------------- begin frame -----------------
+
+\begin{frame}{CRISPR 原理}{免疫过程}
+		
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{img/infect_stage3.jpeg}
+		\caption{3. 靶向干扰}
+	\end{figure}
+
+\end{frame}
+
+% ----------------- begin frame -----------------
+
+	\begin{frame}{CRISPR 原理}{应用}
+		\begin{columns}
+			\column{0.5\textwidth}
+			\begin{itemize}
+				\item CRISPR-Cas9 是常用的 RNA 介导的基因编辑工具。
+				\begin{itemize}
+					\item Cas9 识别并结合 PAM 序列
+					\item 切割产生 DSB
+					\item DNA 修复机制
+				\end{itemize}
+				\item 最早应用于转录抑制或激活以沉默或增强特定基因。
+			\end{itemize}
+
+			\column{0.45\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/util.pdf}
+			\end{figure}	
+		\end{columns}
+	\end{frame}
+	
+% ----------------- begin frame -----------------
+
+	\section{CRISPR 技术的发展}
+
+	\subsection{基因敲除}
+	\begin{frame}{CRISPR 技术的发展}{基因敲除}
+		
+	\end{frame}
+
+% ----------------- begin frame -----------------
+
+	\subsection{同步多位点编辑}
+	\begin{frame}{CRISPR 技术的发展}{同步多位点编辑}
+		
+	\end{frame}
+
+% ----------------- begin frame -----------------
+
+	\subsection{碱基编辑}
+	\begin{frame}{CRISPR 技术的发展}{碱基编辑}
+		
+	\end{frame}
+
+% ----------------- begin frame -----------------
+
+	\section{CRISPR面临的挑战}
+	\subsection{提高编辑准确性}
+	\begin{frame}{CRISPR面临的挑战}{提高编辑准确性}
+		\begin{itemize}
+			\item 基因编辑的特异性（只在靶点进行基因编辑）
+			\item 编辑的精确度（在靶点产生预先确定的编辑结果）
+		\end{itemize}
+
+	\end{frame}
+
+	\subsection{体内外编辑器的递送}
+	\begin{frame}{CRISPR面临的挑战}{体内外编辑器的递送}
+		
+		即需要确保高递送效率、目标特异性和安全性。
+
+	\end{frame}
+	
+% ----------------- begin frame -----------------
+
+	\section{CRISPR当前和未来的应用方向}
+	\begin{frame}{CRISPR当前和未来的应用方向}
+		\begin{itemize}
+			\item 临床应用
+			\begin{itemize}
+				\item 至少有8项FDA批准的基于 CRISPR 的镰状细胞病和相关血液疗法的临床实验正在进行或即将开展。
+			\end{itemize}
+			\item 农业畜牧业
+			\begin{itemize}
+				\item 经过编辑的营养价值更高的番茄和鱼已获批在日本销售。
+				\item 通过多重编辑敲除和激活不同基因在小麦种引入抗病性并提高产量。
+			\end{itemize}
+			\item 与其他技术交叉
+			\begin{itemize}
+				\item 机器学习
+				\item 活细胞成像
+				\item DNA测序
+			\end{itemize}
+		\end{itemize}
+
+		\quad\\
+
+		CRISPR作为一项由好奇心驱动的研究、创新和技术突破间联系的成功例子，鼓励我们继续探索自然世界，将可能发现更多无法想象的事物，并将其用于解决现实世界中的难题。
+	\end{frame}
+
+
+% ----------------- begin frame -----------------
+
+	\section*{总结}
+	\begin{frame}{总结}
+		\begin{itemize}
+			\item 本综述介绍了基于 CRISPR 的基因组编辑的起源和成功，并讨论了最紧迫的挑战，包括提高编辑的准确性和精确性，实施精确可编程的遗传序列插入策略，改善CRISPR编辑器的靶向递送，以及降低其价格增加可及性，并提出了这项技术的未来路线图。
+			\item 基因编辑技术的伦理方面的问题。
+		\end{itemize}
+	
+	\end{frame}
+
+
+% 贺建奎事件是一个引发了全球关注和争议的基因编辑婴儿事件。贺建奎是一位中国科学家，他声称在2018年利用CRISPR技术对两个受孕卵进行了基因编辑，使得出生的双胞胎女婴具有抗艾滋病的能力。这一事件涉及到了基因编辑技术的伦理方面的问题，主要有以下几个方面：
+
+% 基因编辑技术是否会对人类的尊严和权利造成侵犯，是否会导致人类的自然性和多样性的丧失，是否会引发社会不公和歧视等问题。
+% 基因编辑技术是否有足够的安全性和有效性，是否会对受试者和后代造成不可预知的风险和后果，是否有必要和合理的医学指征和目的。
+% 基因编辑技术是否遵守了相关的法律法规和伦理准则，是否经过了充分的伦理审查和公众参与，是否保障了受试者的知情同意和权益。
+
+% 这些问题都需要科学家、政府、社会和公众共同讨论和解决，以确保基因编辑技术的合理、负责任和可持续的发展。
+
+% ----------------- begin frame -----------------
+
+	\section*{致谢}  
+	\begin{frame}
+		\begin{center}
+			\textcolor{myNewColorA}{\huge {谢谢!\\ \quad \\ 请老师批评指正！}}
+		\end{center}
+	\end{frame}
+	
+\end{document}
