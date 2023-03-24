@@ -19,12 +19,14 @@
 \definecolor{myNewColorB}{RGB}{153, 193, 173}
 \definecolor{myNewColorC}{RGB}{216, 232, 224}
 \setbeamercolor*{palette primary}{bg=myNewColorC}
-\setbeamercolor*{palette secondary}{bg=myNewColorB, fg = white}
-\setbeamercolor*{palette tertiary}{bg=myNewColorA, fg = white}
+\setbeamercolor*{palette secondary}{bg=myNewColorB, fg=white}
+\setbeamercolor*{palette tertiary}{bg=myNewColorA, fg=white}
 \setbeamercolor*{titlelike}{fg=myNewColorA}
-\setbeamercolor*{title}{bg=myNewColorA, fg = white}
+\setbeamercolor*{title}{bg=myNewColorA, fg=white}
 \setbeamercolor*{item}{fg=myNewColorA}
 \setbeamercolor*{caption name}{fg=myNewColorA}
+\setbeamercolor*{block title alerted}{bg=myNewColorA, fg=white}
+\setbeamercolor*{block body alerted}{bg=myNewColorC}
 \usefonttheme{professionalfonts}
 \usepackage{natbib}
 \usepackage{hyperref}
@@ -85,7 +87,7 @@
 			\column{0.4\textwidth}
 			\begin{itemize}
 				\item CRISPR 系统是目前发现存在于多数细菌/古菌中的一种后天免疫系统。
-				\item 微生物中的 CRISPR 免疫系统靶定 DNA/RNA.
+				\item 微生物中的 CRISPR 免疫系统靶定 \\DNA/RNA.
 			\end{itemize}
 
 			\column{0.6\textwidth}
@@ -157,10 +159,22 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.8\textwidth]{img/infect_stage2.jpeg}
-		\caption{2. crRNA 合成}
+		\caption{2. crRNA(CRISPR RNA) 合成}
 	\end{figure}
 
-% RISPR/Cas系统共有三种方式（Type Ⅰ、Ⅱ、Ⅲ）合成 用于 攻击
+% 第二个阶段是 crRNA 的合成
+
+% CRISPR/Cas系统共有三种方式（Type Ⅰ、Ⅱ、Ⅲ）合成 crRNA
+
+% CRISPR/Cas9系统属于Type Ⅱ，是目前最成熟也是应用最广的类型。
+
+% 首先合成 trans-acting crRNA 和 Pre-crRNA
+
+% 反式作用 crRNA 是由重复序列区转录而成的具有发卡结构的 RNA
+
+% pre-crRNA 是由整个 CRISPR 序列转录而成的大型 RNA 分子
+
+% 之后 pre-crRNA, 反式作用 crRNA, Cas9 蛋白会在 RNase III 的协助下形成一段小的 crRNA
 
 \end{frame}
 
@@ -173,6 +187,16 @@
 		\includegraphics[width=0.8\textwidth]{img/infect_stage3.jpeg}
 		\caption{3. 靶向干扰}
 	\end{figure}
+
+% crRNA 复合物会扫描整个外源 DNA 序列 识别出于 crRNA 互补的原间隔序列
+
+% 然后定位到 PAM 和原间隔序列区域 解开 DNA 双链 形成 R-loop
+
+% 外源 DNA 一条链与 crRNA 互补 另一条链游离
+
+% Cas9 蛋白 HNH 酶剪切互补的 DNA 链 
+
+% 其 RuvC 活性稳定点剪切游离链 最后产生 DSB
 
 \end{frame}
 
@@ -203,23 +227,116 @@
 
 	\section{CRISPR 技术的发展}
 
-	\subsection{基因敲除}
-	\begin{frame}{CRISPR 技术的发展}{基因敲除}
-		
+	\subsection{CRISPR诱导基因敲除}
+	\begin{frame}{CRISPR 技术的发展}{CRISPR诱导基因敲除}
+		\begin{columns}
+			\column{0.5\textwidth}
+
+			\begin{itemize}
+				\item CRISPR-Cas9核糖核蛋白
+				\begin{itemize}
+					\item Cas9核酸酶
+					\item 单引导RNA分子(sgRNA)
+				\end{itemize}
+				\item sgRNA 将 Cas9 导向靶点，\\产生 DSB
+				\item 内源性修复途径修复
+				\begin{itemize}
+					\item 非同源末端连接(NHEJ)
+					\item 微同源介导的末端连接途径
+					\item 使用修复模板的更精确的\\同源定向修复(HDR)途径
+				\end{itemize}
+			\end{itemize}
+
+			\begin{alertblock}{应用}
+				可用于胚胎细胞编辑和体细胞编辑、快速建立动物模型用于疾病治疗。
+			\end{alertblock}
+
+			\column{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/gene_knockout.pdf}
+			\end{figure}
+
+		\end{columns}
 	\end{frame}
+
+% ----------------- begin frame -----------------
+
+\subsection{CRISPR screen}
+\begin{frame}{CRISPR 技术的发展}{CRISPR screen}
+
+	\begin{columns}
+		\column{0.6\textwidth}
+
+		\begin{itemize}
+			\item CRISPR screen用于筛选突变细胞的群体，发现与特定表型相关的基因。
+			\item 通过引入基因突变，使其失去功能。
+			\item 一般步骤：
+			\begin{itemize}
+				\item 构建sgRNA敲除文库
+				\item 结合特定的筛选方案
+				\item NGS测序和生信分析
+				\item 预测出符合条件的候选基因
+			\end{itemize}
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{img/CRISPR_screen.pdf}
+		\end{figure}
+
+		\column{0.4\textwidth}
+
+		
+		\begin{itemize}
+			\item CRISRP KO，dCas9 结合 FokI 核酸酶，切断基因的 DNA，实现基因的完全敲除。
+			\item CRISPRi，dCas9 结合 KRAB 抑制子，抑制基因的转录起始，实现基因的部分敲降
+			\item CRISPRa，dCas9 结合 VP64 激活子，激活基因的转录起始，实现基因的过表达。
+		\end{itemize}
+		
+		
+
+	\end{columns}
+
+	
+
+\end{frame}
 
 % ----------------- begin frame -----------------
 
 	\subsection{同步多位点编辑}
 	\begin{frame}{CRISPR 技术的发展}{同步多位点编辑}
-		
+		\begin{itemize}
+			\item 利用多个 gRNA 和一种 Cas 蛋白同时对基因组的不同靶标进行修改。
+			\item 可以实现多重基因编辑，例如基因中断、基因整合、碱基编辑等。
+			\item 原理
+			\begin{itemize}
+				\item 利用 CRISPR-Cas 系统识别和切割特定的 DNA 序列
+				\item 通过同源重组或非同源末端连接等机制修复切割位点
+				\item 实现基因组的增加、删除或替换
+			\end{itemize}
+		\end{itemize}
+
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{img/muti_edit.pdf}
+		\end{figure}
 	\end{frame}
 
 % ----------------- begin frame -----------------
 
 	\subsection{碱基编辑}
 	\begin{frame}{CRISPR 技术的发展}{碱基编辑}
-		
+		\begin{itemize}
+			\item Cas 蛋白与碱基脱氨酶或逆转录酶融合，实现 DNA 或 RNA 中碱基的定向替换，而不引入双链断裂。
+			\item  这种技术的作用是可以精准地修复或引入单碱基突变，从而改变基因的功能或表达。
+			\item 利用 CRISPR-Cas 系统识别和切割特定的 DNA 或 RNA 序列，然后通过碱基脱氨酶或逆转录酶催化碱基的转化，从而实现 C $\to$ T 或 A $\to$ G 的编辑。	
+		\end{itemize}
+
+		\begin{figure}
+			\centering
+			\includegraphics{img/base_edit.pdf}
+		\end{figure}
+
 	\end{frame}
 
 % ----------------- begin frame -----------------
@@ -229,16 +346,45 @@
 	\begin{frame}{CRISPR面临的挑战}{提高编辑准确性}
 		\begin{itemize}
 			\item 基因编辑的特异性（只在靶点进行基因编辑）
+			\begin{itemize}
+				\item 优化 sgRNA 的设计，提高其特异性和稳定性
+				\item 利用深度学习等人工智能方法，预测和评估 CRISPR 编辑的效率和脱靶风险
+				\item 使用更精确的碱基编辑技术，避免引入双链断裂
+				\item 使用高通量测序等方法，验证编辑的结果和精度
+			\end{itemize}
 			\item 编辑的精确度（在靶点产生预先确定的编辑结果）
+			\begin{itemize}
+				\item 使用 RNP 复合物直接传递到靶细胞，提高 HDR 的效率
+			\end{itemize}
 		\end{itemize}
 
 	\end{frame}
+	
+% ----------------- begin frame -----------------
 
 	\subsection{体内外编辑器的递送}
 	\begin{frame}{CRISPR面临的挑战}{体内外编辑器的递送}
-		
-		即需要确保高递送效率、目标特异性和安全性。
+		\begin{columns}
+			\column{0.6\textwidth}
+			\begin{itemize}
+				\item 使用靶向脂质纳米颗粒（LNP）递送将CRISPR系统体内递送至肝脏进行转甲状腺素蛋白淀粉样变性的治疗。
+				\item 含有RNA引导酶的腺相关病毒载体直接注射到眼睛中对Leber先天性黑10型进行治疗。
+				\item 递送方法
+				\begin{itemize}
+					\item 物理方法仅限于体外递送，存在低包装容量、免疫原性等问题
+					\item 合成材料也具有材料体积大和离子性质的限制
+					\item 细胞外囊泡和病毒样颗粒（VLP），有可能实现基于病毒策略的高递送效率
+					\item 使用不同的包膜糖蛋白可以编辑VLP的细胞向性以靶向特定细胞类型
+				\end{itemize}
+			\end{itemize}
 
+			\column{0.4\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/edit.pdf}
+			\end{figure}
+
+		\end{columns}
 	\end{frame}
 	
 % ----------------- begin frame -----------------
@@ -288,6 +434,15 @@
 % 基因编辑技术是否遵守了相关的法律法规和伦理准则，是否经过了充分的伦理审查和公众参与，是否保障了受试者的知情同意和权益。
 
 % 这些问题都需要科学家、政府、社会和公众共同讨论和解决，以确保基因编辑技术的合理、负责任和可持续的发展。
+
+% ----------------- begin frame -----------------
+
+\section*{Q\&A}
+\begin{frame}
+	\begin{center}
+		\textcolor{myNewColorA}{\huge {Q\&A}}
+	\end{center}
+\end{frame}
 
 % ----------------- begin frame -----------------
 

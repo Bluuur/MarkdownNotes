@@ -1,0 +1,10 @@
+\beamer@sectionintoc {1}{CRISPR 原理}{3}{0}{1}
+\beamer@sectionintoc {2}{CRISPR 技术的发展}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{CRISPR诱导基因敲除}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{CRISPR screen}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{同步多位点编辑}{13}{0}{2}
+\beamer@subsectionintoc {2}{4}{碱基编辑}{14}{0}{2}
+\beamer@sectionintoc {3}{CRISPR面临的挑战}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{提高编辑准确性}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{体内外编辑器的递送}{17}{0}{3}
+\beamer@sectionintoc {4}{CRISPR当前和未来的应用方向}{18}{0}{4}
