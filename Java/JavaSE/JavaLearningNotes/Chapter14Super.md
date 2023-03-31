@@ -1,27 +1,29 @@
 # super
 
-super是一个关键字，全部小写
+`super` 是一个关键字，全部小写
 
-## super与this
+## super 与 this
 
-+  this
-   +  this能出现在实例方法和构造方法中
-   +  this的语法是"this.","this()
-   +  this不能使用在静态方法中
-   +  this. 大部分情况下可以省略
-   +  this. 在区分局部变量和实例变量的时候不能省略
-   +  this()只能出现在构造方法的第一行,通过当前的构造方法去调用本类中其他的构造方法,目的是代码复用
-
-+  super
-   +  super能出现在实例方法和构造方法中
++  `this`
    
-   +  super的语法是"super.","super()
+   +  `this` 能出现在实例方法和构造方法中
+   +  `this` 的语法是 this.` `this()`
+   +  `this` 不能使用在静态方法中
+   +  `this.` 大部分情况下可以省略
+   +  `this.` 在区分局部变量和实例变量的时候不能省略
+   +  `this()` 只能出现在构造方法的第一行,通过当前的构造方法去调用本类中其他的构造方法,目的是代码复用
    
-   +  super不能使用在静态方法中
++  `super`
    
-   +  super. 大部分情况下可以省略
+   +  `super` 能出现在实例方法和构造方法中
    
-   +  super. 不能省略
+   +  `super` 的语法是`super.`, `super()`
+   
+   +  `super` 不能使用在静态方法中
+   
+   +  `super.` 大部分情况下可以省略
+   
+   +  `super.` 不能省略
    
       ```java
       public class SuperTest04 {
@@ -43,7 +45,7 @@ super是一个关键字，全部小写
       }
       
       class Vip extends Customer{
-          String name;//Java中允许子类中出现和父类同名的属性(变量)
+          String name;// Java 中允许子类中出现和父类同名的属性(变量)
       
           public Vip() {
           }

@@ -338,6 +338,27 @@ meme <序列文件> -o <输出目录> [其他参数]
 	\end{itemize}
 \end{itemize}
 
+\subsubsection{ChIPseeker}
+
+ChIPseeker 是一个 R 包，用于 ChIP 峰值的注释、比较和可视化。它实现了检索峰值周围最近的基因、注释峰值的基因组区域、估计 ChIP 峰值数据集之间重叠的显著性的统计方法，并将 GEO 数据库纳入其中，以供比较。
+
+\paragraph*{命令格式}
+\begin{lstlisting}
+	anno <- annotatePeak(peak, tssRegion=c(-3000, 3000), TxDb=txdb)
+\end{lstlisting}
+
+其中：
+
+\begin{itemize}
+	\item \verb|TxDb| 可以使用 \verb|makeTxDbFromGFF()| 命令从基因组注释文件获得。
+	\item \verb|peak| 是 Peak Calling 产生的 \verb|.bed| 文件。 
+\end{itemize}
+
+\subsubsection{PANTHER}
+
+Panther 是一种用于 GO 分析的软件。它是一个基于隐马模型（HMM）的序列搜索工具，与直接使用 GO 数据库不同，Panther 采用的是其自主整理的基因注释结构。
+
+
 \section{实验流程及结果}
 
 \subsection{使用 FastQC 分析数据}
@@ -678,6 +699,88 @@ bedtools getfasta -fi ~/bwa_index/c_elegans.PRJNA275000.WS286.genomic.fa -bed ~/
 	\centering
 	\includegraphics[width=0.8\textwidth]{img/meme_out/logo3.eps}
 	\caption{MEME 输出结果}
+\end{figure}
+
+\clearpage
+
+\subsection{Peak 注释}
+
+使用 R 包 ChIPseeker 进行 peak 注释。
+
+具体命令：
+
+\begin{lstlisting}[language=R]
+library(ChIPseeker)
+library(GenomicFeatures)
+txdb <- makeTxDbFromGFF(file = file.choose(), format = "gff3")
+peak <- readPeakFile(file.choose())
+peakAnno <- annotatePeak(peak,
+                         TxDb=txdb,
+                         tssRegion=c(-1000, 1000))
+\end{lstlisting}
+
+导出 Gene List 用于进一步的 Gene Ontology 分析。
+
+\begin{lstlisting}[language=R]
+df <- as.data.frame(peakAnno)
+gene <- df[,14]
+write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.names =FALSE, quote =FALSE)
+\end{lstlisting}
+
+结果可视化：
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{img/peak_distrubution.pdf}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{img/peaks_feature_distribution.pdf}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/peaks_pie.pdf}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/peaks_vennpie.pdf}
+\end{figure}
+
+\clearpage
+
+\subsection{Gene Ontology}
+使用 Panther 进行 GO 分析。将 gene list 上传至 Panther 网站，选择物种为线虫。
+
+结果：
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/GO_BioPro.png}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/GO_CelCom.png}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{img/GO_Path.png}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{img/GO_ProCla.png}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{img/GO_MolFun.png}
 \end{figure}
 
 \clearpage

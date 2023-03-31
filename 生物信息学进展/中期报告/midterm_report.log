@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  22 MAR 2023 20:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  29 MAR 2023 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -554,16 +554,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-)
+ [3
+
+])
 \tf@toc=\write4
 \openout4 = `midterm_report.toc'.
 
- [0
-
-]
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 95.
- [1]
+ [0]
 
 Package fontspec Info: Font family 'CourierNew(0)' created for font 'Courier
 (fontspec)             New' with options [Ligatures=TeX].
@@ -584,7 +583,7 @@ Package fontspec Info: Font family 'CourierNew(0)' created for font 'Courier
 (fontspec)             New/BI/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
- [2
+ [1
 
 ]
 
@@ -610,10 +609,10 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- [3] [4] [5] [6]
+ [2] [3] [4] [5]
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/CourierNew(0)/m/it' tried instead on input line 330.
- [7] [8]
+ [6] [7] [8]
 File: img/SRR14325859_FastQC_Origin_img/adapter_content.png Graphic file (type bmp)
 <img/SRR14325859_FastQC_Origin_img/adapter_content.png>
 File: img/SRR14325859_FastQC_Origin_img/duplication_levels.png Graphic file (type bmp)
@@ -679,20 +678,57 @@ File: img/meme_out/logo2.eps Graphic file (type eps)
 <img/meme_out/logo2.eps>
 File: img/meme_out/logo3.eps Graphic file (type eps)
 <img/meme_out/logo3.eps>
- [21] [22
+ [21] (d:/SoftWear/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (d:/SoftWear/texlive/2022/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+) (d:/SoftWear/texlive/2022/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+File: img/peak_distrubution.pdf Graphic file (type pdf)
+<use img/peak_distrubution.pdf>
+File: img/peaks_feature_distribution.pdf Graphic file (type pdf)
+<use img/peaks_feature_distribution.pdf>
+File: img/peaks_pie.pdf Graphic file (type pdf)
+<use img/peaks_pie.pdf>
+File: img/peaks_vennpie.pdf Graphic file (type pdf)
+<use img/peaks_vennpie.pdf>
+ [22
 
+
+] [23]
+File: img/GO_BioPro.png Graphic file (type bmp)
+<img/GO_BioPro.png>
+File: img/GO_CelCom.png Graphic file (type bmp)
+<img/GO_CelCom.png>
+ [24
+
+]
+File: img/GO_Path.png Graphic file (type bmp)
+<img/GO_Path.png>
+File: img/GO_ProCla.png Graphic file (type bmp)
+<img/GO_ProCla.png>
+File: img/GO_MolFun.png Graphic file (type bmp)
+<img/GO_MolFun.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25
+
+] [26] [27
 
 ] (./midterm_report.aux)
 Package rerunfilecheck Info: File `midterm_report.out' has not changed.
-(rerunfilecheck)             Checksum: 18F21798FFDD9161D9C8101A23CA436B;4557.
+(rerunfilecheck)             Checksum: 57A70524AC76B312AFB8AF787954921C;5009.
  ) 
 Here is how much of TeX's memory you used:
- 16517 strings out of 476179
- 370652 string characters out of 5809102
+ 17267 strings out of 476179
+ 380048 string characters out of 5809102
  1046256 words of memory out of 5000000
- 36994 multiletter control sequences out of 15000+600000
+ 37727 multiletter control sequences out of 15000+600000
  472585 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,418b,1746s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,418b,1843s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on midterm_report.pdf (25 pages).
+Output written on midterm_report.pdf (31 pages).
