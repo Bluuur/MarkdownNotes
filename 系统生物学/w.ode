@@ -1,0 +1,6 @@
+x'=a-b*x
+y'=b*x-c*y
+par a=6.6e-7, b=1.6e4, c=3.4e2
+init x=0, y=0
+@total=50
+done
