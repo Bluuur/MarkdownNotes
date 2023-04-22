@@ -51,7 +51,6 @@
    \end{cases}
    $$
    
-
 2. 设蛋白 Z 浓度达到其稳态一半的时刻为 $t_{\frac{1}{2}ss}$，带入 $Z(t)$ 解得：
    $$
    t_{\frac{1}{2}ss}=\frac{\ln 2}{\alpha}
@@ -95,3 +94,5 @@
    \end{aligned}
    $$
    同 2. 。
+   
+   
