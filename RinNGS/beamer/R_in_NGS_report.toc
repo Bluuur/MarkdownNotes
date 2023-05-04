@@ -1,0 +1,8 @@
+\beamer@sectionintoc {2}{发现生命之树}{5}{0}{1}
+\beamer@sectionintoc {3}{定义真核细胞的起源}{9}{0}{2}
+\beamer@sectionintoc {4}{追踪共生的基因组变化}{12}{0}{3}
+\beamer@sectionintoc {5}{解密染色体进化}{16}{0}{4}
+\beamer@sectionintoc {6}{揭示真核基因调控的深层逻辑}{20}{0}{5}
+\beamer@sectionintoc {7}{探索性系统的多样性}{24}{0}{6}
+\beamer@sectionintoc {8}{探索物种基因组学中的多样性}{26}{0}{7}
+\beamer@sectionintoc {9}{探索物种基因组学中的多样性}{28}{0}{8}
