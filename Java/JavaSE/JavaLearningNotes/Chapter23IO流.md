@@ -54,21 +54,23 @@ Java中主要研究
 
 以下四个都是抽象类
 
-| java.io.InputStream | 字节输入流 |
+| Class Name | 类型 |
 | ------------------- | ---------- |
 | java.io.OutStream   | 字节输出流 |
+| java.io.InputStream | 字节输入流 |
 
  
 
-| java.io.Reader | 字符输入流 |
+| Class Name | 类型 |
 | -------------- | ---------- |
 | java.io.Writer | 字符输出流 |
+| java.io.Reader | 字符输入流 |
 
  
 
 所有的流都实现了
 
-java.io.Closeable接口，都是可关闭的，都有close()方法
+`java.io.Closeable` 接口，都是可关闭的，都有 `close()` 方法
 
 流是内存和硬盘之间的通道，用完之后一定要关闭
 
@@ -78,72 +80,81 @@ java.io.Closeable接口，都是可关闭的，都有close()方法
 
 所有的输出流都实现了
 
-java.io.Flushable接口，都是可刷新的，都有flush()方法
+`java.io.Flushable` 接口，都是可刷新的，都有 `flush()` 方法
 
-输出流在最终输出之后，一定要flush()刷新
+输出流在最终输出之后，一定要 `flush()` 刷新
 
 这个书信表示将通道中剩余的，为输出的数据强行输出完（清空通道）
 
-如果没有flush()可能会导致数据丢失
+如果没有 `flush()` 可能会导致数据丢失
 
  
 
-·    注意：在Java中只要“类名”以Stream结尾的都是字节流，以“Reader/Writer”结尾的都是字符流
+·    注意：在 Java 中只要 “类名” 以 Stream 结尾的都是字节流，以 “ Reader/Writer ” 结尾的都是字符流
 
  
 
-java.io包下需要掌握的流有16个
+`java.io` 包下需要掌握的流有 16 个
 
 文件专属
 
-java.io.FileInputStream
+`java.io.FileInputStream`
 
-java.io.OutputStream
+`java.io.FileOutputStream`
 
-java.io.FileReader
+`java.io.FileReader`
 
-java.io.FileWriter
+`java.io.FileWriter`
 
  
 
 转换流（将字节流转换为字符流）
 
-java.io.InputStreamReader
+`java.io.InputStreamReader`
 
-java.io.OutputStreamWriter
+`java.io.OutputStreamWriter`
 
  
 
 缓冲流专属
 
-java.io.BufferedReader
+`java.io.BufferedReader`
 
-java.io.BufferedWriter
+`java.io.BufferedWriter`
 
-java.io.BufferedInputStream
+`java.io.BufferedInputStream`
 
-java.io.BufferedOutputStream
+`java.io.BufferedOutputStream`
 
  
 
 数据流专属
 
-java.io.DataInputStream
+`java.io.DataInputStream`
 
-java.io.DataOutputStream
+`java.io.DataOutputStream`
 
  
 
 标准输出流
 
-java.io.PrintWriter
+`java.io.PrintWriter`
 
-java.io.PrintStream
+`java.io.PrintStream`
 
  
 
 对象专属流
 
-java.io.ObjectInputStream
+`java.io.ObjectInputStream`
 
-java.io.ObjectOutputStream
+`java.io.ObjectOutputStream`
+
+```Java
+public class JavaIO {
+    public static void main(String[] args) {
+        
+    }
+}
+```
+

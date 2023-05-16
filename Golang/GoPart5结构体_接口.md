@@ -41,7 +41,7 @@ func main() {
 	type location struct {
 		lat  float64
 		long float64
-	}
+    }
 
 	var spirit location
 	spirit.lat = -14.5684

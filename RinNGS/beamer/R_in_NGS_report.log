@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  4 MAY 2023 16:43
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  4 MAY 2023 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,60 +1054,45 @@ File: img/background.jpg Graphic file (type bmp)
  [6
 
 ]
-LaTeX Font Info:    Trying to load font information for TU+put on input line 163.
-LaTeX Font Info:    No file TUput.fd. on input line 163.
-
-
-LaTeX Font Warning: Font shape `TU/put/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 163.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 163.
-(d:/SoftWear/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 163.
- (d:/SoftWear/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [7
 
-]
+] (./R_in_NGS_report.toc)
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [8
 
-] (./R_in_NGS_report.toc)
-File: img/background.jpg Graphic file (type bmp)
-<img/background.jpg>
- [9
-
 ]
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
- [10
+ [9
 
 ]
 Missing character: There is no 1 ("31) in font nullfont!
 Missing character: There is no 5 ("35) in font nullfont!
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
-[11
+[10
 
 ] (./R_in_NGS_report.toc)
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
- [12
+ [11
 
 ]
 Missing character: There is no 2 ("32) in font nullfont!
 Missing character: There is no 0 ("30) in font nullfont!
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
-[13
+[12
 
 ]
+File: img/background.jpg Graphic file (type bmp)
+<img/background.jpg>
+ [13
+
+] (./R_in_NGS_report.toc)
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [14
@@ -1117,12 +1102,12 @@ File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [15
 
-] (./R_in_NGS_report.toc)
+]
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [16
 
-]
+] (./R_in_NGS_report.toc)
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [17
@@ -1143,11 +1128,26 @@ File: img/background.jpg Graphic file (type bmp)
  [20
 
 ]
+LaTeX Font Info:    Trying to load font information for TU+put on input line 364.
+LaTeX Font Info:    No file TUput.fd. on input line 364.
+
+
+LaTeX Font Warning: Font shape `TU/put/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 364.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 364.
+(d:/SoftWear/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 364.
+ (d:/SoftWear/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [21
 
-]
+] (./R_in_NGS_report.toc)
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [22
@@ -1157,7 +1157,7 @@ File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [23
 
-] (./R_in_NGS_report.toc)
+]
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [24
@@ -1167,35 +1167,10 @@ File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [25
 
-] (./R_in_NGS_report.toc)
+]
 File: img/background.jpg Graphic file (type bmp)
 <img/background.jpg>
  [26
-
-]
-File: img/background.jpg Graphic file (type bmp)
-<img/background.jpg>
- [27
-
-] (./R_in_NGS_report.toc)
-File: img/background.jpg Graphic file (type bmp)
-<img/background.jpg>
- [28
-
-]
-File: img/background.jpg Graphic file (type bmp)
-<img/background.jpg>
- [29
-
-]
-File: img/background.jpg Graphic file (type bmp)
-<img/background.jpg>
- [30
-
-]
-File: img/background.jpg Graphic file (type bmp)
-<img/background.jpg>
- [31
 
 ]
 \tf@nav=\write6
@@ -1212,15 +1187,15 @@ File: img/background.jpg Graphic file (type bmp)
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `R_in_NGS_report.out' has not changed.
-(rerunfilecheck)             Checksum: BC9FA6366DFC61850EEB266DD22C1CDB;3628.
+(rerunfilecheck)             Checksum: AF1039700645627053A94708EA3EC6FB;1343.
  ) 
 Here is how much of TeX's memory you used:
- 28809 strings out of 476179
- 641174 string characters out of 5809102
- 946855 words of memory out of 5000000
- 48918 multiletter control sequences out of 15000+600000
+ 28712 strings out of 476179
+ 637870 string characters out of 5809102
+ 944036 words of memory out of 5000000
+ 48823 multiletter control sequences out of 15000+600000
  476221 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,15n,122p,441b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,122p,441b,985s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on R_in_NGS_report.pdf (31 pages).
+Output written on R_in_NGS_report.pdf (26 pages).

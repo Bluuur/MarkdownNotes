@@ -1,17 +1,15 @@
 # 多线程
 
-## 什么是进程？什么是线程
+## 什么是进程？什么是线程？
 
-进程是一个应用程序
+进程是一个应用程序，线程是一个进程中的执行场景(执行单元)。
 
-线程是一个进程中的执行场景(执行单元)
+## 对于 Java 程序来说:
 
-## 对于Java程序来说:
-
-当在DOS命令窗口输入java helloworld回车之后
-会前启动JVM,而JVM就是一个进程
-JVM再启动一个主线程调用main方法
-同时再启动一个垃圾回收线程(GC)负责看护,回收垃圾
+当在 DOS 命令窗口输入 `java helloworld` 回车之后
+会前启动 JVM，而 JVM 就是一个进程
+JVM 再启动一个主线程调用 `main` 方法
+同时再启动一个垃圾回收线程(GC)负责看护，回收垃圾
 
 最起码,现在的Java程序中至少有两个线程并发
 一个是垃圾回收线程
@@ -28,7 +26,7 @@ JVM再启动一个主线程调用main方法
 
 假设启动10个线程,会有10个栈空间,每个栈和每个栈之间互不干扰,自己执行自己的,这就是多线程并发
 
-Java中至多一有多线程机制,是为了提高程序的处理效率
+Java有多线程机制,是为了提高程序的处理效率
 
 ## 程序的结束
 
@@ -877,7 +875,7 @@ package com.feidian.java.thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;//JUC包下,属于Java的并法宝,老JDK中没有这个包
+import java.util.concurrent.FutureTask;//JUC包下,属于Java的并发包,老JDK中没有这个包
 
 public class ThreadTest12 {
     public static void main(String[] args) {
@@ -919,7 +917,7 @@ public class ThreadTest12 {
 
 # Object类中的wait和notify方法 
 
-+  wait方法和notify方法不是线程对象的方法,时java中任何一个java对象的都有的方法,一位内这两个方法是Object类中自带的
++  wait方法和notify方法不是线程对象的方法,时java中任何一个java对象的都有的方法,因为这两个方法是Object类中自带的
    wait方法和notify方法不是通过线程对象调用的
 
 +  wait方法作用
