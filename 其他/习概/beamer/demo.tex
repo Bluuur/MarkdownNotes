@@ -1,0 +1,395 @@
+\documentclass{beamer}
+\usepackage{ctex}
+\usetheme{AnnArbor}
+\usecolortheme{spruce}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage {mathtools}
+\usepackage{utopia}
+
+\setbeamerfont{headline}{family=\kaishu}
+\setbeamerfont{footline}{family=\kaishu}
+\setbeamerfont{frametitle}{family=\kaishu}
+
+%----------
+
+\definecolor{myNewColorA}{RGB}{0, 81, 40}
+\definecolor{myNewColorB}{RGB}{153, 193, 173}
+\definecolor{myNewColorC}{RGB}{216, 232, 224}
+\setbeamercolor*{palette primary}{bg=myNewColorC}
+\setbeamercolor*{palette secondary}{bg=myNewColorB, fg = white}
+\setbeamercolor*{palette tertiary}{bg=myNewColorA, fg = white}
+\setbeamercolor*{titlelike}{fg=myNewColorA}
+\setbeamercolor*{title}{bg=myNewColorA, fg = white}
+\setbeamercolor*{item}{fg=myNewColorA}
+\setbeamercolor*{caption name}{fg=myNewColorA}
+\setbeamercolor*{block title alerted}{bg=myNewColorA, fg=white}
+\setbeamercolor*{block body alerted}{bg=myNewColorC}
+\usefonttheme{professionalfonts}
+\usepackage{natbib}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black
+}
+
+%----------
+
+\titlegraphic{\includegraphics[height=1.5cm]{img/hzau-logo.eps}}
+\setbeamertemplate{background}{\includegraphics[width=12.8cm]{img/background.jpg}}
+
+%----------
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{institute}{size=\small}
+\author[]{孙扬~姚代洪~谢樱子~宋俊亮~孙正芃~伍应天~张子栋}
+\title[浅谈中国女权]{浅谈中国女权}
+\institute[]{华中农业大学
+	
+	信息学院}
+\date[\today]{\today}
+
+%----------
+
+\AtBeginSection[]
+{
+	\begin{frame}{}
+		\transfade
+		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide]
+		\addtocounter{framenumber}{0}
+	\end{frame}
+}
+
+%----------
+
+\begin{document}
+	\kaishu
+	
+	\frame{\titlepage}
+	
+	\begin{frame}{声明}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.6\textwidth]{img/IMG_20230530_210751.png}
+		\end{figure}
+
+		\begin{alertblock}{声明}
+			我们尊重任何一位自食其力，靠自己的努力与勤劳换取美好幸福生活以及争取属于自己的人权的女权主义者，反对、鄙视任何一个想不劳而获，只愿意享受权利而不愿意承担义务，只喜欢无差别攻击所有男性并且以偏概全认为所有男性都该消失的极端女拳、田园女权。
+		\end{alertblock}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{目录}
+		\tableofcontents
+	\end{frame}
+	
+	\section{女权是什么}
+	\begin{frame}{女权是什么}
+		\begin{columns}
+			\column{0.4\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics{img/图片1.png}
+			\end{figure}
+
+			\column{0.6\textwidth}
+			\begin{itemize}
+				\item 女权主义是一个源自拉丁语“femina”和法语“feminime”的术语，前者意为女性，后者意为女权主义，于19世纪出现在西方国家。
+				\item 女权主义不仅是一种理论，也是一场旨在促进性别平等、消除性别歧视和基于性别的暴力的运动。
+				
+			\end{itemize}
+		\end{columns}
+	\end{frame}
+
+	\section{欧美女权的发展及现状}
+	\subsection*{欧美女权主义简述}
+	\begin{frame}{欧美女权的发展及现状}{欧美女权主义简述
+		}
+		\begin{columns}
+			\column{0.3\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/Snipaste_2023-05-30_22-49-57.png}
+			\end{figure}
+
+			\column{0.7\textwidth}
+			\begin{itemize}
+				\item 可以追溯19世纪末的欧美社会，当时女性的社会地位相对低下，为了争取与男性平等的权利，女权主义者开始发动运动，旨在争取平等权利和消除对女性的歧视。
+				\item 尽管女权主义在欧美国家得到了广泛的支持和认可，但一些批评者认为其过于强调女性自身的利益，导致忽视了其他社会群体的需要和利益。
+			\end{itemize}
+
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}{欧美女权的发展及现状}{“女权”OR“女拳”？}
+		\begin{itemize}
+			\item 强调男女平等
+			\begin{itemize}
+				\item 女性开始参与劳动力市场、获得教育和进入政治领域。逐渐获得对妇女权利的全面保障和对性别歧视的消除。
+			\end{itemize}
+			\item 强调女性弱势
+			\begin{itemize}
+				\item 一些女权主义者在争取到公平权益并获得独立后，并没有得到满足，开始在已有的关照女性的社会共识下，企图寻求更多的特权。
+			\end{itemize}
+			\item 强调男性有罪
+			\begin{itemize}
+				\item 站在男性对女性的历史下，把女性视为社会中唯一的受害者，并试图借此来获取更多社会上的优待和特权。
+			\end{itemize}
+
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{欧美女权的发展及现状}{跨性别主义者}
+		\begin{columns}
+			\column{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/图片4.png}
+				\caption{美国出现跨性别厕所}
+			\end{figure}
+
+			\column{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/图片5.jpg}
+				\caption{奥运会出现跨性别选手}
+			\end{figure}
+		\end{columns}
+
+		伴随着欧美女权主义的一步步压迫，一些国家开始萌生出“跨性别主义者”、“素食主义者”等等一系列同样站在受压迫的角度弱势群体，来避免受到女权主义的攻击，并且开始争取自己的平等待遇和法律保护。至此，欧美的各种关于性别的场合，逐渐变得畸形且混乱。
+
+	\end{frame}
+
+	\begin{frame}{欧美女权的发展及现状}{弱者利益的争取}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{img/图片6.jpg}
+		\end{figure}
+
+		现代社会的一个核心共识就是约束强者，帮助弱者，保证公平。欧美女权主义者认为女性作为弱者，她们的权益经常被侵害，因此要保障女性的权益。而LGBT因为作为小众群体，他们的利益经常被忽视，因此欧美女权主义者不能歧视LGBT。因为他们遵循着保护弱者的共识。
+
+	\end{frame}
+
+	\begin{frame}{欧美女权的发展及现状}{女权的扩张}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{img/图片13.png}
+			\caption{德国性侵案引千人游行，要求驱逐难民}
+		\end{figure}
+		
+		\begin{itemize}
+			\item 面对跨性别者等弱势群体的出现，建立在保护弱势群体这样社会道德共识基础上的传统女权主义无法保持原有的路线继续前进。
+			\item 而新自由主义女权联合跨性别者、难民等群体，呼吁帮助弱者，能够更好的保障社会公平，从而保证良性竞争环境，最终带动生产力发展。
+		\end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}{欧美女权的发展及现状}{保守主义的萌芽}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{img/图片8.jpg}
+			\caption{塔利班颁布新法令，禁止阿富汗女性接受大学教育}
+		\end{figure}
+
+		20-30岁这个年龄段的男性，年轻，没有家庭压力，也没有生活压力，都应该是一个社会中最前卫最革新的力量，各种新技术新产品新思潮的接受者和中坚力量。但在女权主义政治正确面前，越来越多的年轻男性开始意识到，资本家只是剥削你的剩余价值，女权可是直接宣判你是罪人，老板还要和你装兄弟发工资，对面可是直接不装了，宗族虽然古板好歹还讲道理，但女权这完全不讲道理。于是大量年轻男性，居然真的开始转向右翼保守阵营。
+
+	\end{frame}
+
+	\section{日韩女权的发展及现状}
+	\begin{frame}{日韩女权的发展及现状}
+		\begin{itemize}
+			\item 三十年前，随着日本经济飞速发展，女性获得经济自由后，对传统进行开火，日本女权思潮十分高涨。但在失去的20年里，多数企业面临崩盘，公司裁员，岗位减少，在日本内卷的大逃杀中，第一个出局的就是女性，家庭主妇的传统逐渐抬头，日本女权迎来了崩塌。
+			\item 日本女权极端化后的问题主要是他们放弃了提升女性自我这个主旨，而是向男性开炮，希望男性让渡利益。这些诉求都是建立在男性合作的基础上的。对于部分躺平的日本男性，他们对待这种让渡利益的合作态度也是躺平。对于精英男性，他们则认为不值得与被淘汰出局的女性合作。
+			\item 另一部分对未来就业充满期待的年轻女性将女权极端化。他们将经济下行时期就业的困难局面归结于男性社会的压迫，极端化的仇视男性，这显然不利于女权的发展。
+			\item 部分职场精英女性更加反对女权，女权带来的特殊化增加了他们的职场成本，在崩盘时代，这点成本就可能成为被裁员的原因。她们强调男女平等，但当她们发现后，已经晚了，大量的女性已经被裁员了。
+		\end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}{日韩女权的发展及现状}
+		\begin{itemize}
+			\item 在韩国的支柱产业不断的被冲击以及2008年世界的经济危机的情况下，社会上出现了严重的内卷情况，而内卷的结果就是女性在内卷的风暴下输掉了，之后随着Megalia等组织的出现，宣告着韩国极端女权诞生。
+			\item 韩国女权最根本的特点就是对男性的歧视，而其畸形的点就在，其矛头对准的不是资产阶级男性，而是和她们同一战线的无产阶级男性。这也造就了极端男性的产生，同时男女之间的战争愈演愈烈。
+			\item 女权的目标仅限于需要男性改进，而具体需要男性改进什么却没有一个总体的纲领，甚至在不同的女性之间的需求不一样，内部之间还可能存在矛盾
+			\item 而男性群里的共同利益更见明确，对女生的要求基本上都是年轻漂亮，更加容易形成统一战线。
+			\item 女性的共情能力更强，因此容易很早就开始开展女权的运动，但是之后因为各自的目标不同，从而使得女权群体中往往容易找不到重点方向四处乱打。而男性因为群体目标更加明确，所以力量足，后期力量更加坚固。
+		\end{itemize}
+	\end{frame}
+	
+	\section{中国女权的发展及现状}
+	\subsection*{关于女权主义的典型事件}
+	\begin{frame}{中国女权的发展及现状}{关于女权主义的典型事件}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{img/图片2.jpg}
+		\end{figure}
+
+		2022年6月10日凌晨，唐山某烧烤店发生了一起恶性伤人案件。犯罪嫌疑人对店内正用餐的4名女子中的一人进行骚扰并殴打对方，随后其同行人员冲入店内对受害人进行殴打，并将受害人拖至店外继续殴打。2022年9月23日，“唐山烧烤店打人案”在河北省廊坊市广阳区人民法院一审公开宣判，主犯陈继志被判处有期徒刑二十四年。
+
+	\end{frame}
+
+	\subsection*{中国田园女权为博取利益所采取的手段}
+	\begin{frame}{中国女权的发展及现状}{中国田园女权为博取利益所采取的手段}
+		\begin{columns}
+			\column{0.43\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics{img/图片3.jpg}
+				\caption{双标}
+			\end{figure}
+
+			\column{0.7\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics{img/图片4.jpg}
+				\caption{出售“赎罪劵”}
+			\end{figure}
+		\end{columns}
+	\end{frame}
+
+
+	\section{女权运动如今的困境}
+	\subsection*{伟大的先锋，申纪兰同志}
+	\begin{frame}{女权运动如今的困境}{伟大的先锋，申纪兰同志}
+		\begin{columns}
+			\column{0.3\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/图片5.png}
+				\caption{申纪兰同志}
+			\end{figure}
+
+			\column{0.7\textwidth}
+			\begin{itemize}
+				\item 先有人权，再有女权。
+				\item 1949年，毛主席提出：妇女能顶半边天
+				\item 1950年第一部法律《婚姻法》明确规定，必须尊重女性权益，实行一夫一妻制
+				\item 1951年，申纪兰同志提出“男女同工同酬”理念
+				\item 2019年9月，国家授予申纪兰共和国勋章 
+			\end{itemize}
+
+			\begin{quotation}
+				中国女权甚至是世界女权运动伟大的先锋，开路者。——申纪兰同志
+			\end{quotation}
+		\end{columns}
+	\end{frame}
+
+	\subsection*{女权的内核}
+	\begin{frame}{女权运动如今的困境}{女权的内核}
+		\begin{columns}
+			\column{0.35\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/图片6.png}
+			\end{figure}
+			
+			\column{0.6\textwidth}
+
+			\Huge{权责对等}\\
+
+			\quad\\
+			\normalsize
+			\begin{itemize}
+				\item 内核：平权，男女互相尊重
+			\end{itemize}
+		\end{columns}
+	\end{frame}
+
+	\subsection*{中国女性的地位}
+	\begin{frame}{女权运动如今的困境}{中国女性的地位}
+		中国是一个从建国之初起就坚决贯彻落实男女平等的国家,72年来，女性在我国社会的地位，已经有质的飞跃。
+		\begin{itemize}
+			\item 2015年，中国女性平均预期寿命为79.4岁
+			\item 2017年，本专科在校女生占在校生总数的比例：52.5\%
+			\item 2018年，完成大学本专科教育的女性比例：19\%，男性：17.5\%；研究生教育中女性比例：0.9\%，男性：0.8\%
+		\end{itemize}
+		\begin{columns}
+			\column{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.9\textwidth]{img/图片7.png}
+			\end{figure}
+
+			\column{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.9\textwidth]{img/图片8.png}
+			\end{figure}
+		\end{columns}
+	\end{frame}
+
+	\subsection*{中国女权为何会陷入困境}
+	\begin{frame}{女权运动如今的困境}{中国女权为何会陷入困境}
+		\begin{columns}
+			\column{0.3\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{img/图片9.png}
+			\end{figure}
+
+			\column{0.7\textwidth}
+			\begin{itemize}
+				\item 部分人将女性运动曲解为索取、依靠、不劳而获，与女权运动初衷相背离，给女权运动摸黑，导致很多真正的女权运动者羞于发声。
+				\item 女性挑战以男性的视角描述这个世界的习惯，例如：各界权威为什么只能是男性，凭什么家庭里面男主人一定是权威。但该阶段存在很大阻碍，不是短时间能解决的。
+			\end{itemize}
+		\end{columns}
+	\end{frame}
+
+	\subsection{中国女权面临失控的迹象}
+	\begin{frame}{女权运动如今的困境}{中国女权面临失控的迹象}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.3\textwidth]{img/图片10.png}
+		\end{figure}
+		\begin{itemize}
+			\item 世界女权运动各阶段诉求清晰
+			\begin{enumerate}
+				\item 选举权、一夫一妻制
+				\item 教育权、工作权，同工同酬，婚姻自由
+			\end{enumerate}
+			\item 有目标，才有行动方向，目前中国女权运动没有任何纲领，很多女权主义者压根不知道自己想要什么，所以随意提出诉求，例如日本的“反对生育”，韩国的“杀死男婴”。内部意见都无法统一。我们想要争取女性权益，就要清楚自己需要什么，分清谁是敌人，谁是朋友。
+			
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{女权运动如今的困境}{女权的敌人}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.3\textwidth]{img/图片11.png}
+		\end{figure}
+		\begin{itemize}
+			\item 是长大成人之后，父母的刻板观念：女孩子读那么多书有什么用
+			\item 是在工作上，怀孕之后：公司想要辞退或者拒绝继续录用
+			\item 是成婚之后，丈夫一言不合就家暴，把女性当做私人物品
+			\item 是人死之后，女性碑文上没有全名，只有一个某某氏，
+			\item 而不是：好逸恶劳，享受权利却不愿付出义务
+			\item 更不是： 盯着底层男性拼命榨压从而达到自己想要的心理平衡
+		\end{itemize}
+
+		不管是解决职场歧视，还是保障女性权益，造成这一现状的可不是你旁边的男同学，男同事，底层男性没有制定规则的权利，但是是一个庞大数量的群体，对他们挤兑攻击，只会引起类似日韩的反弹。
+	\end{frame}
+
+	\section{总结}
+	\begin{frame}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.4\textwidth]{img/图片12.png}
+		\end{figure}
+
+		我们习惯性的认为，女性是社会的弱势群体，但是真相是，这个社会最大的弱势群体其实是底层人，矛盾的对立方在阶级，而不在于性别，社会主义从提出的那一天起，要做的一件很重要的事就是抹平阶级差异，在实现这一伟大愿望的道路上，男性和女性不仅不是敌人，反而是最亲密的战友，虽然任重道远，前路漫长，但我们依然相信，未来一片光明。
+	\end{frame}
+	
+	\section*{致谢}  
+	\begin{frame}
+		\begin{center}
+			\textcolor{myNewColorA}{\huge {谢谢!\\ \quad \\ 请老师批评指正！}}
+		\end{center}
+	\end{frame}
+	
+\end{document}
