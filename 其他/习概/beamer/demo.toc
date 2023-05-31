@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{女权是什么}{4}{0}{1}
 \beamer@sectionintoc {2}{欧美女权的发展及现状}{6}{0}{2}
 \beamer@sectionintoc {3}{日韩女权的发展及现状}{13}{0}{3}
-\beamer@sectionintoc {4}{中国女权的发展及现状}{16}{0}{4}
-\beamer@sectionintoc {5}{女权运动如今的困境}{19}{0}{5}
-\beamer@subsectionintoc {5}{5}{中国女权面临失控的迹象}{24}{0}{5}
-\beamer@sectionintoc {6}{总结}{26}{0}{6}
+\beamer@sectionintoc {4}{中国女权的发展及现状}{22}{0}{4}
+\beamer@sectionintoc {5}{女权运动如今的困境}{25}{0}{5}
+\beamer@subsectionintoc {5}{5}{中国女权面临失控的迹象}{30}{0}{5}
+\beamer@sectionintoc {6}{总结}{32}{0}{6}
