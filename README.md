@@ -1,24 +1,7 @@
 # MarkdownNotes
 + 个人笔记，可能有错误。
 + 推荐使用 [Typora](https://typora.io) 打开
-+ 也可使用其他 Markdown 编辑器，如 [Obsidian](https://obsidian.md/) 。
-
-
-
->   ## 如何查看笔记
->
->   ### 方法1
->
->   下载本仓库到本地解压查看
->   可以使用上述两个软件 (Typora/Obsidian)
->
->   ### 方法2
->
->   GitHub 在线查看
->
->   可以直接在 GitHub 显示图片
->   
->本仓库同步至 Gitee [MarkdownNotes: MarkdownNotes， mirro of https://github.com/Bluuur/MarkdownNotes (gitee.com)](https://gitee.com/bluur/MarkdownNotes)
++ 本项目最新文档均参考 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-Hans.md) 进行排版。
 
 
 
