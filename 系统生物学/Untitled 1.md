@@ -16,11 +16,11 @@ ATP 合成是细胞代谢中一个非常重要的过程，ATP 合成能够提供
 
 $$
 \begin{aligned}
-\frac{d [\text{ATP}]}{dt} &= k_{1}[\text{ADP}] [\text{Pi}] - k_2 [\text{ATP}] \\
-\frac{d [\text{ADP}]}{dt} &= k_{2} [\text{ATP}] - k_{1} [\text{ADP}] [\text{Pi}] \\
-\frac{d [\text{Pi}]}{dt} &= k_{1} [\text{ADP}] [\text{Pi}] - k_{2} [\text{ATP}] \\
-\frac{d [\text{NADH}]}{dt} &= -k_{3} [\text{NADH}] [\text{H}] + k_{4} [\text{FADH}_2] [\text{H}] \\
-\frac{d [\text{H}]}{dt} &= -k_{5} [\text{NADH}] [\text{H}] + k_{6} [\text{O}_2]\frac{ [\text{H}_2\text{O}]}{K_m + [\text{H}_2\text{O}]}
+\frac{\mathrm{d}[\text{ATP}]}{dt} &= k_{1}[\text{ADP}] [\text{Pi}] - k_2 [\text{ATP}] \\
+\frac{\mathrm{d}[\text{ADP}]}{dt} &= k_{2} [\text{ATP}] - k_{1} [\text{ADP}] [\text{Pi}] \\
+\frac{\mathrm{d}[\text{Pi}]}{dt} &= k_{1} [\text{ADP}] [\text{Pi}] - k_{2} [\text{ATP}] \\
+\frac{\mathrm{d}[\text{NADH}]}{dt} &= -k_{3} [\text{NADH}] [\text{H}] + k_{4} [\text{FADH}_2] [\text{H}] \\
+\frac{\mathrm{d}[\text{H}]}{dt} &= -k_{5} [\text{NADH}] [\text{H}] + k_{6} [\text{O}_2]\frac{ [\text{H}_2\text{O}]}{K_m + [\text{H}_2\text{O}]}
 \end{aligned}
 $$
 

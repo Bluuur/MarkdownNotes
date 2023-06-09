@@ -1,0 +1,134 @@
+\documentclass{ctexart}
+
+\usepackage{mhchem}
+\usepackage{float}
+\usepackage{booktabs}
+% 设置页边距
+\usepackage{geometry}
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+
+% 设置目录显示的深度
+\setcounter{tocdepth}{3}
+
+% 设置标号深度
+\setcounter{secnumdepth}{3}
+
+\title{对于生物体内ATP合成反应的系统生物学建模}
+\author{生信2001张子栋}
+\date{\today}
+
+% 正文区
+\begin{document}
+
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+% 目录设为页码 0（从正文起为第一页）
+\setcounter{page}{0}
+
+% 目录的页脚设为空
+\thispagestyle{empty}
+
+\newpage
+
+\section{生物学背景}
+ATP合成是细胞代谢中一个非常重要的过程，它可以利用电子传递链产生的质子驱动力，将ADP和无机磷酸合成为ATP，从而提供细胞所需的能量。ATP合成反应是一个氧化磷酸化的过程，发生在真核细胞的线粒体内膜或原核生物的细胞质中；ATP合成反应是一个偶联反应，即有机物在体内氧化时释放的能量通过呼吸链供给ADP与无机磷酸合成ATP。氧化磷酸化过程中 ATP 的合成与电子传递链上的几种复合体密切相关。电子传递链（ETC）上有五种酶复合物支持 OXPHOS 系统运转：复合物 I （也称 CI 或 NADH：泛醌氧化还原酶），复合物 II （也称 CII 或琥珀酸脱氢酶 SDH），二聚体复合物 III2 （也称 CIII2 或细胞色素 bc1 氧化还原酶），复合物 IV （也称 CIV 或细胞色素 c 氧化酶）。由复合物 I-IV 生成的质子梯度随后被复合物 V，也就是 ATP 合酶所利用，将 ADP 磷酸化为ATP。本文从系统生物学的角度对ATP合成过程进行建模和求解，基于已知的实验数据和资料，建立一个可计算的数学模型，通过模拟和求解此模型，获得有关ATP合成过程的定量信息，以探究ATP合成的机制。
+
+\section{模型的建立}
+\subsection{ATP合成的相关反应}
+ATP合成包括以下反应：
+\quad\\
+
+\ce{ADP + Pi ->[ATP Synthase] ATP}
+
+\ce{ATP ->[ATP ase] ADP + Pi}
+
+\ce{NADH + H ->[Complex I] FADH_2}
+
+\ce{FADH_2 + H ->[Complex II] NADH}
+
+\ce{NADH + H + \frac{1}{2} O_2 ->[Complex IV] NAD^+ + H2O}
+\quad\\
+
+其中，第一个反应是由复合物V（ATP合酶）催化的，产物是ATP，这个反应被称为磷酸化；第二个反应是由复合物V（ATP酶）催化的，产物是 ADP 和 Pi，这个反应被称为解磷酸化。第三个反应是由复合物I（NADH-辅酶Q氧化还原酶）和复合物III（细胞色素bc1复合体）催化的，产物是ATP，这个反应被称为氧化磷酸化。第三个是由复合物I催化，产物是$NAD^+$和$H^+$，第四个反应是由复合物II（脂肪酰辅酶Q还原酶）催化，产物是FAD和$H^+$。这两个反应都是电子传递链中的反应。
+
+\subsubsection{各反应反应速率常数}
+各反应反应速率常数如下表，$k_1 - k_6$ 分别对应五个反应，$K_m$ 是酶促反应的 Michaelis 常数。
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        反应速率平衡常数 & 数值 & 单位\\
+        \midrule
+        $k_1$ & 200.0 & $mM^{-2} \cdot s^{-1}$\\
+        $k_2$ & 10.0 & $s^{-1}$\\
+        $k_3$ & 0.1 & $s^{-1}$\\
+        $k_4$ & 0.01 & $s^{-1}$\\
+        $k_5$ & 2.0 & $mM^{-1} \cdot s^{-1}$\\
+        $k_6$ & 0.1 & $mM^{-1} \cdot s^{-1}$\\
+        $K_M$ & 0.1 & $mM$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{\textbf{模型中各物质初始浓度}}
+\end{table}
+
+\subsection{建立常微分方程组}
+\subsubsection{模型需要满足的假设}
+
+采用常微分方程组的方法，建立 ATP 合成的机制动态数学模型。该模型包括以下假设：
+
+\begin{enumerate}
+    \item ATP 合成过程中，存在着多个反应步骤，其中一些反应需要能量输入，一些产生能量。
+    \item ATP 合成过程中，各个分子组分之间及其反应关系是相互联系的。
+    \item ATP 合成反应的速率与当时反应物的浓度有关，可以用速率方程来描述。
+    \item ATP 合成反应的速率方程可以用微积分方法来求解，得到一个积分反应速率方程。
+\end{enumerate}
+
+\subsubsection{常微分方程组的建立}
+
+基于 2.2.1 中的假设，建立一个包含五个动态变量（ATP，ADP，Pi，NADH，H）的微分方程组：
+
+$$
+    \begin{aligned}
+        \frac{\mathrm{d}[\text{ATP}]}{d\mathrm{d}t} & = k_{1}[\text{ADP}] [\text{Pi}] - k_2 [\text{ATP}]                                                             \\
+        \frac{\mathrm{d}[\text{ADP}]}{\mathrm{d}t}  & = k_{2} [\text{ATP}] - k_{1} [\text{ADP}] [\text{Pi}]                                                          \\
+        \frac{\mathrm{d}[\text{Pi}]}{\mathrm{d}t}   & = k_{1} [\text{ADP}] [\text{Pi}] - k_{2} [\text{ATP}]                                                          \\
+        \frac{\mathrm{d}[\text{NADH}]}{\mathrm{d}t} & = -k_{3} [\text{NADH}] [\text{H}] + k_{4} [\text{FADH}_2] [\text{H}]                                           \\
+        \frac{\mathrm{d}[\text{H}]}{\mathrm{d}t}    & = -k_{5} [\text{NADH}] [\text{H}] + k_{6} [\text{O}_2]\frac{ [\text{H}_2\text{O}]}{K_m + [\text{H}_2\text{O}]}
+    \end{aligned}
+$$
+
+其中，$[\text{ATP}]$、$[\text{ADP}]$、$[\text{Pi}]$、$[\text{NADH}]$ 和 $[\text{H}]$ 分别表示三磷酸腺苷、二磷酸腺苷、无机磷酸盐、辅酶NADH 和 氢离子的浓度；$k_{1-6}$ 表示各反应的速率常数；$K_m$ 是酶促反应的 Michaelis 常数。
+
+\subsection{模型中各物质初始浓度}
+模型中各物质初始浓度如下表：
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule%第一道横线
+        物质 & 浓度 & 单位\\
+        \midrule%第二道横线 
+        ATP & 2.0 & mM\\
+        ADP & 0.5 & mM\\
+        Pi & 1.0 & mM\\
+        NADH & 0.01 & mM\\
+        H & 0.001 & mM\\
+        $\mathrm{FADH_2}$ & 0.01 & mM\\
+        $\mathrm{O_2}$ & 0.01 & mM\\
+        \bottomrule
+    \end{tabular}
+    \caption{\textbf{模型中各物质初始浓度}}
+\end{table}
+
+
+
+
+
+\end{document}
