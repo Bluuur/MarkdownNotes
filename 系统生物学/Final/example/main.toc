@@ -6,3 +6,6 @@
 \contentsline {subsubsection}{\numberline {2.2.1}模型需要满足的假设}{2}{}%
 \contentsline {subsubsection}{\numberline {2.2.2}常微分方程组的建立}{2}{}%
 \contentsline {subsection}{\numberline {2.3}模型中各物质初始浓度}{3}{}%
+\contentsline {section}{\numberline {3}代码求解}{3}{}%
+\contentsline {subsection}{\numberline {3.1}计算过程}{3}{}%
+\contentsline {subsection}{\numberline {3.2}作图}{3}{}%
