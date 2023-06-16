@@ -47,17 +47,22 @@
 
 \begin{document}
 
-\thispagestyle{empty}
-
 \maketitle
+\thispagestyle{empty}
 
 \clearpage
 
 \thispagestyle{empty}
-\begin{abstract}
-    
-\end{abstract}
 \setcounter{page}{0}
+
+\begin{abstract}
+    ChIP-seq 有助于了解基因之间的相互调控、表观遗传机制和染色体的结构与动态；可以确定转录因子的结合位点、作用通路、结合 motif 等。可以使用 R 中的一些专门的包来进行 ChIP-seq 数据的peak annotation 和可视化等步骤。参考的数据文章\cite{ref1}使用 ChIP-Seq 的目的是为了发现 HIF-1 直接调控的基因，并分析它们在缺氧应答通路中的功能。
+\end{abstract}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\textwidth]{img/Final_project_cover.pdf}
+\end{figure}
 
 \clearpage
 
@@ -77,7 +82,7 @@
 
 \subsubsection{在 PubMed 中检索文献}
 
-在 \href{https://pubmed.ncbi.nlm.nih.gov/}{PubMed (nih.gov)} 中搜索关键字 Caenorhabditis Elegans ChIP-seq. 并选定文献为 \href{https://pubmed.ncbi.nlm.nih.gov/36257965/}{The hypoxia response pathway promotes PEP carboxykinase and gluconeogenesis in C. elegans} (Nat Commun. 2022 Oct 18;13(1):6168. DOI: \href{https://doi.org/10.1038/s41467-022-33849-x}{10.1038/s41467-022-33849-x} ).
+在 \href{https://pubmed.ncbi.nlm.nih.gov/}{PubMed (nih.gov)} 中搜索关键字 Caenorhabditis Elegans ChIP-seq. 并选定文献为 \href{https://pubmed.ncbi.nlm.nih.gov/36257965/}{The hypoxia response pathway promotes PEP carboxykinase and gluconeogenesis in C. elegans} (Nat Commun. 2022 Oct 18;13(1):6168. DOI: \href{https://doi.org/10.1038/s41467-022-33849-x}{10.1038/s41467-022-33849-x} )\cite{ref1}.
 
 这篇文章研究的内容是在线虫中，缺氧应答通路如何通过激活 HIF-1 转录因子来调节 PEP 羧激酶和糖异生的基因表达和代谢流动，从而提高对氧化应激和缺氧应激的抵抗力。PEP 羧激酶是糖异生过程中的限速酶，可以将草酰乙酸转化为磷酸烯醇式丙酮酸。
 
@@ -200,24 +205,9 @@ Bowtie 是一个超快的，存储高效的短序列片段比对程序。它能�
 
 Bowtie 的使用也需要先对参考基因组建立索引，然后再进行比对。比对的结果是一个 SAM 或 BAM 格式的文件，可以用 Samtools 进行后续的处理。
 
-\subsubsection{Samtools}
+\subsubsection{RSamtools}
 
-Samtools 是一个用于处理 SAM 或 BAM 格式的比对结果的软件包，它可以实现以下功能：
-
-\begin{itemize}
-\item 转换 SAM 和 BAM 格式，例如：
-\begin{lstlisting}
-samtools view -bS in.sam > out.bam
-\end{lstlisting}
-\item 排序和合并 BAM 文件，例如：
-\begin{lstlisting}
-samtools sort in.bam -o out.sorted.bam
-\end{lstlisting}
-\item 统计比对结果，例如：
-\begin{lstlisting}
-samtools flagstat in.bam
-\end{lstlisting}
-\end{itemize}
+RSamtools 是一个用于处理 SAM 或 BAM 格式的比对结果的软件包，本文使用该 R 包进行比对结果的分析。
 
 \subsubsection{Bedtools}
 
@@ -254,7 +244,7 @@ macs2 callpeak -t <ChIP-seq文件> -c <对照文件> -f <文件格式> -g <基�
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{MEME***}
+\subsubsection{MEME}
 
 MEME是一款用于分析蛋白质，DNA和RNA中的序列Motif的软件，它可以用来寻找转录因子结合位点的共有序列特征。MEME的基本原理是利用最大期望算法（Expectation Maximization）来从一组序列中识别出重复出现的Motif。MEME提供了在线版和本地版。
 
@@ -307,7 +297,7 @@ fastqc.test/
 	\end{lstlisting}
 \end{enumerate}
 
-FastQC 结果：
+FastQC 结果见 Fig. 2 - 18。
 \begin{itemize}
 	\item 每序列 GC 含量略微偏离正态分布。
 	\item 过表达序列为 adapter.
@@ -367,37 +357,46 @@ bowtie2 -p 10 -x ~/bowtie_index/c_elegans.PRJNA275000.WS286.genomic.bowtie -U ~/
 
 生成文件：\verb|c_elegans_ChIP-Seq.sam|
 
-\subsection{Samtools 统计比对结果}
+\subsection{RSamtools 统计比对结果}
 
 \subsubsection{Bowtie 比对结果}
 
 具体命令：
 
 \begin{lstlisting}
-samtools view -S -b ~/bowtie_result/c_elegans_ChIP-Seq.sam | samtools flagstat - > ~/bowtie_result/flagstat.txt
+library(Rsamtools)
+bamFile <- "C:\\Users\\ZidongZh\\Documents\\BioInf\\bio_zdzhang\\bowtie_result\\c_elegans_ChIP-Seq.bam"
+quickBamFlagSummary(bamFile)
 \end{lstlisting}
 
 输出结果：
 
 \begin{lstlisting}
-6492282 + 0 in total (QC-passed reads + QC-failed reads)
-0 + 0 secondary
-0 + 0 supplementary
-0 + 0 duplicates
-3405738 + 0 mapped (52.46\% : N/A)
-0 + 0 paired in sequencing
-0 + 0 read1
-0 + 0 read2
-0 + 0 properly paired (N/A : N/A)
-0 + 0 with itself and mate mapped
-0 + 0 singletons (N/A : N/A)
-0 + 0 with mate mapped to a different chr
-0 + 0 with mate mapped to a different chr (mapQ>=5)
+	group |    nb of |    nb of | mean / max
+	of |  records |   unique | records per
+records | in group |   QNAMEs | unique QNAME
+All records........................ A |  6492282 |  6492282 |    1 / 1
+o template has single segment.... S |  6492282 |  6492282 |    1 / 1
+o template has multiple segments. M |        0 |        0 |   NA / NA
+- first segment.............. F |        0 |        0 |   NA / NA
+- last segment............... L |        0 |        0 |   NA / NA
+- other segment.............. O |        0 |        0 |   NA / NA
+
+Note that (S, M) is a partitioning of A, and (F, L, O) is a partitioning of M.
+Indentation reflects this.
+
+Details for group S:
+o record is mapped.............. S1 |  3405738 |  3405738 |    1 / 1
+- primary alignment......... S2 |  3405738 |  3405738 |    1 / 1
+- secondary alignment....... S3 |        0 |        0 |   NA / NA
+o record is unmapped............ S4 |  3086544 |  3086544 |    1 / 1
 \end{lstlisting}
+
+有 3405738 条 reads 比对到参考基因组上，占总数的 52.46\%。
 
 \subsection{Peak Calling}
 
-利用计算的方法找到ChIP-seq或ATAC-seq中 reads 富集的基因组区域。
+利用计算的方法找到ChIP-seq中 reads 富集的基因组区域。
 
 具体命令：
 
@@ -417,8 +416,10 @@ peak_calling/
 |-- test_summits.bed
 \end{lstlisting}
 
+结果见 Fig. 19。
 
-\subsection{Motif 分析}
+
+\subsection{Motif Analysis}
 
 首先需要获得 fasta 格式的 peak 文件，使用 Bedtools ：
 
@@ -426,11 +427,11 @@ peak_calling/
 bedtools getfasta -fi ~/bwa_index/c_elegans.PRJNA275000.WS286.genomic.fa -bed ~/peak_calling/test_peaks.narrowPeak -fo ./peak.fasta
 \end{lstlisting}
 
-由于在线版 MEME 需要排队，以及运行时间长，故使用 TBtools 中内嵌的本地版 MEME.
+由于在线版 MEME 需要排队，以及运行时间长，故使用 TBtools 中内嵌的本地版 MEME。结果见 Fig. 20 - 22。
 
-\subsection{Peak 注释}
+\subsection{Peak Annotation}
 
-使用 R 包 ChIPseeker 进行 peak 注释。
+使用 R 包 ChIPseeker 进行 peak 注释。结果见 Fig. 23 - 25
 
 具体命令：
 
@@ -452,12 +453,14 @@ gene <- df[,14]
 write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.names =FALSE, quote =FALSE)
 \end{lstlisting}
 
+\subsection{Gene Ontology}
+使用 Panther 进行 GO富集分析。将 gene list 上传至 Panther 网站，选择物种为线虫。结果见 Fig. 26 - 30。
 
 \section{结果与图表}
 
-\subsection{FastQC Result}
+% \subsection{FastQC Result}
 
-\subsubsection{Original Data}
+% \subsubsection{Original Data}
 
 \begin{figure}[!htb]
 	\centering
@@ -515,7 +518,7 @@ write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.nam
 
 
 
-\subsubsection{Processed Data}
+% \subsubsection{Processed Data}
 
 \begin{figure}[!htb]
 	\centering
@@ -566,7 +569,7 @@ write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.nam
 	\caption{Sequence length distribution (Processed)\protect}    
 \end{figure}
 
-\subsection{Peak calling}
+% \subsection{Peak calling}
 \begin{figure}[h]
 	\begin{minipage}{0.45\linewidth}
 		\centerline{\includegraphics[width=\textwidth]{img/peak_model.png}}
@@ -579,7 +582,7 @@ write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.nam
 \caption{Peak calling 结果}
 \end{figure}
 
-\subsection{Motif Analysis}
+% \subsection{Motif Analysis}
 
 \begin{figure}
 	\centering
@@ -597,7 +600,7 @@ write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.nam
 	\caption{MEME 输出结果}
 \end{figure}
 
-\subsection{Peak Annotation}
+% \subsection{Peak Annotation}
 
 \begin{figure}[htb]
 	\centering
@@ -618,7 +621,7 @@ write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.nam
 \end{figure}
 
 
-\subsection{Gene Ontology}
+% \subsection{Gene Ontology}
 
 \begin{figure}[htb]
 	\centering
@@ -644,5 +647,19 @@ write.table (gene, file ="D:\\gene_list.txt", sep ="", row.names =FALSE, col.nam
 	\centering
 	\includegraphics[width=\textwidth]{img/GO_MolFun.png}
 \end{figure}
+
+\clearpage
+
+\section{讨论和结论}
+
+文章\cite{ref1}的主要结论是，HIF-1（缺氧诱导因子1）可以促进PEP羧激酶（PCK-1）的表达，从而增加糖异生的速率，帮助线虫在缺氧和氧化应激下存活。文章\cite{ref1}使用了RNA-seq和ChIP-seq两种技术来分析缺乏HIF-1负调控因子EGL-9的突变体在有氧条件下的基因组、转录组和代谢组的变化。ChIP-seq是一种结合染色质免疫沉淀和高通量测序的方法，可以用来鉴定转录因子在基因组上的结合位点。文章\cite{ref1}利用ChIP-seq来确定HIF-1直接调控的基因，发现了200多个上调的基因，其中包括PEP羧激酶PCK-1。文章\cite{ref1}还验证了HIF-1结合到PCK-1启动子区域的特异性。ChIP-seq在文中\cite{ref1}的作用是揭示了HIF-1的转录调控网络，发现了一个新的HIF-1靶基因PCK-1，为研究HIF-1在糖异生中的作用提供了重要线索。
+
+\clearpage
+
+\begin{thebibliography}{99}
+
+	\bibitem{ref1} Vora M, Pyonteck SM, Popovitchenko T, Matlack TL, Prashar A, Kane NS, Favate J, Shah P, Rongo C. The hypoxia response pathway promotes PEP carboxykinase and gluconeogenesis in C. elegans. Nat Commun. 2022 Oct 18;13(1):6168. doi: 10.1038/s41467-022-33849-x. PMID: 36257965; PMCID: PMC9579151.
+
+\end{thebibliography}
 
 \end{document}
