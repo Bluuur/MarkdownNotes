@@ -8,4 +8,5 @@
 \contentsline {subsection}{\numberline {2.3}模型中各物质初始浓度}{3}{}%
 \contentsline {section}{\numberline {3}代码求解}{3}{}%
 \contentsline {subsection}{\numberline {3.1}计算过程}{3}{}%
-\contentsline {subsection}{\numberline {3.2}作图}{3}{}%
+\contentsline {subsection}{\numberline {3.2}结果}{5}{}%
+\contentsline {section}{\numberline {4}结论与总结}{5}{}%
