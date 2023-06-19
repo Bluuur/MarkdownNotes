@@ -1,10 +1,12 @@
 # 多线程
 
-## 什么是进程？什么是线程？
+## 基本概念
+
+### 进程与线程
 
 进程是一个应用程序，线程是一个进程中的执行场景(执行单元)。
 
-## 对于 Java 程序来说:
+### 对于 Java 程序来说:
 
 当在 DOS 命令窗口输入 `java helloworld` 回车之后，会先启动 JVM，而 JVM 就是一个进程，JVM 再启动一个主线程调用 `main()` 方法，同时再启动一个垃圾回收线程（GC）负责看护，回收垃圾。
 
@@ -12,7 +14,7 @@
   + 垃圾回收线程
   + 执行 `main()` 方法的主线程
 
-## 进程和线程的关系
+### 进程和线程的关系
 
 进程 A 和进程 B 的内存独立不共享
 
@@ -24,11 +26,11 @@
 
 Java 有多线程机制，是为了提高程序的处理效率。
 
-## 程序的结束
+### 程序的结束
 
 使用了多线程机制之后，`main()` 方法结束，有可能程序不会结束，`main()` 方法结束之时主线程结束，主栈空了，其他的栈（线程）可能还在压栈弹栈
 
-## CUP 与多线程
+### CUP 与多线程
 
 对于多核的 CPU 来说，可以进行真正的多线程并行。
 
@@ -67,9 +69,9 @@ public class ThreadTest01 {
 
 ```
 
-# Java 语言实现线程的两种方式
+## Java 语言实现线程的两种方式
 
-## 第一种方式
+### 第一种方式
 
 ​	编写一个类，直接继承 `java.lang.Thread`，重写 `run()` 方法
 
@@ -77,17 +79,17 @@ public class ThreadTest01 {
 package com.feidain.java.thread;
 
 public class ThreadTest02 {
-    //这里是main方法,这里的代码属于主线程,在主栈中运行
-    //创建一个分支线程对象
+    // 这里是 main 方法，这里的代码属于主线程，在主栈中运行
+    // 创建一个分支线程对象
     public static void main(String[] args) {
         MyThread myThread = new MyThread();
-        //启动分支线程
-        //start方法的作用是在JVM中开辟一个新的栈空间,这段代码的任务(开辟新的栈空间)完成之后,瞬间就结束了,线程启动成功
-        //启动成功的线程会自动调用run方法,并且run方法在分支栈的底部(压栈)
-        //run方法在分支栈的栈底,main方法在主栈的栈底;run方法和main方法是平级的
+        // 启动分支线程
+        // start 方法的作用是在 JVM 中开辟一个新的栈空间，这段代码的任务（开辟新的栈空间）完成之后，瞬间就结束了，线程启动成功
+        // 启动成功的线程会自动调用 run 方法，并且 run 方法在分支栈的底部（压栈）
+        // run 方法在分支栈的栈底，main 方法在主栈的栈底；run 方法和 main 方法是平级的
         myThread.start();
-        //如果直接调用myThread.run()方法,不会启动线程,不会分配新的分支栈
-        //从这里开始的代码任然运行在主线程中
+        // 如果直接调用 myThread.run() 方法，不会启动线程，不会分配新的分支栈
+        // 从这里开始的代码任然运行在主线程中
         for (int i = 0; i < 1000; i++){
             System.out.println("主线程-->" + i);
         }
@@ -104,7 +106,7 @@ class MyThread extends Thread{
 }
 ```
 
-## 第二种方法
+### 第二种方法
 
 编写一个类，实现 `java.lang.Runnable` 接口，实现 `run()` 方法
 
@@ -112,17 +114,17 @@ class MyThread extends Thread{
 package com.feidain.java.thread;
 
 public class ThreadTest02 {
-    //这里是main方法,这里的代码属于主线程,在主栈中运行
-    //创建一个分支线程对象
+    // 这里是 main 方法，这里的代码属于主线程，在主栈中运行
+    // 创建一个分支线程对象
     public static void main(String[] args) {
         MyThread myThread = new MyThread();
-        //启动分支线程
-        //start方法的作用是在JVM中开辟一个新的栈空间,这段代码的任务(开辟新的栈空间)完成之后,瞬间就结束了,线程启动成功
-        //启动成功的线程会自动调用run方法,并且run方法在分支栈的底部(压栈)
-        //run方法在分支栈的栈底,main方法在主栈的栈底;run方法和main方法是平级的
+        // 启动分支线程
+        // start 方法的作用是在 JVM 中开辟一个新的栈空间，这段代码的任务（开辟新的栈空间）完成之后，瞬间就结束了，线程启动成功
+        // 启动成功的线程会自动调用 run 方法，并且 run 方法在分支栈的底部（压栈）
+        // run 方法在分支栈的栈底，main 方法在主栈的栈底；run 方法和 main 方法是平级的
         myThread.start();
-        //如果直接调用myThread.run()方法,不会启动线程,不会分配新的分支栈
-        //从这里开始的代码任然运行在主线程中
+        // 如果直接调用 myThread.run() 方法，不会启动线程，不会分配新的分支栈
+        // 从这里开始的代码任然运行在主线程中
         for (int i = 0; i < 1000; i++){
             System.out.println("主线程-->" + i);
         }
@@ -141,7 +143,7 @@ class MyThread extends Thread{
 
 +  相比第一种方法（继承 `Thread` 类），第二种方法更好（实现 `Runnable` 接口），这样是面向接口编程，可以继承多个接口，又不占用单继承的类。
 
-## 采用匿名内部类的方法
+### 采用匿名内部类的方法
 
 ```java
 public class ThreadTest04 {
@@ -165,7 +167,7 @@ public class ThreadTest04 {
 
 ```
 
-# 线程的生命周期
+## 线程的生命周期
 
 ![ThreadLifespan.drawio](Chapter24多线程.assets/ThreadLifespan.drawio.svg)
 
@@ -174,9 +176,9 @@ public class ThreadTest04 {
 +  当一个线程遇到阻塞事件（`sleep()`，接受键盘输入等）时。线程会进图阻塞状态,阻塞状态的线程会放弃之前占有的 CPU 时间片。
 +  `yield()` 方法会让运行中的线程回到就绪状态。
 
-##　线程名
+###　线程名
 
-## 获取线程名
+### 获取线程名
 
 ```java
 线程对象.getName();
@@ -184,13 +186,13 @@ public class ThreadTest04 {
 
 如果没有对线程名进行修改，默认线程名为 `Thread-0`。
 
-## 修改线程名
+### 修改线程名
 
 ```java
 线程对象.setName("线程名");
 ```
 
-## 获取当前线程对象
+### 获取当前线程对象
 
 `Thread  t =  Thread.currentThread();` 
 
@@ -204,7 +206,7 @@ public class ThreadTest04 {
 
 `main()` 方法的线程名为`main`
 
-# 线程的 `sleep()` 方法
+## 线程的 `sleep()` 方法
 
 `static void sleep(long millis)`
 
@@ -215,7 +217,7 @@ public class ThreadTest04 {
 
 >  这行代码出现在 A 线程中，A 线程就进入休眠.
 
-## sleep()是静态方法
+### sleep()是静态方法
 
 ```java
 public class ThreadTest07 {
@@ -224,11 +226,11 @@ public class ThreadTest07 {
         t.setName("t");
         t.start();
         
-        //sleep()是一个静态方法,不是实例方法,不是对象级别的方法.使用"引用."调用sleep()
-        //与直接用"类名."调用没有区别,结果是让"currentThread"睡眠
-        //在下面的代码中,是让主线程睡眠
+        // sleep()是一个静态方法,不是实例方法,不是对象级别的方法.使用"引用."调用sleep()
+        // 与直接用"类名."调用没有区别,结果是让"currentThread"睡眠
+        // 在下面的代码中,是让主线程睡眠
         try {
-            t.sleep(1000 * 5);//在运行的时候会转换成"Thread.sleep();",让当前线程(main)睡眠
+            t.sleep(1000 * 5);// 在运行的时候会转换成"Thread.sleep();",让当前线程(main)睡眠
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -247,7 +249,7 @@ class MyThread03 extends Thread{
 
 ```
 
-## 终止线程的睡眠
+### 终止线程的睡眠
 
 ```java
 public class ThreadTest08 {
@@ -255,23 +257,28 @@ public class ThreadTest08 {
         Thread t = new Thread(new MyRunnable02());
         t.start();
         try {
-            Thread.sleep(1000 * 5);//五秒后终断t线程睡眠
+            // 五秒后终断 t 线程睡眠
+            Thread.sleep(1000 * 5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        t.interrupt();//打断t的睡眠,引起线程t的sleep()异常,执行catch
+        // 打断 t 的睡眠，引起线程 t 的 sleep()异常，执行 catch
+        t.interrupt();
     }
 }
 
 class MyRunnable02 implements Runnable{
-    //run()方法中的异常不能抛出,只能try/catch
+    // run() 方法中的异常不能抛出，只能 try/catch
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName() + "---> begin");
-        try {//这里不能抛出异常,只能try/catch,因为子类不能比父类抛出更多的异常
-            Thread.sleep(1000 * 60 * 60 * 24 * 365);//睡眠一年
+        try {
+            // 这里不能抛出异常，只能 try/catch，因为子类不能比父类抛出更多的异常
+            // 睡眠一年
+            Thread.sleep(1000 * 60 * 60 * 24 * 365);
         } catch (InterruptedException e) {
-            e.printStackTrace();//打印异常
+            // 打印异常
+            e.printStackTrace();
         }
         System.out.println(Thread.currentThread().getName() + "---> end");
     }
@@ -289,14 +296,14 @@ public class ThreadTest09 {
         Thread t = new Thread(new MyRunnable());
         t.setName("t");
         t.start();
-        //模拟5秒
+        // 模拟5秒
         try {
             Thread.sleep(1000 * 5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //5秒后强制终止t线程
-        t.stop();//已过时(不建议使用)
+        // 5秒后强制终止t线程
+        t.stop();// 已过时(不建议使用)
     }
 }
 
@@ -331,20 +338,20 @@ public class ThreadTest10 {
         t.setName("t");
         t.start();
 
-        //5秒后终止t线程
+        // 5秒后终止t线程
         try {
             Thread.sleep(1000 * 5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //终止线程
+        // 终止线程
         r.run = false;
     }
 
 }
 
 class MyRunnable05 implements Runnable{
-    //添加bool标记,控制线程的终止与执行
+    // 添加bool标记,控制线程的终止与执行
     boolean run = true;
     @Override
     public void run() {
@@ -357,25 +364,25 @@ class MyRunnable05 implements Runnable{
                     e.printStackTrace();
                 }
             }else {
-                //如果有数据需要保存,可以在return前添加代码保存
-                return;//如果外部修改run标记为false,则结束run方法
+                // 如果有数据需要保存,可以在return前添加代码保存
+                return;// 如果外部修改run标记为false,则结束run方法
             }
         }
     }
 }
 ```
 
-# 线程调度
+## 线程调度
 
-## 抢占式调度模型
+### 抢占式调度模型
 
 线程的优先级越高，抢到的 CPU 时间片的概率越高。Java 采用的是抢占式调度模型。
 
-## 均分式调度模型
+### 均分式调度模型
 
 平均分配 CPU 时间片。每个线程占有的 CPU 时间片长度一致，平均分配，一切平等。
 
-## Java 中的线程调度相关方法
+### Java 中的线程调度相关方法
 
 最高优先级是 10
 最低优先级是 1
@@ -427,11 +434,11 @@ class MyThread2 extends Thread{
 
 `yield()` 方法不是阻塞方法
 
-# 线程安全
+## 线程安全
 
 >  在实际开发中，项目都是运行在服务器中，而服务器已经完成了线程的定义，线程对象的创建，线程的启动等，这些代码不需要手动编写。
 
-## 什么时候数据在多线程并发的环境下会存在安全问题
+### 什么时候数据在多线程并发的环境下会存在安全问题
 
 +  多线程并发
 +  有共享数据
@@ -439,7 +446,7 @@ class MyThread2 extends Thread{
 
 满足以上三个条件之后就会存在线程安全问题
 
-## 如何解决线程安全问题
+### 如何解决线程安全问题
 
 线程排队执行（不能并发）
 用太对执行解决线程安全问题
@@ -448,15 +455,15 @@ class MyThread2 extends Thread{
 
 >  线程同步会牺牲一部分效率
 
-## 线程同步
+### 线程同步
 
-### 同步编程模型
+#### 同步编程模型
 
 线程 t1 和线程 t2，在线程执行的之前，必须等待 t2 执行结束；或者在 t1 执行之前,必须等待 t2 执行结束。
 
 两个线程之间发生了等待关系，这就是异步编程模型。
 
-### 异步编程模型
+#### 异步编程模型
 
 线程 t1 和线程 t2 各自独立执行（多线程并发），效率较高
 
@@ -491,22 +498,22 @@ public class Account {
         this.balance = balance;
     }
 
-    //取款方法
+    // 取款方法
     public void withdraw(double money){
-        //多线程并发此方法,会导致线程安全问题
-        //取款之前的余额
+        // 多线程并发此方法,会导致线程安全问题
+        // 取款之前的余额
         double before = this.getBalance();
-        //取款之后的余额
+        // 取款之后的余额
         double after = before - money;
 
-        //模拟网络延迟
+        // 模拟网络延迟
         try {
             Thread.sleep(24);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        //更新余额
+        // 更新余额
         this.setBalance(after);
     }
 }
@@ -525,8 +532,8 @@ public class AccountThread extends Thread{
 
     @Override
     public void run() {
-        //run方法的执行表示取款操作
-        //假设取款5000
+        // run方法的执行表示取款操作
+        // 假设取款5000
         double money = 5000;
         act.withdraw(money);
         System.out.println(Thread.currentThread().getName() + "对账户:" + act.getActno() + "取款成功,余额:" + act.getBalance());
@@ -540,16 +547,16 @@ package com.feidian.java.threadsafty;
 
 public class Test {
     public static void main(String[] args) {
-        //创建账户对象
+        // 创建账户对象
         Account act = new Account("act-001", 10000);
-        //创建两个线程
+        // 创建两个线程
         Thread t1 = new AccountThread(act);
         Thread t2 = new AccountThread(act);
 
-        //设置name
+        // 设置name
         t1.setName("t1");
         t2.setName("t2");
-        //启动取款线程
+        // 启动取款线程
         t1.start();
         t2.start();
     }
@@ -559,13 +566,13 @@ public class Test {
 
 以上代码在执行的过程中，由于存在网络延迟，一定会出现线程安全问题。
 
-## 同步代码块
+### 同步代码块
 
 线程同步的语法：
 
 ```java
 synchronized(<共享对象>){
-    //线程同步代码块
+    // 线程同步代码块
    
 }
 ```
@@ -603,24 +610,24 @@ public class Account {
         this.balance = balance;
     }
 
-    //取款方法
+    // 取款方法
     public void withdraw(double money){
 
-        //使用同步代码块；this是账户对象，是被共享的
+        // 使用同步代码块；this是账户对象，是被共享的
         synchronized (this){
-            //取款之前的余额
+            // 取款之前的余额
             double before = this.getBalance();
-            //取款之后的余额
+            // 取款之后的余额
             double after = before - money;
 
-            //模拟网络延迟
+            // 模拟网络延迟
             try {
                 Thread.sleep(24);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-            //更新余额
+            // 更新余额
             this.setBalance(after);
         }
     }
@@ -652,7 +659,7 @@ Java 三大变量：
 
 >  同步代码块越小效率越高。
 
-## `synchronized` 出现在实例方法上
+### `synchronized` 出现在实例方法上
 
 ```Java
 public synchronized void withdraw(double money) {
@@ -670,7 +677,7 @@ public synchronized void withdraw(double money) {
 >  `HashMap` 是非线程安全的
 >  `Hashtable` 是线程安全的
 
-## 总结
+### 总结
 
 +  `synchronized` 有两种写法
 
@@ -688,7 +695,7 @@ public synchronized void withdraw(double money) {
    +  第三种：在静态方法上使用 `synchronized`
       表示找类锁，类锁只有一把
 
-## 死锁
+### 死锁
 
 >有两个对象,
 >t1 线程从上往下，锁住了第一个对象，准备所第二个对象。
@@ -761,56 +768,56 @@ class MyThread02 extends Thread{
 
  ```
 
-`synchronized`在开发中最好不要嵌套使用,因为有可能发生死锁现象
+`synchronized `在开发中最好不要嵌套使用，因为有可能发生死锁现象。
 
-## 如何解决线程安全问题
+### 如何解决线程安全问题
 
 `synchronized` 要少使用，因为会让程序的执行效率降低。
 
-### 第一种方案
+#### 第一种方案
 
 尽量使用局部变量代替实例变量和静态变量
 
-### 第二种方案
+#### 第二种方案
 
 如果必须是实例变量，那么可以考虑创建多个对象，这样实例变量的内存就不会共享。
 
-### 第三种方案
+#### 第三种方案
 
 如果不能使用局部变量，对象也不能创建多个，这个时候只能选择 `synchronized`。
 
-# 守护线程
+## 守护线程
 
 Java 语言中线程分为两大类：
 
 +  用户线程
 +  守护线程
 
-垃圾回收线程就是守护线程
+垃圾回收线程就是守护线程。
 
-`main` 线程是一个用户线程
+`main` 线程是一个用户线程。
 
-## 守护线程的特点
+### 守护线程的特点
 
-一般守护线程是一个死循环，所有的用户线程只要结束，守护线程自动结束
+一般守护线程是一个死循环，所有的用户线程只要结束，守护线程自动结束。
 
-## 守护线程的作用
+### 守护线程的作用
 
 每天 00:00 自动备份
 这个需要使用到定时器，并且可以将定时器设置为守护线程。
 
-# 定时器
+## 定时器
 
-## 定时器的作用
+### 定时器的作用
 
-间隔特定的时间，执行特定的程序
+间隔特定的时间，执行特定的程序。
 
 >  例如每周进行银行账户的总账操作
 >  每天要进行数据的备份操作
 
-在实际的开发中,每隔一段时间执行一段特定的程序,这种需求是很常见的,在Java中可以采取多种方式实现
+在实际的开发中，每隔一段时间执行一段特定的程序，这种需求是很常见的，在 Java 中可以采取多种方式实现。
 
-+  可以使用 `Thread.sleep()` 方法,睡眠,设置睡眠时间,每到这个时间点醒来,执行任务,这种方法是最原始的定时器
++  可以使用 `Thread.sleep()` 方法，睡眠，设置睡眠时间，每到这个时间点醒来，执行任务，这种方法是最原始的定时器。
 +  在 Java 的类库中有定时器 `java.util.Timer`，可以直接用，这种方法在目前的开发中很少使用，因为现在有很多的高级框架都支持定时任务。
 +  目前使用较多的是 Spring 框架中提供的 SpringTask 框架，这个框架只要进行简单的配置，就可以完成定时器的任务。这个框架底层通过 `java.util.Timer` 实现。
 
@@ -826,27 +833,27 @@ import java.util.TimerTask;
 public class TimerTest {
     public static void main(String[] args) {
         Timer timer01 = new Timer();
-        Timer timer02 = new Timer(true);//也可以在创建timer对象时,设置其为守护线程
+        Timer timer02 = new Timer(true);// 也可以在创建timer对象时,设置其为守护线程
 
-        //指定定时任务
+        // 指定定时任务
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
             Date firstTime = sdf.parse("2021-03-21 14:13:00");
-            timer01.schedule(new LogTimerTask(), firstTime, 1000 * 10);//可以认为这是一个线程
-            //这里的task也可以采用匿名内部类的方式
-            //类<LogTimerTask>中的run方法会从<firstTime>起,每隔<period>时长执行一次
+            timer01.schedule(new LogTimerTask(), firstTime, 1000 * 10);// 可以认为这是一个线程
+            // 这里的task也可以采用匿名内部类的方式
+            // 类<LogTimerTask>中的run方法会从<firstTime>起,每隔<period>时长执行一次
         } catch (ParseException e) {
             e.printStackTrace();
         }
     }
 }
 
-//编写一个定时任务类
+// 编写一个定时任务类
 class LogTimerTask extends TimerTask{
 
     @Override
     public void run() {
-        //编写需要执行的任务
+        // 编写需要执行的任务
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String strTime = sdf.format(new Date());
         System.out.println(strTime + ": 完成备份");
@@ -856,55 +863,59 @@ class LogTimerTask extends TimerTask{
 
 
 
-# 实现线程的第三种方式
+## 实现线程的第三种方式
 
-实现 callable 接口（JDK 8 特性）
+实现 Callable 接口（JDK 8 特性）
 
 这种方式实现的线程可以获取线程的返回值，之前的两种方式无法获取线程的返回值，因为 `run()` 方法返回 `void`。
 
 系统委派一个线程去执行一个任务，该线程执行完任务之后可能会有一个执行结果，如何拿到这个执行结果？
 
-## 实现Callable接口
+### 实现 `Callable` 接口
 
  ```java
 package com.feidian.java.thread;
 
 /*
     实现线程的第三种方式
-        实现Callable接口
-        优点:可与获取到线程的执行结果
-        缺点:效率比较低,在获取t线程执行结果的时候,当前线程受阻塞,效率比较低
+        实现 Callable 接口 
+        优点：可与获取到线程的执行结果
+        缺点：效率比较低，在获取 t 线程执行结果的时候，当前线程受阻塞，效率比较低
  */
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;//JUC包下,属于Java的并发包,老JDK中没有这个包
+import java.util.concurrent.FutureTask;
+// JUC 包下，属于 Java 的并发包，老 JDK 中没有这个包
 
 public class ThreadTest12 {
     public static void main(String[] args) {
-        //第一步:创建一个"未来任务类"对象
-        //参数非常重要,需要给一个Callable接口实现类对象
-        FutureTask task = new FutureTask(new Callable() {//call()方法就相当于run方法,只不过call方法有返回值
-            //线程执行一个任务,执行之后可能有一个执行结果
-            //模拟执行
+        // 第一步：创建一个「未来任务类」对象
+        // 参数非常重要，需要给一个 Callable 接口实现类对象 
+        FutureTask task = new FutureTask(new Callable() {
+            // call() 方法就相当于 run 方法，只不过 call 方法有返回值
+            // 线程执行一个任务，执行之后可能有一个执行结果
+            // 模拟执行
             @Override
             public Object call() throws Exception {
-                System.out.println("call方法执行");
+                System.out.println("call 方法执行");
                 Thread.sleep(1000 * 10);
-                System.out.println("call方法结束");
+                System.out.println("call 方法结束");
                 return new Object();
             }
-        });//需要传入参数Callable/Runnable,如果传入Runnable,则没有返回值
+        });
+        // 需要传入参数 Callable/Runnable，如果传入 Runnable，则没有返回值
 
-        //创建线程对象
+        // 创建线程对象
         Thread t = new Thread(task);
-        //启动线程对象
+        // 启动线程对象
         t.start();
 
-        //获取t线程的返回结果
+        // 获取 t 线程的返回结果
         try {
-            Object obj = task.get();//在主线程中获取t线程的返回结果,会导致main线程阻塞
-            //get()方法的执行会导致当前线程的阻塞
+            // 在主线程中获取 t 线程的返回结果，会导致 main 线程阻塞
+            Object obj = task.get();
+            // get() 方法的执行会导致当前线程的阻塞
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -918,7 +929,7 @@ public class ThreadTest12 {
 
 
 
-# `Object` 类中的 `wait()` 和 `notify()` 方法
+## `Object` 类中的 `wait()` 和 `notify()` 方法
 
 +  `wait()` 方法和 `notify()` 方法不是线程对象的方法，是 Java 中任何一个 Java 对象的都有的方法，因为这两个方法是 `Object` 类中自带的。`wait()` 方法和 `notify()` 方法不是通过线程对象调用的。
    
@@ -933,9 +944,9 @@ public class ThreadTest12 {
 
 +  `notify()` 方法作用
 
-   +  `o.nitify();` 方法的调用可以让正在 `o` 对象上等待的线程唤醒。
+   +  `o.notify()` 方法的调用可以让正在 `o` 对象上等待的线程唤醒。
 
-## 生产者消费者模型
+### 生产者消费者模型
 
 +  生产者和消费者模式是为了专门解决某个特定需求的。
 +  假设一个线程负责生产，一个线程负责消费。
@@ -967,11 +978,11 @@ import java.util.List;
  */
 public class ThreadTest16 {
     public static void main(String[] args) {
-        //创建一个仓库对象
+        // 创建一个仓库对象
         ArrayList list = new ArrayList();
 
-        Thread t1 = new Thread(new Producer(list));//生产者线程
-        Thread t2 = new Thread(new Consumer(list));//消费者线程
+        Thread t1 = new Thread(new Producer(list));// 生产者线程
+        Thread t2 = new Thread(new Consumer(list));// 消费者线程
 
         t1.setName("ProducerThread");
         t2.setName("ConsumerThread");
@@ -982,7 +993,7 @@ public class ThreadTest16 {
 }
 
 class Producer implements Runnable{
-    //共享一个仓库
+    // 共享一个仓库
     private List list;
 
     public Producer(List list) {
@@ -991,25 +1002,25 @@ class Producer implements Runnable{
 
     @Override
     public void run() {
-        //一直生产
+        // 一直生产
         while(true){
-            synchronized (list){//给仓库对象list加锁
-                if (list.size() > 0){//仓库满了
+            synchronized (list){// 给仓库对象list加锁
+                if (list.size() > 0){// 仓库满了
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    try {//当前线程进入等待状态,释放t1占有的锁
+                    try {// 当前线程进入等待状态,释放t1占有的锁
                         list.wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                } else {//否则仓库已空,生产者生产
+                } else {// 否则仓库已空,生产者生产
                     Object obj = new Object();
                     list.add(obj);
                     System.out.println(Thread.currentThread().getName() + "--->" + obj);
-                    //已完成生产,notify消费者进行消费
+                    // 已完成生产,notify消费者进行消费
                     list.notify();
                 }
             }
@@ -1018,7 +1029,7 @@ class Producer implements Runnable{
 }
 
 class Consumer implements Runnable{
-    //仓库
+    // 仓库
     private List list;
 
     public Consumer(List list) {
@@ -1027,10 +1038,10 @@ class Consumer implements Runnable{
 
     @Override
     public void run() {
-        //一直消费
+        // 一直消费
         while (true) {
             synchronized (list){
-                if (list.size() == 0){//仓库空
+                if (list.size() == 0){// 仓库空
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
@@ -1041,10 +1052,10 @@ class Consumer implements Runnable{
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                } else {//否则仓库满.消费者消费
+                } else {// 否则仓库满.消费者消费
                     Object obj = list.remove(0);
                     System.out.println(Thread.currentThread().getName() + "--->" + obj);
-                    //已完成消费,notify生产者生产
+                    // 已完成消费,notify生产者生产
                     list.notify();
                 }
             }
