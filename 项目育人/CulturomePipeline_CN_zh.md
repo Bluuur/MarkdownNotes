@@ -12,7 +12,7 @@
 
 使用方法：参考附录或 `0install_win/mac.sh` 安装培养组流程。然后在 R Studio 中逐行运行本脚本，缩进的行为代码，可在 Terminal 中运行。
 
-## 分析步骤 
+## 分析步骤
 
 设置工作目录 ( work directory，`wd`)；修改 `db` 为 `Culturome`的安装目录
 
@@ -49,17 +49,17 @@ gunzip seq/*.gz
 ls seq/*.fq | cut -f 2 -d '/' | cut -f 1 -d '_' | uniq > result/library.txt
         
 # 利用 for 循环为每个文库生成包含 48(板) \times 96(孔)的 mapping file
-for l in `cat result/library.txt`; do
-	write_mapping_file.pl -i ${db}/script/barcodeF96.txt -b ${db}/script/barcodeR48.txt \
-		-F AACMGGATTAGATACCCKG -R ACGTCATCCCCACCTTCC \
-		-L ${l} -p 48 -v Nippobare -c Root -m TSB -B 1 -s Rice -d WildType \
-		-o seq/${l}.txt; done
+    for l in `cat result/library.txt`; do
+      write_mapping_file.pl -i ${db}/script/barcodeF96.txt -b ${db}/script/barcodeR48.txt \
+        -F AACMGGATTAGATACCCKG -R ACGTCATCCCCACCTTCC \
+        -L ${l} -p 48 -v Nippobare -c Root -m TSB -B 1 -s Rice -d WildType \
+        -o seq/${l}.txt; done
 
 # 合并两个 mapping file(s) 为单个 metadtata (单个项目要有唯一的 metadata，可以包含多个 mapping file 信息)
-l=`head -n1 result/library.txt|cut -f1`
-cat <(head -n1 seq/${l}.txt | sed 's/#//g') \
-	<(cat seq/*.txt |grep -v '#'|grep -v -P '^SampleID\t') \
-	> result/metadata.txt
+    l=`head -n1 result/library.txt|cut -f1`
+    cat <(head -n1 seq/${l}.txt | sed 's/#//g') \
+        <(cat seq/*.txt |grep -v '#'|grep -v -P '^SampleID\t') \
+        > result/metadata.txt
 ```
 
 ### 校验 mapping file 格式是否正确
@@ -67,8 +67,8 @@ cat <(head -n1 seq/${l}.txt | sed 's/#//g') \
 手动编写或修改的文章必须校验，确保下游分析顺利完成。
 
 ```shell
-for l in `cat result/library.txt`; do
-	validate_mapping_file.py -m seq/${l}.txt -o temp/;done
+    for l in `cat result/library.txt`; do
+      validate_mapping_file.py -m seq/${l}.txt -o temp/;done
 ```
 
 ### 双端序列合并
