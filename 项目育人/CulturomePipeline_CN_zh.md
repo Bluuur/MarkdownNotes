@@ -168,7 +168,7 @@ vsearch --cluster_unoise temp/uniques.fa --minsize 10 \
 vsearch --uchime3_denovo temp/Zotus.fa --relabel ASV_ \
 	--nonchimeras result/ASV.fa
 ```
-### 构建ASV表
+### 构建 ASV 表
 
 ```shell
 # 比对读长到ASV进行定量, 2m-30m
