@@ -95,17 +95,6 @@ time cat result/library.txt|rush -j 3 \
 		-a --rev_comp_bc2 \
 		-o temp/{1}'
 
-# 利用 barcode 与 mapping file，将每条序列重命名为板和孔位置 2m
-# 从数据中提取 barcodes，用于序列孔来源识别 1 - 15m
-# 注意根据实验设计修改 barcode 长度
-time cat result/library.txt|rush -j 3 \
-	'extract_barcodes.py \
-		-f temp/{1}.fq -m seq/{1}.txt \
-		-c barcode_paired_stitched \
-		--bc1_len 10 --bc2_len 6 \
-		-a --rev_comp_bc2 \
-		-o temp/{1}'
-
 # 利用barcode与mapping file，将每条序列重命名为板和孔位置, 2m
 time cat result/library.txt|rush -j 3 \
 	'split_libraries_fastq.py \
