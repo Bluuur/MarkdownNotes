@@ -38,12 +38,12 @@ wd=/mnt/c/culture
 # 创建工作目录并进入，-p允许建立多级目录
 mkdir -p $wd && cd $wd
 #设置Culturome位置
- db=/mnt/c/microbiome/Culturome
+db=/mnt/c/microbiome/Culturome
 #建议项目所需文件夹
 mkdir -p seq temp result
 #上述这几步也可省略直接通过调用绝对路径
- 
- 
+
+
 ###2 导入文件到qiime，并制作mappin文件
 ##2.1 手动制作mainfest文件和mapping文件
 #引物信息和mainfest文件及mapping文件格式见附件“毕设\分析\qiime导入数据”
