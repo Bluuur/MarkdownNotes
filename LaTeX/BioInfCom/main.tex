@@ -1,52 +1,131 @@
+% -------------------- 导言 -------------------- %
 \documentclass{ctexart}
 % 设置页边距
 \usepackage{geometry}
-\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\geometry{left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm}
 
-% 设置目录显示的深度
-\setcounter{tocdepth}{3}
+% 页眉
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\small{\CJKfontspec{SimHei}第九届生物信息设计与技能竞赛}}
+\fancyhead[R]{\small{\CJKfontspec{SimHei}大豆根系微生物的基因鉴定与基因功能预测}}
+\renewcommand{\headrulewidth}{1pt} % 分隔线宽度 1 磅
+
+% 字体
+\usepackage{fontspec}
+\setmainfont{Times New Roman} % 英文正文字体
+\setCJKmainfont{SimSun} % 中文正文字体
+\setCJKsansfont{SimHei}
 
 % 设置标号深度
 \setcounter{secnumdepth}{3}
+\author{}
+\date{}
 
-\title{Title}
-\author{Zidong Zh}
-\date{\today}
+\usepackage{caption}
+\captionsetup[table]{
+    font={small,bf },
+    labelsep=quad,
+    skip=0pt
+}
 
-% 正文区
+% 表格
+\usepackage{booktabs}
+
+\title{\vspace*{-1.5cm} \CJKfontspec{SimHei}大豆根系微生物的基因鉴定与基因功能预测}
+
+
+% \ctexset{
+%     % 修改 section。
+%     section={   
+%         format=\heiti\raggedright\zihao{4} % 设置 section 标题为黑体、右对齐、小4号字
+%     },
+%     % 修改 subsection。
+%     subsection={   
+%         format=\heiti\zihao{-4}
+%     },
+
+%     subsubsection={
+%         format=\songti\zihao{-4}
+%     }
+% }
+
+% -------------------- 正文 -------------------- %
 \begin{document}
 
+    \maketitle\thispagestyle{fancy}
+    \vspace*{-1.5cm}
 
-    \maketitle
+    \raggedleft
+    {\zihao{5} \heiti  ——竞赛单元“2-1基因组”}
 
-    \newpage
+    ~\\
 
-    \tableofcontents
+    \raggedleft
+        团队名称：水哥微生物小队\\
+        指导老师：郑金水\\
+        团队成员：张敦彪，张子栋，颜旭，姚代洪\\
     
-    % 目录设为页码 0（从正文起为第一页）
-    \setcounter{page}{0}
+    ~\\
 
-    % 目录的页脚设为空
-    \thispagestyle{empty}
+    \raggedright
+    {\zihao{4} \heiti 摘要}
 
-    \newpage
+    {\zihao{5} \qquad 高通量培养与鉴定可用于从给定环境和植物物种的本地根微生物组样本中建立一个分类学上全面的细菌培养收集，通过 16S rRNA基因扩增子测序对根样品的细菌多样性进行评价，筛选出具有相应16S rRNA 基因序列的培养菌。通过对大豆根系微生物的高通量培养筛选可以鉴定其基因的类型，进而对其基因功能进行预测。}
+    
+    ~\\
+
+    {\heiti \zihao{-4} \raggedright 关键字：} {\zihao{5} 高通量培养，基因鉴定，功能预测}
+
+    
+    % % 目录设为页码 0（从正文起为第一页）
+    % \setcounter{page}{0}
+
+    % % 目录的页脚设为空
+    % \thispagestyle{empty}
+
 
     % \chapter{Hello}
 
-    \section{chapter 1}
+    \section{引言}
 
-    \subsection{section 1 of chapter 1}
+    \subsection{根系微生物群}
 
-    \subsubsection{subsection 1 of section 1 }
+    \qquad 植物根系组成了一个分类结构的微生物群落，称为根系微生物群。基于标记基因的扩增子图谱和宏基因组测序已被用于描述包括模式和作物物种在内的多种植物根系微生物区系的分类组成和基因含量。最近的功能和机制研究揭示了根共生微生物为宿主提供的服务例如，根部细菌微生物群保护植物免受土壤传播的真菌和卵菌病原体的侵害并参与营养素使用寄主植物选择性地调节其根系微生物群，而根系微生物群反过来又影响植物的各种生理过程从根系微生物群中培养出来的微生物是这些功能和机理研究的核心资源。
 
-    
+    \qquad 为了研究根系微生物群在特定环境中的功能，必须从同一环境（如同一土壤类型）中生长的植物根系样品中分离和培养微生物。 虽然已经分离出数千种培养的微生物，并储存在国际资源中心，但这些微生物来自各种各样的环境和宿主物种。此外，微生物适应预计将有助于从不同生境和宿主取样的微生物之间的基因型和功能分化。 由于这些原因，通常需要从给定的自然土壤和寄主物种组合中创造新的细菌种群，以解剖该系统中植物和根系微生物群之间的相互作用。
 
-    it's dif{}f{}icult to f{}ind 
 
-    about quote `quote'`quote'
+    \subsection{高通量培养}
 
-    这是中文引号“引号”引号
-    
-    % \lipsum
+    \qquad 植物根系微生物组的研究主要依赖于高通量扩增子和宏基因组测序技术，对微生物组的物种分类和基因组成进行描述。高通量就是一代测序一次测序只能够对 1 个基因进行测序，而高通量测序能够一次检测几十甚至几百个基因。与其他方法相比不需要昂贵的设备、比菌落挑选途径产量更高、避免了使用菌落挑选反复获得快速生长细菌的问题（防止生长快的细菌抑制生长缓慢的细菌生长）、Two-sided barcode PCR system（双面条码技术PCR系统）比之前使用 454 焦磷酸测序的识别过程更加准确、高通量。局限性：只适用于细菌，不适合丝状真核生物、不适合与不在液体培养基中生产的细菌一起使用、不适合培养厌氧细菌。
+
+    \section{材料与方法}
+
+    \subsection{培养基的制作}
+
+        实验中需要三种不同的培养基：
+
+    \begin{table}[htb]
+        \caption{实验所需培养基}
+        \centering
+        \begin{tabular}{cc}
+            \toprule
+            培养基类型 & 配置方法\\
+            \midrule
+            TSB 培养基 & $\mathrm{30~g/L}$ TSB，蒸馏水定容\\
+            10\% TSB培养基 & TSB 培养基按照体积分数 10\% 进行稀释\\
+            \bottomrule
+        \end{tabular}
+        
+    \end{table}
+
+        
+
+    TSB 培养基：30 g/L TSB ，蒸馏水定容。
+    10% TSB培养基： TSB 培养基按照体积分数10% 进行稀释。
+    10% TSB培养基＋丙酮酸钠：30 g/L TSB 、10 mM/L丙酮酸钠，蒸馏水定容。
+    三种培养基均高压蒸汽灭菌。
+
 
 \end{document}
