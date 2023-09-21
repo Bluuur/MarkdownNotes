@@ -1,0 +1,982 @@
+<phyloxml xmlns="http://www.phyloxml.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <name>p__Firmicutes</name>
+        <branch_length>1.0</branch_length>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#FCDBA2</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#FCDBA2</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+        <clade>
+          <name>c__Bacilli</name>
+          <branch_length>1.0</branch_length>
+          <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+          <clade>
+            <name>o__Bacillales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+            <clade>
+              <name>Bacillaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F7C875</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Bacillaceae</property>
+              <clade>
+                <name>g__Bacillus</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                <clade>
+                  <name>ASV_1</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">1</property>
+                </clade>
+                <clade>
+                  <name>ASV_2</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0942365643631188</property>
+                </clade>
+                <clade>
+                  <name>ASV_3</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0922482962745392</property>
+                </clade>
+                <clade>
+                  <name>ASV_57</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00578264049910048</property>
+                </clade>
+                <clade>
+                  <name>ASV_65</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0038084936327409</property>
+                </clade>
+                <clade>
+                  <name>ASV_78</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00321540229949983</property>
+                </clade>
+                <clade>
+                  <name>ASV_82</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00254464424404861</property>
+                </clade>
+                <clade>
+                  <name>ASV_54</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00242461385517839</property>
+                </clade>
+                <clade>
+                  <name>ASV_61</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00241049263295837</property>
+                </clade>
+                <clade>
+                  <name>ASV_44</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00186117708859937</property>
+                </clade>
+                <clade>
+                  <name>ASV_87</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00175950428861519</property>
+                </clade>
+                <clade>
+                  <name>ASV_51</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00160840721086091</property>
+                </clade>
+                <clade>
+                  <name>ASV_85</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0014912010664347</property>
+                </clade>
+                <clade>
+                  <name>ASV_71</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0012694978775803</property>
+                </clade>
+                <clade>
+                  <name>ASV_55</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00119183115537016</property>
+                </clade>
+                <clade>
+                  <name>ASV_47</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000807733910985464</property>
+                </clade>
+                <clade>
+                  <name>ASV_59</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000749836899883359</property>
+                </clade>
+                <clade>
+                  <name>ASV_58</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000659461077675195</property>
+                </clade>
+                <clade>
+                  <name>ASV_68</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000619921655459123</property>
+                </clade>
+                <clade>
+                  <name>ASV_91</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000608624677683103</property>
+                </clade>
+                <clade>
+                  <name>ASV_86</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000443406377708803</property>
+                </clade>
+                <clade>
+                  <name>ASV_76</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00042504878882277</property>
+                </clade>
+                <clade>
+                  <name>ASV_83</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000360091166610652</property>
+                </clade>
+                <clade>
+                  <name>ASV_62</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000326200233282591</property>
+                </clade>
+                <clade>
+                  <name>ASV_69</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00030360627773055</property>
+                </clade>
+                <clade>
+                  <name>ASV_89</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000290897177732527</property>
+                </clade>
+                <clade>
+                  <name>ASV_60</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000261242611070473</property>
+                </clade>
+                <clade>
+                  <name>ASV_93</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000259830488848471</property>
+                </clade>
+                <clade>
+                  <name>ASV_94</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000156745566642284</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Planococcaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F7C875</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Planococcaceae</property>
+              <clade>
+                <name>g__Unassigned</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                <clade>
+                  <name>ASV_56</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00447501532152611</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Staphylococcaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F7C875</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Staphylococcaceae</property>
+              <clade>
+                <name>g__Staphylococcus</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                <clade>
+                  <name>ASV_88</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">8.04909666541459e-05</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Paenibacillaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F7C875</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Paenibacillaceae</property>
+              <clade>
+                <name>g__Paenibacillus</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                <clade>
+                  <name>ASV_45</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#F7A415</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">3.67151777720665e-05</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>p__Actinobacteria</name>
+        <branch_length>1.0</branch_length>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#FFB0B0</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#FFB0B0</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+        <clade>
+          <name>c__Actinobacteria</name>
+          <branch_length>1.0</branch_length>
+          <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+          <clade>
+            <name>o__Actinomycetales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+            <clade>
+              <name>Microbacteriaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F58D8D</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Microbacteriaceae</property>
+              <clade>
+                <name>g__Microbacterium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_5</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0315100952617651</property>
+                </clade>
+                <clade>
+                  <name>ASV_24</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00528839772139958</property>
+                </clade>
+                <clade>
+                  <name>ASV_26</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00343569336613223</property>
+                </clade>
+                <clade>
+                  <name>ASV_36</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00207017117745575</property>
+                </clade>
+                <clade>
+                  <name>ASV_13</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000423636666600768</property>
+                </clade>
+                <clade>
+                  <name>ASV_37</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00017651527775032</property>
+                </clade>
+                <clade>
+                  <name>ASV_79</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000159569811086289</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Leifsonia</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_11</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00394264524383114</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Promicromonosporaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F58D8D</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Promicromonosporaceae</property>
+              <clade>
+                <name>g__Cellulosimicrobium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_6</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00983684339846982</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Unassigned</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_70</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000279600199956507</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Dermabacteraceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F58D8D</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Dermabacteraceae</property>
+              <clade>
+                <name>g__Brachybacterium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_10</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00851792124311943</property>
+                </clade>
+                <clade>
+                  <name>ASV_72</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000190636499970345</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Micrococcaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F58D8D</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Micrococcaceae</property>
+              <clade>
+                <name>g__Arthrobacter</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_15</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00465859121038644</property>
+                </clade>
+                <clade>
+                  <name>ASV_31</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00335520239947808</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Streptomycetaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F58D8D</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Streptomycetaceae</property>
+              <clade>
+                <name>g__Streptomyces</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_21</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000228763799964415</property>
+                </clade>
+                <clade>
+                  <name>ASV_27</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">8.19030888761484e-05</property>
+                </clade>
+                <clade>
+                  <name>ASV_30</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">2.96545666620537e-05</property>
+                </clade>
+                <clade>
+                  <name>ASV_40</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">2.82424444400512e-05</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Nocardioidaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F58D8D</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Nocardioidaceae</property>
+              <clade>
+                <name>g__Nocardioides</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_35</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">7.48424777661356e-05</property>
+                </clade>
+                <clade>
+                  <name>ASV_38</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">2.11818333300384e-05</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Mycobacteriaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#F58D8D</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Mycobacteriaceae</property>
+              <clade>
+                <name>g__Mycobacterium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                <clade>
+                  <name>ASV_41</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#EF5656</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">4.23636666600768e-05</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>p__Proteobacteria</name>
+        <branch_length>1.0</branch_length>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#B0FFC0</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#B0FFC0</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+        <clade>
+          <name>c__Alphaproteobacteria</name>
+          <branch_length>1.0</branch_length>
+          <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+          <clade>
+            <name>o__Rhizobiales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+            <clade>
+              <name>Rhizobiaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Rhizobiaceae</property>
+              <clade>
+                <name>g__Rhizobium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_4</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0262555884736936</property>
+                </clade>
+                <clade>
+                  <name>ASV_23</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00534064624361368</property>
+                </clade>
+                <clade>
+                  <name>ASV_67</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000223115311076404</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Shinella</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_49</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">4.09515444380742e-05</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Bradyrhizobiaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Bradyrhizobiaceae</property>
+              <clade>
+                <name>g__Bosea</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_19</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00172420123306512</property>
+                </clade>
+                <clade>
+                  <name>ASV_63</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">6.63697444341203e-05</property>
+                </clade>
+                <clade>
+                  <name>ASV_50</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">1.2709099998023e-05</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Bradyrhizobium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_64</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000420812422156763</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Unassigned</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_92</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">1.83575888860333e-05</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Phyllobacteriaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Phyllobacteriaceae</property>
+              <clade>
+                <name>g__Aquamicrobium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_22</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000118618266648215</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Mesorhizobium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_77</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">6.49576222121177e-05</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>o__Sphingomonadales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+            <clade>
+              <name>Sphingomonadaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Sphingomonadaceae</property>
+              <clade>
+                <name>g__Sphingopyxis</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_9</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0108916986983057</property>
+                </clade>
+                <clade>
+                  <name>ASV_12</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00638420456567357</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Sphingomonas</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_7</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00710579902111688</property>
+                </clade>
+                <clade>
+                  <name>ASV_17</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.0059026708879707</property>
+                </clade>
+                <clade>
+                  <name>ASV_46</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000257006244404466</property>
+                </clade>
+                <clade>
+                  <name>ASV_84</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000200521355524363</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Novosphingobium</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_14</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00611166497682708</property>
+                </clade>
+                <clade>
+                  <name>ASV_8</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00575439805466043</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>o__Rhodobacterales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+            <clade>
+              <name>Rhodobacteraceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Rhodobacteraceae</property>
+              <clade>
+                <name>g__Pannonibacter</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_18</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00859700008755158</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Amaricoccus</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_32</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00228905012186615</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <name>c__Gammaproteobacteria</name>
+          <branch_length>1.0</branch_length>
+          <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+          <clade>
+            <name>o__Xanthomonadales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+            <clade>
+              <name>Xanthomonadaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Xanthomonadaceae</property>
+              <clade>
+                <name>g__Pseudoxanthomonas</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_20</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00674711997672823</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>o__Pseudomonadales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+            <clade>
+              <name>Pseudomonadaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Pseudomonadaceae</property>
+              <clade>
+                <name>g__Pseudomonas</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_33</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00210264998856181</property>
+                </clade>
+                <clade>
+                  <name>ASV_74</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00030925476661856</property>
+                </clade>
+                <clade>
+                  <name>ASV_90</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000177927399972322</property>
+                </clade>
+                <clade>
+                  <name>ASV_53</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000131327366646238</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <name>c__Betaproteobacteria</name>
+          <branch_length>1.0</branch_length>
+          <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+          <clade>
+            <name>o__Burkholderiales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+            <clade>
+              <name>Burkholderiaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Burkholderiaceae</property>
+              <clade>
+                <name>g__Cupriavidus</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_16</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.00365457231054262</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Burkholderia</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_25</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000184988011082335</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Burkholderiales</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Burkholderiales</property>
+              <clade>
+                <name>g__Unassigned</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_34</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000211818333300384</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Comamonadaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#85F29B</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Comamonadaceae</property>
+              <clade>
+                <name>g__Delftia</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_48</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">0.000141212222200256</property>
+                </clade>
+              </clade>
+              <clade>
+                <name>g__Variovorax</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                <clade>
+                  <name>ASV_28</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#2BB065</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">4.09515444380742e-05</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>p__Bacteroidetes</name>
+        <branch_length>1.0</branch_length>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#B0E9FD</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#B0E9FD</property>
+        <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#47B3DA</property>
+        <clade>
+          <name>c__Sphingobacteriia</name>
+          <branch_length>1.0</branch_length>
+          <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#47B3DA</property>
+          <clade>
+            <name>o__Sphingobacteriales</name>
+            <branch_length>1.0</branch_length>
+            <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#47B3DA</property>
+            <clade>
+              <name>Chitinophagaceae</name>
+              <branch_length>1.0</branch_length>
+              <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#47B3DA</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_rotation" ref="A:1">90</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#91DBF6</property>
+              <property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Chitinophagaceae</property>
+              <clade>
+                <name>g__Unassigned</name>
+                <branch_length>1.0</branch_length>
+                <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#47B3DA</property>
+                <clade>
+                  <name>ASV_29</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#47B3DA</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">5.22485222140947e-05</property>
+                </clade>
+                <clade>
+                  <name>ASV_39</name>
+                  <branch_length>1.0</branch_length>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#47B3DA</property>
+                  <property applies_to="clade" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">9.88485555401791e-06</property>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+    </clade>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="ext__3__ring_internal_separator_thickness" ref="A:1">0.5</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="ext__3__ring_width" ref="A:1">1</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="ignore_branch_len" ref="A:1">0</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="ext__3__ring_color" ref="A:1">green</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="start_rotation" ref="A:1">-96</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="annotation_background_separation" ref="A:1">-0.5</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="clade_marker_edge_width" ref="A:1">0.25</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="branch_bracket_depth" ref="A:1">0.8</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="total_plotted_degrees" ref="A:1">360</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="ext__3__ring_alpha" ref="A:1">1.0</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="clade_separation" ref="A:1">0.0</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">16</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="annotation_background_width" ref="A:1">0.60</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="branch_thickness" ref="A:1">0.75</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="branch_bracket_width" ref="A:1">0.5</property>
+    <property applies_to="phylogeny" datatype="xsd:string" id_ref="ignore_branch_len" ref="A:1">1</property>
+  </phylogeny>
+</phyloxml>
