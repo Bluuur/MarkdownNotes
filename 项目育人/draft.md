@@ -61,3 +61,5 @@
 ---
 
 ![fig_longQC_sampleqc_length](draft.assets/fig_longQC_sampleqc_length.png)
+
+![image-20230922091348131](draft.assets/image-20230922091348131.png)
