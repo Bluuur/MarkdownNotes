@@ -1,5 +1,7 @@
 % -------------------- 导言 -------------------- %
 \documentclass{ctexart}
+
+% 化学式
 \usepackage{mhchem}
 % 设置页边距
 \usepackage{geometry}
@@ -25,7 +27,7 @@
 
 \usepackage{caption}
 \captionsetup[table]{
-    font={small,bf },
+    font={small, bf},
     labelsep=quad,
     skip=0pt
 }
@@ -34,22 +36,6 @@
 \usepackage{booktabs}
 
 \title{\vspace*{-1.5cm} \CJKfontspec{SimHei}大豆根系微生物的基因鉴定与基因功能预测}
-
-
-% \ctexset{
-%     % 修改 section。
-%     section={   
-%         format=\heiti\raggedright\zihao{4} % 设置 section 标题为黑体、右对齐、小4号字
-%     },
-%     % 修改 subsection。
-%     subsection={   
-%         format=\heiti\zihao{-4}
-%     },
-
-%     subsubsection={
-%         format=\songti\zihao{-4}
-%     }
-% }
 
 % -------------------- 正文 -------------------- %
 \begin{document}
@@ -106,11 +92,11 @@
 
     \subsection{培养基的制作}
 
-        实验中需要三种不同的培养基（三种培养基均高压蒸汽灭菌）：
+    \qquad 实验中需要三种不同的培养基（三种培养基均高压蒸汽灭菌）：
 
     \begin{table}[htb]
-        \caption{实验所需培养基}
         \centering
+        \caption{实验所需培养基}
         \begin{tabular}{cc}
             \toprule
             培养基类型 & 配置方法\\
@@ -130,49 +116,68 @@
         \qquad 超净工作台中将大豆根系置于无菌滤纸上，使用无菌刀片截取其下方约3cm的根系，总共截取3g的大豆根系样本。拿取 $\mathrm{10x~PBS}$ 溶液，按照体积分数的 10\% 稀释为 $\mathrm{1x~ PBS}$ 溶液约 100~mL 置于两个 50~mL 的离心管中。将截取的根系样本置于 50~mL 的 $\mathrm{1x~ PBS}$ 溶液中来回水平摇匀，将其以 1800~rpm 的速度震荡 20~min，取出其中的根系，将溶液过500目筛，获得根际样本。
 
     \subsubsection{根内样本}
-        \qquad 按照上述方法新截取约 3~g 的大豆根系，使用无菌水持续冲洗，直至除去所有的土壤颗粒。将根系转移至一个新的含有 50~mL 的 1x~PBS 溶液的离心管中，以 1800~rpm 的速度震荡处理 20~min，从离心管中取出根系，使用无菌滤纸吸干，从根表面除去 PBS 溶液，使用无菌水冲洗三次，将根系置于含有 50~mL 无菌水的离心管中，进行超声处理 5~min，将根系取出置于含有 50~mL 的75\%体积分数的酒精溶液的离心管中，震荡 1~min，取出根系，使用无菌水冲洗三次，将根系悬浮在 50~mL 的 10~mMol/L 的无菌$\ce{MgCl2}$溶液中，使用无菌研钵研碎根系直至其均匀，将研钵内液体过 500 目筛获取根内样本。
+        \qquad 按照上述方法新截取约 3~g 的大豆根系，使用无菌水持续冲洗，直至除去所有的土壤颗粒。将根系转移至一个新的含有 50~mL 的 1x~PBS 溶液的离心管中，以 1800~rpm 的速度震荡处理 20~min，从离心管中取出根系，使用无菌滤纸吸干，从根表面除去 PBS 溶液，使用无菌水冲洗三次，将根系置于含有 50~mL 无菌水的离心管中，进行超声处理 5~min，将根系取出置于含有 50~mL 的75\%体积分数的酒精溶液的离心管中，震荡 1~min，取出根系，使用无菌水冲洗三次，将根系悬浮在 50~mL 的 10~mmol/L 的无菌$\ce{MgCl2}$溶液中，使用无菌研钵研碎根系直至其均匀，将研钵内液体过 500 目筛获取根内样本。
 
         \qquad 根内样本与根际样本均置于 4℃ 储存。
 
     \subsection{分液与流式细胞分选}
 
-    \qquad 用分液仪将液体培养基分装到 60 个 384 孔板，每孔 7~μL，再用流式细胞分选仪将根际与根内样本转移到每个孔中并做好标记。
+    \qquad 用分液仪将液体培养基分装到 60 个 384 孔板，再用流式细胞分选仪将根际与根内样本转移到每个孔中并做好标记。
 
+    \subsection{高通量培养}
+    \qquad 高通量培养是一种用于快速筛选和培养大量微生物的方法。它利用自动化设备和高效的培养技术，可以同时处理多个微生物样品，并快速判断微生物的生长状况和特性。本实验中通过流式细胞分选仪连续地将多个样本注入仪器中进行分析和分选，从而实现快速、连续地处理大量样本，提高分选效率。对比需要一个月时间传统的分菌方法，高通量培养只需要一天的时间便可完成。
 
     \subsection{PCR 扩增与电泳鉴定}
-    \qquad 将得到的八连管每个孔中按比例加入1μl F引物、1μl R引物、7μl 无菌水、10μl mix与原1μl菌液形成20μl体系,按照对应程序（如表1）将八连管放入pcr仪器处理。
-    \begin{table}[!htb]
-        \centering
-        \caption{PCR 反应体系}
-        \begin{tabular}{cc}
-            \toprule
-            成分 & 体积（μL）\\
-            \midrule
-            F 引物 & 1\\
-            R 引物 & 1\\
-            \ce{ddH2O} & 7\\
-            Mix & 10\\
-            原样液 & 1\\
-            \bottomrule
-        \end{tabular}
+        \qquad 将得到的 PCR 管每个孔中按比例加入 1~μL~F引物、1~μL~R引物、7~μL 无菌水、10~μL Mix 与 1~μL 原菌液形成 20~μL体系，按照对应程序（如表2）将 PCR 管放入 PCR 仪按照表 3 程序进行扩增。
+    \begin{table}
+        \begin{minipage}[h]{0.4\linewidth}
+            \centering
+                \caption{PCR 反应体系}
+                \begin{tabular}{cc}
+                    \toprule
+                    成分        & 体积（μL）\\
+                    \midrule
+                    F 引物      & 1\\
+                    R 引物      & 1\\
+                    \ce{ddH2O}  & 7\\
+                    Mix         & 10\\
+                    原样液      & 1\\
+                    \bottomrule
+                \end{tabular}
+        \end{minipage}
+        \begin{minipage}[h]{0.6\linewidth}
+            \centering
+                \caption{PCR 程序设定}
+                \begin{tabular}{cccc}
+                    \toprule
+                    循环数  & 流程 & 温度 & 时间\\
+                    \midrule
+                    1 & 预变性 & 98℃ & 10~min\\
+                    & 变性 & 95℃ & 30~s\\
+                    2-36 & 复性 & 55℃ & 30~s\\
+                    & 延伸 & 72℃ & 90~s\\
+                    37 & 终延伸 & 72℃ & 5~min\\
+                    \bottomrule
+                \end{tabular}
+        \end{minipage}
     \end{table}
 
+    \quad 实验采上下游 PCR 引物设计，下游引物是针对目标基因（或序列）末端的引物，而上游引物则与目标基因（或序列）起始点相匹配。用 F 与 R 引物测定了培养菌全长的 16S rRNA 基因序列。
 
-    \begin{table}[!htb]
-        \centering
-        \caption{PCR 程序设定}
-        \begin{tabular}{cccc}
-            \toprule
-            循环数 & 流程 & 温度 & 时间\\
-            \midrule
-            1 & 预变性 & 98℃ & 10~min\\
-            & 变性 & 95℃ & 30~s\\
-            2-36 & 复性 & 55℃ & 30~s\\
-            & 延伸 & 72℃ & 90~s\\
-            37 & 终延伸 & 72℃ & 5~min\\
-            \bottomrule
-        \end{tabular}
-    \end{table}
+    \qquad 通过 PCR 后的产物电泳结果与 DNA Marker 进行对比来检验 PCR 产物是否合格。
+
+    \subsection{产物回收与浓度测定}
+    \subsubsection{产物回收}
+    \qquad 短暂离心 PCR 产物后用移液枪测体积，并转移至灭菌的 2~mL 离心管中，加入 Buffer DP，混匀 15~S 后加入加入 2.5 倍体积 Buffer DP 和 1 倍体积异丙醇，离心收集管壁液滴。将 HiPure 柱子套在收集管中，混合液转移至柱子，$\mathrm{10000\times g}$ 离心 60~s，重复上述步骤5-6次直到混合体积小于 700~μL 后倒掉滤液。柱子套到回收管中，加入 500~μL Buffer DW2，$\mathrm{10000\times g}$ 离心 60~s 后倒掉滤液，套在回收等中，$\mathrm{10000\times g}$ 离心 2~min。将柱子套在 2~mL 的离心管中，加入 25~μL Elution Buff 至柱子的膜中央，静置 1~min 后 $\mathrm{10000\times g}$ 离心 1~min，最后得到产物。
+    \subsubsection{浓度测定}
+    \qquad 使用微量分光光度计来测定得到产物的浓度。
+    \subsection{测序}
+    \qquad 为了让来自不同板的菌体的DNA总量大概一致，按浓度混合后再送往测序公司进行测序。
+
+    \section{16S rRNA 分析}
+    \qquad 16S rRNA 序列由高度保守的不可变区和相对可变的可变区组成，不可变区域是 16S rRNA 序列中相对较短的区域，其在细菌和古菌中高度保守，即基本保持相同的序列。
+    
+    \qquad 16S rRNA 是一个长序列，经过多年的研究和数据库的积累，已经建立了广泛和全球性的 16S rRNA 数据库。这些数据库中包含了大量的细菌和古菌的 16S rRNA 序列，使得通过比对新测序的 16S rRNA 序列与数据库中的序列进行比较成为可能。通过将新测序的 16S rRNA 序列与数据库中已知的序列进行比对，可以根据比对结果确定其与已知物种或菌株的相似性，并进一步进行物种或菌株的鉴定。
 
 
 \end{document}
