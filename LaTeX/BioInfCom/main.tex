@@ -12,6 +12,8 @@
 
 % 图片
 \usepackage{graphicx}
+% 图片位置
+\usepackage{float}
 % 并排
 \usepackage{subfigure}
 \usepackage{parskip}
@@ -19,36 +21,82 @@
 % 页眉
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead[L]{\small \CJKfontspec{SimHei}第九届生物信息设计与技能竞赛}
-\fancyhead[R]{\small \CJKfontspec{SimHei}大豆根系微生物的基因鉴定与基因功能预测}
+\fancyhead[L]{\small \CJKfontspec{SimHei}第九届生物信息设计与技能竞赛}          % 左页眉
+\fancyhead[R]{\small \CJKfontspec{SimHei}大豆根系微生物的基因鉴定与基因功能预测}    % 右页眉
+% \fancyhead[L]{中间页眉}
+% \fancyfoot[L]{左页脚}
+\fancyfoot[C]{第 \thepage 页 \quad 共 \pageref{LastPage} 页}
+% \fancyfoot[R]{右页脚}
 \renewcommand{\headrulewidth}{1pt} % 分隔线宽度 1 磅
+% \renewcommand{\footrulewidth}{4pt}
+
+% 获取最后一页
+\usepackage{lastpage}
 
 % 字体
 % \usepackage{fontspec}
 \setmainfont{Times New Roman} % 英文正文字体
-% \setCJKmainfont{SimSun} % 中文正文字体
-% \setCJKsansfont{SimHei}
+
 
 % 设置标号深度
 \setcounter{secnumdepth}{3}
 \author{}
 \date{}
 
+% 设置表格图片标题
 \usepackage{caption}
 \captionsetup[table]{
     font={small, bf},
     labelsep=quad,
     skip=0pt
 }
-
 \captionsetup[figure]{
     font={small, bf},
     labelsep=quad,
     skip=0pt
 }
 
-% 表格
+% 摘要
+\usepackage{abstract}
+% 标题格式 无衬线 加粗 四号
+\renewcommand{\abstractnamefont}{\sffamily\bfseries\Large}
+% 标题左对齐
+\renewcommand{\absnamepos}{flushleft}
+% 正文格式
+\renewcommand{\abstracttextfont}{\rmfamily\normalsize}
+% 正文两端无缩进
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+
+
+
+% 由于 flushleft/right 取消了 ctex 的默认缩进
+% 需要手动设置缩进
+\setlength{\parindent}{2em}
+
+% 三线表
 \usepackage{booktabs}
+
+% \setlength{\bibleftmargin}{0pt}
+% \setlength{bibindent}{2em}
+
+\ctexset{
+    % 一级标题 无衬线（黑体），左对齐，四号（14 pt）
+    % 标题标号与内容之间空一格
+    section/format              +=  \sffamily\raggedright\Large, 
+    section/aftername           =   \quad,
+    % 二级标题 无衬线（黑体），小四（12 pt） 默认左对齐
+    % 标题标号与内容之间空一格
+    subsection/format           +=  \sffamily\large,
+    subsection/aftername        =   \quad,
+    subsection/afterskip        =   0pt,
+    % 三级标题 小四（12 pt） 默认衬线 对齐
+    % 标题标号与内容之间空一格
+    subsubsection/format        +=  \large,
+    subsubsection/indent        =   2em,
+    subsubsection/number        =   (\arabic{subsubsection}),
+    subsubsection/afterskip     =   0pt,
+}
 
 \title{\vspace*{-1.5cm} \CJKfontspec{SimHei}大豆根系微生物的基因鉴定与基因功能预测}
 
@@ -58,24 +106,25 @@
     \maketitle\thispagestyle{fancy}
     \vspace*{-1.5cm}
 
-    {\raggedleft
-    {\zihao{5} \heiti  ——竞赛单元“2-1基因组”}}
+    % 右对齐 赛道与团队信息
+    \begin{flushright}
+        {\zihao{5} \heiti  ——竞赛单元“2-1基因组”}
 
-    ~\\
+        % 空一行
+        \vspace*{\baselineskip} 
 
-    {\raggedleft
         团队名称：水哥微生物小队\\
         指导老师：郑金水\\
-        团队成员：张敦彪，张子栋，颜旭，姚代洪\\}
-    
-    ~\\
+        团队成员：张敦彪，张子栋，颜旭，姚代洪\\
+    \end{flushright}
 
-    {\raggedright
-    {\zihao{4} \heiti 摘要}}
 
-    高通量培养与鉴定\textsuperscript{\cite{ref1}}可用于从给定环境和植物物种的本地根微生物组样本中建立一个分类学上全面的细菌培养收集，通过 16S rRNA基因扩增子测序对根样品的细菌多样性进行评价，筛选出具有相应16S rRNA 基因序列的培养菌。通过对大豆根系微生物的高通量培养筛选可以鉴定其基因的类型，进而对其基因功能进行预测。
+    % \raggedright
+    % {\zihao{4} \heiti 摘要}
+    \begin{abstract}
+        高通量培养与鉴定\textsuperscript{\cite{ref1}}可用于从给定环境和植物物种的本地根微生物组样本中建立一个分类学上全面的细菌培养收集，通过 16S rRNA基因扩增子测序对根样品的细菌多样性进行评价，筛选出具有相应16S rRNA 基因序列的培养菌。通过对大豆根系微生物的高通量培养筛选可以鉴定其基因的类型，进而对其基因功能进行预测。
+    \end{abstract}
     
-    ~\\
 
     {\heiti \zihao{-4} \raggedright 关键字：} {\zihao{5} 高通量培养，基因鉴定，功能预测}
 
@@ -184,23 +233,25 @@
 
     通过 PCR 后的产物电泳结果与 DNA Marker 进行对比来检验 PCR 产物是否合格。
 
-    \subsection{产物回收与浓度测定}
+    \subsection{产物回收并测序}
     \subsubsection{产物回收}
     短暂离心 PCR 产物后用移液枪测体积，并转移至灭菌的 2~mL 离心管中，加入 Buffer DP，混匀 15~S 后加入加入 2.5 倍体积 Buffer DP 和 1 倍体积异丙醇，离心收集管壁液滴。将 HiPure 柱子套在收集管中，混合液转移至柱子，$\mathrm{10000\times g}$ 离心 60~s，重复上述步骤5-6次直到混合体积小于 700~μL 后倒掉滤液。柱子套到回收管中，加入 500~μL Buffer DW2，$\mathrm{10000\times g}$ 离心 60~s 后倒掉滤液，套在回收等中，$\mathrm{10000\times g}$ 离心 2~min。将柱子套在 2~mL 的离心管中，加入 25~μL Elution Buff 至柱子的膜中央，静置 1~min 后 $\mathrm{10000\times g}$ 离心 1~min，最后得到产物。
 
     \subsubsection{浓度测定}
     使用微量分光光度计来测定得到产物的浓度。
 
-    \subsection{测序}
+    \subsubsection{测序}
     为了让来自不同板的菌体的DNA总量大概一致，按浓度混合后再送往测序公司进行测序。
 
-    \subsection{16S rRNA 分析}
+
+    \subsection{扩增子分析}
+
+    \subsubsection{16S rRNA 菌种鉴定}
     16S rRNA 序列由高度保守的不可变区和相对可变的可变区组成，不可变区域是 16S rRNA 序列中相对较短的区域，其在细菌和古菌中高度保守，即基本保持相同的序列。
     
     16S rRNA 是一个长序列，经过多年的研究和数据库的积累，已经建立了广泛和全球性的 16S rRNA 数据库\textsuperscript{\cite{ref3}}。这些数据库中包含了大量的细菌和古菌的 16S rRNA 序列，使得通过比对新测序的 16S rRNA 序列与数据库中的序列进行比较成为可能。通过将新测序的 16S rRNA 序列与数据库中已知的序列进行比对，可以根据比对结果确定其与已知物种或菌株的相似性，并进一步进行物种或菌株的鉴定。
 
-    \subsection{扩增子分析}
-    培养组流程\textsuperscript{\cite{ref4}}采用 Shell/R/Perl 语言编写脚本，整合了微生物组分析常用软件 QIIME、\\VSEARCH、GraPhlAn 等，定制完成的高通量培养物鉴定流程，可实现双端标签化扩增子文库的分析和可视化全流程。
+    培养组（Culturome）流程\textsuperscript{\cite{ref4}}采用 Shell/R/Perl 语言编写脚本，整合了微生物组分析常用软件 QIIME、\\VSEARCH、GraPhlAn 等，定制完成的高通量培养物鉴定流程，可实现双端标签化扩增子文库的分析和可视化全流程。
 
     \subsubsection{质量分析}
     使用 FastQC 进行质量分析。测序结果较好，均符合预期。
@@ -212,7 +263,7 @@
 
     同时我们也完成了对每板每孔数据读长、读长数量的统计（如图 2）。
 
-    \begin{figure}[htbp]
+    \begin{figure}[!htb]
         \centering
         \subfigure[根内样本测序读长分布]{
             \includegraphics[width=0.48\textwidth]{img/en.txt.histogram.pdf}
@@ -230,49 +281,76 @@
             \caption{测序读长分布}
     \end{figure}
 
-        % \centering
-        % \begin{minipage}[t]{0.48\textwidth}
-        %     \centering
-        %     \includegraphics[width=6cm]{img/en.txt.histogram.pdf}
-        %     \caption{根内样本测序读长分布}
-        % \end{minipage}
+    
 
-        % \begin{minipage}[t]{0.48\textwidth}
-        %     \centering
-        %     \includegraphics[width=6cm]{img/rhi.txt.histogram.pdf}
-        %     \caption{根际样本测序读长分布}
-        % \end{minipage}\\
-         
-        % \centering
-        % \begin{minipage}[t]{0.48\textwidth}
-        %     \centering
-        %     \includegraphics[width=6cm]{img/en.txt.plate.pdf}
-        %     \caption{根内每板读长数量}
-        % \end{minipage}
+    \subsection{代表性序列鉴定和物种注释}
 
-        % \begin{minipage}[t]{0.48\textwidth}
-        %     \centering
-        %     \includegraphics[width=6cm]{img/en.txt.plate.pdf}
-        %     \caption{根际每板读长数量}
-        % \end{minipage}\\
+    \subsubsection{挑选代表性序列}
+
+    挑选出代表性序列作为物种的代表是扩增子分析的关键步骤，主要包括聚类生成 OTU 和去噪生成 ASV 两类方法。UPARSE 算法将具有 97\% 相似性的序列聚类为 OTU，但此方法可能无法检测“种”或“株”之间的细微差异。DADA2是最近开发的一种去噪算法，可挑选出更准确的代表性序列 ASV。QIIME 流程中有两种去噪方法可选，即 DADA2 插件的 \verb|denoise-paired| 和 Deblur 插件的 \verb|denoise-16S|，此外 USEARCH 中的 \verb|-unoise3| 也可用于高速去噪并挑选ASV。最后，可以通过量化每个样本中特征序列的频率来获得特征表，即 OTU 或 ASV 表。同时，可以对特征序列进行分类，通常在界，门，纲，目，科，属和种的层级上进行分类，从而为微生物群提供了更多级别的降维视角。本文使用 ASV 方法，相比 OUT 聚类精度更高，结合去噪算法去除噪音序列，能全包分菌保留更高的多样性。
+
+    在 PCR 反应中，延伸阶段由于不完全延伸，会导致嵌合体序列的出现。通常在 PCR 过程中，大概有1\%的几率会出现嵌合体序列，而以在16S/18S/ITS 扩增子测序的分析中，系统相似度极高，嵌合体可达1\%-20\%，需要去除嵌合体序列。我们使用 VSEARCH 通过序列自身比对 $de~nova$ 去除嵌合体。
+
+    \subsubsection{物种注释}
+
+
+
+    采用 USEARCH 的 \verb|sintax| 命令基于 RDP 数据库进行物种注释，结果整理为制表符分隔的表格（附件 \verb|result/*_ASV_table.txt|）。随后鉴定每个ASV序列对应的候选菌株。此步包括整合ASV和物种注释表、评估 ASV 多样性的饱和度、ASV 或属水平种类的分布、以及每个孔中培养菌的纯度。输出结果主要包括两个表：ASV 列表（\verb|isolate_ASV.txt|）包括 5 个最佳候选菌孔位置信息、纯度和测序量；孔列表（\verb|isolate_well.txt|）包括 ASV 的纯度、测序量和物种注释信息，随后运行脚本可视化（如图3、4）。
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics*[width=0.7\textwidth]{img/en_graphlan.pdf}
+        \caption{培养菌进化分支树（根内）}
+
+        \includegraphics*[width=0.7\textwidth]{img/rhi_graphlan.pdf}
+        \caption{培养菌进化分支树（根际）}
+    \end{figure}
+
+  
+    \subsection{功能预测分析与结果可视化}
+    \subsubsection{功能预测}
+    基于 PICRUSt2 \textsuperscript{\cite{ref7}}开展基因功能预测。相比 PICRUSt，PICRUSt2 包含一个更新的，更大的基因家族和参考基因组数据库，可与任何可操作的分类单位（OTU）筛选或去噪算法互操作，并能够进行表型预测。PICRUSt2 运行简单，但负载较大，需要 16~GB+ 内存，仅需 ASV 序列和丰度两个文件作为输入，输入基因家族和途径丰度参数即可开始工作流。
+
+    \subsubsection{结果可视化}
+    使用 R 包 \verb|ggpicrust2| \cite{ref8}进行结果可视化。\verb|ggpicrust2| 直接接收 PICRUSt2 的输出文件作为输入，并进行差异丰度分析。但介于软件仍处于开发早期，如果通路显著的数量较多（大于 30），则无法生成可视化图像，所以本文中每次仅输入 30 个通路进行分析，得到根内与根际的功能丰度柱状图和 PCA 图（如图5、6，其他图像见附件）。
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics*[width=\textwidth]{img/RelativeAbundance30.pdf}
+        \caption{根内、根际微生物功能丰度柱状图}
+    \end{figure}
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics*[width=0.7\textwidth]{img/PCA_KO.pdf}
+        \caption{根内、根际微生物功能丰度 PCA 图}
+    \end{figure}
+
+
+    \section{总结与展望}
+
+    以大豆为生物材料，我们采集了大豆的根系样品，分为根际、根内两组进行高通量分离培养，并设置三种不同比例的培养基，培养两周后，对 30 个 96 孔细胞培养板每个孔中的细菌进行鉴定。目前基于二代16S rRNA 扩增子测序结果的分析流程已经比较完善，但由于读长限制，二代扩增子挑选可变区是一个主要问题，这意味着部分信息的丢失。而三代测序读长长的优点，可以轻松覆盖 16S rRNA 全长约 1500~bp 共 9 个可变区，最大程度保留了物种鉴定的可能性。但在软件和分析流程方面仍可完善，例如当前的 Phred33/64 评分标准不适用于三代测序结果，从而无法在 \verb|fastq| 文件内存入有效的质量信息，而目前的分析软件均接受 \verb|fastq| 文件作为输入，如 QIIME。所以基于三代测序的 16S rRNA 全长数据分析仍有很大的研究潜力。
 
     % {\zihao{4} \heiti \raggedleft 参考文献}
 
-    \begin{thebibliography}{99}
-        \bibitem{ref1} Jingying Z,Xin Y L,Xiaoxuan G, et al. High-throughput cultivation and identification of bacteria from the plant root microbiota[J]. Nature Protocols,2021,16(2). https://doi.org/10.1038/s41596-020-00444-7
+    \begin{thebibliography}{0}
+        \bibitem{ref1} Jingying Z, Xin Y L, Xiaoxuan G, et al. High-throughput cultivation and identification of bacteria from the plant root microbiota[J]. Nature Protocols,2021,16(2). https://doi.org/10.1038/s41596-020-00444-7
 
-        \bibitem{ref2} 李亭玉,李太元.益生菌发酵工艺中蜡样芽孢杆菌的分离鉴定[J].当代畜禽养殖业, 2019(6):2. CNKI:SUN:DAYZ.0.2019-06-006.
+        \bibitem{ref2} 李亭玉, 李太元.益生菌发酵工艺中蜡样芽孢杆菌的分离鉴定[J].当代畜禽养殖业, 2019(6):2. CNKI:SUN:DAYZ.0.2019-06-006.
  
-        \bibitem{ref3} Nadav B,Grant G,H C W, et al. Genome-wide prediction of disease variant effects with a deep protein language model.[J]. Nature genetics,2023. https://doi.org/10.1038/s41588-023-01465-0
+        \bibitem{ref3} Nadav B, Grant G, H C W, et al. Genome-wide prediction of disease variant effects with a deep protein language model.[J]. Nature genetics,2023. https://doi.org/10.1038/s41588-023-01465-0
 
-        \bibitem{ref4} Jingying Zhang, Yong-Xin Liu, Xiaoxuan Guo, Yuan Qin, Ruben Garrido-Oter, Paul Schulze-Lefert, Yang Bai. 2021. High-throughput cultivation  and identification of bacteria from the plant root microbiota. Nature Protocols 16: 988-1012. https://doi.org/10.1038/s41596-020-00444-7
+        \bibitem{ref4} Jingying Zhang,Yong-Xin Liu,Xiaoxuan Guo,Yuan Qin, Ruben Garrido-Oter,Paul Schulze-Lefert,Yang Bai. 2021. High-throughput cultivation  and identification of bacteria from the plant root microbiota. Nature Protocols 16: 988-1012. https://doi.org/10.1038/s41596-020-00444-7
 
-        \bibitem{ref5} Douglas, G.M., Maffei, V.J., Zaneveld, J.R. et al. PICRUSt2 for prediction of metagenome functions. Nat Biotechnol 38, 685–688 (2020). https://doi.org/10.1038/s41587-020-0548-6
+        \bibitem{ref5} Bolyen E, Rideout JR, Dillon MR, Bokulich NA, Abnet CC, Al-Ghalith GA, Alexander H, Alm EJ, Arumugam M, Asnicar F, Bai Y, Bisanz JE, Bittinger K, Brejnrod A, Brislawn CJ, Brown CT, Callahan BJ, Caraballo-Rodríguez AM, Chase J, Cope EK, Da Silva R, Diener C, Dorrestein PC, Douglas GM, Durall DM, Duvallet C, Edwardson CF, Ernst M, Estaki M, Fouquier J, Gauglitz JM, Gibbons SM, Gibson DL, Gonzalez A, Gorlick K, Guo J, Hillmann B, Holmes S, Holste H, Huttenhower C, Huttley GA, Janssen S, Jarmusch AK, Jiang L, Kaehler BD, Kang KB, Keefe CR, Keim P, Kelley ST, Knights D, Koester I, Kosciolek T, Kreps J, Langille MGI, Lee J, Ley R, Liu YX, Loftfield E, Lozupone C, Maher M, Marotz C, Martin BD, McDonald D, McIver LJ, Melnik AV, Metcalf JL, Morgan SC, Morton JT, Naimey AT, Navas-Molina JA, Nothias LF, Orchanian SB, Pearson T, Peoples SL, Petras D, Preuss ML, Pruesse E, Rasmussen LB, Rivers A, Robeson MS, Rosenthal P, Segata N, Shaffer M, Shiffer A, Sinha R, Song SJ, Spear JR, Swafford AD, Thompson LR, Torres PJ, Trinh P, Tripathi A, Turnbaugh PJ, Ul-Hasan S, van der Hooft JJJ, Vargas F, Vázquez-Baeza Y, Vogtmann E, von Hippel M, Walters W, Wan Y, Wang M, Warren J, Weber KC, Williamson CHD, Willis AD, Xu ZZ, Zaneveld JR, Zhang Y, Zhu Q, Knight R, and Caporaso JG. 2019. Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nature Biotechnology 37: 852–857. https://doi.org/10.1038/s41587-019-0209-9
 
-        \bibitem{ref6} Chen Yang and others. (2023). ggpicrust2: an R package for PICRUSt2 predicted functional profile analysis and visualization. Bioinformatics, btad470. https://doi.org/10.1093/bioinformatics/btad470
+        \bibitem{ref6} QIIME 2 development team. Input Files - Homepage(访问于 2023 年 9 月 18日) [EB/OL]http://qiime.org/documentation/file\_formats.html
+        
+        \bibitem{ref7} Douglas, G.M., Maffei, V.J., Zaneveld, J.R. et al. PICRUSt2 for prediction of metagenome functions. Nat Biotechnol 38, 685–688 (2020). https://doi.org/10.1038/s41587-020-0548-6
 
-        \bibitem{}
-        % http://qiime.org/documentation/file_formats.html ；访问于 2023 年 9 月
+        \bibitem{ref8} Chen Yang and others. (2023). ggpicrust2: an R package for PICRUSt2 predicted functional profile analysis and visualization. [J]. Bioinformatics, btad470. https://doi.org/10.1093/bioinformatics/btad470
+
+
     \end{thebibliography}
 
 \end{document}

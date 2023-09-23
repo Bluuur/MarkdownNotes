@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.20)  24 SEP 2023 00:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.20)  24 SEP 2023 04:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -364,6 +364,13 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen198
 \Gin@req@width=\dimen199
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count310
+\float@exts=\toks23
+\float@box=\box57
+\@float@everytoks=\toks24
+\@floatcapt=\box58
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip76
@@ -372,10 +379,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip78
 \subfigcapmargin=\dimen257
 \subfiglabelskip=\skip79
-\c@subfigure=\count310
-\c@lofdepth=\count311
-\c@subtable=\count312
-\c@lotdepth=\count313
+\c@subfigure=\count311
+\c@lofdepth=\count312
+\c@subtable=\count313
+\c@lotdepth=\count314
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -393,7 +400,7 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count314
+\etb@tempcnta=\count315
 )
 Couldn't patch \@startsection
 Couldn't patch \@xsect
@@ -408,7 +415,14 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip88
 \f@nch@O@olf=\skip89
 \f@nch@O@orf=\skip90
-)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2023/03/07 v2.0a lastpage: 2.09 or 2e? (HMM)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lastpage/lastpage2e.sty
+Package: lastpage2e 2023/03/07 v2.0a Decide which 2e lastpage version to use (HMM)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
+Package: lastpagemodern 2023-03-07 v2.0a Refers to last page's name (HMM; JPG)
+) 
+))
 
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             New Roman' with options [Ligatures=TeX].
@@ -450,9 +464,17 @@ Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@hangindent=\dimen265
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count315
-\c@continuedfloat=\count316
+\c@caption@flags=\count316
+\c@continuedfloat=\count317
+Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/abstract/abstract.sty
+Package: abstract 2009/06/08 v1.2a configurable abstracts
+\abstitleskip=\skip91
+\absleftindent=\skip92
+\absrightindent=\skip93
+\absparindent=\skip94
+\absparsep=\skip95
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen266
@@ -465,34 +487,34 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen273
 \cmidrulekern=\dimen274
 \defaultaddspace=\dimen275
-\@cmidla=\count317
-\@cmidlb=\count318
+\@cmidla=\count318
+\@cmidlb=\count319
 \@aboverulesep=\dimen276
 \@belowrulesep=\dimen277
-\@thisruleclass=\count319
-\@lastruleclass=\count320
+\@thisruleclass=\count320
+\@lastruleclass=\count321
 \@thisrulewidth=\dimen278
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 
-Package chemgreek Info: Activating mapping `fontspec' on line 56.
+Package chemgreek Info: Activating mapping `fontspec' on line 104.
 
 
 *geometry* driver: auto-detecting
@@ -554,28 +576,28 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 58.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 106.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 58.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 106.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 58.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 106.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 58.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 106.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.045> on input line 58.
+(Font)              <12.045> on input line 106.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 106.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 58.
+(Font)              <6> on input line 106.
 
 
 Package fontspec Warning: Font "FandolHei-Regular" does not contain requested
@@ -597,33 +619,22 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
+Package fontspec Warning: Font "FandolHei-Regular" does not contain requested
+(fontspec)                Script "CJK".
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 76.
+(Font)              <10.53937> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 76.
+(Font)              <7> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 76.
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
+(Font)              <5> on input line 125.
 [1
 
 ]
 File: img/CulturePipeline.pdf Graphic file (type pdf)
 <use img/CulturePipeline.pdf>
  [2]
-Overfull \hbox (1.75655pt too wide) in paragraph at lines 151--181
+Overfull \hbox (1.75655pt too wide) in paragraph at lines 200--230
 []$[]$ $[]$ 
  []
 
@@ -652,29 +663,46 @@ File: img/en.txt.plate.pdf Graphic file (type pdf)
 <use img/en.txt.plate.pdf>
 File: img/en.txt.plate.pdf Graphic file (type pdf)
 <use img/en.txt.plate.pdf>
-
-Underfull \hbox (badness 6691) in paragraph at lines 264--265
-[]\TU/FandolSong-Regular(0)/m/n/10.53937 李 亭 玉\TU/TimesNewRoman(0)/m/n/10.53937 , \TU/FandolSong-Regular(0)/m/n/10.53937 李 太 元\TU/TimesNewRoman(0)/m/n/10.53937 . \TU/FandolSong-Regular(0)/m/n/10.53937 益 生 菌 发 酵 工 艺 中 蜡 样 芽 孢 杆 菌 的 分 离 鉴 定 \TU/TimesNewRoman(0)/m/n/10.53937 [J]. \TU/FandolSong-Regular(0)/m/n/10.53937 当 代 畜 禽 养 殖
+[5]
+File: img/en_graphlan.pdf Graphic file (type pdf)
+<use img/en_graphlan.pdf>
+File: img/rhi_graphlan.pdf Graphic file (type pdf)
+<use img/rhi_graphlan.pdf>
+ [6] [7]
+File: img/RelativeAbundance30.pdf Graphic file (type pdf)
+<use img/RelativeAbundance30.pdf>
+File: img/PCA_KO.pdf Graphic file (type pdf)
+<use img/PCA_KO.pdf>
+ [8]
+Underfull \hbox (badness 3271) in paragraph at lines 343--344
+[]\TU/TimesNewRoman(0)/m/n/10.53937 Jingying Zhang,Yong-Xin Liu,Xiaoxuan Guo,Yuan Qin, Ruben Garrido-Oter,Paul Schulze-
  []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+Underfull \hbox (badness 6016) in paragraph at lines 347--348
+[]\TU/TimesNewRoman(0)/m/n/10.53937 QIIME 2 development team. Input Files - Homepage(\TU/FandolSong-Regular(0)/m/n/10.53937 访 问 于 \TU/TimesNewRoman(0)/m/n/10.53937 2023 \TU/FandolSong-Regular(0)/m/n/10.53937 年 \TU/TimesNewRoman(0)/m/n/10.53937 9 \TU/FandolSong-Regular(0)/m/n/10.53937 月 \TU/TimesNewRoman(0)/m/n/10.53937 18 \TU/FandolSong-Regular(0)/m/n/10.53937 日\TU/TimesNewRoman(0)/m/n/10.53937 )
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 []\TU/TimesNewRoman(0)/m/n/10.53937 Chen Yang and others. (2023). ggpicrust2: an R package for PICRUSt2 pre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-\TU/TimesNewRoman(0)/m/n/10.53937 dicted functional profile analysis and visualization. Bioinformatics, btad470.
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
+\TU/TimesNewRoman(0)/m/n/10.53937 dicted functional profile analysis and visualization. [J]. Bioinformatics, btad470.
  []
 
-[7] (./main.aux) ) 
+[10] 
+enddocument/afterlastpage: lastpage setting LastPage.
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 12461 strings out of 476683
- 322093 string characters out of 5804047
- 1868018 words of memory out of 5000000
- 32493 multiletter control sequences out of 15000+600000
- 536196 words of font info for 110 fonts, out of 8000000 for 9000
+ 12800 strings out of 476683
+ 334358 string characters out of 5804047
+ 1869018 words of memory out of 5000000
+ 32807 multiletter control sequences out of 15000+600000
+ 536212 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,19n,97p,1186b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,19n,97p,1561b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (7 pages).
+Output written on main.pdf (10 pages).
