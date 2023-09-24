@@ -128,13 +128,6 @@
 
     {\heiti \zihao{-4} \raggedright 关键字：} {\zihao{5} 高通量培养，基因鉴定，功能预测}
 
-    
-    % % 目录设为页码 0（从正文起为第一页）
-    % \setcounter{page}{0}
-
-    % % 目录的页脚设为空
-    % \thispagestyle{empty}
-
 
     % \chapter{Hello}
 
@@ -251,7 +244,7 @@
     
     16S rRNA 是一个长序列，经过多年的研究和数据库的积累，已经建立了广泛和全球性的 16S rRNA 数据库\textsuperscript{\cite{ref3}}。这些数据库中包含了大量的细菌和古菌的 16S rRNA 序列，使得通过比对新测序的 16S rRNA 序列与数据库中的序列进行比较成为可能。通过将新测序的 16S rRNA 序列与数据库中已知的序列进行比对，可以根据比对结果确定其与已知物种或菌株的相似性，并进一步进行物种或菌株的鉴定。
 
-    培养组（Culturome）流程\textsuperscript{\cite{ref4}}采用 Shell/R/Perl 语言编写脚本，整合了微生物组分析常用软件 QIIME、\\VSEARCH、GraPhlAn 等，定制完成的高通量培养物鉴定流程，可实现双端标签化扩增子文库的分析和可视化全流程。
+    培养组（Culturome）流程\textsuperscript{\cite{ref4}}采用 Shell/R/Perl 语言编写脚本，整合了微生物组分析常用软件 QIIME、VSEARCH、GraPhlAn 等，定制完成的高通量培养物鉴定流程，可实现双端标签化扩增子文库的分析和可视化全流程。
 
     \subsubsection{质量分析}
     使用 FastQC 进行质量分析。测序结果较好，均符合预期。
@@ -295,7 +288,7 @@
 
 
 
-    采用 USEARCH 的 \verb|sintax| 命令基于 RDP 数据库进行物种注释，结果整理为制表符分隔的表格（附件 \verb|result/*_ASV_table.txt|）。随后鉴定每个ASV序列对应的候选菌株。此步包括整合ASV和物种注释表、评估 ASV 多样性的饱和度、ASV 或属水平种类的分布、以及每个孔中培养菌的纯度。输出结果主要包括两个表：ASV 列表（\verb|isolate_ASV.txt|）包括 5 个最佳候选菌孔位置信息、纯度和测序量；孔列表（\verb|isolate_well.txt|）包括 ASV 的纯度、测序量和物种注释信息，随后运行脚本可视化（如图3、4）。
+    采用 USEARCH 的 \verb|sintax| 命令基于 RDP 数据库进行物种注释，结果整理为制表符分隔的表格（附件 \verb|result/*_ASV_table.txt|）。随后鉴定每个ASV序列对应的候选菌株。此步包括整合ASV和物种注释表、评估 ASV 多样性的饱和度、ASV 或属水平种类的分布、以及每个孔中培养菌的纯度。输出结果主要包括两个表：ASV 列表（\verb|isolate_ASV.txt|）包括 5 个最佳候选菌孔位置信息、纯度和测序量；孔列表（\verb|isolate_well.txt|）包括 ASV 的纯度、测序量和物种注释信息，随后运行脚本进行可视化（如图3、4）。
 
     \begin{figure}[!htbp]
         \centering
