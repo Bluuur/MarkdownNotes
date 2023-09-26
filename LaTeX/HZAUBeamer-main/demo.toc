@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{引言}{3}{0}{1}
-\beamer@sectionintoc {2}{文献回顾与理论假说}{5}{0}{2}
-\beamer@sectionintoc {3}{数据来源与统计学特征}{7}{0}{3}
-\beamer@sectionintoc {4}{变量选取与模型设定}{10}{0}{4}
-\beamer@sectionintoc {5}{计量结果与实证分析}{12}{0}{5}
-\beamer@sectionintoc {6}{主要结论与政策含义}{14}{0}{6}

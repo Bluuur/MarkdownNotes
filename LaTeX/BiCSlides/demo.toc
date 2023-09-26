@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{背景}{3}{0}{1}
+\beamer@sectionintoc {2}{湿实验过程}{5}{0}{2}
+\beamer@sectionintoc {3}{数据分析}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{数据预处理}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{物种鉴定}{9}{0}{3}
+\beamer@subsectionintoc {3}{3}{功能预测}{13}{0}{3}
