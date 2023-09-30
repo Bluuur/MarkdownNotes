@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  29 SEP 2023 23:41
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  30 SEP 2023 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,38 +291,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <18.06749> on input line 13.
+(Font)              <12.045> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <15.05624> on input line 13.
+(Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12.045> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
- [1
+(Font)              <6> on input line 15.
 
-] (./main.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-)
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
-LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 19.
- [1
-
-]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.03374> on input line 23.
- [2
-
-]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -340,30 +314,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[2]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[3]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[4] (./main.aux) ) 
+[2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 6967 strings out of 476179
- 211039 string characters out of 5809102
- 556730 words of memory out of 5000000
- 27643 multiletter control sequences out of 15000+600000
- 477580 words of font info for 87 fonts, out of 8000000 for 9000
+ 6827 strings out of 476179
+ 205005 string characters out of 5809102
+ 562730 words of memory out of 5000000
+ 27533 multiletter control sequences out of 15000+600000
+ 473797 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,14n,97p,1200b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,11n,97p,1200b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (7 pages).
+Output written on main.pdf (2 pages).

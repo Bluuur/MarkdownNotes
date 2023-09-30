@@ -1,7 +1,0 @@
-\contentsline {section}{\numberline {1}论文排版系统概述}{1}{}%
-\contentsline {subsection}{\numberline {1.1}论文排版系统的分类}{1}{}%
-\contentsline {subsection}{\numberline {1.2}论文排版系统的历史沿革}{1}{}%
-\contentsline {section}{\numberline {2}论文排版系统用法概述}{2}{}%
-\contentsline {subsection}{\numberline {2.1}Word 用于理工科论文排版的不足}{2}{}%
-\contentsline {subsection}{\numberline {2.2}\LaTeX 在论文排版中的应用}{2}{}%
-\contentsline {section}{\numberline {3}结论与展望}{3}{}%
