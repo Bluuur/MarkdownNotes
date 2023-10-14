@@ -638,4 +638,207 @@ mysql> select ename, comm from emp where comm is not null;
 
 ```
 
-> p16
+#### `in` (选择一个字段的多个情况)
+
++ 找出工作岗位是 `manager` 和 `salesman` 的员工
+
+```mysql
+mysql> select ename, job from emp where job = 'manager' or job = 'salesman';
++--------+----------+
+| ename  | job      |
++--------+----------+
+| ALLEN  | SALESMAN |
+| WARD   | SALESMAN |
+| JONES  | MANAGER  |
+| MARTIN | SALESMAN |
+| BLAKE  | MANAGER  |
+| CLARK  | MANAGER  |
+| TURNER | SALESMAN |
++--------+----------+
+7 rows in set (0.00 sec)
+```
+
++ 使用 `in`
++ `in` 后面的括号不表示区间，只表示集合。
+
+```mysql
+mysql> select ename, job from emp where job in ('salesman', 'manager');
++--------+----------+
+| ename  | job      |
++--------+----------+
+| ALLEN  | SALESMAN |
+| WARD   | SALESMAN |
+| JONES  | MANAGER  |
+| MARTIN | SALESMAN |
+| BLAKE  | MANAGER  |
+| CLARK  | MANAGER  |
+| TURNER | SALESMAN |
++--------+----------+
+7 rows in set (0.00 sec)
+```
+
+
+
+
+
+#### `and` 和 `or` 的优先级
+
++ 找出薪资大于 1000 并且部门编号为 20 或 30 的员工。
++ `and` 优先级大于 `or`
++ 运算符优先级不确定时，加小括号。
+
+```mysql
+mysql> select ename, sal, deptno from emp where sal > 1000 and (deptno = 20 or deptno = 30);
++--------+---------+--------+
+| ename  | sal     | deptno |
++--------+---------+--------+
+| ALLEN  | 1600.00 |     30 |
+| WARD   | 1250.00 |     30 |
+| JONES  | 2975.00 |     20 |
+| MARTIN | 1250.00 |     30 |
+| BLAKE  | 2850.00 |     30 |
+| SCOTT  | 3000.00 |     20 |
+| TURNER | 1500.00 |     30 |
+| ADAMS  | 1100.00 |     20 |
+| FORD   | 3000.00 |     20 |
++--------+---------+--------+
+9 rows in set (0.00 sec)
+
+mysql> select ename, sal, deptno from emp where sal > 1000 and deptno = 20 or deptno = 30;
++--------+---------+--------+
+| ename  | sal     | deptno |
++--------+---------+--------+
+| ALLEN  | 1600.00 |     30 |
+| WARD   | 1250.00 |     30 |
+| JONES  | 2975.00 |     20 |
+| MARTIN | 1250.00 |     30 |
+| BLAKE  | 2850.00 |     30 |
+| SCOTT  | 3000.00 |     20 |
+| TURNER | 1500.00 |     30 |
+| ADAMS  | 1100.00 |     20 |
+| JAMES  |  950.00 |     30 | 
+| FORD   | 3000.00 |     20 |
++--------+---------+--------+
+10 rows in set (0.00 sec)
+```
+
+### `like` 模糊查询
+
++ 在模糊查询中有两个通配符
+  + `%` 表示任意多个字符
+  + `_ ` 表示任意 1 个字符
+
++ 找出名字中有 O 的员工
+
+```mysql
+mysql> select ename from emp where ename like '%O%';
++-------+
+| ename |
++-------+
+| JONES |
+| SCOTT |
+| FORD  |
++-------+
+3 rows in set (0.00 sec)
+```
+
++ 找出名字第二个字母是 A 的员工
+
+```mysql
+mysql> select ename from emp where ename like '_A%';
++--------+
+| ename  |
++--------+
+| WARD   |
+| MARTIN |
+| JAMES  |
++--------+
+3 rows in set (0.00 sec)
+```
+
+## 排序 `order by`
+
+### 升序 `asc`
+
++ 查找员工名和工资，按照工资升序排列
++ 使用 `order by` 默认是升序，也可以使用 `asc` 关键字指定升序。 
+
+```mysql
+mysql> select ename, sal from emp order by sal;
+# 或者 select ename, sal from emp order by sal asc;
++--------+---------+
+| ename  | sal     |
++--------+---------+
+| SMITH  |  800.00 |
+| JAMES  |  950.00 |
+| ADAMS  | 1100.00 |
+| WARD   | 1250.00 |
+| MARTIN | 1250.00 |
+| MILLER | 1300.00 |
+| TURNER | 1500.00 |
+| ALLEN  | 1600.00 |
+| CLARK  | 2450.00 |
+| BLAKE  | 2850.00 |
+| JONES  | 2975.00 |
+| SCOTT  | 3000.00 |
+| FORD   | 3000.00 |
+| KING   | 5000.00 |
++--------+---------+
+14 rows in set (0.00 sec)
+```
+
+
+
+### 降序 `desc`
+
++  使用 `desc` 指定降序
+
+```mysql
+mysql> select ename, sal from emp order by sal desc;
++--------+---------+
+| ename  | sal     |
++--------+---------+
+| KING   | 5000.00 |
+| SCOTT  | 3000.00 |
+| FORD   | 3000.00 |
+| JONES  | 2975.00 |
+| BLAKE  | 2850.00 |
+| CLARK  | 2450.00 |
+| ALLEN  | 1600.00 |
+| TURNER | 1500.00 |
+| MILLER | 1300.00 |
+| WARD   | 1250.00 |
+| MARTIN | 1250.00 |
+| ADAMS  | 1100.00 |
+| JAMES  |  950.00 |
+| SMITH  |  800.00 |
++--------+---------+
+14 rows in set (0.00 sec)
+```
+
++ 按照工资的降序排列，工资相同时按照名字的升序排列。
+
+```mysql
+# asc 可以省略
+mysql> select ename, sal from emp order by sal desc, ename asc;
++--------+---------+
+| ename  | sal     |
++--------+---------+
+| KING   | 5000.00 |
+| FORD   | 3000.00 | #
+| SCOTT  | 3000.00 | #
+| JONES  | 2975.00 |
+| BLAKE  | 2850.00 |
+| CLARK  | 2450.00 |
+| ALLEN  | 1600.00 |
+| TURNER | 1500.00 |
+| MILLER | 1300.00 |
+| MARTIN | 1250.00 |#
+| WARD   | 1250.00 | #
+| ADAMS  | 1100.00 |
+| JAMES  |  950.00 |
+| SMITH  |  800.00 |
++--------+---------+
+14 rows in set (0.00 sec)
+```
+
