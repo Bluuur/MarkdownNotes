@@ -16,11 +16,11 @@ select version();
 
 #### 结束 SQL 语句
 
-	使用 `\c` 结束 SQL 语句。
+使用 `\c` 结束 SQL 语句。
 
 #### 退出 MySQL
 
-	`\q` `exit` `quit` 均可以退出 MySQL。
+`\q` `exit` `quit` 均可以退出 MySQL。
 
 #### 查看其他数据库中的表
 
