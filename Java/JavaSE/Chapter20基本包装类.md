@@ -1,15 +1,16 @@
 # 八种基本包装类
 
-Java中为基本数据类型又对应准备了8种包装类,8种包装类属于引用数据类型,父类是Object
+Java 中为基本数据类型又对应准备了 8 种包装类，8 种包装类属于引用数据类型，父类是 `Object`。
 
 ```java
 package com.java.Integer;
 
 public class IntegerTest01 {
     public static void main(String[] args) {
-        //有没有这种需求:调用doSome()方法的时候需要传一个数字进去
-        //但是数字属于基本数据类型,而doSome方法参数的类型是Object
-        //doSome方法无法接受基本数据类型的数字
+        
+// 有没有这种需求：调用 doSome() 方法的时候需要传一个数字进去
+// 但是数字属于基本数据类型，而 doSome 方法参数的类型是 Object
+// doSome 方法无法接受基本数据类型的数字 
 
         //可以传一个数字对应的包装类进去
         Integer integer = new Integer(100);
@@ -35,22 +36,22 @@ public class IntegerTest01 {
 | `boolean`    | `java.lang.Boolean`   | `Object`     |
 | `char`       | `java.lang.Character` | `Object`     |
 
-可以通过以上类将基本数据类型转换成引用数据类型(装箱)
+可以通过以上类将基本数据类型转换成引用数据类型（装箱）。
 
 # Number类
 
-Number类是一个抽象类,无法通过Number类创建对象
+Number 类是一个抽象类，无法通过 Number 类创建对象
 
-| 返回值类型         | 方法摘要         |                                |
-| ------------------ | ---------------- | ------------------------------ |
-| ` byte`            | `byteValue()`    | 以 `byte` 形式返回指定的数值   |
-| `abstract  double` | `doubleValue()`  | 以 `double` 形式返回指定的数值 |
-| `abstract  float`  | `floatValue()`   | 以 `float` 形式返回指定的数值  |
-| `abstract  int`    | `intValue()`     | 以 `int` 形式返回指定的数值    |
-| `abstract  long`   | `longValue()`    | 以 `long` 形式返回指定的数值   |
-| ` short`           | `shortValue()`。 | 以 `short` 形式返回指定的数值  |
+| 返回值类型         | 方法摘要        |                                |
+| ------------------ | --------------- | ------------------------------ |
+| ` byte`            | `byteValue()`   | 以 `byte` 形式返回指定的数值   |
+| `abstract  double` | `doubleValue()` | 以 `double` 形式返回指定的数值 |
+| `abstract  float`  | `floatValue()`  | 以 `float` 形式返回指定的数值  |
+| `abstract  int`    | `intValue()`    | 以 `int` 形式返回指定的数值    |
+| `abstract  long`   | `longValue()`   | 以 `long` 形式返回指定的数值   |
+| ` short`           | `shortValue()`  | 以 `short` 形式返回指定的数值  |
 
-通过以上方法可以将引用数据类型转换为基本数据类型(拆箱)
+通过以上方法可以将引用数据类型转换为基本数据类型（拆箱）
 
 # Java中的日期
 
@@ -66,22 +67,22 @@ System.out.println(date);
 
 直接输入的格式为:`Wed Apr 14 20:43:54 GMT+08:00 2021`
 
-可以通过`SimpleDateFormat`类将日期格式化
-`SimpleDateFormat`是`java.text`包下的,专门负责日期格式化
+可以通过 `SimpleDateFormat` 类将日期格式化
+`SimpleDateFormat` 是 `java.text` 包下的,专门负责日期格式化
 
-## SimpleDateFormat构造方法SimpleDateFormat
+## `SimpleDateFormat` 的构造方法
 
-```
+```java
 public SimpleDateFormat(String pattern)
 ```
 
->  用给定的模式和默认语言环境的日期格式符号构造 SimpleDateFormat。注：此构造方法可能不支持所有语言环境。要覆盖所有语言环境，请使用 DateFormat 类中的工厂方法。 
+>  用给定的模式和默认语言环境的日期格式符号构造 `SimpleDateFormat`。注：此构造方法可能不支持所有语言环境。要覆盖所有语言环境，请使用 `DateFormat `类中的工厂方法。 
 >
 >  参数：
->  pattern - 描述日期和时间格式的模式 
+>  `pattern` - 描述日期和时间格式的模式 
 >  抛出： 
->  NullPointerException - 如果给定的模式为 null 
->  IllegalArgumentException - 如果给定的模式无效
+>  `NullPointerException` - 如果给定的模式为 `null `
+>  `IllegalArgumentException` - 如果给定的模式无效
 
 ### 日期和时间模式
 
@@ -257,15 +258,15 @@ public class DateTest02 {
 
 ```
 
-### 简单总结System类中的方法
+### 简单总结 System 类中的方法
 
-| 方法                       | 说明                                                    |
-| -------------------------- | ------------------------------------------------------- |
-| `System.out`               | `out`是`System`的静态变量                               |
-| `System.out.println`       | `println()`方法不是`System`类的,是`PrintStream`类的方法 |
-| `System.gc()`              | 建议启动垃圾回收器                                      |
-| `System.currentTimeMillis` | 获取自1970年1月1日00:00:00 000到当前系统时间的总毫秒数  |
-| `System.exit(0);`          | 退出`JVM`                                               |
+| 方法                       | 说明                                                        |
+| -------------------------- | ----------------------------------------------------------- |
+| `System.out`               | `out` 是 `System` 的静态变量                                |
+| `System.out.println`       | `println()` 方法不是 `System `类的,是`PrintStream` 类的方法 |
+| `System.gc()`              | 建议启动垃圾回收器                                          |
+| `System.currentTimeMillis` | 获取自1970年1月1日00:00:00 000到当前系统时间的总毫秒数      |
+| `System.exit(0);`          | 退出`JVM`                                                   |
 
 ## Date有参构造方法
 
