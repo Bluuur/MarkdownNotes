@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用 CSS 样式 </title>
+    <style type="text/css">
+        .citys {
+            /* 隐藏样式 */
+            display: none;
+        }
+
+        #nameError {
+            /* 字体 */
+            font-size: 12px;
+            color: red;
+        }
+
+        .baidu {
+            /* 文本装饰 */
+            text-decoration: none;
+        }
+
+        #country {
+            /* 列表 */
+            list-style: none;
+        }
+
+        /* :hover 用于设置鼠标悬停效果，鼠标悬停时启用样式，鼠标移开时取消
+            注意冒号两边不能有空格
+        */
+        #mouse:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .mydiv {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px black solid;
+            /* 顶部边距 */
+            margin-top: 100px;
+            /* 内补丁 这里 width 会加 50px*/
+            padding-right: 50px;
+        }
+
+        #outdiv {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        /* 浮动效果 默认浮动于左侧 只是浮动于当前元素的父元素内部 */
+        #innerdiv {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: right;
+        }
+
+        /* 定位 */
+        #mydiv2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 绝对定位 */
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+<!--隐藏样式-->
+<ul id="country">
+    <li>中国</li>
+    <ul class="citys">
+        <li>北京</li>
+        <li>上海</li>
+        <li>天津</li>
+    </ul>
+    <li>美国</li>
+    <ul class="citys">
+        <li>华盛顿</li>
+        <li>芝加哥</li>
+        <li>波士顿</li>
+    </ul>
+    <li>日本</li>
+</ul>
+
+<!--字体样式-->
+<span id="nameError">用户名不能为空</span>
+</body>
+
+<!--文本装饰-->
+<a class="baidu" href="https://www.baidu.com">百度</a>
+
+<!-- 设置鼠标悬停效果 -->
+<span id="mouse">HZAU</span>
+
+<!--内补丁 外补丁（编剧）-->
+<div class="mydiv"></div>
+
+<!--浮动效果-->
+<div id="outdiv">
+    <div id="innerdiv"></div>
+</div>
+
+<!--定位-->
+<div id="mydiv2">
+
+</div>
+</html>

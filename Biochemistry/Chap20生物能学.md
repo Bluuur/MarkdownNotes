@@ -6,7 +6,7 @@
 
 ### 定义
 
-机体内有许多磷酸化合物, 当其磷酰基水解时, 释放出大量的自由能. 这类化合物为高能磷酸化合物
+机体内有许多磷酸化合物，当其磷酰基水解时，释放出大量的自由能。这类化合物为高能磷酸化合物
 
 ### 分类
 
@@ -29,14 +29,14 @@
 
 + 磷酸烯醇式丙酮酸 (phosphoenolpyruvate)
 
-#### 氨(氮)磷键型
+#### 氨（氮）磷键型
 
 + 磷酸肌酸 (phosphocreatine 或 creatine phosphate)
 + 磷酸精氨酸 (arginine phosphate)
 
 #### 硫酯键型
 + $3'-$腺苷磷酸 $5'-$磷酰硫酸 (adenosine$-3'-$phosphate$-5'-$phosphosulfate)
-+ 酰基辅酶A (acyl coenzyme A)
++ 酰基辅酶 A (acyl coenzyme A)
 
 #### 甲硫键型
 

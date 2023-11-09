@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>根据 id 获取页面某个元素</title>
+</head>
+<body>
+<script type="text/javascript">
+    function getDivElt(){
+        // 根据 id 获取 div 元素
+        // document 对象是 JS 内置对象 全部小写，代表 body
+        document.getElementById("mydiv");
+    }
+</script>
+
+<div id="mydiv">div 对象</div>
+
+<input type="button" value="获取div元素" onclick="getDivElt()">
+</body>
+</html>

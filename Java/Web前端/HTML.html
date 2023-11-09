@@ -1,0 +1,275 @@
+<!--如果加上以下行 则使用的是 HTML5-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!--指定字符集-->
+    <meta charset="utf-8">
+    <title>网页标题</title>
+</head>
+<body>
+在这里输入内容，HTML 会忽略多个连续的空格为一个空格。也会忽略源代码中的换行符，
+如果需要换行，可以使用 <br> 标签，这是独目标签，不需要成对出现。<br>
+
+<!--分段-->
+<p>如果需要分段，可以使用这个标签</p>
+
+<!--标题-->
+<h1>Heading one</h1>
+HTML 中共有 6 级标题，标题加粗并且独立成行。
+<h2>Heading two</h2>
+<h3>Heading three</h3>
+<h4>Heading four</h4>
+<h5>Heading five</h5>
+<h6>Heading six</h6>
+
+<!-- --------------------- -->
+<!--超链接-->
+<a href="http://www.runoob.com">这是我的第一个链接</a>
+<br/>
+<!--插入图像-->
+<img src="/images/logo.png" width="258" height="28"/>
+<br/>
+<!--加粗文本-->
+<b>加粗文本</b>
+<br/>
+<!--斜体-->
+<i>斜体文本</i>
+<br/>
+<!--上下标-->
+<p>这是<sub>下标</sub></p>
+<p>这是<sup>上标</sup></p>
+<!--删除字与插入字(下划线)-->
+<p>My favorite color is
+    <del>blue</del>
+    <ins>red</ins>
+    !
+</p>
+<!--分割线-->
+<hr>
+
+<!-- --------------------- -->
+<!--表格-->
+<table border="1">
+    <caption>工资单</caption>
+    <!--tablehead, tablebody, tablefoot 没有实际的控制作用，建议加上，方便后续 JS 脚本的控制-->
+    <thead>
+    <!--tr 添加行-->
+    <tr>
+        <!--th 中的内容自动居中加粗，用于表头-->
+        <th>年份</th>
+        <th>季度</th>
+        <th>姓名</th>
+        <th>工资</th>
+        <th>奖金</th>
+        <th>个税</th>
+        <th>扣除个税工资</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <!--合并单元格 行合并使用 rowspan，列合并使用 colspan-->
+        <td rowspan="4">2019</td>
+        <td>1</td>
+        <td rowspan="4">王建民</td>
+        <td>28900</td>
+        <td>3458</td>
+        <td>3988</td>
+        <td>21454</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>27366</td>
+        <td>3458</td>
+        <td>3988</td>
+        <td>21454</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>27366</td>
+        <td>3458</td>
+        <td>3988</td>
+        <td>21454</td>
+    </tr>
+    <!--    </tbody>-->
+
+    <!--    <tfoot>-->
+    <tr>
+        <td>4</td>
+        <td>27366</td>
+        <td>3458</td>
+        <td>3988</td>
+        <td>21454</td>
+    </tr>
+    <!--    </tfoot>-->
+    </tbody>
+</table>
+<!-- --------------------- -->
+<hr>
+<!--列表-->
+<!--有序列表-->
+<!--type="A" 可以按字母排序-->
+<ol type="1">
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>雪梨</li>
+    <li>西瓜</li>
+</ol>
+<!--无序列表-->
+<ul>
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>雪梨</li>
+    <li>西瓜</li>
+</ul>
+<!--列表嵌套-->
+<ul>
+    <li>苹果</li>
+    <ol>
+        <li>大苹果</li>
+        <li>小苹果</li>
+    </ol>
+    <li>香蕉</li>
+    <li>雪梨</li>
+    <li>西瓜</li>
+</ul>
+
+<!--实体符号-->
+<!--所有实体符号都是 & 开头 ; 结尾-->
+&nbsp;
+&lt; &gt;
+
+<!--超链接-->
+<a href="https://www.baidu.com">百度</a>
+<!--使用 target 指定新窗口打开的位置-->
+<!--在新标签页中打开 _blank -->
+<a href="https://www.baidu.com" target="_blank">百度</a>
+<!--在当前标签页中打开（默认） _self -->
+<a href="https://www.baidu.com" target="_self">百度</a>
+<!--在父窗口中打开（窗口嵌套时）-->
+<a href="https://www.baidu.com" target="_parent">百度</a>
+
+
+<!--表单-->
+<!--
+    1. 表单可以用来收集用户的数据，提交表单时，可以向服务器发送请求，并且可以携带用户填写的数据。
+    2. 向服务器发送请求有以下几种方式
+        直接在浏览器地址栏输入 URL 后回车
+        用户点击超链接
+        用户填写表单，然后点击提交按钮
+    3. from 标签的属性
+        action
+            用来请求路径，也就是数据提交的对象，与 href 属性相同，提供请求路径。
+        method
+            用来指定表单提交的方式
+                get 方式，提交的数据会直接显示在浏览器的地址栏上。
+                post 方式，提交的数据不会直接显示在浏览器的地址栏上。
+            当 method 缺省时，默认采用 get 方式提交。
+-->
+<form action="https://www.baidu.com" method="get">
+    <!--
+        form 是提交按钮
+            input 标签被称为输入域，当 type 是 submit 的时候，表示提交按钮
+            提交按钮具有提交表单的能力，即发送请求并提交数据。
+            value 可以设置按钮上的文本
+    -->
+    <input type="submit" value="百度">
+
+    <!--下面这个是普通按钮，普通按钮不具备提交表单的能力-->
+<!--    <input type="button" value="百度按钮">-->
+
+    <!--也可以直接画出按钮对象-->
+    <button>按钮对象</button>
+
+    <!--
+        输入域的 type 属性用于设置输入域中输入数据的数据类型
+        输入域可选的 type
+            text        文本框
+            password    密码框
+            radio       单选按钮
+            checkbox    复选框
+        name 属性
+            没有 name 属性的表单数据不会被提交
+    -->
+    <br>
+
+    Username:&nbsp;<input type="text" name="Username"> <br>
+    Password:&nbsp;<input type="password" name="Password"> <br>
+    <input type="submit" value="Login">
+</form>
+<hr>
+
+<form action="https://localhost:8080/oa/signUp" method="get">
+    用户名 <input type="text" name="username"> <br>
+    密码 <input type="password" name="password"> <br>
+    性别
+    <!--对于同一组单选按钮来说，name 的值必须一样-->
+    <input type="radio" name="gender" value="male">男 &nbsp;
+    <input type="radio" name="gender" value="female">女 &nbsp;
+    <input type="radio" name="gender" value="secret">保密 <br>
+    学历
+    <!--下拉菜单-->
+    <!--支持多选：mutiple 同时显示多个条目：size-->
+    <select name="degree" size="4" multiple>
+        <option value="">--请选择学历--</option>
+        <option value="1">高中</option>
+        <option value="2">专科</option>
+        <!--默认选中：在后面加 selected -->
+        <option value="3" selected>本科</option>
+        <option value="4">硕士</option>
+        <option value="5">博士</option>
+    </select> <br>
+    兴趣
+    <input type="checkbox" name="hobby" value="smoke">抽烟
+    <!--默认选中：在最后面加 checked-->
+    <input type="checkbox" name="hobby" value="drink" checked>喝酒
+    <input type="checkbox" name="hobby" value="perm">烫头
+    <br>
+    简介
+    <!--文本域-->
+    <textarea name="brief" cols="30" rows="10"></textarea> <br>
+    <input type="reset" value="重置">
+    <input type="submit" value="注册">
+</form>
+<!------------------------>
+<!--文件上传-->
+<input type="file">
+<!------------------------>
+<!--hidden 隐藏域控件-->
+<form action="http://localhost:8080/oa/save">
+<!-- 希望隐藏用户代码，同时提交时包含用户代码 -->
+    <input type="hidden" name="usercode" value="1111111">
+<!--    用户代码：<input type="text" name="usercode"> <br>-->
+    机构代码：<input type="text" name="orgcode"> <br>
+    <input type="submit" value="保存">
+</form>
+<!--------------------------->
+<hr>
+<!--disabled readonly-->
+<form action="http://localhost:8080" method="get">
+<!-- readonly 用户无法修改，可见，提交时提交该数据 -->
+    用户代码：<input type="text" name="usercode" value="1234" readonly>
+<!-- disabled 用户无法修改，可见，提交时不提交该数据 -->
+    机构代码：<input type="text" name="orgcode" value="1234" disabled>
+    <input type="submit" value="提交">
+</form>
+<br>
+<!--------------------->
+<hr>
+<!--设置输入的最大长度-->
+输入的最大长度为 3：<input type="text" maxlength="3">
+
+<!-- div 和 span-->
+<!--
+    div
+        div 是图层，也可以叫做盒子
+        div 是用于坐网页布局的，早期网页元素采用 table 进行布局，但是 table 布局不够灵活
+        当代的网页元素布局都是采用 div 方式，div 嵌套。div 布局更加灵活方便
+    div 和 span 的区别
+        div 默认情况下会独自占用一行（跨行）
+        span 不会独自占用一行（行内）
+-->
+hello<div id="div1">这是一个 div 盒子</div>hello
+hello<span>这是一个 span 元素</span>hello
+</body>
+</html>

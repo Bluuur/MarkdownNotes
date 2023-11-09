@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 事件</title>
+</head>
+<body onload="console.log('页面加载完毕')">
+<!--
+    JS 中常用事件
+         1. blur        失去焦点
+         2. change      下拉列表选中项改变，或文本框内容改变
+         3. click       鼠标单击
+         4. dblclick    鼠标双击
+         5. focus       获得焦点
+         6. keydown     键盘按下
+         7. keyup       键盘抬起
+         8. load        页面加载完毕
+         9. mousedown   鼠标按下
+        10. mouseover   鼠标经过
+        11. mousemove   鼠标移动
+        12. mouseout    鼠标移开
+        13. mouseup     鼠标抬起
+        14. reset       表单重置
+        15. select      文本被选中
+        16. submit      表单提交
+-->
+blur/focus 事件：
+<input type="text" onblur="console.log('失去焦点')" onfocus="console.log('获得焦点')"> <br>
+
+change 事件：
+<select name="degree" onchange="console.log('下拉列表项改变')">
+    <option value="gz">高中</option>
+    <option value="zk">专科</option>
+    <option value="bk">本科</option>
+</select> <br>
+
+click/dblclick 事件：
+<input type="button" value="单击" onclick="console.log('鼠标单击')">
+<input type="button" value="双击" ondblclick="console.log('鼠标双击')"> <br>
+
+keydown/keyup 事件：
+
+<input type="text" onkeydown="console.log('按下')" onkeyup="console.log('抬起')"> <br>
+
+load 事件 见 body：
+<!--在页面全部加载完毕后执行-->
+</body>
+</html>

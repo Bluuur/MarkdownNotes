@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌入 JS 的第一种方式：在事件句柄中提供 JS 代码</title>
+</head>
+<body>
+<!--
+    JS 是一种基于事件驱动型的语言，一般依靠事件来触发 JS 代码的执行。
+        如：鼠标单击事件 click
+    JS 中所有事件都有对应的事件句柄，所有的事件句柄都是在事件名称前面添加 on。
+        如：click 对应的事件句柄为 onclick
+    所有的事件句柄都是以标签的属性形式存在。
+    在 JS 中有一个内置的隐含对象：window 全部小写
+        window 代表的是浏览器窗口对象。
+        window 对象有一个 alert 方法（函数，可以完成弹窗操作）
+        window. 可以省略
+-->
+<!--需求：在页面中点击按钮弹出对话框-->
+<!--单双引号要交替使用，JS 语句结尾可以写 ; 也可以不屑-->
+<!--弹出数字-->
+<input type="button" value="hello" onclick="window.alert(1111)">
+<!--弹出字符串-->
+<input type="button" value="hello world" onclick="window.alert('Hello world')">
+</body>
+</html>

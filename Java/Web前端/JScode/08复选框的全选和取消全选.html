@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复选框的全选和取消全选</title>
+</head>
+<body onload="bindClick()">
+
+<script type="text/javascript">
+    function checkAll() {
+        var check00 = document.getElementById("check00");
+        // if (check00.checked) {
+        //     // 全选
+        //     var hobbies = document.getElementsByName("hobby");
+        //     for (var i = 0; i < hobbies.length; i++) {
+        //         hobbies[i].checked = true;
+        //     }
+        // } else {
+        //     // 取消全选
+        //     var hobbies = document.getElementsByName("hobby");
+        //     for (var i = 0; i < hobbies.length; i++) {
+        //         hobbies[i].checked = false;
+        //     }
+        // }
+        var hobbies = document.getElementsByName("hobby");
+        for (var i = 0; i < hobbies.length; i++) {
+            hobbies[i].checked = check00.checked;
+        }
+    }
+
+    function bindClick() {
+        var hobbies = document.getElementsByName("hobby");
+        for (var i = 0; i < hobbies.length; i++) {
+            hobbies[i].onclick = function () {
+                var hobbies = document.getElementsByName("hobby");
+                var flag = true;
+                for (var j = 0; j < hobbies.length; j++) {
+                    if (!hobbies[j].checked) {
+                        flag = false;
+                        break;
+                    }
+                }
+                document.getElementById("check00").checked = flag;
+
+                // var checkedCount = 0;
+                // for (var j = 0; j < hobbies.length; j++) {
+                //     if (hobbies[j].checked) {
+                //         checkedCount++;
+                //     }
+                // }
+                //
+                // document.getElementById("check00").checked = (checkedCount == hobbies.length);
+
+            }
+        }
+    }
+</script>
+
+<input type="checkbox" id="check00" onclick="checkAll()">全选 <br>
+<input type="checkbox" name="hobby" value="1">抽烟 <br>
+<input type="checkbox" name="hobby" value="2">喝酒 <br>
+<input type="checkbox" name="hobby" value="3">烫头 <br>
+<input type="checkbox" name="hobby" value="4">唱歌 <br>
+<input type="checkbox" name="hobby" value="5">跳舞 <br>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 嵌入 HTML：定义内部样式块对象</title>
+    <style type="text/css">
+        /* 这是 CSS 的注释 */
+        /* 设置 id="mydiv" 元素的宽度高度和背景色*/
+        /*
+            设置某个元素的样式，需要选中该元素
+                选择元素的常见三种方式
+                    1. id 选择器
+                    2. 标签选择器
+                    3. 类选择器
+                优先级为 id 选择器 > 类选择器 > 标签选择器
+         */
+        /* 1. id 选择器 */
+        /* id 选择器只能将样式作用与当前页面中的某一个节点。因为 id 是不能重复的。 */
+        #mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+
+        /* 2. 标签选择器 */
+        /* 作用域当前页面中所有元素 下面的样式会作用于所有的 input 标签*/
+        /* id 选择器的优先级比标签选择器高 */
+        input{
+            width: 500px;
+            height: 50px;
+            /*border-color: brown;*/
+            /*border-style: dashed;*/
+            /*border-width: 1px;*/
+            /* 也可以使用总样式 */
+            border: 1px solid black;
+        }
+
+        /* 类选择器 */
+        /* 类选择器的优先级高于标签选择器，低于 id 选择器 */
+        .student{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+<div id="mydiv"></div>
+
+用户名：<input type="text" name="username"> <br>
+密码：<input type="password" name="password">
+
+<!--HTML 中，任何一个节点元素都有 class 属性，用来指定标签类名-->
+<input class="student" type="text">
+<input class="student" type="text">
+<div class="student">3</div>
+</body>
+</html>

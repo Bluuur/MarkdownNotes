@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 函数</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 可以在这里调用后面声明的函数
+    // alert("1 + 2 = " + sum(1, 2));
+
+    /*
+     * JS 中的函数格式
+     *
+     * function 函数名(形式参数列表) {
+     *      函数体;
+     * }
+     *
+     * 也可以这样定义
+     *
+     * sayHello = function(username) {
+     *      alert("Hello" + username);
+     * }
+     *
+     */
+
+    // 函数定义的优先级较高 可以先调用 再定义
+    function sum(a, b) {
+        return a + b;
+    }
+
+    console.log(sum(1, 3));
+
+    function hello(){
+        alert("hello world");
+    }
+</script>
+<input type="button" value="hello" onclick="hello();">
+</body>
+</html>

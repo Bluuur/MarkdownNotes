@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML 和 innerText</title>
+</head>
+<body>
+<script type="text/javascript">
+    function setContent(){
+        var divElt = document.getElementById("mydiv");
+        console.log(divElt);
+        divElt.innerHTML="<font color='red' size='4'>用户名不能为空！</font>";
+        // 如果设置为 innerText 那么后面的内容 <font color='red' size='4'>用户名不能为空！</font>
+        // 不会被当作为 HTML 代码解释，而是直接输出为文本
+    }
+</script>
+
+<div id="mydiv"></div>
+<input type="button" value="设置 div 的内容" onclick="setContent()">
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* 类选择器可以写多个，使用逗号隔开 */
+/* 空格后面是子元素 */
+.shopIcon, .shopChat, .infoIcon span {
+    width: 15px;
+    height: 15px;
+    background-color: aqua;
+    /* 展示方式：行内块 */
+    display: inline-block;
+}
+
+.shops {
+    width: 95%;
+    background-color: beige;
+    /* 设置 div 居中 */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+/* #a5a5a5 */
+
+.shopName {
+    position: relative;
+    bottom: 3px;
+}
+
+.shopCheckbox, .shopIcon, .shopChat, .shopName {
+    margin-right: 10px;
+}
+
+.item {
+    display: flex;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.itemImg {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.itemName{
+    width: 80%;
+}
+
+.sku{
+    width: 20%;
+}

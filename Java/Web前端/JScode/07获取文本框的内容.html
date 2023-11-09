@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取文本框的内容</title>
+</head>
+<body>
+<script type="text/javascript">
+    function getUsername() {
+        var usernameElt = document.getElementById("username");
+        return usernameElt.value;
+    }
+</script>
+
+用户名：<input type="text" name="username" id="username"> <br>
+<input type="button" value="获取用户名" onclick="console.log(getUsername())">
+</body>
+</html>

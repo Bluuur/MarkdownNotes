@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 中嵌入 JS 第二种方式：脚本块</title>
+    <script type="text/javascript">
+        alert('1. script 脚本块可以写在任何位置，可以写多个，按顺序执行')
+    </script>
+</head>
+<body>
+<!---->
+<script type="text/javascript">
+    // JS 注释
+    // 在 script 标签内部的代码会遵循自上而下的顺序依次执行。
+    // script 标签内部的 JS 代码会在页面打开的时候执行，不需要事件的发生。
+    alert('2. hello');
+    alert('3. hello world');
+</script>
+</body>
+</html>

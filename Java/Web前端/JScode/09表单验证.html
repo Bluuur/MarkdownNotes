@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+</head>
+<body>
+<!--
+    1. 用户名不能为空
+    2. 用户名必须在 6 - 14 位之间
+    3. 用户名只能有数字和字母组成，不能含有其他符号
+    4.* 密码和确认密码一致，邮箱地址合法
+    5.* 统一失去焦点验证
+    6. 错误提示信息统一在 span 中显示，字体 12 号，红色
+    7. 文本框再次获得焦点后，清空错误提示信息，如果文本框中数据
+       不合法，要求清空文本框的 value
+    8. 最终表单中所有项均合法可以提交
+-->
+<script type="text/javascript">
+    function checkName(username) {
+        // 去除字符串前后空格
+        username = username.trim();
+        // 判断是否为空
+        var nameError = document.getElementById("nameError");
+        if (username == "") {
+
+            nameError.innerHTML = "用户名不能为空！"
+        } else {
+            var regExp = /^[0-9a-zA-Z]+$/
+            if (regExp.test(username)) {
+
+            } else {
+                nameError.innerHTML = "用户名只能由数字和字母组成！"
+            }
+        }
+    }
+
+    function clearErrorMsg(obj) {
+        obj.innerHTML = "";
+    }
+</script>
+
+<form action="http://localhost:8080/oa/signUp" method="get">
+    用户名：<input type="text"
+                  name="username"
+                  id="username"
+                  minlength="6"
+                  maxlength="14"
+                  onblur="checkName(this.value)"
+                  onfocus="clearErrorMsg(document.getElementById('nameError'))">
+    <span id="nameError" style="color: red; font-size: 12px"></span>
+    <br>
+    密码： <input type="password" name="password" id="password"> <br>
+    <input type="submit" value="提交">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取 div span 中的内容</title>
+</head>
+<body>
+<script type="text/javascript">
+    function getContent() {
+        // 获取 div 中的内容
+        var divElt1 = document.getElementById("div1");
+        // innerHTML 可以获取或设置元素内部的内容
+        console.log(divElt1.innerHTML);
+        var divElt2 = document.getElementById("div2");
+        divElt2.innerHTML = divElt1.innerHTML;
+    }
+</script>
+
+<div id="div1">
+    Hello, Jack.
+</div>
+
+<div id="div2" style="background-color: blue"></div>
+
+<input type="button" value="获取div中的文本信息" onclick="getContent()">
+</body>
+</html>

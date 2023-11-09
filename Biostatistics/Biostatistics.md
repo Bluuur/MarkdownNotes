@@ -279,4 +279,3 @@ $$
 $$
 s_r=\sqrt{\frac{1-r^2}{n-2}}\qquad t=\frac{r-\rho}{s_r}
 $$
-

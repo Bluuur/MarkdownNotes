@@ -1,0 +1,21 @@
+#div1{
+    width: 100px;
+    height: 100px;
+    background: beige;
+    border: 1px solid black;
+    /* 定位 设置 x y 坐标即可 */
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+#div2{
+    width: 100px;
+    height: 100px;
+    background: aquamarine;
+    border: 1px solid black;
+    /* 定位 设置 x y 坐标即可 */
+    position: absolute;
+    top: 120px;
+    left: 320px;
+}
