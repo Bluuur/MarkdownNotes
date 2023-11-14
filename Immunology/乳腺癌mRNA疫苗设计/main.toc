@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}乳腺癌及其疫苗概述}{1}{}%
+\contentsline {subsection}{\numberline {1.1}乳腺癌概述}{1}{}%
+\contentsline {subsection}{\numberline {1.2}抗乳腺癌疫苗研发现状}{1}{}%
+\contentsline {section}{\numberline {2}乳腺癌 mRNA 疫苗设计}{1}{}%
+\contentsline {subsection}{\numberline {2.1}乳腺癌相关抗原}{1}{}%
+\contentsline {subsection}{\numberline {2.2}mRNA 疫苗的序列结构及修饰方式的优化}{1}{}%
+\contentsline {subsection}{\numberline {2.3}递送系统}{2}{}%
+\contentsline {subsection}{\numberline {2.4}乳腺癌的 mRNA 疫苗具体结构及作用原理}{2}{}%
