@@ -24,7 +24,7 @@ class homoSapines{
         this.name = name;
         this.species = species;
 //    static String nationality = "human";
-//    #重点#
+//    #重点
 //      加static的变量叫做静态变量
 //      静态变量在类加载时初始化，不需要new对象，静态变量的空间就开出来了
 //      静态变量存储在方法区
@@ -58,7 +58,7 @@ class Chinese{
     //这个类的nationality都是China，这个类创建的对象的此属性相同
     //所以这里的nationality不是对象级别的特征，属于整个类的特征
 
-//    #重点#
+//    #重点
 //      加static的变量叫做静态变量
 //      静态变量在类加载时初始化，不需要new对象，静态变量的空间就开出来了
 //      静态变量存储在方法区
@@ -71,7 +71,7 @@ class Chinese{
     public Chinese(String idNum, String name) {
         this.idNum = idNum;
         this.name = name;
-//    #重点#
+//    #重点
 //      加static的变量叫做静态变量
 //      静态变量在类加载时初始化，不需要new对象，静态变量的空间就开出来了
 //      静态变量存储在方法区

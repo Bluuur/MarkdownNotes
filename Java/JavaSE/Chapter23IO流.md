@@ -150,11 +150,3 @@ Java中主要研究
 
 `java.io.ObjectOutputStream`
 
-```Java
-public class JavaIO {
-    public static void main(String[] args) {
-        
-    }
-}
-```
-

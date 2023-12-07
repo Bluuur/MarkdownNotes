@@ -4,7 +4,7 @@
 
 ### 进程与线程
 
-进程是一个应用程序，线程是一个进程中的执行场景(执行单元)。
+进程是一个应用程序，线程是一个进程中的执行场景（执行单元），一个进程可以启动多个线程。
 
 ### 对于 Java 程序来说:
 
@@ -28,9 +28,9 @@ Java 有多线程机制，是为了提高程序的处理效率。
 
 ### 程序的结束
 
-使用了多线程机制之后，`main()` 方法结束，有可能程序不会结束，`main()` 方法结束之时主线程结束，主栈空了，其他的栈（线程）可能还在压栈弹栈
+使用了多线程机制之后，`main()` 方法结束，有可能程序不会结束，`main()` 方法结束之时主线程结束，主栈空了，其他的栈（线程）可能还在压栈弹栈。
 
-### CUP 与多线程
+### CPU 与多线程
 
 对于多核的 CPU 来说，可以进行真正的多线程并行。
 
@@ -71,7 +71,7 @@ public class ThreadTest01 {
 
 ## Java 语言实现线程的两种方式
 
-### 第一种方式
+### 继承 `Thread` 类
 
 ​	编写一个类，直接继承 `java.lang.Thread`，重写 `run()` 方法
 
@@ -106,7 +106,7 @@ class MyThread extends Thread{
 }
 ```
 
-### 第二种方法
+### 实现 `Runnable` 接口（推荐）
 
 编写一个类，实现 `java.lang.Runnable` 接口，实现 `run()` 方法
 
@@ -143,7 +143,7 @@ class MyThread extends Thread{
 
 +  相比第一种方法（继承 `Thread` 类），第二种方法更好（实现 `Runnable` 接口），这样是面向接口编程，可以继承多个接口，又不占用单继承的类。
 
-### 采用匿名内部类的方法
+#### 采用匿名内部类的写法
 
 ```java
 public class ThreadTest04 {
@@ -171,9 +171,9 @@ public class ThreadTest04 {
 
 ![ThreadLifespan.drawio](Chapter24多线程.assets/ThreadLifespan.drawio.svg)
 
-+  就绪状态的线程又叫做可运行状态,表示当前线程具有抢夺 CPU 时间片的权利（CPU 时间片就是执行权）。单一一个线程抢夺到 CPU 的时间线之后,就开始执行`run()` 方法，`run()` 方法的开始执行标志着线程进入运行状态
++  就绪状态的线程又叫做可运行状态,表示当前线程具有抢夺 CPU 时间片的权利（CPU 时间片就是执行权）。单一一个线程抢夺到 CPU 的时间线之后，就开始执行 `run()` 方法，`run()` 方法的开始执行标志着线程进入运行状态
 +  `run()` 方法的开始标志着执行线程进入运行状态，当之前占有的 CPU 时间片用完之后，会重新回到就绪状态继续抢夺 CPU 时间片，当再次抢到 CPU 时间片之后，会重新进入 `run()` 方法接着上一次的代码继续往下执行。
-+  当一个线程遇到阻塞事件（`sleep()`，接受键盘输入等）时。线程会进图阻塞状态,阻塞状态的线程会放弃之前占有的 CPU 时间片。
++  当一个线程遇到阻塞事件（`sleep()`，接受键盘输入等）时。线程会进图阻塞状态，阻塞状态的线程会放弃之前占有的 CPU 时间片。
 +  `yield()` 方法会让运行中的线程回到就绪状态。
 
 ###　线程名
@@ -184,7 +184,7 @@ public class ThreadTest04 {
 线程对象.getName();
 ```
 
-如果没有对线程名进行修改，默认线程名为 `Thread-0`。
+如果没有对线程名进行修改，默认线程名从 `Thread-0` 开始递增。
 
 ### 修改线程名
 
@@ -196,12 +196,12 @@ public class ThreadTest04 {
 
 `Thread  t =  Thread.currentThread();` 
 
-返回值t就是当前线程
+`currentThread()` 是一个静态方法，返回值 `t` 就是当前线程。
 
 ```java
-    Thread currentThread = Thread.currentThread();
-    String cThreadName =  currentThread.getName();
-    System.out.println(cThreadName);
+Thread currentThread = Thread.currentThread();
+String cThreadName =  currentThread.getName();
+System.out.println(cThreadName);
 ```
 
 `main()` 方法的线程名为`main`
@@ -217,7 +217,9 @@ public class ThreadTest04 {
 
 >  这行代码出现在 A 线程中，A 线程就进入休眠.
 
-### sleep()是静态方法
+### `sleep()` 是静态方法
+
+`sleep()` 是一个静态方法，不是实例方法，不是对象级别的方法。在调用该方法时，需要使用「类名.」调用。使用「引用.」调用 `sleep()` 与直接用「类名.」调用没有区别，结果是让 `currentThread` 睡眠。
 
 ```java
 public class ThreadTest07 {
@@ -226,11 +228,9 @@ public class ThreadTest07 {
         t.setName("t");
         t.start();
         
-        // sleep()是一个静态方法,不是实例方法,不是对象级别的方法.使用"引用."调用sleep()
-        // 与直接用"类名."调用没有区别,结果是让"currentThread"睡眠
-        // 在下面的代码中,是让主线程睡眠
         try {
-            t.sleep(1000 * 5);// 在运行的时候会转换成"Thread.sleep();",让当前线程(main)睡眠
+            // 在运行的时候会转换成「Thread.sleep();」，让当前线程（main）睡眠。
+            t.sleep(1000 * 5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -251,6 +251,8 @@ class MyThread03 extends Thread{
 
 ### 终止线程的睡眠
 
+使用 `interrupt()` 方法终止线程的睡眠，该方法会让 `sleep()` 方法抛出异常。
+
 ```java
 public class ThreadTest08 {
     public static void main(String[] args) {
@@ -262,7 +264,8 @@ public class ThreadTest08 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        // 打断 t 的睡眠，引起线程 t 的 sleep()异常，执行 catch
+        // interrupt 依靠异常处理机制终止线程的睡眠。
+        // 打断 t 的睡眠，引起线程 t 的 sleep() 异常，执行 catch
         t.interrupt();
     }
 }
@@ -288,7 +291,7 @@ class MyRunnable02 implements Runnable{
 
 ## 强行终止线程
 
-### `stop()` （已过时）
+### `stop()`（已过时）
 
 ```java
 public class ThreadTest09 {
@@ -296,14 +299,15 @@ public class ThreadTest09 {
         Thread t = new Thread(new MyRunnable());
         t.setName("t");
         t.start();
-        // 模拟5秒
+        // 模拟 5 秒
         try {
             Thread.sleep(1000 * 5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        // 5秒后强制终止t线程
-        t.stop();// 已过时(不建议使用)
+        // 5 秒后强制终止 t 线程
+        // 已过时（不建议使用）
+        t.stop();
     }
 }
 
@@ -326,6 +330,28 @@ class MyRunnable implements Runnable{
 
 >  `stop()` 的缺点：强行终止线程，线程没有保存的数据会丢失。
 
+#### 过时的原因
+
+**不安全性**
+
+`stop()` 方法会导致线程抛出 `ThreadDeath` 异常，并且释放线程已经锁定的所有监视器。如果线程在抛出 `ThreadDeath` 异常之前正在访问共享资源，那么其他线程可能会看到该资源处于不一致的状态。
+
+**不推荐使用**
+
+Java 语言规范明确指出，`stop()` 方法是过时的，不推荐使用。
+
+**`stop()` 方法的危害**
+
++ **导致线程逻辑不完整**：`stop()` 方法会立即中断线程的执行，无论线程的逻辑是否已经执行完毕。这可能会导致线程没有完成重要的操作，例如释放资源、关闭连接等。
++ **破坏原子操作**：`stop()` 方法会导致线程释放所有锁，这可能会导致原子操作失败。
++ **导致死锁**：如果线程在停止之前正在等待某个锁，那么其他线程可能会因为无法获取该锁而导致死锁。
+
+**替代 `stop()` 的方法**
+
++ **使用 `interrupt()` 方法**：`interrupt()` 方法会向线程发送中断信号，但不会强制线程停止。线程可以根据中断信号自行决定是否停止。
++ **使用 `volatile` 变量**：`volatile` 变量可以保证线程之间对变量的可见性。在线程停止之前，可以将 `volatile` 变量设置为一个特殊值，表示线程需要停止。
++ **使用 `join()` 方法**：`join()` 方法可以等待线程执行完毕。在需要停止线程之前，可以调用 `join()` 方法等待线程执行完毕，然后再停止线程。
+
 ### 添加 `boolean` 标记
 
 ```java
@@ -338,7 +364,7 @@ public class ThreadTest10 {
         t.setName("t");
         t.start();
 
-        // 5秒后终止t线程
+        // 5 秒后终止 t 线程
         try {
             Thread.sleep(1000 * 5);
         } catch (InterruptedException e) {
@@ -364,8 +390,9 @@ class MyRunnable05 implements Runnable{
                     e.printStackTrace();
                 }
             }else {
-                // 如果有数据需要保存,可以在return前添加代码保存
-                return;// 如果外部修改run标记为false,则结束run方法
+                // 如果有数据需要保存，可以在 return 前添加代码保存
+                // 如果外部修改 run 标记为 false，则结束 run 方法
+                return;
             }
         }
     }
@@ -390,15 +417,15 @@ class MyRunnable05 implements Runnable{
 
 ### 实例方法
 
-#### `void setPriority()`
+#### `setPriority()`
 
 设置线程优先级
 
-#### `int getPriority()`
+#### `getPriority()`
 
 获取线程优先级
 
-#### `void join()`
+#### `join()`
 
 合并线程
 
@@ -422,7 +449,7 @@ class MyThread2 extends Thread{
 
 ### 静态方法
 
-#### `static void yield()` 让位方法
+#### `yield()` 让位方法
 
 ![ThreadLifespan.drawio (1)](Chapter24多线程.assets/ThreadLifespan.drawio (1).svg)
 
