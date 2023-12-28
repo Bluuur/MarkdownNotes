@@ -1,7 +1,12 @@
-\documentclass{ctexart}
+\documentclass[UTF8]{ctexart}
+
 % 设置页边距
 \usepackage{geometry}
 \geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+
+\usepackage{graphicx}
+
+\usepackage{lipsum}
 
 % 设置目录显示的深度
 \setcounter{tocdepth}{3}
@@ -9,17 +14,49 @@
 % 设置标号深度
 \setcounter{secnumdepth}{3}
 
-\title{Title}
-\author{Zidong Zh}
-\date{\today}
+% 去除页码 
+\pagestyle{empty}	
+\usepackage{setspace}
+\date{}
 
-% 正文区
 \begin{document}
+    % 插入校徽
+	\begin{figure}[t]
+		\centering
+        \includegraphics[scale=0.7]{img/HZAU.png}
+	\end{figure}
+
+	\begin{center}
+		\quad \\
+		\quad \\
+		\heiti \fontsize{45}{17} 标题 1
+		\vskip 3.5cm
+		\heiti \zihao{2} 标题 2
+	\end{center}
+	\vskip 3.5cm
+
+	\begin{quotation}
+		\heiti \fontsize{15}{15}
+		\doublespacing
+		\par\setlength\parindent{12em}
+		\quad
+
+		学\hspace{0.61cm} 院：信息学院
+
+		专\hspace{0.61cm} 业：生物信息学
+
+		学生姓名：张子栋
+
+		学\hspace{0.61cm} 号：2020317210101
 
 
-    \maketitle
+		\vskip 1.5cm
+		\centering
+        湖北~·~武汉\\
+		2023 年 12 月 28 日
+	\end{quotation}
 
-    \newpage
+	\newpage
 
     \tableofcontents
     
@@ -31,22 +68,11 @@
 
     \newpage
 
-    % \chapter{Hello}
-
-    \section{chapter 1}
-
-    \subsection{section 1 of chapter 1}
-
-    \subsubsection{subsection 1 of section 1 }
-
-    
-
-    it's dif{}f{}icult to f{}ind 
-
-    about quote `quote'`quote'
-
-    这是中文引号“引号”引号
-    
-    % \lipsum
+	\section{前言}
+	
+	\begin{thebibliography}{99}
+		\bibitem{ref1} 
+		
+	\end{thebibliography}
 
 \end{document}
