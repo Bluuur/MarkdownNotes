@@ -1,0 +1,82 @@
+\documentclass{ctexart}
+
+\ctexset{
+	section={
+		%format用于设置章节标题全局格式，作用域为标题和编号
+		%字号为三号，字体为黑体，左对齐
+		%+号表示在原有格式下附加格式命令
+		format+ = \zihao{3} \heiti \raggedright,
+	},
+	subsection={
+		format+ = \zihao{-3} \heiti \raggedright,
+	},
+	subsubsection={
+		format+ = \zihao{4} \heiti \raggedright,
+	}
+}
+
+
+\usepackage{zhlipsum}
+
+\usepackage[a4paper]{geometry}
+% 设置页边距
+\geometry{
+    twoside,
+    top=25mm, 
+    bottom=25mm, 
+    inner=32mm, 
+    outer=25mm,
+    headheight=3mm, headsep=4mm,
+    footskip=5mm,
+}
+
+
+\usepackage{fancyhdr}
+% 设置页眉
+\pagestyle{fancy}
+\fancyhead{}
+    \fancyhead[CO]{论文题目} % 奇数页页眉
+    \fancyhead[CE]{华中农业大学$\times\times$届学士学位（毕业论文）} % 偶数页页眉
+\fancyfoot{}
+    \fancyfoot[CO,CE]{\thepage}
+
+\begin{document}
+% 论文独创性声明及使用授权书
+
+% 目录
+\pagenumbering{Roman} %设置罗马数字页码
+\begin{center}
+    \tableofcontents    
+\end{center}
+
+\setcounter{page}{1}
+
+
+
+\clearpage
+
+\pagenumbering{roman} %设置罗马数字页码
+\begin{abstract}
+    \zhlipsum
+\end{abstract}
+
+\clearpage
+
+% \begin{abstract}*
+%     \zhlipsum
+% \end{abstract}
+
+\pagenumbering{arabic} %设置阿拉伯数字页码
+
+\zhlipsum
+
+\section{前言}
+\section{材料与方法}
+\section{结果与分析}
+\section{讨论}
+
+\subsection{二级标题}
+
+\subsubsection{三级标题}
+
+\end{document}
