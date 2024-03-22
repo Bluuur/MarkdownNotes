@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{引言}{3}{0}{1}
+\beamer@sectionintoc {2}{材料与方法}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{材料}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{方法}{7}{0}{2}
+\beamer@sectionintoc {3}{目前进度}{8}{0}{3}
+\beamer@sectionintoc {4}{后续研究步骤}{11}{0}{4}
