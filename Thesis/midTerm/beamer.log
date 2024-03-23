@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.26)  23 MAR 2024 02:52
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.26)  23 MAR 2024 12:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -763,7 +763,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count370
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+Package hyperref Info: Option `colorlinks' set `true' on input line 36.
 
 
 Package fontspec Warning: Font "Microsoft YaHei" does not contain requested
@@ -798,26 +798,26 @@ Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
 (./beamer.aux)
 \openout1 = `beamer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -853,7 +853,7 @@ LaTeX Font Info:    ... okay on input line 70.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 70.
+Package hyperref Info: Link coloring ON on input line 71.
 (./beamer.out) (./beamer.out)
 \@outlinefile=\write5
 \openout5 = `beamer.out'.
@@ -879,56 +879,56 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 70.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 70.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 70.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 70.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 70.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 70.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 70.
-LaTeX Font Info:    Redeclaring math accent \check on input line 70.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 70.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 70.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 70.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 70.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 71.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 71.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 71.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 71.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 71.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 71.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 71.
+LaTeX Font Info:    Redeclaring math accent \check on input line 71.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 71.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 71.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 71.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 71.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 70.
+(Font)              `operators' in the math version `normal' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/put/m/n on input line 70.
+(Font)                  OT1/cmr/m/n --> TU/put/m/n on input line 71.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 70.
+(Font)              `operators' in the math version `bold' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/put/m/n on input line 70.
+(Font)                  OT1/cmr/bx/n --> TU/put/m/n on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/put/m/n --> TU/put/m/n on input line 70.
+(Font)                  TU/put/m/n --> TU/put/m/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/put/m/it on input line 70.
+(Font)                  OT1/cmr/m/it --> TU/put/m/it on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/put/b/n on input line 70.
+(Font)                  OT1/cmr/bx/n --> TU/put/b/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 70.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 70.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/put/m/n --> TU/put/b/n on input line 70.
+(Font)                  TU/put/m/n --> TU/put/b/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/put/b/it on input line 70.
+(Font)                  OT1/cmr/bx/it --> TU/put/b/it on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 70.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 70.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 71.
  (./beamer.nav)
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
@@ -997,6 +997,8 @@ File: background.jpg Graphic file (type bmp)
  [8
 
 ]
+File: figure/genome_contene.png Graphic file (type bmp)
+<figure/genome_contene.png>
 File: background.jpg Graphic file (type bmp)
 <background.jpg>
  [9
@@ -1012,6 +1014,21 @@ File: background.jpg Graphic file (type bmp)
  [11
 
 ]
+LaTeX Font Info:    Trying to load font information for TU+put on input line 165.
+LaTeX Font Info:    No file TUput.fd. on input line 165.
+
+
+LaTeX Font Warning: Font shape `TU/put/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 165.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 165.
+(d:/Softwear/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 165.
+ (d:/Softwear/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 File: background.jpg Graphic file (type bmp)
 <background.jpg>
  [12
@@ -1037,15 +1054,18 @@ File: background.jpg Graphic file (type bmp)
 \openout8 = `beamer.snm'.
 
  (./beamer.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `beamer.out' has not changed.
 (rerunfilecheck)             Checksum: 6B7AE7400FC615C2C6E1E9C0407160CD;513.
  ) 
 Here is how much of TeX's memory you used:
- 28604 strings out of 476683
- 637305 string characters out of 5803605
- 1862012 words of memory out of 5000000
- 48248 multiletter control sequences out of 15000+600000
- 514585 words of font info for 72 fonts, out of 8000000 for 9000
+ 28668 strings out of 476683
+ 638607 string characters out of 5803605
+ 1863012 words of memory out of 5000000
+ 48291 multiletter control sequences out of 15000+600000
+ 516308 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,432b,694s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

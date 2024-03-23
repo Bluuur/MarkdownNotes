@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage {mathtools}
 \usepackage{utopia}
+\usepackage{hyperref}
 
 \setbeamerfont{headline}{family=\kaishu}
 \setbeamerfont{footline}{family=\kaishu}
@@ -90,7 +91,7 @@
 	\section{材料与方法}
 	\subsection{材料}
 	\begin{frame}{材料与方法}{材料}
-		\qquad 研究数据从 NCBI 下载，包括 390 个枯草芽孢杆菌全基因组。
+		\qquad 研究数据从 NCBI 下载，包括 384 个枯草芽孢杆菌全基因组。
 
 		\begin{figure}
 			\centering
@@ -109,6 +110,7 @@
 			\item 基因功能分析
 				\begin{itemize}
 					\item GO Annotation
+					\item COG Annotation
 					\item KEGG Annotation
 					\item CAZy Annotation
 				\end{itemize}
@@ -125,8 +127,12 @@
 	\end{frame}
 
 	\section{目前进度}
-	\begin{frame}{目前进度}{}
-		\qquad 目前已经完成基因组组分分析和
+	\begin{frame}{目前进度}{基因组组分分析}
+		目前已完成基因组组分分析与基因功能分析。
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.9\textwidth]{figure/genome_contene.png}
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}{目前进度}{过程记录}
@@ -134,19 +140,29 @@
 
 		\quad \\
 
-		GitHub 地址：
+		GitHub 地址：\href{https://github.com/Bluuur/MarkdownNotes/tree/main/Thesis}{GitHub Zhang Zidong Thesis}
+		
 	\end{frame}
 
 	\section{后续研究步骤}
 	\begin{frame}{后续研究步骤}{待完成步骤}
 		\begin{itemize}
 			\item 泛基因组分析
+			\begin{itemize}
+				\item 遗传多样性
+				\item 新基因与功能
+				\item 微生物群落功能
+				\item $\cdots$
+			\end{itemize}
 			\item 比较基因组分析
+			\begin{itemize}
+				\item 物种进化信息
+				\item 发现功能基因与调控元件
+				\item $\cdots$
+			\end{itemize}
 		\end{itemize}
 		
 	\end{frame}
-
-	
 
 	\begin{frame}{后续研究步骤}{结果解读与可视化}
 		除去既定方法中的剩余步骤外，还有以下部分需要完成：
