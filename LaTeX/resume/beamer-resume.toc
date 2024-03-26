@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{简介}{3}{0}{1}
+\beamer@sectionintoc {2}{主修课程与专业技能}{5}{0}{2}
+\beamer@sectionintoc {3}{项目经历}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{微生物物种鉴定与功能预测}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{线虫 ChIP-Seq 数据分析}{16}{0}{3}
+\beamer@subsectionintoc {3}{3}{枯草芽孢杆菌群比较基因组分析}{20}{0}{3}
