@@ -54,8 +54,8 @@ DNA 携带着决定蛋白质的氨基酸顺序的信息，但本身不可能是�
 
 <img src="Chap03RNA的转录.assets/image-20221220054141842.png" alt="image-20221220054141842" style="zoom:50%;" />
 
-- 编码链（Coding Strand）或称有意义链（Sense Strand）：与 **mRNA 序列相同**的那条 DNA 链
-- 模板链（Template Strand）或称反义链（Antisense Strand）：根据碱基互补配对原则**指导 mRNA 合成**的 DNA 链
+- 编码链（Coding Strand）或称有意义链（Sense Strand）：与 **mRNA 序列相同**的那条 DNA 链。
+- 模板链（Template Strand）或称反义链（Antisense Strand）：根据碱基互补配对原则**指导 mRNA 合成**的 DNA 链。
 
 # 3.1 RNA 的结构与功能
 
