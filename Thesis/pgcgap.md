@@ -9,4 +9,6 @@ nohup pgcgap
 	--species subtilis \
 	--codon 11 \
 	--threads 4 &
+	
+nohup pgcgap --Annotate --scafPath /mnt/e/Data/genomes --Scaf_suffix .fna --genus Bacillus --species subtilis --codon 11 --threads 8 &
 ```
