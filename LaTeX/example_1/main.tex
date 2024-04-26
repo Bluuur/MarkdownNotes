@@ -9,8 +9,26 @@
 % 设置标号深度
 \setcounter{secnumdepth}{3}
 
-\title{Title}
-\author{Zidong Zh}
+% 图片
+\usepackage{graphicx}
+% 图片位置
+\usepackage{float}
+% 并排
+\usepackage{subfigure}
+\usepackage{parskip}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\small \CJKfontspec{SimHei}武汉新助研生物科技有限公司}          % 左页眉
+\fancyhead[R]{\small \CJKfontspec{SimHei}16S扩增子测序数据分析报告}    % 右页眉
+% \fancyhead[L]{中间页眉}
+% \fancyfoot[L]{左页脚}
+\fancyfoot[C]{第 \thepage 页 \quad 共 \pageref{LastPage} 页}
+% \fancyfoot[R]{右页脚}
+\renewcommand{\headrulewidth}{1pt}
+
+\title{16s Report}
+\author{author}
 \date{\today}
 
 % 正文区
@@ -31,22 +49,18 @@
 
     \newpage
 
-    % \chapter{Hello}
+    \section{16S扩增子测序数据分析方案流程}
 
-    \section{chapter 1}
 
-    \subsection{section 1 of chapter 1}
+    \section{样本与测序信息}
+    \subsection{方法描述}
+    \section{样本信息}
+    \section{数据预处理}
+    \section{物种注释}
+    \section{多样性分析}
+    \section{差异分析}
+    \section{功能预测}
 
-    \subsubsection{subsection 1 of section 1 }
 
-    
-
-    it's dif{}f{}icult to f{}ind 
-
-    about quote `quote'`quote'
-
-    这是中文引号“引号”引号
-    
-    % \lipsum
 
 \end{document}

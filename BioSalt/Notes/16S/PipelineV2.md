@@ -2,6 +2,45 @@
 
 [toc]
 
+```mermaid
+graph TB
+
+A(下机数据)
+A-->step1
+
+subgraph step1 [ ]
+    direction LR
+    B(双端合并) ~~~ C(质控过滤) ~~~ D(去嵌合体)
+end 
+step1-->E(ASV 降噪)
+E-->step2
+subgraph step2 [ ]
+    direction LR
+    subgraph 物种注释
+        direction TB
+        物种丰度 ~~~ 分类堆叠柱状图 ~~~ 分类热图
+    end 
+    物种注释~~~alpha-多样性~~~beta-多样性~~~差异分析~~~其他分析
+    subgraph alpha-多样性
+    	direction TB 
+    	alpha多样性指数~~~稀释性曲线~~~香农指数曲线
+    end
+    subgraph beta-多样性
+    	direction TB
+    	PCA分析~~~PCoA分析~~~样品距离热图
+    end
+    subgraph 差异分析
+    	LEfSe~~~Wilcoxon检验~~~Kruskal-Wallis
+    end
+    subgraph 其他分析
+    	direction TB
+    	功能预测
+    end
+end
+```
+
+
+
 ## 环境安装
 
 ### 目录结构
@@ -755,7 +794,7 @@ Rscript script/alpha_boxplot.R \
 #### 三元图
 
 ```shell
-# Set working enviroment
+# Set wo enviroment
 rm(list=ls()) # clean enviroment object
 source("ternary_func.R")
 
@@ -863,7 +902,6 @@ for(i in 1:dim(tern_group)[1]){
   ## Write hightlight OUT summary
   write.table(paste(tern[1],tern[2],"Common",sep = "\t"), file=paste("ter", "_sum.txt", sep=""), sep="\t", quote=F, append = TRUE, row.names=F, col.names=F)
   write.table(paste(length(A),length(B),length(C),sep = "\t"), file=paste("ter", "_sum.txt", sep=""), sep="\t", quote=F, append = TRUE, row.names=F, col.names=F)
-  
 }
 ```
 
@@ -879,7 +917,9 @@ Rscript script/format2lefse.R \
     --group Group --threshold 0.4 \
     --output result/lefse/LEfSe
     
-conda install lefse
+# conda create -n lefse
+conda activate lefse
+# conda install lefse=1.0
 
 lefse_format_input.py result/lefse/LEfSe.txt result/lefse/input.in -c 1 -o 1000000
 run_lefse.py result/lefse/input.in result/lefse/input.res
@@ -895,21 +935,23 @@ lefse-plot_features.py -f one --feature_name "Bacteria.Firmicutes.Bacilli.Bacill
 # lefse-plot_features.py -f diff --archive none --format pdf input.in input.res features/
 ```
 
-### 功能预测
+## 功能预测
 
-#### PICRUSt2 安装
-
-```shell
-conda create -n picrust2 -c bioconda -c conda-forge picrust2=2.5.2
-```
-
-#### 运行 PICRUSt2 pipeline
+### PICRUSt2 安装
 
 ```shell
-picrust2_pipeline.py -s basic/qiime/finalResult/dna-sequences.fasta -i basic/qiime/finalResult/feature-table-norm.tsv -o basic/picrust2/ -p 16
+# conda create -n picrust2 -c bioconda -c conda-forge picrust2=2.5.2
 ```
 
-#### 核心输出结果
+### 运行 PICRUSt2 pipeline
+
+```shell
+conda activate picrust2
+
+picrust2_pipeline.py -s result/otus.fa -i result/otutab.txt -o result/picrust2/ -p 32
+```
+
+### 核心输出结果
 
 + `EC_metagenome_out` 目录
   + 非分层的预测宏基因组 EC 数量 `pred_metagenome_unstrat.tsv`
@@ -920,17 +962,19 @@ picrust2_pipeline.py -s basic/qiime/finalResult/dna-sequences.fasta -i basic/qii
 + `pathways_out`
 + 包括预测的通路丰度和覆盖度，基于 EC 数量丰度，一般仅有 400 多行。
 
-#### 添加注释
+### 添加注释
 
 ```shell
-add_descriptions.py -i basic/picrust2/EC_metagenome_out/pred_metagenome_unstrat.tsv.gz -m EC -o basic/picrust2/EC_metagenome_out/pred_metagenome_unstrat.description.tsv.gz
+add_descriptions.py -i result/picrust2/EC_metagenome_out/pred_metagenome_unstrat.tsv.gz -m EC -o result/picrust2/EC_metagenome_out/pred_metagenome_unstrat.description.tsv.gz
 
-add_descriptions.py -i basic/picrust2/KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -m KO -o basic/picrust2/KO_metagenome_out/pred_metagenome_unstrat.description.tsv.gz 
+add_descriptions.py -i result/picrust2/KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -m KO -o result/picrust2/KO_metagenome_out/pred_metagenome_unstrat.description.tsv.gz 
 
-add_descriptions.py -i basic/picrust2/pathways_out/path_abun_unstrat.tsv.gz -m METACYC -o basic/picrust2/pathways_out/path_abun_unstrat.description.tsv.gz 
+add_descriptions.py -i result/picrust2/pathways_out/path_abun_unstrat.tsv.gz -m METACYC -o result/picrust2/pathways_out/path_abun_unstrat.description.tsv.gz 
 ```
 
-#### 结果可视化
+### 结果可视化
+
+#### 安装 `ggplot2`
 
 ```R
 install.packages("devtools")
@@ -938,16 +982,110 @@ install.packages("BiocManager")
 
 if(!requireNamespace("ggpicrust2", quietly = TRUE))
 	devtools::install_github('cafferychen777/ggpicrust2')
+```
+
+```R
 library(readr)
 library(ggpicrust2)
 library(tibble)
-library(tidyverse)
 library(ggprism)
 library(patchwork)
+library(ggh4x)
 library(conflicted)
 library(tidyverse)
-library(ggh4x)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("lag", "dplyr")
+
+# 加载必要的数据: abundance data（丰度数据） and metadata（元数据）
+df <- read_delim("result/picrust2/KO_metagenome_out/pred_metagenome_unstrat.tsv.gz", delim = "\t", col_names = TRUE, trim_ws = TRUE)
+# 样本列表：有些分析只能有2个分组
+md <- read_delim("result/metadata.tsv", delim = "\t", escape_double = FALSE, trim_ws = TRUE)
+
+# 转换KO为通路
+kegg_abundance <- ko2kegg_abundance(data = df)
+
+# PCA
+p = pathway_pca(abundance = kegg_abundance, metadata = md, group = "Group")
+ggsave("result/picrust2/pathway_pca.pdf", p, width = 160, height = 100, units = "mm")
+
+# 只能有2个分组
+# 筛选样本
+idx = md$Group %in% c("KO", "WT")
+md = md[idx,]
+idx = colnames(kegg_abundance) %in% md$SampleID # c(md$SampleID, "function", "#NAME")
+kegg_abundance = kegg_abundance[,idx]
+
+# 组间差异比较
+daa <- pathway_daa(abundance	= kegg_abundance, 
+                   metadata		= md, 
+                   group		= "Group", 
+                   daa_method	= "LinDA", 
+                   select		= NULL, 
+                   p.adjust		= "none", 
+                   reference	= "WT")
+
+write.table(daa, 
+            file		= "result/picrust2/daa_LinDA_WT.txt", 
+            append		= F, 
+            sep			= "\t", 
+            quote		= F, 
+            row.names	= F, 
+            col.names	= T)
+
+
+#注释结果，仅筛选p<0.05的结果
+annotated_daa <- pathway_annotation(pathway			= "KO",
+                                    daa_results_df	= daa,
+                                    ko_to_kegg		= T)
+
+# 进一步过滤 p < 0.05/0.01/0.001的特征    
+feature_filter <- annotated_daa %>% filter(p_adjust < 0.05)
+
+# 创建热图
+kegg_abundance$pathway = rownames(kegg_abundance)
+p = pathway_heatmap(
+    abundance = kegg_abundance %>% 
+				right_join(
+                    feature_filter %>% 
+			   		select(all_of(c("feature","pathway_name"))),
+               		by = c("pathway" = "feature")
+                ) %>% 
+    			select(-"pathway") %>% 
+               	column_to_rownames("pathway_name"),
+    metadata = md, 
+	group	 = "Group",
+    color	 = NULL
+)
+ggsave("result/picrust2/pathway_heatmap.pdf", p, width = 160*1.5, height = 100*1.5, units = "mm")
+
+
+# 分析流程, method: ALDEx2(无结果)、DESeq2、edgeR(结果>30)、limma voom、metagenomeSeq、LinDA(无结果)、Maaslin2
+result <- ggpicrust2(
+    data			= df[,c("function", md$SampleID)], 
+    metadata		= md, 
+    group			= "Group", 
+    reference		= "WT", 
+    pathway			= "KO", 
+    daa_method		= "LinDA", 
+    p.adjust		= "none", 
+    ko_to_kegg		= TRUE, 
+    order			= "pathway_class", 
+    p_values_bar	= TRUE, 
+    x_lab			= "pathway_name")
+
+# 访问第一个DA方法的绘图、预览和保存
+pathway_errorbar <- result[[1]]$plot
+ggsave("result/picrust2/pathway_errorbar.pdf", pathway_errorbar, width = 360, height = 180, units = "mm")
+# 访问第一个DA方法的绘图和结果数据
+pathway_errorbar <- result[[1]]$results
+write.table(pathway_errorbar, 
+            file="result/picrust2/pathway_errorbar.txt", 
+            append = F, 
+            sep="\t", 
+            quote=F, 
+            row.names=F, 
+            col.names=T)
 ```
+
+
 
