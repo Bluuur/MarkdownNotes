@@ -10,3 +10,11 @@
 "GIT PUSH BAT running" 
 "Time:" 2024/04/28 周日 12:30:53.86 
 "Start submitting code to the local repository" 
+"Commit the changes to the local repository" 
+[main e3252b9] 2024/04/28 鍛ㄦ棩 12:30:53.86 update
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+"Push the changes to the remote git server" 
+"Execution complete!" 
+"GIT PUSH BAT running" 
+"Time:" 2024/04/28 周日 17:41:59.31 
+"Start submitting code to the local repository" 
