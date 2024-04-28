@@ -1,5 +1,6 @@
 @echo off
-echo "GIT PUSH BAT running" > repoSync.log
+echo "Execution start"
+echo "GIT PUSH BAT running" >> repoSync.log
 set now=%date% %time%
 echo "Time:" %now% >> repoSync.log
 
