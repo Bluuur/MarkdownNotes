@@ -1,7 +1,7 @@
 @echo off
 echo "Execution start"
 echo "Pull before push"
-git pull >> repoSync
+git pull >> repoSync.log
 echo "GIT PUSH BAT running" >> repoSync.log
 set now=%date% %time%
 echo "Time:" %now% >> repoSync.log
