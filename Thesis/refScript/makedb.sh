@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # 目录路径，包含所有的.faa文件
-DATA_DIR="/beegfs/home/dhyao/data_faa"
+DATA_DIR="/data1/develop/16s/pgcgap/comparative/data/Annotations/AAs"
 
 # 进入数据目录
 cd "$DATA_DIR"
+conda acitvate comparative
 
 # 遍历目录中的每个.faa文件
 for faa_file in *.faa; do
@@ -15,7 +16,7 @@ for faa_file in *.faa; do
         
         # 使用diamond makedb命令创建数据库
         # 这里假设你已经安装了Diamond，并且其可执行文件在系统的PATH中
-       ../diamond makedb --in "$faa_file" --db db
+       diamond makedb --in "$faa_file" --db "$faa_file"
         
         echo "Database for $faa_file has been created."
     else
