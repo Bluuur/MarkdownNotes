@@ -380,3 +380,34 @@ wget http://orthomcl.org/common/downloads/software/v2.0/orthomclSoftware-v2.0.9.
 srfA-A srfA-B srfA-C srfA-D
 
 调控基因：ComA DegU AbrB CodY SinR
+
+## ClusterProfiler 功能富集
+
+```R
+#载入所有所需R包
+library(clusterProfiler)
+library(enrichplot)
+library(ggplot2)
+library(stringr)
+#读取数据
+egg <- read.table("go_files.txt",sep="\t",header=T, stringsAsFactors = FALSE)
+#提取id列
+gene_ids <- egg$query_name
+#有的基因没有注释到会显示为  ""，需使用逻辑值索引去除未注释到的
+eggnog_lines_with_go <- egg$GOs!= ""
+#将一个GeneId对应多个GOId的宽数据格式转换位长数据格式
+eggnog_annoations_go <- str_split(egg[eggnog_lines_with_go,]$GOs, ",")
+gene_to_go <- data.frame(gene = rep(gene_ids[eggnog_lines_with_go], times = sapply(eggnog_annoations_go, length)), term = unlist(eggnog_annoations_go))
+term2gene1 <- gene_to_go[, c(2, 1)]
+#为直接注释补充为间接注释
+term2gene <- buildGOmap(term2gene1)
+#将GoId转换为GoTerm
+go2term <- go2term(term2gene$GO)
+#将GoId转换为GoOnt
+go2ont <- go2ont(term2gene$GO)
+gene1 <- read.table("gene1.txt", header = FALSE, stringsAsFactors = FALSE)
+gene1 <- gene1$V1[1:nrow(gene1)]
+df <- enricher(gene = gene1, TERM2GENE = term2gene, TERM2NAME = go2term, pvalueCutoff = 1, qvalueCutoff = 1)
+
+```
+
