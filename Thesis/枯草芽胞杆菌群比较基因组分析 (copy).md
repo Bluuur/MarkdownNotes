@@ -390,11 +390,11 @@ library(enrichplot)
 library(ggplot2)
 library(stringr)
 #读取数据
-egg <- read.table("go_files.txt",sep="\t",header=T, stringsAsFactors = FALSE)
+egg <- read.table("/data1/develop/16s/pgcgap/comparative/result/clusterProfilerInput/GCF_000009045.1_ASM904v1_genomic.faa.emapper.annotations.symbol_go",sep="\t",header=T, stringsAsFactors = FALSE)
 #提取id列
-gene_ids <- egg$query_name
+gene_ids <- egg$symbol
 #有的基因没有注释到会显示为  ""，需使用逻辑值索引去除未注释到的
-eggnog_lines_with_go <- egg$GOs!= ""
+eggnog_lines_with_go <- egg$GOs!= "-"
 #将一个GeneId对应多个GOId的宽数据格式转换位长数据格式
 eggnog_annoations_go <- str_split(egg[eggnog_lines_with_go,]$GOs, ",")
 gene_to_go <- data.frame(gene = rep(gene_ids[eggnog_lines_with_go], times = sapply(eggnog_annoations_go, length)), term = unlist(eggnog_annoations_go))
@@ -408,6 +408,12 @@ go2ont <- go2ont(term2gene$GO)
 gene1 <- read.table("gene1.txt", header = FALSE, stringsAsFactors = FALSE)
 gene1 <- gene1$V1[1:nrow(gene1)]
 df <- enricher(gene = gene1, TERM2GENE = term2gene, TERM2NAME = go2term, pvalueCutoff = 1, qvalueCutoff = 1)
+
+symbol_goID <- read.table("/data1/develop/16s/pgcgap/comparative/result/clusterProfilerInput/GCF_000009045.1_ASM904v1_genomic.faa.emapper.annotations.symbol_go", header = T, sep = "\t")
+line <- symbol_goID$symbol != "-"
+symbol_goID <- symbol_goID[line, ]
+line <- symbol_goID$GO != "-"
+symbol_goID <- symbol_goID[line, ]
 
 ```
 
