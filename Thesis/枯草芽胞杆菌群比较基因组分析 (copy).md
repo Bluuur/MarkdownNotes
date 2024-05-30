@@ -384,36 +384,14 @@ srfA-A srfA-B srfA-C srfA-D
 ## ClusterProfiler 功能富集
 
 ```R
-#载入所有所需R包
-library(clusterProfiler)
-library(enrichplot)
-library(ggplot2)
-library(stringr)
-#读取数据
-egg <- read.table("/data1/develop/16s/pgcgap/comparative/result/clusterProfilerInput/GCF_000009045.1_ASM904v1_genomic.faa.emapper.annotations.symbol_go",sep="\t",header=T, stringsAsFactors = FALSE)
-#提取id列
-gene_ids <- egg$symbol
-#有的基因没有注释到会显示为  ""，需使用逻辑值索引去除未注释到的
-eggnog_lines_with_go <- egg$GOs!= "-"
-#将一个GeneId对应多个GOId的宽数据格式转换位长数据格式
-eggnog_annoations_go <- str_split(egg[eggnog_lines_with_go,]$GOs, ",")
-gene_to_go <- data.frame(gene = rep(gene_ids[eggnog_lines_with_go], times = sapply(eggnog_annoations_go, length)), term = unlist(eggnog_annoations_go))
-term2gene1 <- gene_to_go[, c(2, 1)]
-#为直接注释补充为间接注释
-term2gene <- buildGOmap(term2gene1)
-#将GoId转换为GoTerm
+geneGO <- read.table(file.choose(),sep="\t",header=T, stringsAsFactors = FALSE)
+symbol <- geneGO$symbol
+goID <- geneGO$GO
+term2gene <- geneGO[,c(2,1)]
+#term2gene <- buildGOmap(term2gene)
 go2term <- go2term(term2gene$GO)
-#将GoId转换为GoOnt
-go2ont <- go2ont(term2gene$GO)
-gene1 <- read.table("gene1.txt", header = FALSE, stringsAsFactors = FALSE)
-gene1 <- gene1$V1[1:nrow(gene1)]
-df <- enricher(gene = gene1, TERM2GENE = term2gene, TERM2NAME = go2term, pvalueCutoff = 1, qvalueCutoff = 1)
-
-symbol_goID <- read.table("/data1/develop/16s/pgcgap/comparative/result/clusterProfilerInput/GCF_000009045.1_ASM904v1_genomic.faa.emapper.annotations.symbol_go", header = T, sep = "\t")
-line <- symbol_goID$symbol != "-"
-symbol_goID <- symbol_goID[line, ]
-line <- symbol_goID$GO != "-"
-symbol_goID <- symbol_goID[line, ]
-
+# go2term <- as.data.frame(goID) %>% left_join(go2term, by = c("goID"="go_id"))
+df <- enricher(symbol, TERM2GENE = term2gene, TERM2NAME = go2term,pvalueCutoff = 0.5,qvalueCutoff = 0.5)
+barplot(df, showCategory=20, title="EnrichmentGO_MF")
 ```
 
