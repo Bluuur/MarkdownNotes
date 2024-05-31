@@ -395,3 +395,47 @@ df <- enricher(symbol, TERM2GENE = term2gene, TERM2NAME = go2term,pvalueCutoff =
 barplot(df, showCategory=20, title="EnrichmentGO_MF")
 ```
 
+```
+/data1/develop/16s/pgcgap
+├── comparative
+│   ├── data
+│   │   ├── genes
+│   │   └── genomes
+│   ├── db
+│   │   ├── diamondDB
+│   │   └── eggnogDB
+│   ├── result
+│   │   ├── clusterProfilerInput
+│   │   ├── dmndMap
+│   │   ├── egngmpOut
+│   │   ├── emapperAnno
+│   │   ├── iden0.7GeneFre
+│   │   ├── iden0.9GeneFre
+│   │   ├── OrthoFinder
+│   │   ├── prokka
+│   │   ├── roary
+│   │   └── test
+│   └── sgeScript
+│       └── plot
+├── dumped
+│   ├── GCA
+│   │   ├── AAs
+│   │   ├── annotation
+│   │   ├── CDs
+│   │   └── GFF
+│   ├── Results
+│   │   ├── Annotations
+│   │   ├── COG
+│   │   ├── CoreTrees
+│   │   ├── PanGenome
+│   │   └── PanGenome_1714460030
+│   └── sgeOut
+│       └── script
+└── soft
+    └── orthomclSoftware-v2.0.9
+        ├── bin
+        ├── config
+        ├── doc
+        └── lib
+```
+
