@@ -396,6 +396,9 @@ barplot(df, showCategory=20, title="EnrichmentGO_MF")
 ```
 
 ```
+/data1/develop/16s/pgcgap/comparative/result/OrthoFinder
+/data1/develop/16s/pgcgap/comparative/result/roary
+
 /data1/develop/16s/pgcgap
 ├── comparative
 │   ├── data
@@ -439,3 +442,4 @@ barplot(df, showCategory=20, title="EnrichmentGO_MF")
         └── lib
 ```
 
+对核心基因进行富集
