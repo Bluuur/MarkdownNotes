@@ -384,6 +384,10 @@ srfA-A srfA-B srfA-C srfA-D
 ## ClusterProfiler 功能富集
 
 ```R
+library(clusterProfiler)
+library(enrichplot)
+library(ggplot2)
+library(stringr)
 geneGO <- read.table(file.choose(),sep="\t",header=T, stringsAsFactors = FALSE)
 symbol <- geneGO$symbol
 goID <- geneGO$GO
@@ -392,7 +396,7 @@ term2gene <- geneGO[,c(2,1)]
 go2term <- go2term(term2gene$GO)
 # go2term <- as.data.frame(goID) %>% left_join(go2term, by = c("goID"="go_id"))
 df <- enricher(symbol, TERM2GENE = term2gene, TERM2NAME = go2term,pvalueCutoff = 0.5,qvalueCutoff = 0.5)
-barplot(df, showCategory=20, title="EnrichmentGO_MF")
+barplot(df, showCategory=20, title="EnrichmentGO")
 ```
 
 ```
