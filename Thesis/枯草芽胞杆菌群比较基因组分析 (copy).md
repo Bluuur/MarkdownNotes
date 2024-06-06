@@ -395,6 +395,11 @@ term2gene <- geneGO[,c(2,1)]
 #term2gene <- buildGOmap(term2gene)
 go2term <- go2term(term2gene$GO)
 # go2term <- as.data.frame(goID) %>% left_join(go2term, by = c("goID"="go_id"))
+
+soft <- panGene[304:2283]
+shell <- panGene[2588:4877]
+cloud <- panGene[4878:31561]
+
 df <- enricher(symbol, TERM2GENE = term2gene, TERM2NAME = go2term,pvalueCutoff = 0.5,qvalueCutoff = 0.5)
 barplot(df, showCategory=20, title="EnrichmentGO")
 ```
