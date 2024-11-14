@@ -17,25 +17,6 @@ GitHub: [MarkdownNotes/R_Source.md at main · Bluuur/MarkdownNotes (github.com)]
 ## 实验流程
 
 ```R
-
-R version 4.1.1 (2021-08-10) -- "Kick Things"
-Copyright (C) 2021 The R Foundation for Statistical Computing
-Platform: x86_64-w64-mingw32/x64 (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-[Workspace loaded from D:/program/R_Repo/.RData]
-
 > load("G.Rdata")
 > load("RIL.Phe.Rdata") # 载入 水稻基因型数据和表型数据
 > str(G) # 查看结构
@@ -52,7 +33,6 @@ Type 'q()' to quit R.
 > y = RIL.Phe[,2]
 > library(ISLR)
 
-载入程辑包：‘ISLR’
 > set.seed(1) # 设置种子抽样, 保证可重复性
 > train<-sample(1:nrow(x),nrow(x)/2) # 一半用于训练模型, 一半用于预测
 > test <- (-train)
