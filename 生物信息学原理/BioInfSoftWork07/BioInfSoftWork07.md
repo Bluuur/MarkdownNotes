@@ -486,7 +486,6 @@ ggscatter(deg.data, x = "logFC", y = "logP", color = "Group") + theme_base()
 ​        color_palette
 
 
-​    
 ​    Warning message:
 ​    "程辑包'ggthemes'是用R版本4.1.3 来建造的"
 
