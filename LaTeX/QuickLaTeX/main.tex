@@ -1,0 +1,89 @@
+\documentclass[UTF8]{ctexart}
+% 导言区
+
+% 设置页边距
+\usepackage{geometry}
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+
+% 图片调整
+\usepackage{graphicx}
+
+% 随机英文文本
+\usepackage{lipsum}
+
+% 设置目录深度
+\setcounter{tocdepth}{3}
+
+% Section 标号深度
+\setcounter{secnumdepth}{3}
+
+% 可以用于清除页脚（一般是页码）和页眉
+\pagestyle{empty}
+
+\usepackage{setspace}
+\date{}
+
+% 文档开始
+\begin{document}
+    % 插入图形
+	\begin{figure}[t]
+		\centering
+        \includegraphics[scale=0.7]{img/HZAU.png}
+	\end{figure}
+
+	% 居中环境
+	\begin{center}
+		\quad \\
+		\quad \\
+		\heiti \fontsize{45}{17} 标题 1
+		\vskip 3.5cm
+		% ctex 包特性
+		\heiti \zihao{2} 标题 2
+	\end{center}
+
+	% vertical space
+	\vskip 3.5cm
+
+	% make cover
+	\begin{quotation}
+		\heiti \fontsize{15}{15}
+		\doublespacing
+		\par\setlength\parindent{12em}
+		\quad
+
+		学\hspace{0.61cm} 院：信息学院
+
+		专\hspace{0.61cm} 业：生物信息学
+
+		学生姓名：张子栋
+
+		学\hspace{0.61cm} 号：2020317210101
+
+
+		\vskip 1.5cm
+		\centering
+        湖北~·~武汉\\
+		2023 年 12 月 28 日
+	\end{quotation}
+
+	% 另起一页
+	\newpage
+
+    \tableofcontents
+    
+    % 目录设为页码 0（从正文起为第一页）
+    \setcounter{page}{0}
+
+    % 目录的页脚设为空
+    \thispagestyle{empty}
+
+    \newpage
+
+	\section{前言}
+	
+	\begin{thebibliography}{99}
+		\bibitem{ref1} 
+		
+	\end{thebibliography}
+
+\end{document}
