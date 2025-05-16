@@ -10,7 +10,7 @@
 
 
 
-All Rights Reserve (C) 2021 - 2023 Zidong Zh.
+All Rights Reserve (C) 2021 - 2025 Zhang Zidong.
 
 本项目采用 Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) 进行许可
 
