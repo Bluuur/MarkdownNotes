@@ -474,9 +474,9 @@ RNAi Pathway
 
 ###  miRNA 的发现
 
-+ 1993 年，LeeRC 等在线虫（C。elegans）中意外地发现了一种定时调控胚胎后期发育的 miRNA-lin4，它是一种非编码 RNA，长度为 22 nt。
++ 1993 年，LeeRC 等在线虫（C. elegans）中意外地发现了一种定时调控胚胎后期发育的 miRNA-lin4，它是一种非编码 RNA，长度为 22 nt。
 + 2000 年，miRNA-let7 的发现掀起了寻找 miRNA 的热潮。
-+ 在线虫（C。elegans）当中，通过功能缺失突变体的筛选，找到了 let-7/lin-41 基因 19
++ 在线虫（C. elegans）当中，通过功能缺失突变体的筛选，找到了 let-7/lin-41 基因 19
   <img src="Chap06真核生物基因表达调控.assets/image-20221228223607483.png" alt="image-20221228223607483" style="zoom: 33%;" /><img src="Chap06真核生物基因表达调控.assets/image-20221228223844201.png" alt="image-20221228223844201" style="zoom: 50%;" />
 
 ###  miRNA 的生物合成
@@ -491,7 +491,7 @@ RNAi Pathway
 3. Pre-miRNA 的剪切与 miRNA 的成熟
 
    + Dicer 识别 pre-miRNA 的双链部分。
-   + 茎环基部的两圈螺旋解开，Dicer 对两条链都进行切割，生成 5’端磷酸化、3‘端有 2nt 突出的类似于 siRNA 的不完全配对的双链。
+   + 茎环基部的两圈螺旋解开，Dicer 对两条链都进行切割，生成 5’端磷酸化、3' 端有 2nt 突出的类似于 siRNA 的不完全配对的双链。
    + 这条 RNA 双链是由成熟 miRNA 与 miRNA*组成的。miRNA*是 pre-miRNA 上的一段 RNA，其位置恰好与成熟的 miRNA 相对。
    + 如果大量的前体均可产生并只产生一种 miRNA，则其双链中的星号链也可以成为成熟的 miRNA。
      ![image-20221228224201298](Chap06真核生物基因表达调控.assets/image-20221228224201298.png)
@@ -515,6 +515,34 @@ RNAi Pathway
 
 1. 和 siRNA 一样装载成 RISC 后使互补配对的 mRNA 降解。
 2. 可抑制 mRNA 的翻译，降低靶基因的蛋白水平但不影响其 mRNA 的水平。
+
+> @20250516
+>
+> **mRNA 降解**：早期对 miRNA 的研究表明，mRNA 降解更多地发生在植物中，因为 RISC 的形成要求 miRNA 与 Target 完全配对，而动物中 miRNA 与 Target 是存在错配的。
+>
+> 所以早期研究认为 miRNA 在动物中的功能主要是 miRNA 与 Target 不完全配对导致的「**翻译抑制**」（\~90%，通过抑制翻译延伸），少部分（\~10%） miRNA 通过介导 mRNA 降解（RISC，要求 miRNA 序列与 mRNA 序列完全互补配对）进行转录后调控。
+>
+> 最近几年的研究表明，翻译抑制对蛋白质当量影响较小，mRNA 的含量对蛋白质的含量影响更大。
+>
+> 动物中 miRNA 与 Target 不完全配对也会导致 mRNA 去多聚腺苷酸化，降低其稳定性，导致提前降解而降低蛋白翻译量。也即最近的观点认为 miRNA 主要通过 mRNA 降解完成转录后调控的功能。
+>
+> 研究这一点的原因是，在 miRNA 分析中，总有 mRNA - miRNA 表达量的相关性分析：
+>
+> 1. 基因的定义，表达量的定义
+>    $$
+>    \text{DNA} \xrightleftharpoons[\text{逆转录}]{\text{转录}} \text{RNA} \xrightarrow{\text{翻译}} \text{蛋白质}
+>    $$
+>
+>    1. 基因是具有遗传效应的 DNA/RNA/蛋白质片段，对于真核生物，基因是 DNA。
+>    2. 不同语境下，表达量有不同的含义，但是多数指的是基因转录为 mRNA 的量。表达量也可以用在蛋白质水平。
+>
+> 2. 如果 miRNA 功能主要是翻译抑制，那么 miRNA 理论上不会与 mRNA 表达量有显著的相关性，而是与蛋白质水平有相关性。
+>
+> 3. 如果 miRNA 的功能主要是介导 mRNA 降解（RISC 方式）或者去多聚腺苷酸化降低 mRNA 稳定性，导致 mRNA 提前降解，那么研究 miRNA 与 mRNA 的相关性才是有意义的。
+>
+> **结论**：近几年研究表明动物 miRNA 主要通过去多聚腺苷酸化发挥作用，所以研究 miRNA - mRNA 表达量相关性是有意义的。
+>
+> 
 
 <img src="Chap06真核生物基因表达调控.assets/image-20221228224426123.png" alt="image-20221228224426123" style="zoom: 33%;" />
 
