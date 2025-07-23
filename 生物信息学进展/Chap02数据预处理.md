@@ -102,30 +102,3 @@ dotplot(eG,x = "GeneRatio", color = "p.adjust", size = "Count", #默认参数
 
 
 
-```latex
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=textwidth]{img/GO_BioPro.png}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=textwidth]{img/GO_CelCom.png.png}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=textwidth]{img/GO_MolFun.png.png}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=textwidth]{img/GO_Path.png}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=textwidth]{img/GO_ProCla.png.png}
-\end{figure}
-```
-
