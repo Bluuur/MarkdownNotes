@@ -127,10 +127,10 @@ $$
 \hline
 &SOV &SS &df &MS &F &F_{0.05} &F_{0.01}\\
 \hline
-&Treatment &SSt &k-1 &MSt  &\frac{MSt}{MSE} &\text{check\ \ \ \ in}&\text{table}\\
-&Error &SSR &k(n-1)&MSE\\
+&\text{Treatment} &SSt &k-1 &MSt  &\frac{MSt}{MSE} &\text{check\ \ \ \ in}&\text{table}\\
+&\text{Error} &SSR &k(n-1)&MSE\\
 \hline
-&Total &SST &kn-1\\
+&\text{Total} &SST &kn-1\\
 \hline
 \end{array}
 $$
