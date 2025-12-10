@@ -34,10 +34,10 @@ GitHub: [MarkdownNotes/R_Source.md at main · Bluuur/MarkdownNotes (github.com)]
 > library(ISLR)
 
 > set.seed(1) # 设置种子抽样, 保证可重复性
-> train<-sample(1:nrow(x),nrow(x)/2) # 一半用于训练模型, 一半用于预测
+> train<-sample(1:nrow(x), nrow(x)/2) # 一半用于训练模型, 一半用于预测
 > test <- (-train)
-> x.train <- x[train,]
-> x.test <- x[test,]
+> x.train <- x[train, ]
+> x.test <- x[test, ]
 > dim(x.train)
 [1]  105 1618
 > dim(x.test)
