@@ -1,0 +1,42 @@
+# cliff.toml
+
+[changelog]
+header = """
+# Change Log
+"""
+
+body = """
+{% for commit in commits %}
+    {%- set commit_date = commit.author.timestamp | date(format="%Y-%m-%d") -%}
+    {#- 日期分组逻辑 -#}
+    {%- if loop.first or commit_date != prev_date %}
+        {#- 如果不是第一条，在日期前手动插入空行，保证段落分隔 -#}
+        {%- if not loop.first %}\n{% endif -%}
+## {{ commit_date }}
+    {% endif -%}
+- {{ commit.group }} {% if commit.scope %}**{{ commit.scope }}**: {% endif %}{{ commit.message }}
+    {#- 这里的 set_global 去掉了前面的 -，确保上面的列表项能正常换行 -#}
+    {% set_global prev_date = commit_date %}
+{% endfor %}
+"""
+
+trim = true
+
+[git]
+conventional_commits = true
+filter_unconventional = false
+split_commits = false
+# 保持最新日期的在最上面，同一天内也是最新的在最上面
+sort_commits = "newest"
+
+commit_parsers = [
+    { message = "^(?i)(feat|add)", group = "✨" },
+    { message = "^(?i)fix", group = "🐛" },
+    { message = "^(?i)docs", group = "📝" },
+    { message = "^(?i)perf", group = "⚡" },
+    { message = "^(?i)refactor", group = "♻️" },
+    { message = "^(?i)style", group = "🎨" },
+    { message = "^(?i)test", group = "🧪" },
+    { message = "^(?i)chore", skip = true },
+    { message = ".*", group = "Other" },
+]
