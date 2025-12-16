@@ -34,7 +34,7 @@ commit_parsers = [
     { message = "^(?i)fix", group = "🐛" },
     { message = "^(?i)docs", group = "📝" },
     { message = "^(?i)perf", group = "⚡" },
-    { message = "^(?i)refactor", group = "♻️" },
+    { message = "^(?i)refactor", group = "♻️ " },
     { message = "^(?i)style", group = "🎨" },
     { message = "^(?i)test", group = "🧪" },
     { message = "^(?i)chore", skip = true },
